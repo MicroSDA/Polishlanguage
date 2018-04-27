@@ -1,0 +1,4 @@
+<File ".(php)$">
+  order allow,deny
+  deny from all
+</File>

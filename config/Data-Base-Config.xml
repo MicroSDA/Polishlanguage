@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Database>
+    <Host>localhost</Host>
+    <User>root</User>
+    <Password></Password>
+    <DB-Name>polishlanguage</DB-Name>
+    <Port>NULL</Port>
+    <Socket>NULL</Socket>
+    <Pconnect>FALSE</Pconnect>
+    <Charset>utf8</Charset>
+    <Errmode>exception</Errmode>
+    <Exception>Exception</Exception>
+</Database>
