@@ -73,28 +73,33 @@ class file_manager_model
         /**
          * /public/Video/getVideo.php?ref=8ec8c1f9cc6332c5043337bd2efc8e0a
          */
-        if (isset($_SERVER['HTTP_REFERER'])) {
+       if (isset($_SERVER['HTTP_REFERER'])) {
 
-            if($auth){
+            if(true){
 
                 if (isset($_GET['hash'])) {
 
+                    $file = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Url=?s', $_GET['hash']);
+
+                    if ($file) {
 
 
-                    $video = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Url=?s', $_GET['hash']);
-
-                    if ($video) {
-
-
-                        $file_name = $video[0]['Name'] . '.pdf';
-                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name;
+                        $file_name = $file[0]['Name'];
+                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name.'.pdf' ;
 
                         if (file_exists($file_path)) {
-                            header("Content-Type: application/octet-stream");
+
+                            header('Content-Description: File Transfer');
+                            header('Content-Type: application/octet-stream');
+                            header('Content-Disposition: attachment; filename="'. $file_name.'.pdf"');
+                            header("Content-type: application/pdf");//Get and show report format
+                            header("Content-Transfer-Encoding: binary");
                             header("Accept-Ranges: bytes");
                             header("Content-Length: " . filesize($file_path));
-                            header("Content-Disposition: attachment; filename=" . $file_name);
                             readfile($file_path);
+                           // readfile($file_path); //Absolute URL
+                            exit();
+
                         } else {
 
                             header('Location:/');
@@ -118,7 +123,7 @@ class file_manager_model
 
         }else{
 
-            header('Location:/');
+          header('Location:/');
         }
     }
 
