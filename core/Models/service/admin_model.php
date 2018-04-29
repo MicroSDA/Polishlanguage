@@ -172,7 +172,7 @@ class admin_model extends Model
     {
 
         /**
-         * Case of actions on the dashboard 
+         * Case of actions on the dashboard
          */
         if(isset($_GET['submit'])){
 
@@ -212,6 +212,9 @@ class admin_model extends Model
                 DataManager::getInstance()->addData('Logs', 'Logs wasn\'t found');
             }
 
+            /**
+             * Charts section
+             */
             require_once URL_ROOT.'/core/Libs/Basic/General/Charts.php';
 
             $charts_daily = new Charts('Day'); DataManager::getInstance()->addData('Day',$charts_daily);
@@ -224,10 +227,18 @@ class admin_model extends Model
             $charts_monthly_page = new Charts('MonthPage'); DataManager::getInstance()->addData('MonthPage',  $charts_monthly_page);
             $charts_yearly_page = new Charts('YearPage'); DataManager::getInstance()->addData('YearPage',  $charts_yearly_page);
 
+
+
+
+
+
         } catch (Exception $error) {
 
             echo $error->getMessage();
         }
+
+
+
 
 
         /**
@@ -260,6 +271,23 @@ class admin_model extends Model
     /**
      *
      */
+
+
+    public function entrance(){
+
+
+        $entrance = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_restricted_person');
+        DataManager::getInstance()->addData('Entrance',$entrance);
+
+
+        /**
+         * Render with admin header and footer
+         */
+        $this->render('admin/header.php','admin/footer.php');
+
+    }
+
+
     public function settings()
     {
 

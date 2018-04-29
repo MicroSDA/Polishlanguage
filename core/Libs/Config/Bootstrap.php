@@ -11,6 +11,7 @@
  * include global core modules
  */
 
+require_once URL_ROOT.'/core/Libs/Basic/General/RestrictedPerson.php';
 require_once URL_ROOT.'/core/Libs/Config/Config.php';
 require_once URL_ROOT.'/core/Libs/Config/ErrorLog.php';
 require_once URL_ROOT.'/core/Libs/Config/TemplateManager.php';

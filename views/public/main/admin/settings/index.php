@@ -15,6 +15,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/secure/employee/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Employee</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/secure/entrance/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Entrance</a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link" href="/admin/secure/settings/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Settings</a>
                 </li>
@@ -163,6 +166,9 @@
                                 <p style="text-align: center;">Href:
                                     <?= md5(getenv("REMOTE_ADDR") . "key" . time()); ?>
                                 </p>
+                                <p style="text-align: center;">Href:
+                                    <?= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                                        time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()); ?></p>
                             </div>
                         </div>
                     </div>
@@ -334,5 +340,4 @@
             </div>
         </div>
     </div>
-
 </div>

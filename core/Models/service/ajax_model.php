@@ -421,4 +421,61 @@ class ajax_model
 
 
     }
+
+    public function add_block(){
+
+        if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value'])){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
+
+        }else{
+
+            try {
+
+                if(!DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_restricted_person WHERE IP=?s",$_POST['data'][0]['value'])){
+
+                    DataBase::getInstance()->getDB()->query("INSERT INTO c_restricted_person (IP, Reason) VALUES (?s, ?s)",$_POST['data'][0]['value'],
+                        $_POST['data'][1]['value']);
+
+                    $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+                    echo' <form type="Get" action="">';
+                    echo' <div style="text-align: center"><a href="/admin/secure/entrance/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+                    echo' </form>';
+
+                }else{
+
+                    echo '<div style="text-align: center"><span class="btn btn-warning"><h5>Already exist</h5></span></div>';
+                }
+
+
+            } catch (Exception $error) {
+
+                echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 218: ajax_model: admin_add_url()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
+            }
+        }
+    }
+
+    public function delete_block_validate(){
+
+        $outgoing['ip'] = $_POST['data'][0]['value'];
+        echo json_encode($outgoing);
+    }
+
+    public function delete_block(){
+
+        try {
+
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_restricted_person WHERE IP=?s", $_POST['data']);
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+            echo' <form type="Get" action="">';
+            echo' <div style="text-align: center"><a href="/admin/secure/entrance/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+            echo' </form>';
+
+        } catch (Exception $error) {
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">INTERNAL ERROR<br>Line 168: ajax_model: admin_delete_url()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
+        }
+    }
 }

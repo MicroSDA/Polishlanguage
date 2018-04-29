@@ -16,7 +16,7 @@ class file_manager_model
     }
 
 
-    public function upload(){
+    public function upload_image(){
 
         $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
 
@@ -61,4 +61,65 @@ class file_manager_model
             echo "<script type='text/javascript'>window.parent.CKEDITOR.tools.callFunction($funcNum, '$url', '$message');</script>";
         }
     }
+
+    public function upload_pdf(){
+
+    }
+
+    public function download_pdf()
+    {
+
+
+        /**
+         * /public/Video/getVideo.php?ref=8ec8c1f9cc6332c5043337bd2efc8e0a
+         */
+        if (isset($_SERVER['HTTP_REFERER'])) {
+
+            if($auth){
+
+                if (isset($_GET['hash'])) {
+
+
+
+                    $video = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Url=?s', $_GET['hash']);
+
+                    if ($video) {
+
+
+                        $file_name = $video[0]['Name'] . '.pdf';
+                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name;
+
+                        if (file_exists($file_path)) {
+                            header("Content-Type: application/octet-stream");
+                            header("Accept-Ranges: bytes");
+                            header("Content-Length: " . filesize($file_path));
+                            header("Content-Disposition: attachment; filename=" . $file_name);
+                            readfile($file_path);
+                        } else {
+
+                            header('Location:/');
+                        }
+
+                    } else {
+
+                        header('Location:/');
+                    }
+
+                } else {
+
+                    header('Location:/');
+                }
+
+            }else{
+
+                header('Location:/');
+            }
+
+
+        }else{
+
+            header('Location:/');
+        }
+    }
+
 }

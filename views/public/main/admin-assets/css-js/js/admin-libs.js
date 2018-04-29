@@ -289,3 +289,75 @@ function addNewEmployee() {
 
     });
 }
+
+function addNewBlock(){
+
+    var this_data = $('#add-new-block-form').serializeArray();
+
+
+    $.ajax({
+        type: 'POST',
+        url:  '/ajax-admin/add-block/',
+        headers: { "Ajax": "Ajax" },
+        data:
+            {
+                data: this_data
+            },
+        success: function (html){
+
+            $('#add-new-block-message').empty();
+            $('#add-new-block-message').append(html);
+        }
+
+    });
+}
+
+function deleteBlockValidate(form_id){
+
+
+    var this_data = $('#'+form_id).serializeArray();
+
+
+    $.ajax({
+        type: 'POST',
+        url:  '/ajax-admin/delete-block-validate/',
+        headers: { "Ajax": "Ajax" },
+        data:
+            {
+                data: this_data
+            },
+        success: function (html){
+
+            var obj = JSON.parse(html);
+
+            $('#delete-block-message').empty();
+            $('#delete-block-ip').empty();
+            $('#delete-block-ip').append(obj['ip']);
+
+            $('#delete-block-modal').modal();
+        }
+
+    });
+}
+
+function deleteBlock() {
+
+    var this_data = $('#delete-block-ip').text();
+
+
+    $.ajax({
+        type: 'POST',
+        url:  '/ajax-admin/delete-block/',
+        headers: { "Ajax": "Ajax" },
+        data:
+            {
+                data: this_data
+            },
+        success: function (html){
+
+            $('#delete-block-message').empty();
+            $('#delete-block-message').append(html);
+        }
+
+    });
+}
