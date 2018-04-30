@@ -6,6 +6,8 @@
 CKEDITOR.editorConfig = function( config ) {
 	 config.filebrowserUploadUrl = '/file-upload/upload/';
 	 config.filebrowserBrowseUrl = '/file-upload/get/';
+	 config.extraPlugins = 'filebrowser';
+	 config.extraPlugins = 'uploadfile';
 	// Define changes to default configuration here. For example:
 	  config.language = 'ru';
 	// config.uiColor = '#AADC6E';

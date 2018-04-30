@@ -287,6 +287,15 @@ class admin_model extends Model
 
     }
 
+    public function lessons(){
+
+        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
+        DataManager::getInstance()->addData('Lessons',$lessons);
+        /**
+         * Render with admin header and footer
+         */
+        $this->render('admin/header.php','admin/footer.php');
+    }
 
     public function settings()
     {

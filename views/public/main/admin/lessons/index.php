@@ -17,10 +17,10 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/admin/secure/employee/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Employee</a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="/admin/secure/entrance/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Entrance</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="/admin/secure/lessons/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Lessons</a>
                 </li>
                 <li class="nav-item">
@@ -38,10 +38,10 @@
 <div class="container-fluid">
     <div class="card">
         <h4 class="card-title" style="text-align: center">
-            <span class="btn btn-outline-dark"><h5>Blocked</h5></span>
+            <span class="btn btn-outline-dark"><h5>Lessons</h5></span>
         </h4>
         <div class="card-title" style="text-align: center">
-            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#add-new-block-modal">
+            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#add-new-lesson-modal">
                 <h6>Add new</h6>
             </button>
         </div>
@@ -52,24 +52,25 @@
                 <thead class="elegant-color">
                 <tr style="color:white">
                     <th>#</th>
-                    <th>Ip</th>
-                    <th>Time</th>
-                    <th>Reason</th>
+                    <th>Name</th>
+                    <th>Level</th>
+                    <th></th>
                     <th></th>
                 </tr>
                 </thead>
                 <tbody>
                 <?php $i = 1;
-                foreach (DataManager::getInstance()->getDataByKey('Entrance') as $value): ?>
+                foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
                     <tr>
                         <form id="form-edit-<?= $i ?>" method="post">
                             <th scope="row"><?= $i ?></th>
-                            <td><?= $value['IP'] ?></td>
-                            <td><?= $value['Time'] ?></td>
-                            <td><?= $value['Reason'] ?></td>
-                            <td  hidden><input  hidden name="ip" type="text" value="<?= $value['IP'] ?>" required></td>
+                            <td><?= $value['Name'] ?></td>
+                            <td><?= $value['Level'] ?></td>
                             <td>
-                                <button class="btn btn-outline-info" type="button" onclick="deleteBlockValidate('form-edit-<?= $i ?>');">Remove</button>
+                                <button class="btn btn-outline-info" type="button" onclick="('form-edit-<?= $i ?>');">Change</button>
+                            </td>
+                            <td>
+                                <button class="btn btn-outline-warning" type="button" onclick="('form-edit-<?= $i ?>');">Delete</button>
                             </td>
                         </form>
                     </tr>
@@ -78,54 +79,42 @@
                 </tbody>
             </table>
         </div>
+        <form enctype="multipart/form-data" action="/lesson-upload" method="POST">
+            <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+            Отправить этот файл: <input name="upfile" type="file" />
+            <input type="submit" value="Send File" />
+        </form>
     </div>
 </div>
-<div id="add-new-block-modal" class="modal fade">
+<div id="add-new-lesson-modal" class="modal fade">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <form id="add-new-block-form" >
+                <form id="add-new-employee-form" enctype="multipart/form-data" action="/lesson-upload" method="POST">
                     <div class="form-row">
-                        <div class="col-md-3">
-                            <label class="control-label" for="name">Ip</label>
-                            <input type="text" name="ip" class="form-control" PLACEHOLDER="Ip" required>
-                        </div>
                         <div class="col-md-9">
-                            <label class="control-label" for="name">Reason</label>
-                            <input type="text" name="reason"  class="form-control" PLACEHOLDER="Reason" required>
+                            <input type="text" name="name" class="form-control" PLACEHOLDER="Name" required>
+                        </div>
+                        <div class="col-md-3">
+                            <input type="text" name="level"  class="form-control" PLACEHOLDER="level" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input class="btn btn-outline-info" name="upfile" type="file"/>
+                            <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+                        </div>
+                        <div class="col-md-6">
+                            <input  class="btn btn-success"  type="submit" value="Send File" />
                         </div>
                     </div>
                     </td>
                 </form>
                 <br>
-                <button class="btn btn-success" onclick="addNewBlock();">Add-new</button>
-                <br>
-                <div id="add-new-block-message"></div>
+                <div id="add-new-employee-message"></div>
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning" type="button" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<div id="delete-block-modal" class="modal fade">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-            </div>
-            <div class="modal-body">
-                <input hidden type="text" name="ip" id="delete-block-ip">
-                <div style="text-align: center"><div class="btn btn-outline-warning"><h3>Are you sure ?</h3></div></div>
-                <br>
-                <div style="text-align: center"><button type="button" class="btn btn-danger" onclick="deleteBlock();">Yes</button></div>
-                <hr size="15">
-                <br>
-                <div id="delete-block-message"></div>
-            </div>
-            <div class="modal-footer">
-                <button class="btn btn-warning" type="button" data-dismiss="modal" onclick="">Close</button>
             </div>
         </div>
     </div>
