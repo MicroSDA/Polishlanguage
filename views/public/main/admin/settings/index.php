@@ -83,18 +83,18 @@
                                         <tr>
                                             <form id="form-edit-<?= $i?>" method="post">
                                                 <th scope="row"><?= $i ?></th>
-                                                <td><?= $value['name'] ?><input hidden name="name" type="text" value="<?= $value['name'] ?>" required></td>
-                                                <td><?= $value['pattern'] ?><input hidden name="pattern" type="text" value="<?= $value['pattern'] ?>" required></td>
+                                                <td><?= $value['Name'] ?><input hidden name="name" type="text" value="<?= $value['Name'] ?>" required></td>
+                                                <td><?= $value['Pattern'] ?><input hidden name="pattern" type="text" value="<?= $value['Pattern'] ?>" required></td>
 
-                                                <?php if ($value['status'] == 'active'): ?>
-                                                    <td><span class="btn-success"><?= $value['status'] ?></span></td>
+                                                <?php if ($value['Status'] == 'active'): ?>
+                                                    <td><span class="btn-success"><?= $value['Status'] ?></span></td>
 
                                                     <select hidden name="status" class="mdb-select colorful-select dropdown-primary">
                                                         <option value="active">Active</option>
                                                         <option value="not-active">Not active</option>
                                                     </select>
                                                 <?php else: ?>
-                                                    <td><span class="btn-warning"><?= $value['status'] ?></span></td>
+                                                    <td><span class="btn-warning"><?= $value['Status'] ?></span></td>
                                                     <select hidden name="status" class="mdb-select colorful-select dropdown-primary">
                                                         <option value="not-active">Not active</option>
                                                         <option value="active"Active</option>
@@ -106,11 +106,11 @@
                                                 <td>
                                                     <button class="btn btn-outline-warning" type="button" onclick="deleteUrlValidate('form-edit-<?=$i?>');">Delete</button>
                                                 </td>
-                                                <td  hidden><input  hidden name="model" type="text" value="<?= $value['model'] ?>" required></td>
-                                                <td  hidden><input  hidden name="method" type="text" value="<?= $value['method'] ?>" required></td>
-                                                <td  hidden><input  hidden name="view" type="text" value="<?= $value['view'] ?>" required></td>
+                                                <td  hidden><input  hidden name="model" type="text" value="<?= $value['Model'] ?>" required></td>
+                                                <td  hidden><input  hidden name="method" type="text" value="<?= $value['Method'] ?>" required></td>
+                                                <td  hidden><input  hidden name="view" type="text" value="<?= $value['View'] ?>" required></td>
 
-                                                <?php if ($value['type'] == 'basic'): ?>
+                                                <?php if ($value['Type'] == 'basic'): ?>
                                                     <td  hidden><select hidden name="type" class="mdb-select colorful-select dropdown-primary">
                                                             <option value="basic">Basic</option>
                                                             <option value="service">Service</option>
@@ -123,7 +123,7 @@
                                                         </select>
                                                     </td>
                                                 <?php endif ?>
-                                                <?php if ($value['cache'] == 'yes'): ?>
+                                                <?php if ($value['Cache'] == 'yes'): ?>
                                                     <td  hidden><select hidden name="cache" class="mdb-select colorful-select dropdown-primary">
                                                             <option value="yes">Yes</option>
                                                             <option value="no">No</option>

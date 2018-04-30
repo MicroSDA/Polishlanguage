@@ -341,7 +341,20 @@ class admin_model extends Model
         /**
          * Add all url in the container
          */
-        DataManager::getInstance()->addData('URLS', UrlsDispatcher::getInstance()->getUrlsDataList());
+
+        if($this->employee[0]['Role']=='developer'){
+
+            $urls = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_urls ORDER BY id DESC');
+            DataManager::getInstance()->addData('URLS', $urls);
+        }else{
+
+            $urls = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_urls WHERE Type=?s ORDER BY id DESC','basic');
+            DataManager::getInstance()->addData('URLS', $urls);
+        }
+
+
+
+        //DataManager::getInstance()->addData('URLS', UrlsDispatcher::getInstance()->getUrlsDataList());
 
 
         /**
