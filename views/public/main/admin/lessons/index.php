@@ -79,37 +79,36 @@
                 </tbody>
             </table>
         </div>
-        <form enctype="multipart/form-data" action="/lesson-upload" method="POST">
-            <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
-            Отправить этот файл: <input name="upfile" type="file" />
-            <input type="submit" value="Send File" />
-        </form>
     </div>
+    <!-- <input id="upload-file" type="file" name="upload" />
+    <button id="upload-bnt" onclick="uploadLesson();">Upload</button>-->
 </div>
+
 <div id="add-new-lesson-modal" class="modal fade">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <form id="add-new-employee-form" enctype="multipart/form-data" action="/lesson-upload" method="POST">
+                <form id="add-new-employee-form">
+                    </form>
                     <div class="form-row">
                         <div class="col-md-9">
-                            <input type="text" name="name" class="form-control" PLACEHOLDER="Name" required>
+                            <input type="text" id="lesson-name" name="name" class="form-control" PLACEHOLDER="Name" required>
                         </div>
                         <div class="col-md-3">
-                            <input type="text" name="level"  class="form-control" PLACEHOLDER="level" required>
+                           <input type="text" id="lesson-level" name="level"  class="form-control" PLACEHOLDER="level" required>
                         </div>
                         <div class="col-md-6">
-                            <input class="btn btn-outline-info" name="upfile" type="file"/>
-                            <input type="hidden" name="MAX_FILE_SIZE" value="300000" />
+                            <input class="btn btn-outline-info" id="upload-file" type="file" name="upload" />
                         </div>
                         <div class="col-md-6">
-                            <input  class="btn btn-success"  type="submit" value="Send File" />
+                            <button class="btn btn-outline-success" id="upload-bnt" onclick="uploadLesson();">Upload</button>
                         </div>
                     </div>
-                    </td>
-                </form>
+                <br>
+                <br>
+                <div id="add-new-lesson-message"></div>
                 <br>
                 <div id="add-new-employee-message"></div>
             </div>

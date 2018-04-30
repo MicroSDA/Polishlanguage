@@ -1,5 +1,7 @@
 <body>
 <main>
    <h1>PERSONAL AREA PAGE</h1>
-    <a href="/lessons-donwload?hash=ce3bdfe02b793bc10a28d7060716448c2a92414ff4811434a9614bae45df4f2d8383b0ab3a4dbbeb58818f045a4015ff">Lesson 1</a>
+    <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+        <a href="/lessons-donwload?hash=<?= $value['Url']?>"><?= $value['Name']?></a><br>
+    <?php endforeach ?>
 </main>

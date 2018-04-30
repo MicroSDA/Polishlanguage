@@ -16,13 +16,10 @@ class ajax_model
          */
         if (empty($_SERVER['HTTP_X_REQUESTED_WITH']) or $_SERVER['HTTP_X_REQUESTED_WITH'] != 'XMLHttpRequest' or empty($_SERVER['HTTP_REFERER']) or empty($_SERVER['HTTP_AJAX']) or $_SERVER['HTTP_AJAX'] != 'Ajax') {
 
-            // UrlsDispatcher::getInstance()->setCurrentUrlData(array_pop(UrlsDispatcher::getInstance()->getUrlsDataList()));
-            // $contorller = new Controller();
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
 
-            foreach (getallheaders() as $name => $value) {
-                echo "$name: $value"."<br>";
-            }
-            //die();
+            die();
         }
 
         /**
@@ -476,6 +473,99 @@ class ajax_model
         } catch (Exception $error) {
 
             echo '<div style="text-align: center"><span class="btn btn-warning">INTERNAL ERROR<br>Line 168: ajax_model: admin_delete_url()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
+        }
+    }
+
+    public function upload_pdf(){
+
+
+        header('Content-Type: text/plain; charset=utf-8');
+
+        try {
+
+            if(empty($_POST['name']) or empty($_POST['level']) ){
+
+                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
+                die();
+
+            }else{
+
+                if(!DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_lessons_pdf WHERE Name=?s",$_POST['name'])){
+
+                    // Undefined | Multiple Files | $_FILES Corruption Attack
+                    // If this request falls under any of them, treat it invalid.
+                    if (!isset($_FILES['file']['error']) || is_array($_FILES['file']['error'])) {
+                        throw new RuntimeException('Invalid parameters.');
+                    }
+
+                    // Check $_FILES['upfile']['error'] value.
+                    switch ($_FILES['file']['error']) {
+                        case UPLOAD_ERR_OK:
+                            break;
+                        case UPLOAD_ERR_NO_FILE:
+                            throw new RuntimeException('No file sent.');
+                        case UPLOAD_ERR_INI_SIZE:
+                        case UPLOAD_ERR_FORM_SIZE:
+                            throw new RuntimeException('Exceeded filesize limit.');
+                        default:
+                            throw new RuntimeException('Unknown errors.');
+                    }
+
+                    // You should also check filesize here.
+                    if ($_FILES['file']['size'] > 100000000) {
+                        throw new RuntimeException('Exceeded filesize limit.');
+
+                    }
+
+                    // DO NOT TRUST $_FILES['upfile']['mime'] VALUE !!
+                    // Check MIME Type by yourself.
+                    $finfo = new finfo(FILEINFO_MIME_TYPE);
+                    if (false === $ext = array_search(
+                            $finfo->file($_FILES['file']['tmp_name']),
+                            array(
+                                'pdf' => 'application/pdf',
+                            ),
+                            true
+                        )) {
+                        throw new RuntimeException('Invalid file format.');
+                    }
+
+                    // You should name it uniquely.
+                    // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
+                    // On this example, obtain safe unique name from its binary data.
+                    if (!move_uploaded_file($_FILES['file']['tmp_name'], sprintf('./private/content/lessons/%s',$_FILES['file']['name']))) {
+                        throw new RuntimeException('Failed to move uploaded file.');
+                    }
+
+                    /**
+                     * Success
+                     */
+                    $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+                    echo' <form type="Get" action="">';
+                    echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+                    echo' </form>';
+
+
+
+                    $url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name']);
+                    DataBase::getInstance()->getDB()->query("INSERT INTO c_lessons_pdf (Name, FileName, Level, Url) VALUES (?s, ?s, ?s, ?s)",$_POST['name'],
+                        $_FILES['file']['name'], $_POST['level'],$url);
+
+                }else{
+
+                    echo '<div style="text-align: center"><span class="btn btn-warning"><h5>Name already exist</h5></span></div>';
+                    die();
+                }
+
+            }
+
+
+        } catch (RuntimeException $e) {
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+
+
         }
     }
 }

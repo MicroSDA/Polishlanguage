@@ -64,21 +64,20 @@ class file_manager_model
 
     public function upload_pdf(){
 
-        header('Content-Type: text/plain; charset=utf-8');
+
+
+       // header('Content-Type: text/plain; charset=utf-8');
 
         try {
-            var_dump($_FILES);
+            arrayPrint($_FILES);
             // Undefined | Multiple Files | $_FILES Corruption Attack
             // If this request falls under any of them, treat it invalid.
-            if (
-                !isset($_FILES['upfile']['error']) ||
-                is_array($_FILES['upfile']['error'])
-            ) {
+            if (!isset($_FILES['file']['error']) || is_array($_FILES['file']['error'])) {
                 throw new RuntimeException('Invalid parameters.');
             }
 
             // Check $_FILES['upfile']['error'] value.
-            switch ($_FILES['upfile']['error']) {
+            switch ($_FILES['file']['error']) {
                 case UPLOAD_ERR_OK:
                     break;
                 case UPLOAD_ERR_NO_FILE:
@@ -91,7 +90,7 @@ class file_manager_model
             }
 
             // You should also check filesize here.
-            if ($_FILES['upfile']['size'] > 100000000) {
+            if ($_FILES['file']['size'] > 100000000) {
                 throw new RuntimeException('Exceeded filesize limit.');
 
             }
@@ -100,11 +99,8 @@ class file_manager_model
             // Check MIME Type by yourself.
             $finfo = new finfo(FILEINFO_MIME_TYPE);
             if (false === $ext = array_search(
-                    $finfo->file($_FILES['upfile']['tmp_name']),
+                    $finfo->file($_FILES['file']['tmp_name']),
                     array(
-                        'jpg' => 'image/jpeg',
-                        'png' => 'image/png',
-                        'gif' => 'image/gif',
                         'pdf' => 'application/pdf',
                     ),
                     true
@@ -115,7 +111,7 @@ class file_manager_model
             // You should name it uniquely.
             // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
             // On this example, obtain safe unique name from its binary data.
-            if (!move_uploaded_file($_FILES['upfile']['tmp_name'], sprintf('./private/%s',$_FILES['upfile']['name']))) {
+            if (!move_uploaded_file($_FILES['file']['tmp_name'], sprintf('./private/content/lessons/%s',$_FILES['file']['name']))) {
                 throw new RuntimeException('Failed to move uploaded file.');
             }
 
@@ -146,20 +142,19 @@ class file_manager_model
                     if ($file) {
 
 
-                        $file_name = $file[0]['Name'];
-                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name.'.pdf' ;
+                        $file_name = $file[0]['FileName'];
+                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name;
 
                         if (file_exists($file_path)) {
 
                             header('Content-Description: File Transfer');
                             header('Content-Type: application/octet-stream');
-                            header('Content-Disposition: attachment; filename="'. $file_name.'.pdf"');
+                            header('Content-Disposition: attachment; filename="'. $file_name);
                             header("Content-type: application/pdf");//Get and show report format
                             header("Content-Transfer-Encoding: binary");
                             header("Accept-Ranges: bytes");
                             header("Content-Length: " . filesize($file_path));
                             readfile($file_path);
-                           // readfile($file_path); //Absolute URL
                             exit();
 
                         } else {

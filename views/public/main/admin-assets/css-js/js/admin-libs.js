@@ -361,3 +361,31 @@ function deleteBlock() {
 
     });
 }
+
+
+function uploadLesson() {
+        var name =  $('#lesson-name').val();
+        var level=  $('#lesson-level').val();
+        var file_data = $('#upload-file').prop('files')[0];
+        var form_data = new FormData();
+        form_data.append('file', file_data);
+        form_data.append('name',name);
+        form_data.append('level',level);
+        $.ajax({
+            url: '/ajax-admin/lesson-upload',
+            headers: { "Ajax": "Ajax" },
+            dataType: 'text',
+            cache: false,
+            contentType: false,
+            processData: false,
+            data: form_data,
+            type: 'post',
+            success: function(html){
+
+                $('#add-new-lesson-message').empty();
+                $('#add-new-lesson-message').append(html);
+
+            }
+        });
+
+}

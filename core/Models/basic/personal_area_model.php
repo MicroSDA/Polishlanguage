@@ -24,7 +24,8 @@ class personal_area_model extends Model
      */
     public function index()
     {
-
+        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
+        DataManager::getInstance()->addData('Lessons',$lessons);
         $this->render();
 
     }
