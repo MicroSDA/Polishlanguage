@@ -198,142 +198,7 @@ class ajax_model
         }
 
     }
-
-    public function add_article(){
-
-
-        try{
-
-            if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value']) or empty($_POST['body'])){
-
-                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
-
-            }else{
-
-                if(DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_article WHERE Url=?s",$_POST['data'][1]['value'])){
-
-                    echo '<div style="text-align: center"><span class="btn btn-danger"><h5>Already exist</h5></span></div>';
-
-                }else{
-                    $description = strip_tags(mb_substr($_POST['body'],0,200));
-
-                    $description.='...';
-
-                    if(DataBase::getInstance()->getDB()->query('INSERT INTO c_article (Url, Title, Description, Body, Writer) VALUES (?s,?s,?s,?s,?s)',$_POST['data'][1]['value'],$_POST['data'][0]['value'],$description, $_POST['body'], 'Ro')){
-
-                        $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
-
-                        echo' <form type="Get" action="">';
-                        echo' <div style="text-align: center"><a href="/admin/secure/settings/'.$token[0]['Token'].'?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
-                        echo' </form>';
-
-                    }else{
-
-
-                    }
-                }
-
-
-            }
-
-
-
-
-        }catch (Exception $error){
-
-            echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 242: ajax_model: add_article()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
-        }
-
-
-    }
-
-
-    public function admin_validate_edit_article(){
-
-
-        $article_title = $_POST['data'][0]['value'];
-        $article_url = $_POST['data'][1]['value'];
-        $article_writer = $_POST['data'][2]['value'];
-        $article_body = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_article WHERE Url=?s',$article_url);
-
-        $outgoing['title'] = $article_title;
-        $outgoing['url'] =  $article_url;
-        $outgoing['writer'] = $article_writer;
-        $outgoing['body'] = $article_body[0]['Body'];
-
-
-        echo json_encode($outgoing);
-    }
-
-    public function admin_edit_article(){
-
-
-        $article_title = $_POST['data'][0]['value'];
-        $article_url = $_POST['data'][1]['value'];
-        $article_url_old = $_POST['data'][2]['value'];
-        $article_writer = $_POST['data'][3]['value'];
-        $article_body = $_POST['body'];
-
-
-        if(empty($article_title) or empty($article_url) or empty($article_writer) or empty($article_body) or empty($article_url_old)){
-
-            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
-            die();
-
-        }else{
-
-            try {
-
-
-                $description = strip_tags(mb_substr($article_body,0,200));
-
-                $description.='...';
-
-                DataBase::getInstance()->getDB()->query("UPDATE c_article SET Url=?s, Title=?s, Description=?s, Body=?s WHERE Url=?s",
-                    $article_url, $article_title, $description, $article_body, $article_url_old);
-
-                $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
-
-                echo' <form type="Get" action="">';
-                echo' <div style="text-align: center"><a href="/admin/secure/settings/'.$token[0]['Token'].'?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
-                echo' </form>';
-
-            } catch (Exception $error) {
-
-                echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 329: ajax_model: admin_edit_article()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
-            }
-
-        }
-
-    }
-
-
-    public function admin_validate_delete_article()
-    {
-
-        $outgoing['url'] = $_POST['data'][1]['value'];
-        echo json_encode($outgoing);
-
-    }
-
-
-    public function admin_delete_article(){
-        try {
-
-            DataBase::getInstance()->getDB()->query("DELETE FROM c_article WHERE Url=?s", $_POST['data']);
-            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
-
-            echo' <form type="Get" action="">';
-            echo' <div style="text-align: center"><a href="/admin/secure/settings/'.$token[0]['Token'].'?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
-            echo' </form>';
-
-        } catch (Exception $error) {
-
-            echo '<div style="text-align: center"><span class="btn btn-warning">INTERNAL ERROR<br>Line 168: ajax_model: admin_delete_url()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
-        }
-
-    }
-
+    
     public function admin_add_employee(){
 
 
@@ -634,6 +499,79 @@ class ajax_model
 
         }catch (Exception $e){
 
+            echo $e->getMessage();
+        }
+
+
+    }
+
+    public function login(){
+
+        $email = $_POST['email'];
+        $password =$_POST['password'];
+
+        try{
+            /**
+             * ///////////EMAIL//////////////////////////////////////
+             */
+            if(empty($email)){
+                throw new Exception('Email should be filled');
+            }
+
+            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$email)){
+                throw new Exception('Email has a wrong format');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+            /**
+             * ///////////PASSWORD/////////////////////////////////////
+             */
+            if(empty($password)){
+                throw new Exception('Password should be filled');
+            }
+
+            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
+
+                throw new Exception('Password has a wrong format<br>The password must contain at least 8 characters including numbers and upper and lower case letters');
+            }
+
+
+
+            $student = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s AND Password=?s',$email, $password);
+
+            if($student){
+
+                if($student[0]['Status']=='not-active'){
+                    throw new Exception('Your account should be active');
+                }
+                /**
+                 * Generate new Hash for cookie
+                 */
+                $hash = md5(getenv("REMOTE_ADDR"). time()). md5($email.time()).md5($password.time());
+
+                /**
+                 * Set new Hash for Student
+                 */
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Hash=?s WHERE id=?s AND Email=?s AND Password=?s',$hash, $student[0]['id'],$email, $password);
+
+                /**
+                 * Set Cookie
+                 */
+                setcookie('id', $student[0]['id'],time()+36000,"/");
+                setcookie('hash', $hash,time()+36000,"/");
+
+                /**
+                 * Redirect to dashboard page
+                 */
+                echo '<script>document.location.replace("/account");</script>';
+
+            }else{
+
+                throw new Exception('Wrong password or email !');
+            }
+
+        }catch (Exception $e){
             echo $e->getMessage();
         }
 

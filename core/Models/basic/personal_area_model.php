@@ -17,6 +17,10 @@ class personal_area_model extends Model
     public function __construct()
     {
         parent::__construct();
+
+
+        $this->students = new Students();
+
     }
 
     /**
@@ -25,21 +29,33 @@ class personal_area_model extends Model
     public function index()
     {
 
-        $this->students = new Students();
 
-        if(!$this->students->isLogin()){
+        if (!$this->students->isLogin()) {
 
-            header('Location:/');
+            header('Location:/login');
+            die();
         }
-
 
 
         $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
         DataManager::getInstance()->addData('Lessons', $lessons);
         DataManager::getInstance()->addData('Students', $this->students);
+
+
         $this->render();
 
     }
 
+    public function login()
+    {
 
+        if ($this->students->isLogin()) {
+
+            header('Location:/account');
+            die();
+        }
+
+
+        $this->render();
+    }
 }

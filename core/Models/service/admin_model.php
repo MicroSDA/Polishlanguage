@@ -142,7 +142,7 @@ class admin_model extends Model
                  DataBase::getInstance()->getDB()->query('UPDATE c_employee SET Hash=?s WHERE id=?s',$hash, $adminData[0]['id']);
 
                  /**
-                  * Get Cookie
+                  * Set Cookie
                   */
                  setcookie('id-super', $adminData[0]['id'],time()+36000,"/");
                  setcookie('hash', $hash,time()+36000,"/");

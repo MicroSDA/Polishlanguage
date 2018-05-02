@@ -120,7 +120,12 @@ class Students
                     /**
                      * Was login
                      */
-                    return true;
+
+                    /**
+                     * If account aren't active then disable authorization
+                     */
+                    if($this->STATUS == 'not-active'){return false;}else{return true;}
+
                 }
 
             } else {

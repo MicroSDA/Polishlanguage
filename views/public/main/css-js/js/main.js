@@ -17,3 +17,23 @@ function registerNewUser() {
 
     });
 }
+
+function login() {
+
+    var login_data = $('#login-user-form').serializeArray();
+
+    $.ajax({
+        type: 'POST',
+        url:  '/login-secure',
+        headers: { "Ajax": "Ajax" },
+        data: login_data,
+        cache: false,
+        success: function (html){
+
+            $('#login-user-message').empty();
+            $('#login-user-message').append(html);
+
+        }
+
+    });
+}

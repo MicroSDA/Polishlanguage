@@ -30,6 +30,18 @@
             <Assets-Js>
                 <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
                 <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
+            </Assets-Js>
+        </Page>
+        <Page name="Login">
+            <Assets-Css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap.min.css" file="bootstrap.min.css" hash="722ed72dbc5ac18a105a23afbc6addda"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap-theme.min.css" file="bootstrap-theme.min.css" hash="7637192c80e1ef0fa6ae65580d7d1e0a"> </css>
+            </Assets-Css>
+            <Assets-Js>
+                <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
             </Assets-Js>
         </Page>
         <Page name="Admin">
