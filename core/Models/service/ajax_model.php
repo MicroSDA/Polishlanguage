@@ -551,7 +551,7 @@ class ajax_model
              */
 
             /**
-             * ///////////LAST NAME//////////////////////////////////
+             * ///////////LAST NAME/////////////////////////////////
              */
             if(empty($last_name)){
                 throw new Exception('Last name should be filled');
@@ -590,7 +590,7 @@ class ajax_model
              * ////////////////////////////////////////////////////////
              */
             /**
-             * ///////////PASSWORD//////////////////////////////////////
+             * ///////////PASSWORD/////////////////////////////////////
              */
             if(empty($password)){
                 throw new Exception('Password should be filled');
