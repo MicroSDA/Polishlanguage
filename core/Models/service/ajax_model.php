@@ -34,50 +34,6 @@ class ajax_model
     }
 
 
-    public function add()
-    {
-
-        foreach (getallheaders() as $name => $value) {
-            echo "$name: $value"."<br>";
-        }
-
-    }
-
-
-
-
-    public function admin_add_newbrand()
-    {
-
-        if (!empty($_POST['brand_name']) &&
-            !empty($_POST['brand_url']) &&
-            !empty($_POST['brand_description'])) {
-
-            $if_exist = DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_brands WHERE Name=?s", $_POST['brand_name']);
-
-            if (!$if_exist) {
-                $result = DataBase::getInstance()->getDB()->query("INSERT INTO c_brands (Name, Url, Description, Image) VALUES (?s, ?s, ?s, ?s)",
-                    $_POST['brand_name'], $_POST['brand_url'], $_POST['brand_description'], 'image');
-
-                if ($result) {
-
-                    echo 'Added';
-
-                } else {
-
-                    echo '<span class="btn btn-warning">Internal error, wasn\'t added</span>';
-                }
-
-            } else {
-
-                echo '<span class="btn btn-warning">This Brand is already exist</span>';
-            }
-
-
-        } else {
-            echo '<span class="btn btn-warning">All Fields should be filled</span>';
-        }
-    }
 
     public function admin_edit_url()
     {
@@ -571,62 +527,104 @@ class ajax_model
 
     public function register_new_user(){
 
-        $skype = 'NO';
+       $first_name = $_POST['first-name'];
+       $last_name = $_POST['last-name'];
+       $email= $_POST['email'];
+       $phone = $_POST['phone'];
+       $skype = $_POST['skype'];
+       $password = $_POST['password'];
+       $confirm_password=$_POST['password-confirm'];
+
         try{
-            if(empty($_POST['first-name'])){
+            /**
+             * ///////////FIRS NAME/////////////////////////////////
+             */
+            if(empty($first_name)){
                throw new Exception('Name should be filled');
             }
 
-            if(empty($_POST['last-name'])){
+            if(!preg_match('/^[a-zA-Z0-9]{3,}$/',$first_name)){
+                throw new Exception('Name has a wrong format');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+
+            /**
+             * ///////////LAST NAME//////////////////////////////////
+             */
+            if(empty($last_name)){
                 throw new Exception('Last name should be filled');
             }
 
-            if(empty($_POST['email'])){
+            if(!preg_match('/^[a-zA-Z0-9]{3,}$/',$last_name)){
+                throw new Exception('Last has a wrong format');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+            /**
+             * ///////////EMAIL//////////////////////////////////////
+             */
+            if(empty($email)){
                 throw new Exception('Email should be filled');
             }
 
-            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$_POST['email'])){
+            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$email)){
                 throw new Exception('Email has a wrong format');
             }
-
-            if(empty($_POST['phone'])){
+            /**
+             * //////////////////////////////////////////////////////
+             */
+            /**
+             * ///////////PHONE//////////////////////////////////////
+             */
+            if(empty($phone) or $phone == '+'){
                 throw new Exception('Phone should be filled');
             }
 
-            if(!preg_match('/^\+[0-9]{10,13}$/',$_POST['phone'])){
+            if(!preg_match('/^\+[0-9]{10,13}$/',$phone)){
                 throw new Exception('Phone has a wrong format');
             }
-
-            if(empty($_POST['password'])){
+            /**
+             * ////////////////////////////////////////////////////////
+             */
+            /**
+             * ///////////PASSWORD//////////////////////////////////////
+             */
+            if(empty($password)){
                 throw new Exception('Password should be filled');
             }
 
-            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$_POST['password'])){
+            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
 
                 throw new Exception('Password has a wrong format<br>The password must contain at least 8 characters including numbers and upper and lower case letters');
             }
 
-            if(empty($_POST['password-confirm'])){
+            if(empty($confirm_password)){
                 throw new Exception('Confirm password should be filled');
             }
 
 
-            if($_POST['password']!= $_POST['password-confirm']){
+            if($password!= $confirm_password){
                 throw new Exception('Passwords mismatched');
             }
+            /**
+             * //////////////////////////////////////////////////////
+             */
 
-            if(!empty($_POST['skype'])){
-                $skype = $_POST['skype'];
+            if(empty($skype)){
+                $skype = 'NO';
             }
 
 
-            $user =DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s',$_POST['email'], $_POST['phone']);
+            $user =DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s',$email, $phone);
 
             if($user){
                 throw new Exception('Account with this email or phone already exist');
             }else{
                 DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password, Ip) VALUES (?s,?s,?s,?s,?s,?s,?s)',
-                    $_POST['first-name'],$_POST['last-name'],$_POST['email'],$_POST['phone'],$skype,$_POST['password'],$_SERVER['REMOTE_ADDR']);
+                    $first_name, $last_name, $email, $phone, $skype, $password, $_SERVER['REMOTE_ADDR']);
             }
 
 
