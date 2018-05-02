@@ -543,7 +543,7 @@ class ajax_model
                throw new Exception('Name should be filled');
             }
 
-            if(!preg_match('/^[a-zA-Z0-9]{3,}$/',$first_name)){
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$first_name)){
                 throw new Exception('Name has a wrong format');
             }
             /**
@@ -557,7 +557,7 @@ class ajax_model
                 throw new Exception('Last name should be filled');
             }
 
-            if(!preg_match('/^[a-zA-Z0-9]{3,}$/',$last_name)){
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$last_name)){
                 throw new Exception('Last has a wrong format');
             }
             /**
