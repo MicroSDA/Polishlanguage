@@ -2,7 +2,7 @@
 <main>
    <h1>INDEX PAGE</h1>
     <div id="register-new-user-block" style="margin-left: 20px">
-        <form id="register-new-user-form"method="post">
+        <form id="register-new-user-form">
             First Name<br>
             <input id="first-name" name="first-name" type="text" required/><br>
             Last Name<br>
@@ -15,6 +15,8 @@
             <input id="skype" name="skype" type="text"/><br>
             Password<br>
             <input id="password" name="password" type="password" required/><br>
+            Confirm Password<br>
+            <input id="password-confirm" name="password-confirm" type="password" required/><br>
             <button name="submit" type="button" onclick="registerNewUser();">Register</button>
         </form>
     </div>

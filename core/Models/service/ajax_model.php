@@ -594,6 +594,15 @@ class ajax_model
                 throw new Exception('Password should be filled');
             }
 
+            if(empty($_POST['password-confirm'])){
+                throw new Exception('Confirm password should be filled');
+            }
+
+
+            if($_POST['password']!= $_POST['password-confirm']){
+                throw new Exception('Passwords mismatched');
+            }
+
             if(!empty($_POST['skype'])){
                 $skype = $_POST['skype'];
             }
