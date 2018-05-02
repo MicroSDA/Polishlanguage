@@ -572,7 +572,6 @@ class ajax_model
     public function register_new_user(){
 
         $skype = 'NO';
-
         try{
             if(empty($_POST['first-name'])){
                throw new Exception('Name should be filled');
@@ -586,12 +585,25 @@ class ajax_model
                 throw new Exception('Email should be filled');
             }
 
+            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$_POST['email'])){
+                throw new Exception('Email has a wrong format');
+            }
+
             if(empty($_POST['phone'])){
                 throw new Exception('Phone should be filled');
             }
 
+            if(!preg_match('/^\+[0-9]{10,13}$/',$_POST['phone'])){
+                throw new Exception('Phone has a wrong format');
+            }
+
             if(empty($_POST['password'])){
                 throw new Exception('Password should be filled');
+            }
+
+            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$_POST['password'])){
+
+                throw new Exception('Password has a wrong format<br>The password must contain at least 8 characters including numbers and upper and lower case letters');
             }
 
             if(empty($_POST['password-confirm'])){
@@ -607,13 +619,14 @@ class ajax_model
                 $skype = $_POST['skype'];
             }
 
+
             $user =DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s',$_POST['email'], $_POST['phone']);
 
             if($user){
                 throw new Exception('Account with this email or phone already exist');
             }else{
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password) VALUES (?s,?s,?s,?s,?s,?s)',
-                    $_POST['first-name'],$_POST['last-name'],$_POST['email'],$_POST['phone'],$skype,$_POST['password']);
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password, Ip) VALUES (?s,?s,?s,?s,?s,?s,?s)',
+                    $_POST['first-name'],$_POST['last-name'],$_POST['email'],$_POST['phone'],$skype,$_POST['password'],$_SERVER['REMOTE_ADDR']);
             }
 
 

@@ -10,14 +10,14 @@
             Email<br>
             <input id="email" name="email" type="email" required/><br>
             Phone<br>
-            <input id="phone" name="phone" type="text" required/><br>
+            <input id="phone" name="phone" type="text" value="+" required/><br>
             Skype<br>
             <input id="skype" name="skype" type="text"/><br>
             Password<br>
             <input id="password" name="password" type="password" required/><br>
             Confirm Password<br>
-            <input id="password-confirm" name="password-confirm" type="password" required/><br>
-            <button name="submit" type="button" onclick="registerNewUser();">Register</button>
+            <input id="password-confirm" name="password-confirm" type="password" required/><br><br>
+            <button name="submit" type="button" onclick="registerNewUser();">Register</button><br>
         </form>
     </div>
     <div id="register-new-user-message"></div>
