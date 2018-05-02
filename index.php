@@ -37,6 +37,7 @@
 
         require URL_ROOT.'/core/Libs/Config/Bootstrap.php';
         $restricted = new RestrictedPerson();
+
         $Router = new Router();
 
 

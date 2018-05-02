@@ -13,17 +13,20 @@
 
 require_once $_SERVER['DOCUMENT_ROOT'].'/core/Libs/DataBase/DataBase.php';
 
-$query['adminTable'] = '
-CREATE TABLE IF NOT EXISTS `c_admin` (
-    `id` INT(11) NOT NULL AUTO_INCREMENT,
-	`Login` VARCHAR(200) NOT NULL,
-	`Password` TEXT NOT NULL,
-	`Hash` TEXT NOT NULL,
-	`Time` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-	`Href` TEXT NOT NULL,
-	PRIMARY KEY(`id`),
-	UNIQUE INDEX `Login` (`Login`)
-) COLLATE=\'utf8_general_ci\'';
+$query['employeeTable'] = '
+CREATE TABLE `c_employee` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`FirstName` VARCHAR(100) NULL DEFAULT NULL,
+	`LastName` VARCHAR(100) NULL DEFAULT NULL,
+	`Email` VARCHAR(150) NULL DEFAULT NULL,
+	`Password` TEXT NULL,
+	`Hash` TEXT NULL,
+	`LastLogin` TIMESTAMP NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+	`Role` ENUM(\'developer\',\'admin\',\'manager\',\'moderator\',\'employee\') NULL DEFAULT \'employee\',
+	PRIMARY KEY (`id`),
+	UNIQUE INDEX `Email` (`Email`)
+)
+COLLATE=\'utf8_general_ci\'';
 $query['apiKeyTable'] = '
 CREATE TABLE IF NOT EXISTS `c_api_key` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
@@ -183,7 +186,7 @@ try{
     }
 
     $href = md5(getenv("REMOTE_ADDR") . "key" . date("i")). md5(getenv("REMOTE_ADDR") . "key-2" . date("i")). md5(getenv("REMOTE_ADDR") . "key-3" . date("i"));
-    DataBase::getInstance()->getDB()->query('INSERT INTO c_admin (Login, Password, Href) VALUES (?s,?s,?s)','admin@admin','admin',$href);
+    DataBase::getInstance()->getDB()->query('INSERT INTO c_employee (Login, Password, Href) VALUES (?s,?s,?s)','admin@admin','admin',$href);
 
     DataBase::getInstance()->getDB()->mysqlQuery('INSERT INTO `c_urls` (`id`, `Pattern`, `Name`, `Type`, `View`, `Cache`, `Model`, `Method`, `Status`) VALUES 
     (1, \'(^)\', \'Error-404\', \'basic\', \'error-404\', \'no\', \'error_404_model\', \'index\', \'active\'),

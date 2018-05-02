@@ -47,6 +47,9 @@ class Router
          *  Visitors
          */
         require_once URL_ROOT.'/core/Libs/Basic/General/Visitor.php';
+        /**
+         * Skip statistic if url's contain file format and url has service type
+         */
         if(!preg_match('(\.(css|js|php|mp4|txt|jpeg|gif|png|woff|woff2|ttf|map|ico)$)',UrlsDispatcher::getInstance()->getUlrRequest())
             && UrlsDispatcher::getInstance()->getCurrentUrlData()['type'] != 'service'){
 
@@ -64,6 +67,9 @@ class Router
 
                 CacheGenerator::getCache();
                 die();
+                /**
+                 * End of server work if cache exist
+                 */
 
             }else{
                 $this->controller = new Controller();

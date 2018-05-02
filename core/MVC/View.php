@@ -163,45 +163,66 @@ class View
 
 
     /**
-     * @throws ErrorException
+     * @throws Exception
      */
     public function render($header = true, $footer = true){
 
         ob_start();
         ob_implicit_flush(0);
+
         try{
 
             if($header == false){
+
+                /**
+                 * If header should not be attached
+                 */
 
             }else{
 
                 require_once $this->header;
             }
 
+            /**
+             * Attach page's body
+             */
+
             require_once $this->index;
 
+            /**
+             * ------------------------
+             */
+
             if($footer == false){
+
+                /**
+                 * If footer should not be attached
+                 */
 
             }else{
                 require_once $this->footer;
             }
 
 
-        }catch (ErrorException $error){
+        }catch (Exception $error){
 
             ob_end_clean();
 
             throw $error;
         }
-
+        /**
+         * Generate cache if url required, see urls template
+         */
         if(UrlsDispatcher::getInstance()->getCurrentUrlData()['cache']=='yes'){
 
+            /**
+             * If cache wasn't generated before
+             */
           if(!CacheGenerator::isCache()){
               CacheGenerator::generateCache();
           }
         }
-          /* echo '<div style="text-align: center;">Usage:'.round(memory_get_usage() / 1024 / 1024, 2).'MB</div>';
-           echo ' <div style="text-align: center;">Time:'.(microtime(true) - $GLOBALS['time']) .'Sec</div>';*/
+
 
         echo ob_get_clean();
     }

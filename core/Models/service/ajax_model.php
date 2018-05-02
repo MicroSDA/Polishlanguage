@@ -568,4 +568,55 @@ class ajax_model
 
         }
     }
+
+    public function register_new_user(){
+
+        $skype = 'NO';
+
+        try{
+            if(empty($_POST['first-name'])){
+               throw new Exception('Name should be filled');
+            }
+
+            if(empty($_POST['last-name'])){
+                throw new Exception('Last name should be filled');
+            }
+
+            if(empty($_POST['email'])){
+                throw new Exception('Email should be filled');
+            }
+
+            if(empty($_POST['phone'])){
+                throw new Exception('Phone should be filled');
+            }
+
+            if(empty($_POST['password'])){
+                throw new Exception('Password should be filled');
+            }
+
+            if(!empty($_POST['skype'])){
+                $skype = $_POST['skype'];
+            }
+
+            $user =DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s',$_POST['email'], $_POST['phone']);
+
+            if($user){
+                throw new Exception('Account with this email or phone already exist');
+            }else{
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password) VALUES (?s,?s,?s,?s,?s,?s)',
+                    $_POST['first-name'],$_POST['last-name'],$_POST['email'],$_POST['phone'],$skype,$_POST['password']);
+            }
+
+
+            echo '<script>document.getElementById(\'register-new-user-form\').reset();</script>';
+            echo '<script>$("#register-new-user-block").remove();</script>';
+            echo '<script>$("#register-new-user-message").append(\'Done\');</script>';
+
+        }catch (Exception $e){
+
+            echo $e->getMessage();
+        }
+
+
+    }
 }

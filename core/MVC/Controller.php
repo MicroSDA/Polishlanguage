@@ -20,7 +20,9 @@ class controller
      */
     public function __construct()
     {
-
+        /**
+         * Initialize Model
+         */
         if (is_file(URL_ROOT . '/core/Models/' .UrlsDispatcher::getInstance()->getCurrentUrlData()['type'].'/'.UrlsDispatcher::getInstance()->getCurrentUrlData()['model']. '.php')) {
 
             require_once URL_ROOT . '/core/Models/' .UrlsDispatcher::getInstance()->getCurrentUrlData()['type'].'/'. UrlsDispatcher::getInstance()->getCurrentUrlData()['model'] . '.php';
@@ -29,6 +31,9 @@ class controller
             $this->model = new $modelName();
             $method = UrlsDispatcher::getInstance()->getCurrentUrlData()['method'];
 
+            /**
+             * Run current method following by urls template
+             */
             if (method_exists($this->model, $method)) {
 
                 $this->model->$method();
