@@ -58,7 +58,7 @@ class personal_area_model extends Model
          * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
          */
 
-
+arrayPrint($this->students);
 
         $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
         DataManager::getInstance()->addData('Lessons', $lessons);

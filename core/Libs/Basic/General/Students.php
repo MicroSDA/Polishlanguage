@@ -62,7 +62,8 @@ class Students
     /**
      * @var
      */
-    private $COURSES;
+      private $COURSES = [];
+
     /**
      * @var
      */
@@ -115,6 +116,7 @@ class Students
                     $this->STATUS = $this->students_tempalte[0]['Status'];
                     $this->IP = $this->students_tempalte[0]['Ip'];
                     $this->ADD_INFO = $this->students_tempalte[0]['AddInfo'];
+                    $this->COURSES = $this->students_tempalte[0]['Courses'];
 
                     unset($this->students_tempalte);
                     /**

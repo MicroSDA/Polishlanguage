@@ -14,6 +14,7 @@
         Last Login: <?= DataManager::getInstance()->getDataByKey('Students')->getLASTLOGIN() ?><br>
         Additional Info: <?= DataManager::getInstance()->getDataByKey('Students')->getADDINFO() ?><br>
         Status: <?= DataManager::getInstance()->getDataByKey('Students')->getSTATUS() ?><br>
+        Courses: <?= DataManager::getInstance()->getDataByKey('Students')->getCOURSES() ?><br>
     </div>
     <hr>
     <div>

@@ -127,13 +127,13 @@ class file_manager_model
     public function download_pdf()
     {
 
-
+        $student = new Students();
         /**
-         * /public/Video/getVideo.php?ref=8ec8c1f9cc6332c5043337bd2efc8e0a
+         * /lessons-donwload?hash=
          */
        if (isset($_SERVER['HTTP_REFERER'])) {
 
-            if(true){
+            if($student->isLogin()){
 
                 if (isset($_GET['hash'])) {
 
