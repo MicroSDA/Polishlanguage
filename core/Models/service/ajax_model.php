@@ -559,7 +559,7 @@ class ajax_model
                  * Set Cookie
                  */
                 setcookie('id', $student[0]['id'],time()+36000,"/");
-                setcookie('hash', $hash,time()+36000,"/");
+                setcookie('s-hash', $hash,time()+36000,"/");
 
                 /**
                  * Redirect to dashboard page

@@ -85,17 +85,17 @@ class Students
         /**
          * If cookies isset
          */
-        if (isset($_COOKIE['id']) && isset($_COOKIE['hash'])) {
+        if (isset($_COOKIE['id']) && isset($_COOKIE['s-hash'])) {
 
             /**
              * If cookie is wrong
              */
 
-            $this->students_tempalte = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?s AND Hash=?s', $_COOKIE['id'], $_COOKIE['hash']);
+            $this->students_tempalte = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?s AND Hash=?s', $_COOKIE['id'], $_COOKIE['s-hash']);
 
             if ($this->students_tempalte) {
 
-                if ((string)$this->students_tempalte[0]['id'] != $_COOKIE['id'] || (string)$this->students_tempalte[0]['Hash'] != (string)$_COOKIE['hash']) {
+                if ((string)$this->students_tempalte[0]['id'] != $_COOKIE['id'] || (string)$this->students_tempalte[0]['Hash'] != (string)$_COOKIE['s-hash']) {
 
                     return false;
 

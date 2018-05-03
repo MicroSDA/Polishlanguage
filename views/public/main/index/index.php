@@ -21,4 +21,7 @@
         </form>
     </div>
     <div id="register-new-user-message"></div>
+    <br>
+    <a href="/account">Account</a><br>
+    <a href="/login">Login</a><br>
 </main>
