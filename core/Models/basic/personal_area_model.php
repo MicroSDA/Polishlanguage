@@ -28,8 +28,9 @@ class personal_area_model extends Model
      */
     public function index()
     {
-
-
+        /**
+         * If isn't login then redirect to login page
+         */
         if (!$this->students->isLogin()) {
 
             header('Location:/login');
@@ -37,11 +38,41 @@ class personal_area_model extends Model
         }
 
 
+        /**
+         * If GET action is logout the delete cookie
+         */
+        if (isset($_GET['submit'])) {
+
+            switch ($_GET['submit']){
+                case 'logout':
+                    setcookie('id','',time()-100,"/");
+                    setcookie('hash', '',time()-100,"/");
+                    header('Location:' . $_SERVER['HTTP_REFERER']);
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        /**
+         * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+
+
         $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
         DataManager::getInstance()->addData('Lessons', $lessons);
         DataManager::getInstance()->addData('Students', $this->students);
 
 
+
+
+
+
+
+        /**
+         * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
+         */
         $this->render();
 
     }
@@ -57,5 +88,9 @@ class personal_area_model extends Model
 
 
         $this->render();
+    }
+
+    public function logout(){
+
     }
 }

@@ -198,7 +198,7 @@ class ajax_model
         }
 
     }
-    
+
     public function admin_add_employee(){
 
 

@@ -19,7 +19,7 @@
             </Assets-Css>
             <Assets-Js>
                 <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
-                <js type="internal" url="/assets/js/" path="/css-js/js/popper.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
             </Assets-Js>
         </Page>
         <Page name="Personal Area">
