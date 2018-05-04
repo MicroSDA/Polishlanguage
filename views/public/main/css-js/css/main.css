@@ -1,0 +1,12 @@
+#calendar {
+    width: 600px;
+    margin: auto;
+}
+
+#calendar .fc-today {
+ background: #d6c632;
+}
+
+#calendar .fc-day:hover{
+    background: #a1a1a1;
+}

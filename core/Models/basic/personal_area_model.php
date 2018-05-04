@@ -43,10 +43,10 @@ class personal_area_model extends Model
          */
         if (isset($_GET['submit'])) {
 
-            switch ($_GET['submit']){
+            switch ($_GET['submit']) {
                 case 'logout':
-                    setcookie('id','',time()-100,"/");
-                    setcookie('hash', '',time()-100,"/");
+                    setcookie('id', '', time() - 100, "/");
+                    setcookie('hash', '', time() - 100, "/");
                     header('Location:' . $_SERVER['HTTP_REFERER']);
                     break;
                 default:
@@ -58,16 +58,11 @@ class personal_area_model extends Model
          * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
          */
 
-arrayPrint($this->students);
+        //arrayPrint($this->students);
 
         $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
         DataManager::getInstance()->addData('Lessons', $lessons);
         DataManager::getInstance()->addData('Students', $this->students);
-
-
-
-
-
 
 
         /**
@@ -90,7 +85,8 @@ arrayPrint($this->students);
         $this->render();
     }
 
-    public function logout(){
+    public function logout()
+    {
 
     }
 }

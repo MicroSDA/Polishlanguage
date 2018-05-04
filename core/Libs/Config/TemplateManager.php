@@ -70,13 +70,20 @@ class TemplateManager
         if ($key == 'css') {
 
             $css_out = '';
-            $i = 0;
+
+
             foreach ($this->assets[$page][$key] as $keys=> $value) {
 
-                $css_temp = '<link href="' . $value['url'] .'?page='.UrlsDispatcher::getInstance()->getCurrentUrlData()['name'].'&hash='.$keys. '" rel="stylesheet">' . "\n";
-                $css_out .= $css_temp;
+                if($value['type'] == 'internal') {
 
-                $i++;
+                    $css_temp = '<link href="' . $value['url'] . '?page=' . UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] . '&hash=' . $keys . '" rel="stylesheet">' . "\n";
+                    $css_out .= $css_temp;
+                }else{
+
+                    $css_temp = '<link href="' . $value['path'] . '"rel="stylesheet">' . "\n";
+                    $css_out .= $css_temp;
+                }
+
             }
 
             return $css_out;

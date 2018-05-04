@@ -1,6 +1,6 @@
 <body>
 <main>
-   <h1>INDEX PAGE</h1>
+    <h1>INDEX PAGE</h1>
     <div id="register-new-user-block" style="margin-left: 20px">
         <form id="register-new-user-form">
             First Name<br>
