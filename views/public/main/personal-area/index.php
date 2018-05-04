@@ -36,6 +36,8 @@
             </div>
             <div class="modal-body">
                 <p>Are you sure that this day is preferred for lesson?</p>
+                <div id="lessons-date"></div>
+
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

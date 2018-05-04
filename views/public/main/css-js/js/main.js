@@ -44,6 +44,7 @@ $(document).ready(function() {
     $('#calendar').fullCalendar({
         dayClick: function (date, jsEvent, view) {
             var clickData = date.format();
+            $('#lessons-date').text(clickData);
             $('#myModal').modal()
         },
         editable: true,
