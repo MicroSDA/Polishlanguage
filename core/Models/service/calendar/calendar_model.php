@@ -60,7 +60,7 @@ class calendar_model extends Model
         if ($lessonsDB) {
 
             foreach ($lessonsDB as $value) {
-                array_push($lessons, array('title' => $value['Title'] . ':' . $value['Time'], 'start' => $value['Data'], 'color' => $value['Type']));
+                array_push($lessons, array('title' => $value['Title'] . ':' . $value['Time'], 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $value['Type']));
 
             }
 

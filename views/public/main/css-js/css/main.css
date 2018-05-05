@@ -3,10 +3,11 @@
     margin: auto;
 }
 
-#calendar .fc-today {
- background: #fff9c4;
-}
 
 #calendar .fc-day:hover{
     background: #fff9c4;
+}
+
+#calendar .fc-sat, .fc-sun {
+    background-color: lavender !important;
 }

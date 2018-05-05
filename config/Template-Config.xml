@@ -34,7 +34,7 @@
                  <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
                  <js type="internal" url="/assets/js/" path="/css-js/calendar/lib/moment.min.js" file="moment.min.js" hash="9cae0af27c056b4013f74547b5f1f949"> </js>
                  <js type="internal" url="/assets/js/" path="/css-js/calendar/fullcalendar.min.js" file="fullcalendar.min.js" hash="69b5cf6107e47d2466fc88eba1c813c6c"> </js>
-                 <js type="internal" url="/assets/js/" path="/css-js/calendar/locale-all.js" file="locale-all.js" hash="2d2559afa35e68b7cbf6cd111fb3a9f1"> </js>
+                 <js type="internal" url="/assets/js/" path="/css-js/calendar/locale/ru.js" file="ru.js" hash="2d2559afa35e68b7cbf6cd111fb3a9f1"> </js>
                  <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
             </Assets-Js>
         </Page>

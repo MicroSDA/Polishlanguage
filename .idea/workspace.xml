@@ -11,24 +11,15 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="640">
+              <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
               <folding>
                 <element signature="e#1848#1855#1#HTML" expanded="true" />
+                <element signature="e#2671#2678#1#HTML" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -36,7 +27,7 @@
       <file leaf-file-name="personal_area_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Models/basic/personal_area_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
+            <state relative-caret-position="249">
               <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
               <folding>
                 <marker date="1525427628466" expanded="true" signature="1289:1316" ph="SELECT * FRO... c_lessons_pdf" />
@@ -55,15 +46,35 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="ru.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale/ru.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="80" column="110" lean-forward="false" selection-start-line="80" selection-start-column="110" selection-end-line="80" selection-end-column="110" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="calendar_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1042">
-              <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+            <state relative-caret-position="396">
+              <caret line="62" column="129" lean-forward="false" selection-start-line="62" selection-start-column="129" selection-end-line="62" selection-end-column="129" />
               <folding>
-                <marker date="1525504940624" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-                <marker date="1525504940624" expanded="true" signature="3077:3158" ph="INSERT INTO c_lessons... " />
-                <marker date="1525504940624" expanded="true" signature="3077:3176" ph="INSERT INTO c_lessons... " />
+                <marker date="1525509068097" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+                <marker date="1525509068097" expanded="true" signature="3100:3181" ph="INSERT INTO c_lessons... " />
+                <marker date="1525509068097" expanded="true" signature="3100:3199" ph="INSERT INTO c_lessons... " />
               </folding>
             </state>
           </provider>
@@ -139,33 +150,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+            <state relative-caret-position="318">
+              <caret line="50" column="88" lean-forward="false" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="88" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="utils.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/utils.php">
+      <file leaf-file-name="locale-all.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-869">
-              <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
-              <folding>
-                <element signature="e#7#107#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="events.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/json/events.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="22" lean-forward="false" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="22" />
+            <state relative-caret-position="288">
+              <caret line="5274" column="62" lean-forward="false" selection-start-line="5274" selection-start-column="59" selection-end-line="5274" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -183,7 +182,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>index</find>
       <find>das</find>
       <find>select</find>
       <find>cha</find>
@@ -213,6 +211,7 @@
       <find>theme-chooser.js</find>
       <find>theme-chooser</find>
       <find>nice-normal nice-current</find>
+      <find>Май</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -222,7 +221,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/core/Libs/Config/Bootstrap.php" />
         <option value="$PROJECT_DIR$/core/Libs/DataBase/safemysql.class.php" />
         <option value="$PROJECT_DIR$/test/install.php" />
         <option value="$PROJECT_DIR$/core/Libs/Config/SiteMapGenerator.php" />
@@ -267,12 +265,13 @@
         <option value="$PROJECT_DIR$/core/Models/service/calendar/utils.php" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/calendar/nice-date-picker.js" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js" />
-        <option value="$PROJECT_DIR$/config/Template-Config.xml" />
         <option value="$PROJECT_DIR$/core/Models/service/calendar/json/events.json" />
-        <option value="$PROJECT_DIR$/views/public/main/css-js/css/main.css" />
         <option value="$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php" />
-        <option value="$PROJECT_DIR$/views/public/main/css-js/js/main.js" />
+        <option value="$PROJECT_DIR$/config/Template-Config.xml" />
+        <option value="$PROJECT_DIR$/views/public/main/css-js/calendar/locale/ru.js" />
+        <option value="$PROJECT_DIR$/views/public/main/css-js/css/main.css" />
         <option value="$PROJECT_DIR$/views/public/main/personal-area/index.php" />
+        <option value="$PROJECT_DIR$/views/public/main/css-js/js/main.js" />
       </list>
     </option>
   </component>
@@ -283,7 +282,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-22" />
     <option name="y" value="-8" />
     <option name="width" value="1940" />
@@ -414,25 +413,16 @@
               <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="calendar" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="css" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="fonts" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
-              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -578,15 +568,15 @@
       <workItem from="1524668592508" duration="4548000" />
       <workItem from="1525365289934" duration="413000" />
       <workItem from="1525425379661" duration="3837000" />
-      <workItem from="1525441534272" duration="25381000" />
+      <workItem from="1525441534272" duration="31685000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="870049000" />
+    <option name="totallyTimeSpent" value="876353000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20520833" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -622,13 +612,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/core/Models/service/assets_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/material/admin/js/ckeditor/editor/ckeditor.js" />
     <entry file="file://$PROJECT_DIR$/views/public/material/admin/js/ckeditor/editor/sf.js" />
     <entry file="file://$PROJECT_DIR$/views/public/material/css-js/js/add.js" />
@@ -816,14 +799,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-103752">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Libs/Config/Bootstrap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="527">
@@ -840,48 +815,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="8" lean-forward="false" selection-start-line="1" selection-start-column="8" selection-end-line="1" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/utils.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-869">
           <caret line="20" column="39" lean-forward="false" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
           <folding>
             <element signature="e#7#107#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/basic/personal_area_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
-          <folding>
-            <marker date="1525427628466" expanded="true" signature="1289:1316" ph="SELECT * FRO... c_lessons_pdf" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Libs/Basic/General/Students.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1229">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1525365086841" expanded="true" signature="1218:1266" ph="SELECT * FRO... c_students" />
           </folding>
         </state>
       </provider>
@@ -942,33 +881,86 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/Libs/Basic/General/Students.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1229">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1525365086841" expanded="true" signature="1218:1266" ph="SELECT * FRO... c_students" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="5274" column="62" lean-forward="false" selection-start-line="5274" selection-start-column="59" selection-end-line="5274" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale/ru.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="80" column="110" lean-forward="false" selection-start-line="80" selection-start-column="110" selection-end-line="80" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="36" column="17" lean-forward="false" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Models/basic/personal_area_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+          <folding>
+            <marker date="1525427628466" expanded="true" signature="1289:1316" ph="SELECT * FRO... c_lessons_pdf" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1042">
-          <caret line="100" column="36" lean-forward="true" selection-start-line="100" selection-start-column="36" selection-end-line="100" selection-end-column="36" />
+        <state relative-caret-position="396">
+          <caret line="62" column="129" lean-forward="false" selection-start-line="62" selection-start-column="129" selection-end-line="62" selection-end-column="129" />
           <folding>
-            <marker date="1525504940624" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-            <marker date="1525504940624" expanded="true" signature="3077:3158" ph="INSERT INTO c_lessons... " />
-            <marker date="1525504940624" expanded="true" signature="3077:3176" ph="INSERT INTO c_lessons... " />
+            <marker date="1525509068097" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+            <marker date="1525509068097" expanded="true" signature="3100:3181" ph="INSERT INTO c_lessons... " />
+            <marker date="1525509068097" expanded="true" signature="3100:3199" ph="INSERT INTO c_lessons... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="640">
+          <caret line="55" column="41" lean-forward="false" selection-start-line="55" selection-start-column="41" selection-end-line="55" selection-end-column="41" />
+          <folding>
+            <element signature="e#1848#1855#1#HTML" expanded="true" />
+            <element signature="e#2671#2678#1#HTML" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="70" column="17" lean-forward="true" selection-start-line="70" selection-start-column="17" selection-end-line="70" selection-end-column="17" />
+        <state relative-caret-position="318">
+          <caret line="50" column="88" lean-forward="false" selection-start-line="50" selection-start-column="88" selection-end-line="50" selection-end-column="88" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="45" column="14" lean-forward="false" selection-start-line="45" selection-start-column="14" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="e#1848#1855#1#HTML" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>

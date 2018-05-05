@@ -43,13 +43,22 @@ $(document).ready(function () {
 
     $('#calendar').fullCalendar({
         dayClick: function (date, jsEvent, view) {
-            var clickData = date.format();
-            $('#lessons-date').text(clickData);
-            $('#myModal').modal()
+            if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
+                var clickData = date.format();
+                $('#lessons-date').text(clickData);
+                $('#myModal').modal()
+            } else {
+                $('#error-message').text('This is past day, please choose available days');
+                $('#messageModal').modal()
+
+            }
         },
         eventLimit: true, // allow "more" link when too many events
-        lang: 'ru',
+        locale: "ru",
         editable: false,
+        selectable: true,
+        selectHelper: true,
+        businessHours: true, // display business hours
         events: {
             url: '/get-events',
             error: function () {
@@ -58,20 +67,15 @@ $(document).ready(function () {
         },
         loading: function (bool) {
             $('#loading').toggle(bool);
-        }
+        },
+
     });
 
 });
 
 function updateLessons() {
 
-    var data ={
-        title: 'Title',
-        start: 'Start',
-        end:'End'
-    };
 
-    $('#calendar').fullCalendar( 'refetchEvents' );
 
 }
 
@@ -88,7 +92,7 @@ function addNewLesson() {
         },
         cache: false,
         success: function (html) {
-            updateLessons();
+            $('#calendar').fullCalendar( 'refetchEvents' );
         },
         error: function (html) {
             alert(html);
