@@ -37,7 +37,6 @@
             <div class="modal-body">
                 <p>Are you sure that this day is preferred for lesson?</p>
                 <div id="lessons-date"></div>
-
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" onclick="addNewLesson()">Save</button>
@@ -53,7 +52,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Error</h4>
+                <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">
                 <div id="error-message"></div>

@@ -92,6 +92,10 @@ function addNewLesson() {
         },
         cache: false,
         success: function (html) {
+
+            $('#myModal').modal('toggle');
+            $('#error-message').text(html);
+            $('#messageModal').modal();
             $('#calendar').fullCalendar( 'refetchEvents' );
         },
         error: function (html) {

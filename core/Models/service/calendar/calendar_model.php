@@ -94,6 +94,10 @@ class calendar_model extends Model
     public function add_events()
     {
         try {
+            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s',$this->student->getID(),$this->student->getEMAIL(), $_POST['Data']);
+            if($result){
+                throw new Exception('You have already picked this day');
+            }
 
             DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Type) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
                 '10:00', $this->student->getID(), $this->student->getEMAIL(), 'green');
