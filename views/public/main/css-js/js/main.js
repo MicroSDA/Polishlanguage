@@ -4,11 +4,11 @@ function registerNewUser() {
 
     $.ajax({
         type: 'POST',
-        url:  '/register-new-user',
-        headers: { "Ajax": "Ajax" },
+        url: '/register-new-user',
+        headers: {"Ajax": "Ajax"},
         data: register_data,
         cache: false,
-        success: function (html){
+        success: function (html) {
 
             $('#register-new-user-message').empty();
             $('#register-new-user-message').append(html);
@@ -24,11 +24,11 @@ function login() {
 
     $.ajax({
         type: 'POST',
-        url:  '/login-secure',
-        headers: { "Ajax": "Ajax" },
+        url: '/login-secure',
+        headers: {"Ajax": "Ajax"},
         data: login_data,
         cache: false,
-        success: function (html){
+        success: function (html) {
 
             $('#login-user-message').empty();
             $('#login-user-message').append(html);
@@ -39,7 +39,7 @@ function login() {
 }
 
 
-$(document).ready(function() {
+$(document).ready(function () {
 
     $('#calendar').fullCalendar({
         dayClick: function (date, jsEvent, view) {
@@ -47,66 +47,51 @@ $(document).ready(function() {
             $('#lessons-date').text(clickData);
             $('#myModal').modal()
         },
-        editable: true,
         eventLimit: true, // allow "more" link when too many events
         lang: 'ru',
         editable: false,
-        events: [
-            {
-                title: 'Hi',
-                start: '2018-05-01'
-            },
-            {
-                title: 'Long Event',
-                start: '2018-03-07',
-                end: '2018-03-10'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2018-03-09T16:00:00'
-            },
-            {
-                id: 999,
-                title: 'Repeating Event',
-                start: '2018-03-16T16:00:00'
-            },
-            {
-                title: 'Conference',
-                start: '2018-03-11',
-                end: '2018-03-13'
-            },
-            {
-                title: 'Meeting',
-                start: '2018-03-12T10:30:00',
-                end: '2018-03-12T12:30:00'
-            },
-            {
-                title: 'Lunch',
-                start: '2018-03-12T12:00:00'
-            },
-            {
-                title: 'Meeting',
-                start: '2018-03-12T14:30:00'
-            },
-            {
-                title: 'Happy Hour',
-                start: '2018-03-12T17:30:00'
-            },
-            {
-                title: 'Dinner',
-                start: '2018-03-12T20:00:00'
-            },
-            {
-                title: 'Birthday Party',
-                start: '2018-03-13T07:00:00'
-            },
-            {
-                title: 'Click for Google',
-                url: 'http://google.com/',
-                start: '2018-03-28'
+        events: {
+            url: '/get-events',
+            error: function () {
+                $('#script-warning').show();
             }
-        ]
+        },
+        loading: function (bool) {
+            $('#loading').toggle(bool);
+        }
     });
 
 });
+
+function updateLessons() {
+
+    var data ={
+        title: 'Title',
+        start: 'Start',
+        end:'End'
+    };
+
+    $('#calendar').fullCalendar( 'refetchEvents' );
+
+}
+
+
+function addNewLesson() {
+
+    var data = $('#lessons-date').text();
+    $.ajax({
+        type: 'POST',
+        url: '/add-events',
+        headers: {"Ajax": "Ajax"},
+        data: {
+            Data: data
+        },
+        cache: false,
+        success: function (html) {
+            updateLessons();
+        },
+        error: function (html) {
+            alert(html);
+        }
+    });
+}
