@@ -79,15 +79,34 @@ $(document).ready(function () {
             });
 
             if(eventDay.length > 0 ){
+                if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
-                $('#lessons-date-edit').text(clickData);
-                $('#lessons-time-edit').val(eventTime);
-                $('#edit-lessons-day').modal()
+                    $('#lessons-date-edit').text(clickData);
+                    $('#lessons-time-edit').val(eventTime);
+                    $('#edit-lessons-day').modal()
+
+                }else {
+
+                    $('#error-message').text('This is past day, please choose available days');
+                    $('#messageModal').modal()
+
+                }
+
 
             }else{
 
-                $('#lessons-date').text(clickData);
-                $('#myModal').modal()
+                if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
+
+                    $('#lessons-date').text(clickData);
+                    $('#myModal').modal()
+
+                }else {
+
+                    $('#error-message').text('This is past day, please choose available days');
+                    $('#messageModal').modal()
+
+                }
+
             }
 
 
