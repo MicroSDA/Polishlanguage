@@ -90,7 +90,7 @@ class calendar_model extends Model
 
                 }
 
-                array_push($lessons, array('title' => $time_out, 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $color));
+                array_push($lessons, array('title' => $time_out, 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $color,'blocked'=>'true'));
 
             }
 

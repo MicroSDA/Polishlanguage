@@ -52,6 +52,30 @@
         </div>
     </div>
 </div>
+<div id="edit-lessons-day" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Edit</h5>
+            </div>
+            <div class="modal-body">
+                <div style="margin-left: auto">
+                    <span id="lessons-date-edit" ></span>
+                    <div class="input-group clockpicker" style="max-width: 140px;">
+                        <input type="text" class="form-control" id="lessons-time-edit" value="">
+                        <span class="input-group-addon"><span class="">Time</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="editLessonDay()">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 <div id="messageModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->

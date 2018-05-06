@@ -42,17 +42,6 @@ function login() {
 $(document).ready(function () {
 
     $('#calendar').fullCalendar({
-        dayClick: function (date, jsEvent, view) {
-            if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
-                var clickData = date.format();
-                $('#lessons-date').text(clickData);
-                $('#myModal').modal()
-            } else {
-                $('#error-message').text('This is past day, please choose available days');
-                $('#messageModal').modal()
-
-            }
-        },
         eventLimit: true, // allow "more" link when too many events
         locale: "ru",
         editable: false,
@@ -67,6 +56,54 @@ $(document).ready(function () {
         },
         loading: function (bool) {
             $('#loading').toggle(bool);
+        },  dayClick: function (date, allDay, jsEvent, view) {
+
+            var dayEvents = $('#calendar').fullCalendar('clientEvents', function(event){
+                return event;
+            });
+
+
+            var clickData = date.format();
+            var eventDay = [];
+            var eventTime = '';
+            dayEvents.forEach(function(item, i, dayEvents) {
+
+                if(clickData.toString() === moment(item.start).format().toString()) {
+                    //alert(moment(item.start).format());
+                    eventDay.push(clickData);
+                    console.log(item);
+                    eventTime = item.title;
+                }
+
+
+            });
+
+            if(eventDay.length > 0 ){
+
+                $('#lessons-date-edit').text(clickData);
+                $('#lessons-time-edit').val(eventTime);
+                $('#edit-lessons-day').modal()
+
+            }else{
+
+                $('#lessons-date').text(clickData);
+                $('#myModal').modal()
+            }
+
+
+
+
+
+            /* if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
+                 var clickData = date.format();
+                 $('#lessons-date').text(clickData);
+                 $('#myModal').modal()
+
+             } else {
+                 $('#error-message').text('This is past day, please choose available days');
+                 $('#messageModal').modal()
+
+             }*/
         },
 
     });
