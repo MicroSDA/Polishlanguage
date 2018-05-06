@@ -1,6 +1,6 @@
 <body>
 <main>
-   <h1>PERSONAL AREA PAGE</h1>
+    <h1>PERSONAL AREA PAGE</h1>
     <div>
         <span><a href="/account/?submit=logout">Logout</a></span><br><br>
         id: <?= DataManager::getInstance()->getDataByKey('Students')->getID() ?><br>
@@ -36,7 +36,13 @@
             </div>
             <div class="modal-body">
                 <p>Are you sure that this day is preferred for lesson?</p>
-                <div id="lessons-date"></div>
+                Data: <span id="lessons-date"></span>
+                <div>
+                    <div class="input-group clockpicker" style="max-width: 140px">
+                         <input type="text" class="form-control" id="lessons-time" value="">
+                         <span class="input-group-addon"><span class="">Time</span></span>
+                    </div>
+                </div>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" onclick="addNewLesson()">Save</button>
@@ -45,13 +51,12 @@
         </div>
     </div>
 </div>
-
 <div id="messageModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <button type="button" class="close" data-dismiss="modal"></button>
                 <h4 class="modal-title"></h4>
             </div>
             <div class="modal-body">

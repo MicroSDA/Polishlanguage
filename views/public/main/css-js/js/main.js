@@ -38,7 +38,7 @@ function login() {
     });
 }
 
-
+//Calendar init
 $(document).ready(function () {
 
     $('#calendar').fullCalendar({
@@ -73,6 +73,34 @@ $(document).ready(function () {
 
 });
 
+//Clock init
+$(document).ready(function () {
+
+    $('.clockpicker').clockpicker({
+        'default': DisplayCurrentTime(),
+        placement: 'bottom',
+        align: 'right',
+        donetext: 'Done',
+        twelvehour: true,
+        vibrate: true
+    }).find('input').val(DisplayCurrentTime())
+
+    function DisplayCurrentTime() {
+        var date = new Date();
+        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
+        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+        hours = hours < 10 ? "0" + hours : hours;
+        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
+        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
+        //time = hours + ":" + minutes + ":" + am_pm;
+        time = hours + ":" + minutes + am_pm;
+        return time;
+    };
+});
+
+
+
+
 function updateLessons() {
 
 
@@ -83,12 +111,14 @@ function updateLessons() {
 function addNewLesson() {
 
     var data = $('#lessons-date').text();
+    var time = $('#lessons-time').val();
     $.ajax({
         type: 'POST',
         url: '/add-events',
         headers: {"Ajax": "Ajax"},
         data: {
-            Data: data
+            Data: data,
+            Time: time
         },
         cache: false,
         success: function (html) {

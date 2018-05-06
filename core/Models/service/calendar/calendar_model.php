@@ -60,7 +60,7 @@ class calendar_model extends Model
         if ($lessonsDB) {
 
             foreach ($lessonsDB as $value) {
-                array_push($lessons, array('title' => $value['Title'] . ':' . $value['Time'], 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $value['Type']));
+                array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $value['Type']));
 
             }
 
@@ -100,7 +100,7 @@ class calendar_model extends Model
             }
 
             DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Type) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
-                '10:00', $this->student->getID(), $this->student->getEMAIL(), 'green');
+                $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'green');
 
             echo 'Lesson was added';
 
