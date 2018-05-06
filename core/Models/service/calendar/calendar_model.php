@@ -57,10 +57,40 @@ class calendar_model extends Model
 
         $lessonsDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s', $this->student->getID(), $this->student->getEMAIL());
         $lessons = [];
+
+
+
         if ($lessonsDB) {
 
             foreach ($lessonsDB as $value) {
-                array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $value['Type']));
+
+                $color ='';
+                $time = $value['Time'];
+                $time_out = '';
+                for ($i = 0; $i < strlen($time); $i++)
+                {
+                    if ($i == 5) $time_out .= "\n";
+                    $time_out .= $time[$i];
+                }
+
+                switch ($value['Status']){
+                    case 'approved':
+                        $color = 'green';
+                        break;
+                    case 'not-approved':
+                        $color = 'blue';
+                        break;
+                    case 'disallowed':
+                        $color = 'red';
+                        break;
+                    case 'completed':
+                        $color = 'gray';
+                        break;
+                    default: $color = 'blue';
+
+                }
+
+                array_push($lessons, array('title' => $time_out, 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $color));
 
             }
 
@@ -99,8 +129,8 @@ class calendar_model extends Model
                 throw new Exception('You have already picked this day');
             }
 
-            DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Type) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
-                $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'green');
+            DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
+                $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'not-approved');
 
             echo 'Lesson was added';
 

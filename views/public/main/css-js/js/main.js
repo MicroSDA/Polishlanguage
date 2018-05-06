@@ -79,7 +79,7 @@ $(document).ready(function () {
     $('.clockpicker').clockpicker({
         'default': DisplayCurrentTime(),
         placement: 'bottom',
-        align: 'right',
+        align: 'left',
         donetext: 'Done',
         twelvehour: true,
         vibrate: true

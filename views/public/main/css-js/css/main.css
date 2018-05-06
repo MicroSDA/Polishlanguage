@@ -1,5 +1,5 @@
 #calendar {
-    max-width: 700px;
+    max-width: 1000px;
     margin: auto;
 }
 
@@ -10,4 +10,12 @@
 
 #calendar .fc-sat, .fc-sun {
     background-color: lavender !important;
+}
+
+#calendar .fc-content{
+    text-align: center;
+}
+
+#sd{
+    background: #fff9c4;
 }

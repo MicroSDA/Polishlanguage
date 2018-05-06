@@ -14,9 +14,12 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
-              <folding />
+            <state relative-caret-position="663">
+              <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -65,56 +68,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ru.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale/ru.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="80" column="110" lean-forward="false" selection-start-line="80" selection-start-column="110" selection-end-line="80" selection-end-column="110" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+            <state relative-caret-position="323">
+              <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="calendar_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="245">
-              <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+            <state relative-caret-position="360">
+              <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
               <folding>
-                <marker date="1525594775418" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-                <marker date="1525594775418" expanded="true" signature="3086:3160" ph="SELECT * FRO... s_lessons" />
-                <marker date="1525594775418" expanded="true" signature="3397:3478" ph="INSERT INTO c_lessons... " />
-                <marker date="1525594775418" expanded="true" signature="3397:3496" ph="INSERT INTO c_lessons... " />
+                <marker date="1525603241739" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+                <marker date="1525603241739" expanded="true" signature="3917:3991" ph="SELECT * FRO... s_lessons" />
+                <marker date="1525603241739" expanded="true" signature="4228:4311" ph="INSERT INTO c_lessons... " />
+                <marker date="1525603241739" expanded="true" signature="4228:4329" ph="INSERT INTO c_lessons... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
+      <file leaf-file-name="CacheGenerator.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/Libs/Basic/General/CacheGenerator.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
+            <state relative-caret-position="455">
+              <caret line="59" column="86" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="59" selection-end-column="86" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="locale-all.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js">
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="5274" column="62" lean-forward="false" selection-start-line="5274" selection-start-column="59" selection-end-line="5274" selection-end-column="62" />
+            <state relative-caret-position="150">
+              <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -171,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/test/install.php" />
         <option value="$PROJECT_DIR$/core/Libs/Config/SiteMapGenerator.php" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/core/Router/UrlsDispatcher.php" />
@@ -216,12 +208,13 @@
         <option value="$PROJECT_DIR$/views/public/main/css-js/calendar/locale-all.js" />
         <option value="$PROJECT_DIR$/core/Models/service/calendar/json/events.json" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/calendar/locale/ru.js" />
-        <option value="$PROJECT_DIR$/views/public/main/css-js/css/main.css" />
         <option value="$PROJECT_DIR$/config/Template-Config.xml" />
-        <option value="$PROJECT_DIR$/views/public/main/personal-area/index.php" />
-        <option value="$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/clock/dist/bootstrap-clockpicker.js" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/js/main.js" />
+        <option value="$PROJECT_DIR$/core/Libs/Basic/Admin/addNewBrand.php" />
+        <option value="$PROJECT_DIR$/views/public/main/personal-area/index.php" />
+        <option value="$PROJECT_DIR$/views/public/main/css-js/css/main.css" />
+        <option value="$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php" />
       </list>
     </option>
   </component>
@@ -232,7 +225,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-75" />
     <option name="y" value="-24" />
     <option name="width" value="1940" />
@@ -293,6 +286,13 @@
               <item name="Libs" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Basic" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="General" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Libs" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Config" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
@@ -529,15 +529,15 @@
       <workItem from="1525365289934" duration="413000" />
       <workItem from="1525425379661" duration="3837000" />
       <workItem from="1525441534272" duration="31685000" />
-      <workItem from="1525536081887" duration="11483000" />
+      <workItem from="1525536081887" duration="18285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="887836000" />
+    <option name="totallyTimeSpent" value="894638000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -573,8 +573,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/public/material/css-js/js/add.js" />
-    <entry file="file://$PROJECT_DIR$/views/public/material/admin/js/ckeditor/editor/config.js" />
     <entry file="file://$PROJECT_DIR$/views/public/material/index/index.php" />
     <entry file="file://$PROJECT_DIR$/views/public/material/admin/js/ckeditor/editor/sample.js" />
     <entry file="file://$PROJECT_DIR$/core/Router/UrlsDispatcher.php">
@@ -810,11 +808,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/core/Libs/Basic/Admin/addNewBrand.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Libs/Basic/General/CacheGenerator.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="59" column="86" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="59" selection-end-column="86" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="45" lean-forward="false" selection-start-line="39" selection-start-column="45" selection-end-line="39" selection-end-column="45" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/main/css-js/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="30" lean-forward="false" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+        <state relative-caret-position="323">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="23" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="20" selection-end-line="80" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="164" lean-forward="true" selection-start-line="35" selection-start-column="164" selection-end-line="35" selection-end-column="164" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/clock/dist/bootstrap-clockpicker.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="670" column="6" lean-forward="true" selection-start-line="670" selection-start-column="6" selection-end-line="670" selection-end-column="6" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -838,48 +889,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="62" column="53" lean-forward="false" selection-start-line="62" selection-start-column="53" selection-end-line="62" selection-end-column="53" />
+        <state relative-caret-position="360">
+          <caret line="86" column="38" lean-forward="false" selection-start-line="86" selection-start-column="38" selection-end-line="86" selection-end-column="38" />
           <folding>
-            <marker date="1525594775418" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-            <marker date="1525594775418" expanded="true" signature="3086:3160" ph="SELECT * FRO... s_lessons" />
-            <marker date="1525594775418" expanded="true" signature="3397:3478" ph="INSERT INTO c_lessons... " />
-            <marker date="1525594775418" expanded="true" signature="3397:3496" ph="INSERT INTO c_lessons... " />
+            <marker date="1525603241739" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+            <marker date="1525603241739" expanded="true" signature="3917:3991" ph="SELECT * FRO... s_lessons" />
+            <marker date="1525603241739" expanded="true" signature="4228:4311" ph="INSERT INTO c_lessons... " />
+            <marker date="1525603241739" expanded="true" signature="4228:4329" ph="INSERT INTO c_lessons... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="35" column="164" lean-forward="true" selection-start-line="35" selection-start-column="164" selection-end-line="35" selection-end-column="164" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="40" column="78" lean-forward="false" selection-start-line="40" selection-start-column="78" selection-end-line="40" selection-end-column="78" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/clock/dist/bootstrap-clockpicker.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="670" column="6" lean-forward="true" selection-start-line="670" selection-start-column="6" selection-end-line="670" selection-end-column="6" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="81" column="21" lean-forward="false" selection-start-line="81" selection-start-column="21" selection-end-line="81" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
