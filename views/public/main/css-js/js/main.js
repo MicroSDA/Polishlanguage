@@ -71,7 +71,6 @@ $(document).ready(function () {
                 if(clickData.toString() === moment(item.start).format().toString()) {
                     //alert(moment(item.start).format());
                     eventDay.push(clickData);
-                    console.log(item);
                     eventTime = item.title;
                 }
 
@@ -206,6 +205,34 @@ function addNewLesson() {
             $('#error-message').text(html);
             $('#messageModal').modal();
             $('#calendar').fullCalendar( 'refetchEvents' );
+        },
+        error: function (html) {
+            alert(html);
+        }
+    });
+}
+
+function deleteLesson() {
+
+
+    var data = $('#lessons-date-edit').text();
+    var time = $('#lessons-time-edit').val();
+    $.ajax({
+        type: 'POST',
+        url: '/delete-events',
+        headers: {"Ajax": "Ajax"},
+        data: {
+            Data: data,
+            Time: time
+        },
+        cache: false,
+        success: function (html) {
+
+            $('#edit-lessons-day').modal('toggle');
+            $('#error-message').text(html);
+            $('#messageModal').modal();
+            $('#calendar').fullCalendar( 'refetchEvents' );
+
         },
         error: function (html) {
             alert(html);

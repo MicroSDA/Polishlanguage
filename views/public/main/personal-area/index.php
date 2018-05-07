@@ -68,6 +68,7 @@
                         <span class="input-group-addon"><span class="">Time</span></span>
                     </div>
                 </div>
+                <button type="button" class="btn btn-warning" onclick="deleteLesson()">Delete</button>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" onclick="editLesson();">Save</button>

@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="72" column="84" lean-forward="false" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
+            <state relative-caret-position="385">
+              <caret line="70" column="85" lean-forward="false" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="85" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="personal_area_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Models/basic/personal_area_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="494">
-              <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+            <state relative-caret-position="708">
+              <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
               <folding>
                 <marker date="1525427628466" expanded="true" signature="1289:1316" ph="SELECT * FRO... c_lessons_pdf" />
               </folding>
@@ -58,18 +58,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="calendar_model.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="calendar_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="606">
-              <caret line="158" column="49" lean-forward="true" selection-start-line="158" selection-start-column="49" selection-end-line="158" selection-end-column="49" />
+            <state relative-caret-position="691">
+              <caret line="178" column="43" lean-forward="true" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
               <folding>
-                <marker date="1525689013478" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-                <marker date="1525689013478" expanded="true" signature="3954:4028" ph="SELECT * FRO... s_lessons" />
-                <marker date="1525689013478" expanded="true" signature="4269:4352" ph="INSERT INTO c_lessons... " />
-                <marker date="1525689013478" expanded="true" signature="4269:4370" ph="INSERT INTO c_lessons... " />
-                <marker date="1525689013478" expanded="true" signature="4746:4820" ph="SELECT * FRO... c_lessons" />
-                <marker date="1525689013478" expanded="true" signature="5168:5247" ph="UPDATE c_lessons... " />
+                <marker date="1525692896879" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+                <marker date="1525692896879" expanded="true" signature="3954:4028" ph="SELECT * FRO... s_lessons" />
+                <marker date="1525692896879" expanded="true" signature="4269:4352" ph="INSERT INTO c_lessons... " />
+                <marker date="1525692896879" expanded="true" signature="4269:4370" ph="INSERT INTO c_lessons... " />
+                <marker date="1525692896879" expanded="true" signature="4746:4820" ph="SELECT * FRO... c_lessons" />
+                <marker date="1525692896879" expanded="true" signature="5168:5247" ph="UPDATE c_lessons... " />
+                <marker date="1525692896879" expanded="true" signature="5612:5684" ph="DELETE FROM c_lessons... " />
               </folding>
             </state>
           </provider>
@@ -78,8 +79,8 @@
       <file leaf-file-name="ajax_model.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/core/Models/service/ajax_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
-              <caret line="553" column="43" lean-forward="true" selection-start-line="553" selection-start-column="43" selection-end-line="553" selection-end-column="43" />
+            <state relative-caret-position="-6837">
+              <caret line="131" column="107" lean-forward="true" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="107" />
               <folding>
                 <marker date="1525365086982" expanded="true" signature="1492:1510" ph="..." />
                 <marker date="1525365086982" expanded="true" signature="1771:1789" ph="..." />
@@ -170,8 +171,8 @@
       <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="158" column="21" lean-forward="false" selection-start-line="158" selection-start-column="9" selection-end-line="158" selection-end-column="21" />
+            <state relative-caret-position="453">
+              <caret line="220" column="21" lean-forward="true" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -262,7 +263,6 @@
         <option value="$PROJECT_DIR$/core/Models/service/ajax_model.php" />
         <option value="$PROJECT_DIR$/Polishlanguage/config/Template-Config.xml" />
         <option value="$PROJECT_DIR$/Polishlanguage/core/Models/service/assets_model.php" />
-        <option value="$PROJECT_DIR$/core/Models/basic/personal_area_model.php" />
         <option value="$PROJECT_DIR$/views/public/main/index/index.php" />
         <option value="$PROJECT_DIR$/core/Libs/Config/TemplateManager.php" />
         <option value="$PROJECT_DIR$/core/Models/service/calendar_model.php" />
@@ -276,8 +276,9 @@
         <option value="$PROJECT_DIR$/views/public/main/css-js/css/main.css" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/clock/dist/bootstrap-clockpicker-24.js" />
         <option value="$PROJECT_DIR$/config/Template-Config.xml" />
-        <option value="$PROJECT_DIR$/views/public/main/css-js/js/main.js" />
         <option value="$PROJECT_DIR$/views/public/main/personal-area/index.php" />
+        <option value="$PROJECT_DIR$/views/public/main/css-js/js/main.js" />
+        <option value="$PROJECT_DIR$/core/Models/basic/personal_area_model.php" />
         <option value="$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php" />
       </list>
     </option>
@@ -556,12 +557,12 @@
       <workItem from="1525365289934" duration="413000" />
       <workItem from="1525425379661" duration="3837000" />
       <workItem from="1525441534272" duration="31685000" />
-      <workItem from="1525536081887" duration="33763000" />
+      <workItem from="1525536081887" duration="35618000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="910116000" />
+    <option name="totallyTimeSpent" value="911971000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -821,19 +822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="72" column="84" lean-forward="false" selection-start-line="72" selection-start-column="84" selection-end-line="72" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/main/css-js/clock/dist/bootstrap-clockpicker.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="7954">
@@ -844,10 +832,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="661">
+          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="453">
+          <caret line="220" column="21" lean-forward="true" selection-start-line="220" selection-start-column="21" selection-end-line="220" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/service/ajax_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="553" column="43" lean-forward="true" selection-start-line="553" selection-start-column="43" selection-end-line="553" selection-end-column="43" />
+        <state relative-caret-position="-6837">
+          <caret line="131" column="107" lean-forward="true" selection-start-line="131" selection-start-column="10" selection-end-line="131" selection-end-column="107" />
           <folding>
             <marker date="1525365086982" expanded="true" signature="1492:1510" ph="..." />
             <marker date="1525365086982" expanded="true" signature="1771:1789" ph="..." />
@@ -900,26 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="158" column="21" lean-forward="false" selection-start-line="158" selection-start-column="9" selection-end-line="158" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="661">
-          <caret line="43" column="27" lean-forward="true" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/basic/personal_area_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="60" column="10" lean-forward="false" selection-start-line="60" selection-start-column="10" selection-end-line="60" selection-end-column="10" />
+        <state relative-caret-position="708">
+          <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
           <folding>
             <marker date="1525427628466" expanded="true" signature="1289:1316" ph="SELECT * FRO... c_lessons_pdf" />
           </folding>
@@ -928,15 +916,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/service/calendar/calendar_model.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="606">
-          <caret line="158" column="49" lean-forward="true" selection-start-line="158" selection-start-column="49" selection-end-line="158" selection-end-column="49" />
+        <state relative-caret-position="691">
+          <caret line="178" column="43" lean-forward="true" selection-start-line="178" selection-start-column="43" selection-end-line="178" selection-end-column="43" />
           <folding>
-            <marker date="1525689013478" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
-            <marker date="1525689013478" expanded="true" signature="3954:4028" ph="SELECT * FRO... s_lessons" />
-            <marker date="1525689013478" expanded="true" signature="4269:4352" ph="INSERT INTO c_lessons... " />
-            <marker date="1525689013478" expanded="true" signature="4269:4370" ph="INSERT INTO c_lessons... " />
-            <marker date="1525689013478" expanded="true" signature="4746:4820" ph="SELECT * FRO... c_lessons" />
-            <marker date="1525689013478" expanded="true" signature="5168:5247" ph="UPDATE c_lessons... " />
+            <marker date="1525692896879" expanded="true" signature="1768:1830" ph="SELECT * FRO... c_lessons" />
+            <marker date="1525692896879" expanded="true" signature="3954:4028" ph="SELECT * FRO... s_lessons" />
+            <marker date="1525692896879" expanded="true" signature="4269:4352" ph="INSERT INTO c_lessons... " />
+            <marker date="1525692896879" expanded="true" signature="4269:4370" ph="INSERT INTO c_lessons... " />
+            <marker date="1525692896879" expanded="true" signature="4746:4820" ph="SELECT * FRO... c_lessons" />
+            <marker date="1525692896879" expanded="true" signature="5168:5247" ph="UPDATE c_lessons... " />
+            <marker date="1525692896879" expanded="true" signature="5612:5684" ph="DELETE FROM c_lessons... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/personal-area/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="70" column="85" lean-forward="false" selection-start-line="70" selection-start-column="71" selection-end-line="70" selection-end-column="85" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

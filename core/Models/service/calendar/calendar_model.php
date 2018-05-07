@@ -169,4 +169,19 @@ class calendar_model extends Model
         }
 
     }
+
+    public function delete_events(){
+
+        try {
+
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s",$this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+
+            echo 'Lesson has been removed';
+
+        } catch (Exception $es) {
+
+            $es->getMessage();
+        }
+
+    }
 }
