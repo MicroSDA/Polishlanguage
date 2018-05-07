@@ -4,9 +4,10 @@
 }
 
 
-#calendar .fc-day:hover{
+#calendar .fc-today {
     background: #fff9c4;
 }
+
 
 #calendar .fc-sat, .fc-sun {
     background-color: lavender !important;
@@ -14,8 +15,5 @@
 
 #calendar .fc-content{
     text-align: center;
-}
-
-#sd{
-    background: #fff9c4;
+    /*height: 30px;*/
 }

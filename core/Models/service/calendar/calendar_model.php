@@ -15,6 +15,7 @@ class calendar_model extends Model
     {
         $this->student = new Students();
         if (!$this->student->isLogin()) {
+            echo 'Session lost';
             die();
         }
 
@@ -95,43 +96,33 @@ class calendar_model extends Model
 
         }
 
-        // arrayPrint($lessons);
-        //die();
-        //arrayPrint($lessons);
-        $json = file_get_contents(URL_ROOT . '/core/Models/service/calendar/json/events.json');
-        $input_arrays = json_decode($json, true);
-
-        //arrayPrint($json);
-// Accumulate an output array of event data arrays.
-        $output_arrays = array();
-        foreach ($input_arrays as $array) {
-
-            // Convert the input array into a useful Event object
-            $event = new Event($array, $timezone);
-
-            // If the event is in-bounds, add it to the output
-            if ($event->isWithinDayRange($range_start, $range_end)) {
-                $output_arrays[] = $event->toArray();
-            }
-        }
-
-// Send JSON to the client.
-        //$data[0] =
         echo json_encode($lessons);
     }
 
     public function add_events()
     {
         try {
+
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
             if ($result) {
+
                 throw new Exception('You have already picked this day');
             }
 
-            DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
-                $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'not-approved');
+            preg_match('/^[+|-}[0-9+]{2,}/',$_POST['Offset'], $offset);
 
-            echo 'Lesson was added';
+            if ((string)$_POST['Data'] == (string)gmdate('Y-m-d',strtotime($offset[0].' hours'))) {
+
+                echo  'It\'s too late';
+
+            }else{
+
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
+                    $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'not-approved');
+
+                echo 'Lesson was added';
+            }
+
 
         } catch (Exception $e) {
 
@@ -148,7 +139,9 @@ class calendar_model extends Model
 
             if ($result) {
 
-                if ((string)$result[0]['Data'] == (string)date('Y-m-d')) {
+                preg_match('/^[+|-}[0-9+]{2,}/',$_POST['Offset'], $offset);
+
+                if ((string)$_POST['Data'] == (string)gmdate('Y-m-d',strtotime($offset[0].' hours'))) {
 
                     echo  'Unfortunately you can\'t change time, 24 hours before!';
 

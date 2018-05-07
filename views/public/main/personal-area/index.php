@@ -39,6 +39,7 @@
             <div class="modal-body">
                 <div style="margin-left: auto">
                     <span id="lessons-date" hidden></span>
+                    <span id="lessons-date-offset" hidden</span>
                     <div class="input-group clockpicker" style="max-width: 140px;">
                          <input type="text" class="form-control" id="lessons-time" value="">
                          <span class="input-group-addon"><span class="">Time</span></span>
@@ -63,12 +64,13 @@
             <div class="modal-body">
                 <div style="margin-left: auto">
                     <span id="lessons-date-edit" ></span>
+                    <span id="lessons-date-edit-offset" hidden</span>
                     <div class="input-group clockpicker" style="max-width: 140px;">
                         <input type="text" class="form-control" id="lessons-time-edit" value="">
                         <span class="input-group-addon"><span class="">Time</span></span>
                     </div>
                 </div>
-                <button type="button" class="btn btn-warning" onclick="deleteLesson()">Delete</button>
+                <button type="button" class="btn btn-warning" onclick="deleteLesson();">Delete</button>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" onclick="editLesson();">Save</button>

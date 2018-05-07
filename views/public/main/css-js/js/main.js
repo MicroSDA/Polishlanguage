@@ -41,6 +41,7 @@ function login() {
 //Calendar init
 $(document).ready(function () {
 
+
     $('#calendar').fullCalendar({
         eventLimit: true, // allow "more" link when too many events
         locale: "ru",
@@ -83,6 +84,7 @@ $(document).ready(function () {
                     //Edit
                     $('#lessons-date-edit').text(clickData);
                     $('#lessons-time-edit').val(eventTime);
+                    $('#lessons-date-edit-offset').val(moment().format("Z"));
                     $('#edit-lessons-day').modal()
 
                 }else {
@@ -98,7 +100,10 @@ $(document).ready(function () {
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
                     //add new
+                    alert(moment().format("Z"));
+                    var hours = new Date().getHours();
                     $('#lessons-date').text(clickData);
+                    $('#lessons-date-offset').val(moment().format("Z"));
                     $('#myModal').modal()
 
                 }else {
@@ -124,7 +129,7 @@ $(document).ready(function () {
                  $('#messageModal').modal()
 
              }*/
-        },
+        }
 
     });
 
@@ -143,14 +148,10 @@ $(document).ready(function () {
 
     function DisplayCurrentTime() {
         var date = new Date();
-        var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-        var am_pm = date.getHours() >= 12 ? " PM" : " AM";
-        hours = hours < 10 ? "0" + hours : hours;
-        var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
-        var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
-        //time = hours + ":" + minutes + ":" + am_pm;
-        time = hours + ":" + minutes + am_pm;
-        return moment(time, "h:mm A").format("HH:mm");
+        var hours = date.getHours();
+        var minutes = date.getMinutes();
+        time = hours + ":" + minutes;
+        return time;
     };
 });
 
@@ -161,13 +162,15 @@ function editLesson() {
 
     var data = $('#lessons-date-edit').text();
     var time = $('#lessons-time-edit').val();
+    var offset = $('#lessons-date-edit-offset').val();
     $.ajax({
         type: 'POST',
         url: '/edit-events',
         headers: {"Ajax": "Ajax"},
         data: {
             Data: data,
-            Time: time
+            Time: time,
+            Offset: offset
         },
         cache: false,
         success: function (html) {
@@ -175,7 +178,7 @@ function editLesson() {
             $('#edit-lessons-day').modal('toggle');
             $('#error-message').text(html);
             $('#messageModal').modal();
-            $('#calendar').fullCalendar( 'refetchEvents' );
+            $('#calendar').fullCalendar('refetchEvents');
 
         },
         error: function (html) {
@@ -190,13 +193,15 @@ function addNewLesson() {
 
     var data = $('#lessons-date').text();
     var time = $('#lessons-time').val();
+    var offset = $('#lessons-date-offset').val();
     $.ajax({
         type: 'POST',
         url: '/add-events',
         headers: {"Ajax": "Ajax"},
         data: {
             Data: data,
-            Time: time
+            Time: time,
+            Offset: offset
         },
         cache: false,
         success: function (html) {
@@ -204,7 +209,7 @@ function addNewLesson() {
             $('#myModal').modal('toggle');
             $('#error-message').text(html);
             $('#messageModal').modal();
-            $('#calendar').fullCalendar( 'refetchEvents' );
+            $('#calendar').fullCalendar('refetchEvents');
         },
         error: function (html) {
             alert(html);
@@ -213,7 +218,6 @@ function addNewLesson() {
 }
 
 function deleteLesson() {
-
 
     var data = $('#lessons-date-edit').text();
     var time = $('#lessons-time-edit').val();
@@ -231,7 +235,7 @@ function deleteLesson() {
             $('#edit-lessons-day').modal('toggle');
             $('#error-message').text(html);
             $('#messageModal').modal();
-            $('#calendar').fullCalendar( 'refetchEvents' );
+            $('#calendar').fullCalendar('refetchEvents');
 
         },
         error: function (html) {
