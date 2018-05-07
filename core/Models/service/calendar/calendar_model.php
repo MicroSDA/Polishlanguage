@@ -59,21 +59,19 @@ class calendar_model extends Model
         $lessons = [];
 
 
-
         if ($lessonsDB) {
 
             foreach ($lessonsDB as $value) {
 
-                $color ='';
+                $color = '';
                 $time = $value['Time'];
                 $time_out = '';
-                for ($i = 0; $i < strlen($time); $i++)
-                {
+                for ($i = 0; $i < strlen($time); $i++) {
                     if ($i == 5) $time_out .= "\n";
                     $time_out .= $time[$i];
                 }
 
-                switch ($value['Status']){
+                switch ($value['Status']) {
                     case 'approved':
                         $color = 'green';
                         break;
@@ -86,11 +84,12 @@ class calendar_model extends Model
                     case 'completed':
                         $color = 'gray';
                         break;
-                    default: $color = 'blue';
+                    default:
+                        $color = 'blue';
 
                 }
 
-                array_push($lessons, array('title' => $time_out, 'start' => $value['Data'], 'end'=> $value['Data'],'color' => $color,'blocked'=>'true'));
+                array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color, 'blocked' => 'true'));
 
             }
 
@@ -124,8 +123,8 @@ class calendar_model extends Model
     public function add_events()
     {
         try {
-            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s',$this->student->getID(),$this->student->getEMAIL(), $_POST['Data']);
-            if($result){
+            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            if ($result) {
                 throw new Exception('You have already picked this day');
             }
 
@@ -135,7 +134,39 @@ class calendar_model extends Model
             echo 'Lesson was added';
 
         } catch (Exception $e) {
+
             echo $e->getMessage();
         }
+    }
+
+    public function edit_events()
+    {
+
+        try {
+
+            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+
+            if ($result) {
+
+                if ((string)$result[0]['Data'] == (string)date('Y-m-d')) {
+
+                    echo  'Unfortunately you can\'t change time, 24 hours before!';
+
+                }else{
+
+                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $_POST['Time'],$this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+
+                    echo 'Time has been changed';
+
+                }
+
+
+            }
+
+        } catch (Exception $es) {
+
+            $es->getMessage();
+        }
+
     }
 }

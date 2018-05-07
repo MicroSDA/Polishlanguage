@@ -81,6 +81,7 @@ $(document).ready(function () {
             if(eventDay.length > 0 ){
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
+                    //Edit
                     $('#lessons-date-edit').text(clickData);
                     $('#lessons-time-edit').val(eventTime);
                     $('#edit-lessons-day').modal()
@@ -97,6 +98,7 @@ $(document).ready(function () {
 
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
+                    //add new
                     $('#lessons-date').text(clickData);
                     $('#myModal').modal()
 
@@ -133,33 +135,54 @@ $(document).ready(function () {
 $(document).ready(function () {
 
     $('.clockpicker').clockpicker({
-        'default': DisplayCurrentTime(),
+        default: 'now',
         placement: 'bottom',
         align: 'left',
         donetext: 'Done',
-        twelvehour: true,
         vibrate: true
     }).find('input').val(DisplayCurrentTime())
 
     function DisplayCurrentTime() {
         var date = new Date();
         var hours = date.getHours() > 12 ? date.getHours() - 12 : date.getHours();
-        var am_pm = date.getHours() >= 12 ? "PM" : "AM";
+        var am_pm = date.getHours() >= 12 ? " PM" : " AM";
         hours = hours < 10 ? "0" + hours : hours;
         var minutes = date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes();
         var seconds = date.getSeconds() < 10 ? "0" + date.getSeconds() : date.getSeconds();
         //time = hours + ":" + minutes + ":" + am_pm;
         time = hours + ":" + minutes + am_pm;
-        return time;
+        return moment(time, "h:mm A").format("HH:mm");
     };
 });
 
 
+function editLesson() {
 
 
-function updateLessons() {
 
+    var data = $('#lessons-date-edit').text();
+    var time = $('#lessons-time-edit').val();
+    $.ajax({
+        type: 'POST',
+        url: '/edit-events',
+        headers: {"Ajax": "Ajax"},
+        data: {
+            Data: data,
+            Time: time
+        },
+        cache: false,
+        success: function (html) {
 
+            $('#edit-lessons-day').modal('toggle');
+            $('#error-message').text(html);
+            $('#messageModal').modal();
+            $('#calendar').fullCalendar( 'refetchEvents' );
+
+        },
+        error: function (html) {
+            alert(html);
+        }
+    });
 
 }
 

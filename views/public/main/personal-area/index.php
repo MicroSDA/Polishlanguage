@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" onclick="editLessonDay()">Save</button>
+                <button type="button" class="btn btn-success" onclick="editLesson();">Save</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
