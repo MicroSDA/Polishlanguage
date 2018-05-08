@@ -52,13 +52,13 @@ $(document).ready(function () {
         events: {
             url: '/get-events',
             error: function () {
-                $('#script-warning').show();
+               // $('#script-warning').show();
             }
         },
         loading: function (bool) {
-            $('#loading').toggle(bool);
-        },  dayClick: function (date, allDay, jsEvent, view) {
-
+           // $('#loading').toggle(bool);
+        },
+        dayClick: function (date, allDay, jsEvent, view) {
             var dayEvents = $('#calendar').fullCalendar('clientEvents', function(event){
                 return event;
             });
@@ -67,30 +67,30 @@ $(document).ready(function () {
             var clickData = date.format();
             var eventDay = [];
             var eventTime = '';
-            dayEvents.forEach(function(item, i, dayEvents) {
 
+            dayEvents.forEach(function(item, i, dayEvents) {
                 if(clickData.toString() === moment(item.start).format().toString()) {
                     //alert(moment(item.start).format());
                     eventDay.push(clickData);
                     eventTime = item.title;
+                    return false;
                 }
-
-
             });
 
             if(eventDay.length > 0 ){
+
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
                     //Edit
                     $('#lessons-date-edit').text(clickData);
                     $('#lessons-time-edit').val(eventTime);
                     $('#lessons-date-edit-offset').val(moment().format("Z"));
-                    $('#edit-lessons-day').modal()
+                    $('#edit-lessons-day').modal();
 
                 }else {
 
                     $('#error-message').text('This is past day, please choose available days');
-                    $('#messageModal').modal()
+                    $('#messageModal').modal();
 
                 }
 
@@ -100,16 +100,14 @@ $(document).ready(function () {
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
                     //add new
-                    alert(moment().format("Z"));
-                    var hours = new Date().getHours();
                     $('#lessons-date').text(clickData);
                     $('#lessons-date-offset').val(moment().format("Z"));
-                    $('#myModal').modal()
+                    $('#myModal').modal();
 
                 }else {
 
                     $('#error-message').text('This is past day, please choose available days');
-                    $('#messageModal').modal()
+                    $('#messageModal').modal();
 
                 }
 
@@ -212,7 +210,7 @@ function addNewLesson() {
             $('#calendar').fullCalendar('refetchEvents');
         },
         error: function (html) {
-            alert(html);
+
         }
     });
 }
@@ -239,7 +237,7 @@ function deleteLesson() {
 
         },
         error: function (html) {
-            alert(html);
+
         }
     });
 }

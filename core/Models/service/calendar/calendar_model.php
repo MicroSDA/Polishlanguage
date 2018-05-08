@@ -21,6 +21,64 @@ class calendar_model extends Model
 
     }
 
+    private function isFormatCorrect($array, $flag)
+    {
+
+        switch ($flag) {
+
+            case 'DATE':
+                if (preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+
+                break;
+            case 'TIME':
+                if (preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+
+                } else {
+                    return false;
+                }
+
+                break;
+            case 'OFFSET':
+                if (preg_match('/^(\+|\-)[0-9]{2,2}[:][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
+
+        }
+    }
+
+    private function isTimeAvalible($input_time, $all_time, $delay, $break)
+    {
+
+        foreach ($all_time as $value) {
+
+
+            $date_min = new DateTime($value['Time']); // минимальное значение времени
+            $date_max = new DateTime($value['Time']); // максимальное значение времени
+            $date_min->modify('-'.$delay.' hour');
+            $date_max->modify('+'.$delay.' hour');
+            $date_now = new DateTime($input_time); // текущее значение времени
+
+            // Проверяем, находится ли $date_now в диапазоне
+            if ($date_now >= $date_min && $date_now <= $date_max) {
+                return false;
+                break;
+            }
+        }
+
+        return true;
+    }
+
     public function get_events()
     {
 
@@ -103,22 +161,51 @@ class calendar_model extends Model
     {
         try {
 
+
+
+            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+                throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
+                throw new Exception('Incorrect time format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Offset'], 'OFFSET')) {
+                throw new Exception('Incorrect offset format');
+            }
+
+
+            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Data=?s', $_POST['Data']);
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+
+
+            if($all_lessons){
+
+                if(!$this->isTimeAvalible($_POST['Time'], $all_lessons, '01', '00:00')){
+
+                    throw new Exception('Time is not available, please try to choose another time');
+                }
+
+
+            }
+
             if ($result) {
 
                 throw new Exception('You have already picked this day');
             }
 
-            preg_match('/^[+|-}[0-9+]{2,}/',$_POST['Offset'], $offset);
+            preg_match('/^(\+|\-)[0-9]{2,2}/', $_POST['Offset'], $offset);
 
-            if ((string)$_POST['Data'] == (string)gmdate('Y-m-d',strtotime($offset[0].' hours'))) {
 
-                echo  'It\'s too late';
+            if ((string)$_POST['Data'] == (string)gmdate('Y-m-d', strtotime($offset[0] . ' hours'))) {
 
-            }else{
+                echo 'It\'s too late';
+
+            } else {
 
                 DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
-                    $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'not-approved');
+                    $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'approved');
 
                 echo 'Lesson was added';
             }
@@ -135,19 +222,43 @@ class calendar_model extends Model
 
         try {
 
+            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+                throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
+                throw new Exception('Incorrect time format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Offset'], 'OFFSET')) {
+                throw new Exception('Incorrect offset format');
+            }
+
+            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Data=?s AND StudentID !=?s AND  StudentEmail !=?s', $_POST['Data'],$this->student->getID(), $this->student->getEMAIL());
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+
+
+            if($all_lessons){
+
+                if(!$this->isTimeAvalible($_POST['Time'], $all_lessons, '01', '00:00')){
+
+                    throw new Exception('Time is not available, please try to choose another time');
+                }
+
+            }
+
 
             if ($result) {
 
-                preg_match('/^[+|-}[0-9+]{2,}/',$_POST['Offset'], $offset);
+                preg_match('/^[+|-}[0-9+]{2,}/', $_POST['Offset'], $offset);
 
-                if ((string)$_POST['Data'] == (string)gmdate('Y-m-d',strtotime($offset[0].' hours'))) {
+                if ((string)$_POST['Data'] == (string)gmdate('Y-m-d', strtotime($offset[0] . ' hours'))) {
 
-                    echo  'Unfortunately you can\'t change time, 24 hours before!';
+                    echo 'Unfortunately you can\'t change time, 24 hours before!';
 
-                }else{
+                } else {
 
-                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $_POST['Time'],$this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
                     echo 'Time has been changed';
 
@@ -163,17 +274,24 @@ class calendar_model extends Model
 
     }
 
-    public function delete_events(){
+    public function delete_events()
+    {
 
         try {
 
-            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s",$this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+
+                throw new Exception('Incorrect date format');
+            }
+
+
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s", $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
             echo 'Lesson has been removed';
 
-        } catch (Exception $es) {
+        } catch (Exception $e) {
 
-            $es->getMessage();
+            $e->getMessage();
         }
 
     }

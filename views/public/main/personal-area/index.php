@@ -41,13 +41,13 @@
                     <span id="lessons-date" hidden></span>
                     <span id="lessons-date-offset" hidden</span>
                     <div class="input-group clockpicker" style="max-width: 140px;">
-                         <input type="text" class="form-control" id="lessons-time" value="">
-                         <span class="input-group-addon"><span class="">Time</span></span>
+                        <input type="text" class="form-control" id="lessons-time" value="">
+                        <span class="input-group-addon"><span class="">Time</span></span>
                     </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" onclick="addNewLesson()">Save</button>
+                <button type="button" class="btn btn-success" onclick="addNewLesson();">Save</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
