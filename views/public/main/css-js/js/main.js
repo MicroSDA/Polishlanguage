@@ -52,11 +52,11 @@ $(document).ready(function () {
         events: {
             url: '/get-events',
             error: function () {
-               // $('#script-warning').show();
+                $('#script-warning').show();
             }
         },
         loading: function (bool) {
-           // $('#loading').toggle(bool);
+            $('#loading-calendar').toggle(bool);
         },
         dayClick: function (date, allDay, jsEvent, view) {
             var dayEvents = $('#calendar').fullCalendar('clientEvents', function(event){

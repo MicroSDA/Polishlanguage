@@ -85,8 +85,49 @@ class personal_area_model extends Model
         $this->render();
     }
 
-    public function logout()
-    {
+  public function contents(){
 
-    }
+      /**
+       * If isn't login then redirect to login page
+       */
+      if (!$this->students->isLogin()) {
+
+          header('Location:/login');
+          die();
+      }
+
+
+      /**
+       * If GET action is logout the delete cookie
+       */
+      if (isset($_GET['submit'])) {
+
+          switch ($_GET['submit']) {
+              case 'logout':
+                  setcookie('id', '', time() - 100, "/");
+                  setcookie('hash', '', time() - 100, "/");
+                  header('Location:' . $_SERVER['HTTP_REFERER']);
+                  break;
+              default:
+                  break;
+          }
+      }
+
+      /**
+       * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
+       */
+
+      //arrayPrint($this->students);
+
+      $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
+      DataManager::getInstance()->addData('Lessons', $lessons);
+      DataManager::getInstance()->addData('Students', $this->students);
+
+
+      /**
+       * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
+       */
+      $this->render();
+
+  }
 }
