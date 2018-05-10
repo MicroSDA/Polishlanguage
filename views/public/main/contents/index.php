@@ -53,25 +53,7 @@
                     <div class="tab-content">
                         <div class="tab-pane fade in active" id="A1">
                             <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
-                            <div class="row">
-                                <div class="col-sm-6 col-md-4">
-                                    <div class="thumbnail">
-                                        <img src="https://media.giphy.com/media/TvLuZ00OIADoQ/giphy.gif" alt="">
-                                        <div class="caption">
-                                            <h3><?= $value['Name'] ?></h3>
-                                            <p><?= $value['Description'] ?></p>
-                                            <hr>
-                                            <p><a href="/lessons-donwload?hash=<?= $value['Url'] ?>" class="btn btn-primary" role="button">Скачать</a> <a href="/lessons-donwload?hash=<?= $value['Url'] ?>" class="btn btn-default" role="button">Открыть</a></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <?php endforeach ?>
-                        </div>
-                        <div class="tab-pane fade" id="A2">
-                            <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+                            <?php foreach (DataManager::getInstance()->getDataByKey('LessonsA1') as $value): ?>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
@@ -87,9 +69,9 @@
                                 </div>
                             <?php endforeach ?>
                         </div>
-                        <div class="tab-pane fade" id="A3">
+                        <div class="tab-pane fade" id="A2">
                             <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+                            <?php foreach (DataManager::getInstance()->getDataByKey('LessonsA2') as $value): ?>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
@@ -107,7 +89,7 @@
                         </div>
                         <div class="tab-pane fade" id="B1">
                             <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+                            <?php foreach (DataManager::getInstance()->getDataByKey('LessonsB1') as $value): ?>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
@@ -125,7 +107,7 @@
                         </div>
                         <div class="tab-pane fade" id="B2">
                             <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+                            <?php foreach (DataManager::getInstance()->getDataByKey('LessonsB2') as $value): ?>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">
@@ -143,7 +125,7 @@
                         </div>
                         <div class="tab-pane fade" id="C1">
                             <br>
-                            <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
+                            <?php foreach (DataManager::getInstance()->getDataByKey('LessonsC1') as $value): ?>
                                 <div class="row">
                                     <div class="col-sm-6 col-md-4">
                                         <div class="thumbnail">

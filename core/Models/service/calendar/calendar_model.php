@@ -57,24 +57,51 @@ class calendar_model extends Model
         }
     }
 
-    private function isTimeAvalible($input_time, $all_time, $delay, $break)
+    private function isTimeAvailable($input_time, $all_time, $delay, $break)
     {
+        $date_now = new DateTime($input_time); // текущее значение времени
 
-        foreach ($all_time as $value) {
+        if($all_time){
+
+            foreach ($all_time as $value) {
 
 
-            $date_min = new DateTime($value['Time']); // минимальное значение времени
-            $date_max = new DateTime($value['Time']); // максимальное значение времени
-            $date_min->modify('-'.$delay.' hour');
-            $date_max->modify('+'.$delay.' hour');
-            $date_now = new DateTime($input_time); // текущее значение времени
+                $date_min = new DateTime($value['Time']); // минимальное значение времени
+                $date_max = new DateTime($value['Time']); // максимальное значение времени
 
-            // Проверяем, находится ли $date_now в диапазоне
-            if ($date_now >= $date_min && $date_now <= $date_max) {
+                $date_min->modify('-'.$delay.' hour');
+                $date_max->modify('+'.$delay.' hour');
+
+
+                // Проверяем, находится ли $date_now в диапазоне
+                if ($date_now >= $date_min && $date_now <= $date_max) {
+                    return false;
+                    break;
+                }
+            }
+
+        }else{
+
+            $date_end_of_day_f = new DateTime('23:00');
+            $date_end_of_day_s = new DateTime('24:00');
+
+            $date_start_of_day_f = new DateTime('00:00');
+            $date_start_of_day_s = new DateTime('01:00');
+            
+
+
+            if($date_now >= $date_end_of_day_f && $date_now <= $date_end_of_day_s){
+
                 return false;
-                break;
+            }
+
+            if($date_start_of_day_f && $date_now <= $date_start_of_day_s){
+
+                return false;
             }
         }
+
+
 
         return true;
     }
@@ -180,15 +207,15 @@ class calendar_model extends Model
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
 
-            if($all_lessons){
 
-                if(!$this->isTimeAvalible($_POST['Time'], $all_lessons, '01', '00:00')){
+
+                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
 
                     throw new Exception('Time is not available, please try to choose another time');
                 }
 
 
-            }
+
 
             if ($result) {
 
@@ -240,7 +267,7 @@ class calendar_model extends Model
 
             if($all_lessons){
 
-                if(!$this->isTimeAvalible($_POST['Time'], $all_lessons, '01', '00:00')){
+                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
 
                     throw new Exception('Time is not available, please try to choose another time');
                 }
