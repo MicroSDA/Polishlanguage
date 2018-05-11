@@ -47,7 +47,7 @@ $(document).ready(function () {
         locale: "ru",
         editable: false,
         selectable: true,
-      
+
         events: {
             url: '/get-events',
             error: function () {

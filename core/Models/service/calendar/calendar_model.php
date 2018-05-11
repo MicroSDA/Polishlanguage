@@ -150,12 +150,6 @@ class calendar_model extends Model
             foreach ($lessonsDB as $value) {
 
                 $color = '';
-                $time = $value['Time'];
-                $time_out = '';
-                for ($i = 0; $i < strlen($time); $i++) {
-                    if ($i == 5) $time_out .= "\n";
-                    $time_out .= $time[$i];
-                }
 
                 switch ($value['Status']) {
                     case 'approved':
@@ -171,14 +165,22 @@ class calendar_model extends Model
                         array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
                         break;
                     case 'completed':
+                        $title ='';
+
+                        if($value['Feedback']=='open'){
+                            $title = 'Оставьте свой отзыв'."\n".$value['Time'];
+                        }else{
+                            $title = $value['Time'];
+                        }
+
                         $color = 'gray';
-                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color,  'url'=> '/'));
+                        array_push($lessons, array('title' =>  $title, 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color,  'url'=> '/account/lesson-feedback/?date='.$value['Data'].'&time='.$value['Time']));
                         break;
                     default:
                         $color = 'blue';
                         array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
                         break;
-
+//http://127.0.0.1/account/lesson-feedback/?date=2018-05-11&time=12:00&ref=eee5e1d597bbf0600bfc69734a2f4e546e991d2836d4de62ac8d5ba1b6fb5b1dd8100f3c30bf076069083e139ad22c84
                 }
 
 

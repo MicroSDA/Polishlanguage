@@ -17,7 +17,7 @@
                 </div>
                 <div class="row">
                     <br>
-                    <div class="col-sm-auto col-md-7">
+                    <div class="col-md-12">
                         <div class="thumbnail">
                             <div class="caption">
                                 <h3>Профиль</h3>
