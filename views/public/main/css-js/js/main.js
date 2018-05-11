@@ -47,8 +47,7 @@ $(document).ready(function () {
         locale: "ru",
         editable: false,
         selectable: true,
-        selectHelper: true,
-        businessHours: true, // display business hours
+      
         events: {
             url: '/get-events',
             error: function () {

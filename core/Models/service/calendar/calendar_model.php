@@ -87,7 +87,7 @@ class calendar_model extends Model
 
             $date_start_of_day_f = new DateTime('00:00');
             $date_start_of_day_s = new DateTime('01:00');
-            
+
 
 
             if($date_now >= $date_end_of_day_f && $date_now <= $date_end_of_day_s){
@@ -160,22 +160,27 @@ class calendar_model extends Model
                 switch ($value['Status']) {
                     case 'approved':
                         $color = 'green';
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
                         break;
                     case 'not-approved':
                         $color = 'blue';
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
                         break;
                     case 'disallowed':
                         $color = 'red';
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
                         break;
                     case 'completed':
                         $color = 'gray';
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color,  'url'=> '/'));
                         break;
                     default:
                         $color = 'blue';
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
+                        break;
 
                 }
 
-                array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color, 'blocked' => 'true'));
 
             }
 
@@ -208,19 +213,11 @@ class calendar_model extends Model
 
 
 
-
-                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
-
-                    throw new Exception('Time is not available, please try to choose another time');
-                }
-
-
-
-
             if ($result) {
 
                 throw new Exception('You have already picked this day');
             }
+
 
             preg_match('/^(\+|\-)[0-9]{2,2}/', $_POST['Offset'], $offset);
 
@@ -230,6 +227,24 @@ class calendar_model extends Model
                 echo 'It\'s too late';
 
             } else {
+
+
+                $date = new DateTime($_POST['Data']);
+                $now = new DateTime();
+
+                if($date < $now) {
+
+                    echo 'This is past day, please choose available days';
+                    die();
+                }
+
+                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
+
+                    echo 'Time is not available, please try to choose another time';
+                    die();
+                }
+
+
 
                 DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
                     $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'approved');
@@ -265,14 +280,6 @@ class calendar_model extends Model
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
 
-            if($all_lessons){
-
-                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
-
-                    throw new Exception('Time is not available, please try to choose another time');
-                }
-
-            }
 
 
             if ($result) {
@@ -285,6 +292,23 @@ class calendar_model extends Model
 
                 } else {
 
+                    $date = new DateTime($_POST['Data']);
+                    $now = new DateTime();
+
+                    if($date < $now) {
+
+                        echo 'This is past day, please choose available days';
+                        die();
+                    }
+
+                    if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
+
+                        echo 'Time is not available, please try to choose another time';
+                        die();
+
+                    }
+
+
                     DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
                     echo 'Time has been changed';
@@ -292,6 +316,9 @@ class calendar_model extends Model
                 }
 
 
+            }else{
+
+                throw new Exception('Date wasn\'t find');
             }
 
         } catch (Exception $es) {
