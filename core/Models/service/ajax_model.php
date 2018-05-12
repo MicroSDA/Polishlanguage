@@ -577,4 +577,90 @@ class ajax_model
 
 
     }
+
+
+    public function add_feedback(){
+
+
+        if(empty($_POST['rating'])){
+
+            echo 'rating empty';
+            die;
+        }
+
+        if(empty($_POST['feedback-text'])){
+
+            echo 'feedback-text empty';
+            die;
+        }
+
+        if(!preg_match('/^[1|2|3|4|5]$/', $_POST['rating'], $out)) {
+
+            echo 'rating wrong format';
+            die;
+        }
+
+        if(!preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $_POST['time'], $out)){
+            echo 'time wrong format';
+            die;
+        }
+
+        if(!preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/',$_POST['date'], $out)){
+            echo 'date wrong format';
+            die;
+        }
+
+
+        $student = new Students();
+
+        /**
+         * If isn't login then redirect to login page
+         */
+        if (!$student->isLogin()) {
+
+            header('Location:/login');
+            die();
+        }
+
+        try{
+
+            //http://127.0.0.1/account/lesson-feedback/?date=2018-05-09&time=00:01
+            //http://127.0.0.1/account/lesson-feedback/?date=2018-05-08&time=23:01
+            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s AND Status=?s',
+                $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL(), 'completed');
+
+            if($lesson){
+
+                $feedback = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
+                    $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL());
+
+                if($feedback){
+                    echo 'Feedback was already added';
+                    die();
+                }
+
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons_feedback (Date, Time, StudentID, StudentEmail, Text, Evaluation, Status) VALUES (?s,?s,?i,?s,?s,?s,?s)',
+                    $_POST['date'],$_POST['time'], $student->getID(), $student->getEMAIL(), $_POST['feedback-text'], $_POST['rating'], 'closed');
+
+                DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET FeedBack=?s WHERE Date=?s AND Time=?s AND StudentID=?s AND StudentEmail=?s',
+                    'closed', $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL());
+
+                echo '<script>document.getElementById(\'feedback-form\').reset();</script>';
+                echo '<script>$("#feedback-form").remove();</script>';
+                echo '<script>$("#feedback-message").append(\'Ваш отзыв был успешно добавлен!\');</script>';
+
+            }else{
+
+               echo  'Sorry, but lesson wasn\'t find';
+            }
+
+
+        }catch (Exception $e){
+
+            echo $e->getMessage();
+        }
+
+
+
+    }
 }

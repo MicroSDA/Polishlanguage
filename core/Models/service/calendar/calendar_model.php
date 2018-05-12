@@ -154,31 +154,33 @@ class calendar_model extends Model
                 switch ($value['Status']) {
                     case 'approved':
                         $color = 'green';
-                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
                     case 'not-approved':
                         $color = 'blue';
-                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
                     case 'disallowed':
                         $color = 'red';
-                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
                     case 'completed':
                         $title ='';
 
                         if($value['Feedback']=='open'){
                             $title = 'Оставьте свой отзыв'."\n".$value['Time'];
+
                         }else{
+
                             $title = $value['Time'];
                         }
 
                         $color = 'gray';
-                        array_push($lessons, array('title' =>  $title, 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color,  'url'=> '/account/lesson-feedback/?date='.$value['Data'].'&time='.$value['Time']));
+                        array_push($lessons, array('title' =>  $title, 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color,  'url'=> '/account/lesson-feedback/?date='.$value['Date'].'&time='.$value['Time']));
                         break;
                     default:
                         $color = 'blue';
-                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Data'], 'end' => $value['Data'], 'color' => $color));
+                        array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
 //http://127.0.0.1/account/lesson-feedback/?date=2018-05-11&time=12:00&ref=eee5e1d597bbf0600bfc69734a2f4e546e991d2836d4de62ac8d5ba1b6fb5b1dd8100f3c30bf076069083e139ad22c84
                 }
@@ -210,8 +212,8 @@ class calendar_model extends Model
             }
 
 
-            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Data=?s', $_POST['Data']);
-            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s', $_POST['Data']);
+            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Date']);
 
 
 
@@ -248,7 +250,7 @@ class calendar_model extends Model
 
 
 
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Data, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Date, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
                     $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'approved');
 
                 echo 'Lesson was added';
@@ -278,8 +280,8 @@ class calendar_model extends Model
                 throw new Exception('Incorrect offset format');
             }
 
-            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Data=?s AND StudentID !=?s AND  StudentEmail !=?s', $_POST['Data'],$this->student->getID(), $this->student->getEMAIL());
-            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND StudentID !=?s AND  StudentEmail !=?s', $_POST['Data'],$this->student->getID(), $this->student->getEMAIL());
+            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
 
 
@@ -311,7 +313,7 @@ class calendar_model extends Model
                     }
 
 
-                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Data=?s', $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Time=?s WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
                     echo 'Time has been changed';
 
@@ -341,7 +343,7 @@ class calendar_model extends Model
             }
 
 
-            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Data=?s", $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s", $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
 
             echo 'Lesson has been removed';
 

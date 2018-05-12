@@ -20,7 +20,6 @@ class personal_area_model extends Model
     {
         parent::__construct();
 
-
         $this->students = new Students();
 
     }
@@ -145,11 +144,15 @@ class personal_area_model extends Model
             $time = $_GET['time'];
             $date = $_GET['date'];
 
-            $feedBack = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s AND Status=?s',
-                $date ,$time,$this->students->getID(),$this->students->getEMAIL(),'open');
-            
-            if($feedBack){
+            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
+                $date ,$time,$this->students->getID(),$this->students->getEMAIL());
 
+            if($lesson){
+
+                $feedBack = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
+                    $date ,$time,$this->students->getID(),$this->students->getEMAIL());
+
+                if($feedBack){
                     $feedBackFile = '<div>
                                       <div class="thumbnail">
                                           <div class="caption">
@@ -170,17 +173,54 @@ class personal_area_model extends Model
                                      </div>';
 
                     DataManager::getInstance()->addData('FeedBackFile', $feedBackFile);
-                    DataManager::getInstance()->addData('Lesson-feedback', $feedBack[0]);
-                    DataManager::getInstance()->addData('Students', $this->students);
 
+                }else{
+
+                    $feedBackFile = '
+<form id="feedback-form">
+  <label>Оценка</label>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="rating" id="inlineRadio1" value="1">
+  <label class="form-check-label" for="inlineRadio1">1</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="rating" id="inlineRadio2" value="2">
+  <label class="form-check-label" for="inlineRadio2">2</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="rating" id="inlineRadio3" value="3">
+  <label class="form-check-label" for="inlineRadio2">3</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="rating" id="inlineRadio4" value="4">
+  <label class="form-check-label" for="inlineRadio2">4</label>
+</div>
+<div class="form-check form-check-inline">
+  <input class="form-check-input" type="radio" name="rating" id="inlineRadio5" value="5">
+  <label class="form-check-label" for="inlineRadio2">5</label>
+</div>
+<div class="form-group">
+    <label for="exampleFormControlTextarea1">Ваш отзыв</label>
+    <textarea class="form-control" name="feedback-text" rows="3" required></textarea>
+  </div>
+   <input class="form-check-input" type="text" name="date" value="'.$date.'" readonly hidden>
+   <input class="form-check-input" type="text" name="time" value="'.$time.'" readonly hidden>
+   <button name="submit" type="button" onclick="addFeedback();" class="btn btn-primary mb-2">Оставить отзыв</button><br>
+</form>
+<div id="feedback-message"></div>';
+
+                    DataManager::getInstance()->addData('FeedBackFile', $feedBackFile);
+
+
+                }
 
             }else{
 
-
+                DataManager::getInstance()->addData('FeedBackFile', 'Sorry, but lesson wasn\'t find');
             }
 
 
-
+        DataManager::getInstance()->addData('Students', $this->students);
 
 
         /**

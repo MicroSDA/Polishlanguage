@@ -240,3 +240,22 @@ function deleteLesson() {
         }
     });
 }
+
+function addFeedback() {
+
+    var feedback_data = $('#feedback-form').serializeArray();
+
+    $.ajax({
+        type: 'POST',
+        url: '/add-feedback',
+        headers: {"Ajax": "Ajax"},
+        data: feedback_data,
+        cache: false,
+        success: function (html) {
+            $('#feedback-message').empty();
+            $('#feedback-message').append(html);
+
+        }
+
+    });
+}
