@@ -74,7 +74,7 @@ class Teacher
     private $AVAILABLE_TIME;
 
     /**
-     * @return array
+     * @return mixed
      */
     public function getAVAILABLETIME()
     {
@@ -87,8 +87,10 @@ class Teacher
         foreach ($array as $key => $value) {
 
             if (array_search($c_date, $value) && array_search($c_time, $value)) {
-                $array[$key]['Date'] = $new_date;
-                $array[$key]['Time'] = $new_time;
+                $array[$key]['start'] = $new_date;
+                $array[$key]['end'] = $new_date;
+                $array[$key]['title'] = $new_time;
+                $array[$key]['in-use'] ='false';
                 break;
 
 
@@ -97,35 +99,47 @@ class Teacher
         }
 
         $array_out = json_encode($array);
-        DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=1',$array_out);
+        DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s',$array_out, $this->getID(), $this->getEMAIL());
         $this->setAVAILIBLETIME($array_out);
     }
 
     public function addAVAILABLETIME($array, $date, $time)
     {
+
         try {
 
+            if(!empty($array)){
 
-            foreach ($array as $key => $value) {
+                foreach ($array as $key => $value) {
 
-                if (array_search($date, $value) && array_search($time, $value)) {
+                    if (array_search($date, $value) && array_search($time, $value)) {
 
-                    throw new Error('This time already added');
-                    return false;
+                        throw new Error('This time already added');
+                        return false;
+                    }
+
                 }
 
+                array_push($array, array('start' => $date,'end'=> $date, 'title' => $time,'in-use'=> false));
+                $array_out = json_encode($array);
+                DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(),$this->getEMAIL());
+                $this->setAVAILIBLETIME($array_out);
+
+            }else{
+
+                $array =[];
+                array_push($array, array('start' => $date,'end'=> $date, 'title' => $time,'in-use'=> false));
+                $array_out = json_encode($array);
+                DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(),$this->getEMAIL());
+                $this->setAVAILIBLETIME($array_out);
             }
 
-            array_push($array, array('Date' => $date, 'Time' => $time));
-            $array_out = json_encode($array);
-            DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=1', $array_out);
-            $this->setAVAILIBLETIME($array_out);
+
 
         }catch (Error $e){
 
             echo $e->getMessage();
         }
-
 
     }
 
@@ -142,7 +156,7 @@ class Teacher
         }
 
         $array_out = json_encode($array);
-        DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=1', $array_out);
+        DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out,$this->getID(),$this->getEMAIL());
         $this->setAVAILIBLETIME($array_out);
     }
 

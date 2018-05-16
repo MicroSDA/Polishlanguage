@@ -6,7 +6,7 @@
  * Time: 7:41 AM
  */
 
-class calendar_model extends Model
+class calendar_student_model extends Model
 {
 
     private $student;
@@ -319,4 +319,6 @@ class calendar_model extends Model
         }
 
     }
+
+
 }

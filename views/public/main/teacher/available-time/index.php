@@ -30,6 +30,7 @@
                                         <p>Доступное Время: <?= DataManager::getInstance()->getDataByKey('Teacher')->getAVAILABLETIME() ?></p>
                                         <hr>
                                         <p>Дополнительная информация:
+                                        <div id="script-warning"></div>
                                         <div class="panel panel-default">
                                             <div class="panel-body">
                                                 <?= DataManager::getInstance()->getDataByKey('Teacher')->getADDINFO() ?>
@@ -42,8 +43,55 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-9">
+                        <div id='calendar' class="sf">
+                            <div id="loading-calendar">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
     </div>
 </main>
+<div id="addTime" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Add new time</h5>
+            </div>
+            <div class="modal-body">
+                <div style="margin-left: auto">
+                    <span id="new-date" hidden></span>
+                    <div class="input-group clockpicker" style="max-width: 140px;">
+                        <input type="text" class="form-control" id="new-time" value="">
+                        <span class="input-group-addon"><span class="">Time</span></span>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" onclick="addNewTime();">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="messageModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"></button>
+                <h4 class="modal-title">Message</h4>
+            </div>
+            <div class="modal-body">
+                <div id="error-message"></div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
