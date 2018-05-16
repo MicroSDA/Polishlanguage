@@ -60,9 +60,7 @@ $(document).ready(function () {
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
                     //add new
-                    $('#lessons-date').text(clickData);
-                    $('#lessons-date-offset').val(moment().format("Z"));
-                    $('#myModal').modal();
+                    getAllTeachers(clickData);
 
                 }else {
 
@@ -146,8 +144,31 @@ function editLesson() {
 
 }
 
+function getAllTeachers(date) {
 
-function addNewLesson() {
+    var this_date = date;
+
+    $.ajax({
+        type: 'POST',
+        url: '/get-s-all-teachers',
+        headers: {"Ajax": "Ajax"},
+        data: {
+            Date: this_date
+        },
+        cache: false,
+        success: function (html) {
+
+            $('#allTeachers').text(html);
+            $('#getAllTeachersModal').modal();
+            $('#calendar').fullCalendar('refetchEvents');
+        },
+        error: function (html) {
+
+        }
+    });
+}
+
+function addNewLesson(date) {
 
     var data = $('#lessons-date').text();
     var time = $('#lessons-time').val();
@@ -220,3 +241,4 @@ function addFeedback() {
 
     });
 }
+

@@ -57,7 +57,7 @@
     </div>-->
 </main>
 <!-- Modal -->
-<div id="myModal" class="modal fade" role="dialog">
+<div id="getAllTeachersModal" class="modal fade" role="dialog">
     <div class="modal-dialog">
         <!-- Modal content-->
         <div class="modal-content">
@@ -67,12 +67,7 @@
             </div>
             <div class="modal-body">
                 <div style="margin-left: auto">
-                    <span id="lessons-date" hidden></span>
-                    <span id="lessons-date-offset" hidden</span>
-                    <div class="input-group clockpicker" style="max-width: 140px;">
-                        <input type="text" class="form-control" id="lessons-time" value="">
-                        <span class="input-group-addon"><span class="">Time</span></span>
-                    </div>
+                   <div id="allTeachers"></div>
                 </div>
             </div>
             <div class="modal-footer">

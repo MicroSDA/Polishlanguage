@@ -10,6 +10,7 @@ class calendar_student_model extends Model
 {
 
     private $student;
+    private $teachers;
 
     public function __construct()
     {
@@ -320,5 +321,39 @@ class calendar_student_model extends Model
 
     }
 
+   public function get_all_teachers(){
 
+        try{
+
+            //echo $_POST['Date'];
+
+            if (!$this->isFormatCorrect($_POST['Date'], 'DATE')) {
+                throw new Exception('Incorrect date format');
+            }
+
+
+            $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher');
+
+
+            foreach ($this->teachers as $key_one => $value_one){
+
+                //arrayPrint($value_one['AvailableTime']);
+
+                $timesArray = json_decode($value_one['AvailableTime'],true);
+                foreach ($timesArray as $key_two => $value_two){
+
+
+                    arrayPrint($value_two);
+                }
+
+            }
+
+            //arrayPrint($this->teachers);
+
+        }catch (Exception $e){
+
+            echo $e->getMessage();
+        }
+   }
 }
+
