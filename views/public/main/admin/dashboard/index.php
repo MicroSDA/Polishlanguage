@@ -117,6 +117,8 @@
                                 </thead>
                                 <tbody>
                                 <?php $i = 1;
+                                if(key_exists('Logs',DataManager::getInstance()->getAllData())){
+
                                 foreach (DataManager::getInstance()->getDataByKey('Logs') as $value): ?>
                                     <tr>
                                         <td scope="row"><?= $i ?></td>
@@ -128,6 +130,7 @@
                                     </tr>
                                     <?php $i++; ?>
                                 <?php endforeach ?>
+                                <?php }?>
                                 </tbody>
                             </table>
                         </div>

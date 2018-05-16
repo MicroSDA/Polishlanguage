@@ -1,0 +1,19 @@
+#calendar {
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+#calendar .fc-today {
+    background-color: #fff9c4;
+}
+
+
+#calendar .fc-sat, .fc-sun {
+// background-color: lavender !important;
+}
+
+#calendar .fc-content{
+    text-align: center;
+    /*height: 30px;*/
+}

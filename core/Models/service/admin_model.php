@@ -206,10 +206,7 @@ class admin_model extends Model
             $logs = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_logs ORDER BY id DESC');
 
             if ($logs) {
-
                 DataManager::getInstance()->addData('Logs', $logs);
-            } else {
-                DataManager::getInstance()->addData('Logs', 'Logs wasn\'t found');
             }
 
             /**

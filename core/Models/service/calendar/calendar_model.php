@@ -106,40 +106,8 @@ class calendar_model extends Model
         return true;
     }
 
-    public function get_events()
+    public function get_student_calendar()
     {
-
-//--------------------------------------------------------------------------------------------------
-// This script reads event data from a JSON file and outputs those events which are within the range
-// supplied by the "start" and "end" GET parameters.
-//
-// An optional "timezone" GET parameter will force all ISO8601 date stings to a given timezone.
-//
-// Requires PHP 5.2.0 or higher.
-//--------------------------------------------------------------------------------------------------
-
-// Require our Event class and datetime utilities
-        require_once URL_ROOT . '/core/Models/service/calendar/utils.php';
-
-// Short-circuit if the client did not give us a date range.
-        if (!isset($_GET['start']) || !isset($_GET['end'])) {
-            die("Please provide a date range.");
-        }
-
-// Parse the start/end parameters.
-// These are assumed to be ISO8601 strings with no time nor timezone, like "2013-12-29".
-// Since no timezone will be present, they will parsed as UTC.
-        $range_start = parseDateTime($_GET['start']);
-        $range_end = parseDateTime($_GET['end']);
-
-// Parse the timezone parameter if it is present.
-        $timezone = null;
-        if (isset($_GET['timezone'])) {
-            $timezone = new DateTimeZone($_GET['timezone']);
-        }
-
-// Read and parse our events JSON file into an array of event data arrays.
-
 
         $lessonsDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s', $this->student->getID(), $this->student->getEMAIL());
         $lessons = [];
@@ -182,7 +150,6 @@ class calendar_model extends Model
                         $color = 'blue';
                         array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
-//http://127.0.0.1/account/lesson-feedback/?date=2018-05-11&time=12:00&ref=eee5e1d597bbf0600bfc69734a2f4e546e991d2836d4de62ac8d5ba1b6fb5b1dd8100f3c30bf076069083e139ad22c84
                 }
 
 
@@ -193,10 +160,9 @@ class calendar_model extends Model
         echo json_encode($lessons);
     }
 
-    public function add_events()
+    public function add_student_lesson()
     {
         try {
-
 
 
             if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
@@ -263,7 +229,7 @@ class calendar_model extends Model
         }
     }
 
-    public function edit_events()
+    public function edit_student_lesson()
     {
 
         try {
@@ -332,7 +298,7 @@ class calendar_model extends Model
 
     }
 
-    public function delete_events()
+    public function delete_student_lesson()
     {
 
         try {

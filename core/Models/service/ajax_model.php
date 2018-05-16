@@ -558,7 +558,7 @@ class ajax_model
                 /**
                  * Set Cookie
                  */
-                setcookie('id', $student[0]['id'],time()+36000,"/");
+                setcookie('s-id', $student[0]['id'],time()+36000,"/");
                 setcookie('s-hash', $hash,time()+36000,"/");
 
                 /**
@@ -568,7 +568,40 @@ class ajax_model
 
             }else{
 
-                throw new Exception('Wrong password or email !');
+                $teacher = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE Email=?s AND Password=?s',$email, $password);
+
+                if($teacher){
+
+                    if($teacher[0]['Status']=='not-active'){
+                        throw new Exception('Your account should be active');
+                    }
+                    /**
+                     * Generate new Hash for cookie
+                     */
+                    $hash = md5(getenv("REMOTE_ADDR"). time()). md5($email.time()).md5($password.time());
+
+                    /**
+                     * Set new Hash for Teacher
+                     */
+                    DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET Hash=?s WHERE id=?s AND Email=?s AND Password=?s',$hash, $teacher[0]['id'],$email, $password);
+
+                    /**
+                     * Set Cookie
+                     */
+                    setcookie('t-id', $teacher[0]['id'],time()+36000,"/");
+                    setcookie('t-hash', $hash,time()+36000,"/");
+
+                    /**
+                     * Redirect to dashboard page
+                     */
+                    echo '<script>document.location.replace("/teacher/dashboard");</script>';
+
+                }else{
+
+                    throw new Exception('Wrong password or email !');
+                }
+
+
             }
 
         }catch (Exception $e){
@@ -663,4 +696,54 @@ class ajax_model
 
 
     }
+
+
+    public function add_article(){
+
+
+        try{
+
+            if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value']) or empty($_POST['body'])){
+
+                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
+
+            }else{
+
+                if(DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_article WHERE Url=?s",$_POST['data'][1]['value'])){
+
+                    echo '<div style="text-align: center"><span class="btn btn-danger"><h5>Already exist</h5></span></div>';
+
+                }else{
+                    $description = strip_tags(mb_substr($_POST['body'],0,200));
+
+                    $description.='...';
+
+                    if(DataBase::getInstance()->getDB()->query('INSERT INTO c_article (Url, Title, Description, Body, Writer) VALUES (?s,?s,?s,?s,?s)',$_POST['data'][1]['value'],$_POST['data'][0]['value'],$description, $_POST['body'], 'Ro')){
+
+                        $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+                        echo' <form type="Get" action="">';
+                        echo' <div style="text-align: center"><a href="/admin/secure/settings/'.$token[0]['Token'].'?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
+                        echo' </form>';
+
+                    }else{
+
+
+                    }
+                }
+
+
+            }
+
+
+
+
+        }catch (Exception $error){
+
+            echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 242: ajax_model: add_article()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
+        }
+
+
+    }
+
 }

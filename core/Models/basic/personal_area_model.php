@@ -46,8 +46,8 @@ class personal_area_model extends Model
 
             switch ($_GET['submit']) {
                 case 'logout':
-                    setcookie('id', '', time() - 100, "/");
-                    setcookie('hash', '', time() - 100, "/");
+                    setcookie('s-id', '', time() - 100, "/");
+                    setcookie('s-hash', '', time() - 100, "/");
                     header('Location:' . $_SERVER['HTTP_REFERER']);
                     break;
                 default:
@@ -71,13 +71,6 @@ class personal_area_model extends Model
 
     public function login()
     {
-
-        if ($this->students->isLogin()) {
-
-            header('Location:/account');
-            die();
-        }
-
 
         $this->render();
     }

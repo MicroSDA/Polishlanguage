@@ -9,7 +9,7 @@
             <Assets-Js>
                 <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
                 <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
-                <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/login-and-register.js" file="login-and-register.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
             </Assets-Js>
         </Page>
         <Page name="Error-404">
@@ -22,13 +22,13 @@
                 <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
             </Assets-Js>
         </Page>
-        <Page name="Personal Area">
+        <Page name="Личный кабинет">
             <Assets-Css>
                 <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap.min.css" file="bootstrap.min.css" hash="722ed72dbc5ac18a105a23afbc6addda"> </css>
                 <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap-theme.min.css" file="bootstrap-theme.min.css" hash="7637192c80e1ef0fa6ae65580d7d1e0a"> </css>
                 <css  type="internal" url="/assets/css/" path="/css-js/calendar/fullcalendar.min.css" file="fullcalendar.min.css" hash="66aeb28e96b42ff5492040340df887a6"> </css>
                 <css  type="internal" url="/assets/css/" path="/css-js/clock/dist/bootstrap-clockpicker.min.css" file="bootstrap-clockpicker.min.css" hash="0c91e57f438d931ccb095459cdfe3d8a"> </css>
-                <css  type="internal" url="/assets/css/" path="/css-js/css/main.css" file="main.css" hash="7969c2be479ea4b0e8938e1513f88284"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/student.css" file="student.css" hash="7969c2be479ea4b0e8938e1513f88284"> </css>
             </Assets-Css>
             <Assets-Js>
                  <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
@@ -38,7 +38,26 @@
                  <js type="internal" url="/assets/js/" path="/css-js/calendar/locale/ru.js" file="ru.js" hash="2d2559afa35e68b7cbf6cd111fb3a9f1"> </js>
                  <js type="internal" url="/assets/js/" path="/css-js/calendar/demos/js/theme-chooser.js" file="theme-chooser.js" hash="fb40c335d87fc25ddb6b92aac6406179"> </js>
                  <js type="internal" url="/assets/js/" path="/css-js/clock/dist/bootstrap-clockpicker-24.js" file="bootstrap-clockpicker-24.js" hash="a588e0b2374d39bec7ceff78eac3620c"> </js>
-                 <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
+                 <js type="internal" url="/assets/js/" path="/css-js/js/student.js" file="student.js" hash="d92e22d29c4b48b2294c6cb9d18b78cb"> </js>
+            </Assets-Js>
+        </Page>
+        <Page name="Учительская">
+            <Assets-Css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap.min.css" file="bootstrap.min.css" hash="722ed72dbc5ac18a105a23afbc6addda"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/bootstrap-theme.min.css" file="bootstrap-theme.min.css" hash="7637192c80e1ef0fa6ae65580d7d1e0a"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/calendar/fullcalendar.min.css" file="fullcalendar.min.css" hash="66aeb28e96b42ff5492040340df887a6"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/clock/dist/bootstrap-clockpicker.min.css" file="bootstrap-clockpicker.min.css" hash="0c91e57f438d931ccb095459cdfe3d8a"> </css>
+                <css  type="internal" url="/assets/css/" path="/css-js/css/teacher.css" file="teacher.css" hash="81130b0b3339f30d731935e7097b249d"> </css>
+            </Assets-Css>
+            <Assets-Js>
+                <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/calendar/lib/moment.min.js" file="moment.min.js" hash="9cae0af27c056b4013f74547b5f1f949"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/calendar/fullcalendar.min.js" file="fullcalendar.min.js" hash="69b5cf6107e47d2466fc88eba1c813c6c"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/calendar/locale/ru.js" file="ru.js" hash="2d2559afa35e68b7cbf6cd111fb3a9f1"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/calendar/demos/js/theme-chooser.js" file="theme-chooser.js" hash="fb40c335d87fc25ddb6b92aac6406179"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/clock/dist/bootstrap-clockpicker-24.js" file="bootstrap-clockpicker-24.js" hash="a588e0b2374d39bec7ceff78eac3620c"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/teacher.js" file="teacher.js" hash="5a0b39749e10a05ea096b71002f4fb1b"> </js>
             </Assets-Js>
         </Page>
         <Page name="Login">
@@ -49,7 +68,7 @@
             <Assets-Js>
                 <js type="remote" path="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </js>
                 <js type="internal" url="/assets/js/" path="/css-js/js/bootstrap.min.js" file=" bootstrap.min.js" hash="132df0f08b3bb45a1e9b5af35bb0047f"> </js>
-                <js type="internal" url="/assets/js/" path="/css-js/js/main.js" file="main.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
+                <js type="internal" url="/assets/js/" path="/css-js/js/login-and-register.js" file="login-and-register.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
             </Assets-Js>
         </Page>
         <Page name="Admin">
