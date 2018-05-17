@@ -79,7 +79,7 @@ $(document).ready(function () {
 
     function DisplayCurrentTime() {
         var date = new Date();
-        var hours = date.getHours();
+        var hours = (date.getHours()<10?'0':'')+ date.getHours();
         var minutes = (date.getMinutes()<10?'0':'') + date.getMinutes();
         time = hours + ":" + minutes;
         return time;

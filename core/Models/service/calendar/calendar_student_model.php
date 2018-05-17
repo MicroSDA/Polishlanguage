@@ -62,7 +62,7 @@ class calendar_student_model extends Model
     {
         $date_now = new DateTime($input_time); // текущее значение времени
 
-        if($all_time){
+        if ($all_time) {
 
             foreach ($all_time as $value) {
 
@@ -70,8 +70,8 @@ class calendar_student_model extends Model
                 $date_min = new DateTime($value['Time']); // минимальное значение времени
                 $date_max = new DateTime($value['Time']); // максимальное значение времени
 
-                $date_min->modify('-'.$delay.' hour');
-                $date_max->modify('+'.$delay.' hour');
+                $date_min->modify('-' . $delay . ' hour');
+                $date_max->modify('+' . $delay . ' hour');
 
 
                 // Проверяем, находится ли $date_now в диапазоне
@@ -81,7 +81,7 @@ class calendar_student_model extends Model
                 }
             }
 
-        }else{
+        } else {
 
             $date_end_of_day_f = new DateTime('23:00');
             $date_end_of_day_s = new DateTime('24:00');
@@ -90,18 +90,16 @@ class calendar_student_model extends Model
             $date_start_of_day_s = new DateTime('01:00');
 
 
-
-            if($date_now >= $date_end_of_day_f && $date_now <= $date_end_of_day_s){
+            if ($date_now >= $date_end_of_day_f && $date_now <= $date_end_of_day_s) {
 
                 return false;
             }
 
-            if($date_start_of_day_f && $date_now <= $date_start_of_day_s){
+            if ($date_start_of_day_f && $date_now <= $date_start_of_day_s) {
 
                 return false;
             }
         }
-
 
 
         return true;
@@ -134,18 +132,18 @@ class calendar_student_model extends Model
                         array_push($lessons, array('title' => $value['Time'], 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color));
                         break;
                     case 'completed':
-                        $title ='';
+                        $title = '';
 
-                        if($value['Feedback']=='open'){
-                            $title = 'Оставьте свой отзыв'."\n".$value['Time'];
+                        if ($value['Feedback'] == 'open') {
+                            $title = 'Оставьте свой отзыв' . "\n" . $value['Time'];
 
-                        }else{
+                        } else {
 
                             $title = $value['Time'];
                         }
 
                         $color = 'gray';
-                        array_push($lessons, array('title' =>  $title, 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color,  'url'=> '/account/lesson-feedback/?date='.$value['Date'].'&time='.$value['Time']));
+                        array_push($lessons, array('title' => $title, 'start' => $value['Date'], 'end' => $value['Date'], 'color' => $color, 'url' => '/account/lesson-feedback/?date=' . $value['Date'] . '&time=' . $value['Time']));
                         break;
                     default:
                         $color = 'blue';
@@ -183,7 +181,6 @@ class calendar_student_model extends Model
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Date']);
 
 
-
             if ($result) {
 
                 throw new Exception('You have already picked this day');
@@ -203,18 +200,17 @@ class calendar_student_model extends Model
                 $date = new DateTime($_POST['Data']);
                 $now = new DateTime();
 
-                if($date < $now) {
+                if ($date < $now) {
 
                     echo 'This is past day, please choose available days';
                     die();
                 }
 
-                if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
+                if (!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')) {
 
                     echo 'Time is not available, please try to choose another time';
                     die();
                 }
-
 
 
                 DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Date, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
@@ -247,10 +243,8 @@ class calendar_student_model extends Model
                 throw new Exception('Incorrect offset format');
             }
 
-            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND StudentID !=?s AND  StudentEmail !=?s', $_POST['Data'],$this->student->getID(), $this->student->getEMAIL());
+            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND StudentID !=?s AND  StudentEmail !=?s', $_POST['Data'], $this->student->getID(), $this->student->getEMAIL());
             $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
-
-
 
 
             if ($result) {
@@ -266,13 +260,13 @@ class calendar_student_model extends Model
                     $date = new DateTime($_POST['Data']);
                     $now = new DateTime();
 
-                    if($date < $now) {
+                    if ($date < $now) {
 
                         echo 'This is past day, please choose available days';
                         die();
                     }
 
-                    if(!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')){
+                    if (!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')) {
 
                         echo 'Time is not available, please try to choose another time';
                         die();
@@ -287,7 +281,7 @@ class calendar_student_model extends Model
                 }
 
 
-            }else{
+            } else {
 
                 throw new Exception('Date wasn\'t find');
             }
@@ -321,9 +315,10 @@ class calendar_student_model extends Model
 
     }
 
-   public function get_all_teachers(){
+    public function get_all_teachers()
+    {
 
-        try{
+        try {
 
             //echo $_POST['Date'];
 
@@ -334,26 +329,76 @@ class calendar_student_model extends Model
 
             $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher');
 
+            $available_teachers = [];
 
-            foreach ($this->teachers as $key_one => $value_one){
+            foreach ($this->teachers as $key_one => $value_one) {
 
                 //arrayPrint($value_one['AvailableTime']);
 
-                $timesArray = json_decode($value_one['AvailableTime'],true);
-                foreach ($timesArray as $key_two => $value_two){
+                $timesArray = json_decode($value_one['AvailableTime'], true);
+
+                /*if (array_search($_POST['Date'], $timesArray)) {
+
+                    arrayPrint($timesArray);
+
+                }*/
+
+                foreach ($timesArray as $value_two) {
+
+                    if (array_search($_POST['Date'], $value_two)) {
+
+                        array_push($available_teachers, $this->teachers[$key_one]);
+                        break;
+                        //echo  $this->teachers[$key_one]['FirstName'];
+                        //echo $_POST['Date']."\n";
+                    }
 
 
-                    arrayPrint($value_two);
+                    // arrayPrint($value_two);
+
                 }
 
+                //arrayPrint($timesArray);
             }
 
-            //arrayPrint($this->teachers);
+           // arrayPrint($available_teachers);
 
-        }catch (Exception $e){
+           echo '<div class="row">';
+            foreach ($available_teachers as $value) {
+                echo '<div class="col-lg-4">';
+                    echo '<div class="thumbnail">';
+                      echo '<div class="caption">';
+                      echo '<h5 style="text-align: center">Профиль</h5>
+                                <hr>
+                                <h6>Имя:'.$value['FirstName'].'</h6>
+                                <h6>Уровень:</h6>
+                                <h6>Доступное время</h6>
+                                <hr>';
+                      echo '<form>';
+                                   echo '<div data-toggle="buttons">';
+                                   $teacher_time_to_array = json_decode($value['AvailableTime'], true);
+                                   foreach ($teacher_time_to_array as $time){
+
+                                       if($time['start'] == $_POST['Date']){
+                                           echo '<label class="btn btn-primary">
+                                              <input type="radio" name="time" id="" value="'.$time['title'].'" autocomplete="off">'.$time['title'].'
+                                              </label>
+                                             <br>';
+                                       }
+
+                                   }
+                                   echo '</div>';
+                      echo '</form>';
+                      echo '</div>';
+                    echo '</div>';
+                echo '</div>';
+            }
+            echo '</div>';
+
+        } catch (Exception $e) {
 
             echo $e->getMessage();
         }
-   }
+    }
 }
 

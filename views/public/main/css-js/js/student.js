@@ -158,7 +158,8 @@ function getAllTeachers(date) {
         cache: false,
         success: function (html) {
 
-            $('#allTeachers').text(html);
+            $('#allTeachers').empty();
+            $('#allTeachers').append(html);
             $('#getAllTeachersModal').modal();
             $('#calendar').fullCalendar('refetchEvents');
         },
