@@ -27,6 +27,7 @@
                                 <p>Телефон: <?= DataManager::getInstance()->getDataByKey('Students')->getPHONE() ?></p>
                                 <p>Skype: <?= DataManager::getInstance()->getDataByKey('Students')->getSkype() ?></p>
                                 <p>Доступные курсы: <?= DataManager::getInstance()->getDataByKey('Students')->getCOURSES() ?></p>
+                                <p>Уровень: <?= DataManager::getInstance()->getDataByKey('Students')->getLEVEL()?></p>
                                 <hr>
                                 <p>Дополнительная информация:
                                 <div class="panel panel-default">
@@ -68,7 +69,6 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-success" onclick="addNewLesson();">Save</button>
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

@@ -70,6 +70,27 @@ class Students
     private $STATUS;
 
     /**
+     * @var
+     */
+    private $LEVEL;
+
+    /**
+     * @return mixed
+     */
+    public function getLEVEL()
+    {
+        return $this->LEVEL;
+    }
+
+    /**
+     * @param mixed $LEVEL
+     */
+    public function setLEVEL($LEVEL)
+    {
+        $this->LEVEL = $LEVEL;
+    }
+
+    /**
      * Students constructor.
      */
     public function __construct()
@@ -110,6 +131,7 @@ class Students
                     $this->IP = $this->students_tempalte[0]['Ip'];
                     $this->ADD_INFO = $this->students_tempalte[0]['AddInfo'];
                     $this->COURSES = $this->students_tempalte[0]['Courses'];
+                    $this->LEVEL = $this->students_tempalte[0]['Level'];
 
                     unset($this->students_tempalte);
                     /**

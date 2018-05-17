@@ -52,11 +52,6 @@ class teacher_model extends Model
          * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
          */
 
-        $array = json_decode($this->teacher->getAVAILABLETIME(),true);
-        //$this->teacher->addAVAILABLETIME($array,'2018-05-20','16:00');
-        //$this->teacher->deleteAVAILABLETIME($array,'2018-05-20','15:00');
-        $this->teacher->changeAVAILABLETIME($array,'2018-05-20','17:22','2018-05-20','17:33');
-
         DataManager::getInstance()->addData('Teacher', $this->teacher);
 
 

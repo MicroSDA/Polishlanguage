@@ -54,6 +54,14 @@ class calendar_student_model extends Model
                     return false;
                 }
                 break;
+            case 'ID':
+                if (preg_match('/^[0-9]+$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
 
         }
     }
@@ -163,60 +171,37 @@ class calendar_student_model extends Model
     {
         try {
 
+            arrayPrint($_POST['Data']);
 
-            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+            if (!$this->isFormatCorrect($_POST['Data'][0]['value'], 'DATE')) {
                 throw new Exception('Incorrect date format');
             }
 
-            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
+            if (!$this->isFormatCorrect($_POST['Data'][1]['value'], 'ID')) {
+                throw new Exception('Incorrect id format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Data'][2]['value'], 'TIME')) {
                 throw new Exception('Incorrect time format');
             }
 
-            if (!$this->isFormatCorrect($_POST['Offset'], 'OFFSET')) {
-                throw new Exception('Incorrect offset format');
-            }
 
+            $teacherDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i',$_POST['Data'][1]['value']);
 
-            $all_lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s', $_POST['Data']);
-            $result = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s', $this->student->getID(), $this->student->getEMAIL(), $_POST['Date']);
+            if($teacherDB){
 
+                $teacher = new Teacher();
+                $availebleTime =json_decode($teacherDB[0]['AvailableTime'],true);
 
-            if ($result) {
+                if($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'],$_POST['Data'][2]['value'],$_POST['Data'][1]['value'], 'yes')){
 
-                throw new Exception('You have already picked this day');
-            }
+                    echo 'Yes';
 
+                }else{
 
-            preg_match('/^(\+|\-)[0-9]{2,2}/', $_POST['Offset'], $offset);
-
-
-            if ((string)$_POST['Data'] == (string)gmdate('Y-m-d', strtotime($offset[0] . ' hours'))) {
-
-                echo 'It\'s too late';
-
-            } else {
-
-
-                $date = new DateTime($_POST['Data']);
-                $now = new DateTime();
-
-                if ($date < $now) {
-
-                    echo 'This is past day, please choose available days';
-                    die();
+                    echo 'No';
                 }
 
-                if (!$this->isTimeAvailable($_POST['Time'], $all_lessons, '01', '00:00')) {
-
-                    echo 'Time is not available, please try to choose another time';
-                    die();
-                }
-
-
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Title, Date, Time, StudentID, StudentEmail, Status) VALUES (?s,?s,?s,?s,?s,?s)', 'Lesson', $_POST['Data'],
-                    $_POST['Time'], $this->student->getID(), $this->student->getEMAIL(), 'approved');
-
-                echo 'Lesson was added';
             }
 
 
@@ -327,73 +312,97 @@ class calendar_student_model extends Model
             }
 
 
-            $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher');
+            $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE Level=?s',$this->student->getLEVEL());
 
-            $available_teachers = [];
+            if($this->teachers){
 
-            foreach ($this->teachers as $key_one => $value_one) {
+                $available_teachers = [];
 
-                //arrayPrint($value_one['AvailableTime']);
+                foreach ($this->teachers as $key_one => $value_one) {
 
-                $timesArray = json_decode($value_one['AvailableTime'], true);
+                    //arrayPrint($value_one['AvailableTime']);
 
-                /*if (array_search($_POST['Date'], $timesArray)) {
+                    $timesArray = json_decode($value_one['AvailableTime'], true);
 
-                    arrayPrint($timesArray);
+                    /*if (array_search($_POST['Date'], $timesArray)) {
 
-                }*/
+                        arrayPrint($timesArray);
 
-                foreach ($timesArray as $value_two) {
+                    }*/
 
-                    if (array_search($_POST['Date'], $value_two)) {
+                    foreach ($timesArray as $value_two) {
 
-                        array_push($available_teachers, $this->teachers[$key_one]);
-                        break;
-                        //echo  $this->teachers[$key_one]['FirstName'];
-                        //echo $_POST['Date']."\n";
+                        if (array_search($_POST['Date'], $value_two)) {
+
+                            array_push($available_teachers, $this->teachers[$key_one]);
+                            break;
+                            //echo  $this->teachers[$key_one]['FirstName'];
+                            //echo $_POST['Date']."\n";
+                        }
+
+
+                        // arrayPrint($value_two);
+
                     }
 
-
-                    // arrayPrint($value_two);
-
+                    //arrayPrint($timesArray);
                 }
 
-                //arrayPrint($timesArray);
-            }
+                // arrayPrint($available_teachers);
 
-           // arrayPrint($available_teachers);
-
-           echo '<div class="row">';
-            foreach ($available_teachers as $value) {
-                echo '<div class="col-lg-4">';
+                echo '<div class="row">';
+                foreach ($available_teachers as $value) {
+                    echo '<div class="col-lg-4 col-sm-3">';
                     echo '<div class="thumbnail">';
-                      echo '<div class="caption">';
-                      echo '<h5 style="text-align: center">Профиль</h5>
+                    echo '<div class="caption">';
+                    echo '<h5 style="text-align: center">Профиль</h5>
                                 <hr>
-                                <h6>Имя:'.$value['FirstName'].'</h6>
-                                <h6>Уровень:</h6>
+                                <h6>Имя: '.$value['FirstName'].'</h6>
+                                <h6>Уровень: '.$value['Level'].'</h6>
                                 <h6>Доступное время</h6>
                                 <hr>';
-                      echo '<form>';
-                                   echo '<div data-toggle="buttons">';
-                                   $teacher_time_to_array = json_decode($value['AvailableTime'], true);
-                                   foreach ($teacher_time_to_array as $time){
+                    echo '<form id="'.$value['id'].'">';
+                    echo '<input type="text" name="date" value="'.$_POST['Date'].'" hidden/>';
+                    echo '<input type="text" name="id" value="'.$value['id'].'" hidden/>';
+                    echo '<div data-toggle="buttons">';
+                    $teacher_time_to_array = json_decode($value['AvailableTime'], true);
+                    $inuse = false;
+                    foreach ($teacher_time_to_array as $time){
+                        if($time['start'] == $_POST['Date'] && $time['in-use']=='no'){
+                            $inuse = false;
+                            echo '<label class="btn btn-primary">
+                                                 <input type="radio" name="time" id="" value="'.$time['title'].'" autocomplete="off">'.$time['title'].'
+                                                 </label>
+                                             <br><br>';
+                        }else{
 
-                                       if($time['start'] == $_POST['Date']){
-                                           echo '<label class="btn btn-primary">
-                                              <input type="radio" name="time" id="" value="'.$time['title'].'" autocomplete="off">'.$time['title'].'
-                                              </label>
-                                             <br>';
-                                       }
+                            $inuse = true;
+                        }
 
-                                   }
-                                   echo '</div>';
-                      echo '</form>';
-                      echo '</div>';
+                    }
+                    if($inuse){
+
+                        echo 'Все время занято';
+                    }
+
                     echo '</div>';
+                    echo '<hr>';
+                    if(!$inuse){
+                        echo '<button type="button" class="btn btn-success" onclick="addNewLesson(\''.$value['id'].'\')">Выбрать</button>';
+                    }
+
+                    echo '</form>';
+                    echo '</div>';
+                    echo '</div>';
+                    echo '</div>';
+                }
                 echo '</div>';
+
+            }else{
+
+
+                echo 'We can\'t find any teachers that equals to your level';
             }
-            echo '</div>';
 
         } catch (Exception $e) {
 

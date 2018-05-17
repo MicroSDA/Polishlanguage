@@ -161,7 +161,7 @@ function getAllTeachers(date) {
             $('#allTeachers').empty();
             $('#allTeachers').append(html);
             $('#getAllTeachersModal').modal();
-            $('#calendar').fullCalendar('refetchEvents');
+            //$('#calendar').fullCalendar('refetchEvents');
         },
         error: function (html) {
 
@@ -169,25 +169,23 @@ function getAllTeachers(date) {
     });
 }
 
-function addNewLesson(date) {
+function addNewLesson(id) {
 
-    var data = $('#lessons-date').text();
-    var time = $('#lessons-time').val();
-    var offset = $('#lessons-date-offset').val();
+  var data = $('#'+id).serializeArray();
+
     $.ajax({
         type: 'POST',
         url: '/add-s-lesson',
         headers: {"Ajax": "Ajax"},
         data: {
-            Data: data,
-            Time: time,
-            Offset: offset
+            Data: data
         },
         cache: false,
         success: function (html) {
 
-            $('#myModal').modal('toggle');
-            $('#error-message').text(html);
+            $('#getAllTeachersModal').modal('toggle');
+            $('#error-message').empty();
+            $('#error-message').append(html);
             $('#messageModal').modal();
             $('#calendar').fullCalendar('refetchEvents');
         },

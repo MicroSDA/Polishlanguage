@@ -61,7 +61,18 @@ class calendar_teacher_model
         try{
 
             $time = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s', $this->teacher->getID(),$this->teacher->getEMAIL());
-            echo $time[0]['AvailableTime'];
+            $time_out = json_decode($time[0]['AvailableTime'],true);
+
+            foreach ($time_out as $key=> $value){
+                if($value['in-use']== 'yes' ){
+                    $time_out[$key]['color']= 'green';
+                }else{
+                    $time_out[$key]['color']= 'blue';
+                }
+
+            }
+
+            echo json_encode($time_out);
         }catch (Exception $e){
             echo $e->getMessage();
         }
@@ -84,10 +95,12 @@ class calendar_teacher_model
             }
 
 
-              $array = json_decode($this->teacher->getAVAILABLETIME(),true);
+              $teacher_time =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s',$this->teacher->getID(),$this->teacher->getEMAIL());
+              $array = json_decode($teacher_time[0]['AvailableTime'],true);
+
               $this->teacher->addAVAILABLETIME($array, $_POST['Data'], $_POST['Time']);
 
-              arrayPrint($_POST);
+              //arrayPrint($_POST);
 
         } catch (Exception $e) {
 
