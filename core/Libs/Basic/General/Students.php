@@ -57,6 +57,26 @@ class Students
     /**
      * @var
      */
+    private $REFERAL;
+
+    /**
+     * @return mixed
+     */
+    public function getREFERAL()
+    {
+        return $this->REFERAL;
+    }
+
+    /**
+     * @param mixed $REFERAL
+     */
+    public function setREFERAL($REFERAL)
+    {
+        $this->REFERAL = $REFERAL;
+    }
+    /**
+     * @var
+     */
     private $LAST_LOGIN;
 
     /**
@@ -119,6 +139,7 @@ class Students
 
                     $this->ID = $this->students_tempalte[0]['id'];
                     $this->HASH = $this->students_tempalte[0]['Hash'];
+                    $this->REFERAL = $this->students_tempalte[0]['Referal'];
                     $this->LAST_LOGIN = $this->students_tempalte[0]['LastLogin'];
 
                     $this->FIRST_NAME = $this->students_tempalte[0]['FirstName'];

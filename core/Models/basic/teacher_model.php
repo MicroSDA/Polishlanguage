@@ -95,4 +95,44 @@ class teacher_model extends Model
 
         $this->render();
     }
+
+    public function get_student_profile(){
+
+        if (!$this->teacher->isLogin()) {
+
+            header('Location:/login');
+            die();
+        }
+        /**
+         * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        if(isset($_GET['ref'])){
+
+            try{
+
+               $student = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Referal=?s',$_GET['ref'] );
+
+                if($student){
+                    DataManager::getInstance()->addData('Student',$student[0]);
+                }else{
+
+                    UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+                    $controller = new Controller();
+                    die();
+                }
+
+            }catch (Exception $e){
+                $e->getMessage();
+            }
+        }
+
+
+        DataManager::getInstance()->addData('Teacher', $this->teacher);
+        /**
+         * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        $this->render();
+    }
 }

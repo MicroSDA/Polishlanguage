@@ -116,7 +116,7 @@ class calendar_student_model extends Model
     public function get_student_calendar()
     {
 
-        $lessonsDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s', $this->student->getID(), $this->student->getEMAIL());
+        $lessonsDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE StudentID=?i', $this->student->getID());
         $lessons = [];
 
 
@@ -171,19 +171,20 @@ class calendar_student_model extends Model
     {
         try {
 
-            arrayPrint($_POST['Data']);
 
             if (!$this->isFormatCorrect($_POST['Data'][0]['value'], 'DATE')) {
                 throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Data'][2]['value'], 'TIME')) {
+                throw new Exception('Incorrect time format');
             }
 
             if (!$this->isFormatCorrect($_POST['Data'][1]['value'], 'ID')) {
                 throw new Exception('Incorrect id format');
             }
 
-            if (!$this->isFormatCorrect($_POST['Data'][2]['value'], 'TIME')) {
-                throw new Exception('Incorrect time format');
-            }
+
 
 
             $teacherDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i',$_POST['Data'][1]['value']);
@@ -193,9 +194,12 @@ class calendar_student_model extends Model
                 $teacher = new Teacher();
                 $availebleTime =json_decode($teacherDB[0]['AvailableTime'],true);
 
-                if($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'],$_POST['Data'][2]['value'],$_POST['Data'][1]['value'], 'yes')){
+                if($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'],$_POST['Data'][2]['value'],$_POST['Data'][1]['value'], 'yes',$this->student->getREFERAL())){
 
-                    echo 'Yes';
+                    DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Date, Time, StudentID, TeacherID) VALUES (?s,?s,?i,?i)',
+                        $_POST['Data'][0]['value'],$_POST['Data'][2]['value'], $this->student->getID(),$_POST['Data'][1]['value']);
+
+                   echo 'Урок был назначаен, ожидайте звонка на '.$this->student->getSKYPE();
 
                 }else{
 
@@ -366,7 +370,8 @@ class calendar_student_model extends Model
                     echo '<input type="text" name="id" value="'.$value['id'].'" hidden/>';
                     echo '<div data-toggle="buttons">';
                     $teacher_time_to_array = json_decode($value['AvailableTime'], true);
-                    $inuse = false;
+                    $inuse = true;
+
                     foreach ($teacher_time_to_array as $time){
                         if($time['start'] == $_POST['Date'] && $time['in-use']=='no'){
                             $inuse = false;
@@ -374,12 +379,9 @@ class calendar_student_model extends Model
                                                  <input type="radio" name="time" id="" value="'.$time['title'].'" autocomplete="off">'.$time['title'].'
                                                  </label>
                                              <br><br>';
-                        }else{
-
-                            $inuse = true;
                         }
-
                     }
+
                     if($inuse){
 
                         echo 'Все время занято';

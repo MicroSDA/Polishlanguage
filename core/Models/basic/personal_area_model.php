@@ -137,13 +137,13 @@ class personal_area_model extends Model
             $time = $_GET['time'];
             $date = $_GET['date'];
 
-            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
-                $date ,$time,$this->students->getID(),$this->students->getEMAIL());
+            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i',
+                $date ,$time,$this->students->getID());
 
             if($lesson){
 
-                $feedBack = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
-                    $date ,$time,$this->students->getID(),$this->students->getEMAIL());
+                $feedBack = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i',
+                    $date ,$time,$this->students->getID());
 
                 if($feedBack){
                     $feedBackFile = '<div>

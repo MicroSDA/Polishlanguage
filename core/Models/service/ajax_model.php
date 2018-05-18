@@ -488,8 +488,11 @@ class ajax_model
             if($user){
                 throw new Exception('Account with this email or phone already exist');
             }else{
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password, Ip) VALUES (?s,?s,?s,?s,?s,?s,?s)',
-                    $first_name, $last_name, $email, $phone, $skype, $password, $_SERVER['REMOTE_ADDR']);
+                /**
+                 * Register new student
+                 */
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password, Ip, Referal) VALUES (?s,?s,?s,?s,?s,?s,?s,?s)',
+                    $first_name, $last_name, $email, $phone, $skype, $password, $_SERVER['REMOTE_ADDR'],  md5(getenv("REMOTE_ADDR") . "key" . time()));
             }
 
 
@@ -659,24 +662,24 @@ class ajax_model
 
             //http://127.0.0.1/account/lesson-feedback/?date=2018-05-09&time=00:01
             //http://127.0.0.1/account/lesson-feedback/?date=2018-05-08&time=23:01
-            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s AND Status=?s',
-                $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL(), 'completed');
+            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i  AND Status=?s',
+                $_POST['date'], $_POST['time'], $student->getID(), 'completed');
 
             if($lesson){
 
-                $feedback = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i AND StudentEmail=?s',
-                    $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL());
+                $feedback = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_feedback WHERE Date=?s AND Time=?s AND StudentID=?i ',
+                    $_POST['date'], $_POST['time'], $student->getID());
 
                 if($feedback){
                     echo 'Feedback was already added';
                     die();
                 }
 
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons_feedback (Date, Time, StudentID, StudentEmail, Text, Evaluation, Status) VALUES (?s,?s,?i,?s,?s,?s,?s)',
-                    $_POST['date'],$_POST['time'], $student->getID(), $student->getEMAIL(), $_POST['feedback-text'], $_POST['rating'], 'closed');
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons_feedback (Date, Time, StudentID, Text, Evaluation, Status) VALUES (?s,?s,?i,?s,?s,?s)',
+                    $_POST['date'],$_POST['time'], $student->getID(), $_POST['feedback-text'], $_POST['rating'], 'closed');
 
-                DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET FeedBack=?s WHERE Date=?s AND Time=?s AND StudentID=?s AND StudentEmail=?s',
-                    'closed', $_POST['date'], $_POST['time'], $student->getID(), $student->getEMAIL());
+                DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET FeedBack=?s WHERE Date=?s AND Time=?s AND StudentID=?i',
+                    'closed', $_POST['date'], $_POST['time'], $student->getID());
 
                 echo '<script>document.getElementById(\'feedback-form\').reset();</script>';
                 echo '<script>$("#feedback-form").remove();</script>';

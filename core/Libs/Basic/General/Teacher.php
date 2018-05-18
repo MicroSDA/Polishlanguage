@@ -167,14 +167,15 @@ class Teacher
     }
 
 
-    public function setLesson($array, $date, $time, $id, $inuse){
+    public function setLesson($array, $date, $time, $id, $inuse, $s_ref){
 
         foreach ($array as $key => $value) {
 
-            if (array_search($date, $value) && array_search($time, $value)) {
+            if (array_search($date, $value) && array_search($time, $value) && array_search('no', $value)) {
                 $array[$key]['start'] = $date;
                 $array[$key]['title'] = $time;
                 $array[$key]['in-use'] = $inuse;
+                $array[$key]['url'] = '/teacher/student/?ref='.$s_ref;
 
                 $array_out = json_encode($array);
 
