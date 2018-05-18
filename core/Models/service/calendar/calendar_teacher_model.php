@@ -66,14 +66,14 @@ class calendar_teacher_model
             foreach ($time_out as $key=> $value){
                 if($value['in-use']== 'yes' ){
                     $time_out[$key]['color']= 'green';
-                }else{
-                    $time_out[$key]['color']= 'blue';
                 }
 
             }
 
             echo json_encode($time_out);
+
         }catch (Exception $e){
+
             echo $e->getMessage();
         }
     }
@@ -100,7 +100,6 @@ class calendar_teacher_model
 
               $this->teacher->addAVAILABLETIME($array, $_POST['Data'], $_POST['Time']);
 
-              //arrayPrint($_POST);
 
         } catch (Exception $e) {
 

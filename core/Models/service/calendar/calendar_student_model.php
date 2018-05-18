@@ -185,23 +185,21 @@ class calendar_student_model extends Model
             }
 
 
+            $teacherDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i', $_POST['Data'][1]['value']);
 
-
-            $teacherDB = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i',$_POST['Data'][1]['value']);
-
-            if($teacherDB){
+            if ($teacherDB) {
 
                 $teacher = new Teacher();
-                $availebleTime =json_decode($teacherDB[0]['AvailableTime'],true);
+                $availebleTime = json_decode($teacherDB[0]['AvailableTime'], true);
 
-                if($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'],$_POST['Data'][2]['value'],$_POST['Data'][1]['value'], 'yes',$this->student->getREFERAL())){
+                if ($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $_POST['Data'][1]['value'], 'yes', $this->student->getREFERAL())) {
 
                     DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Date, Time, StudentID, TeacherID) VALUES (?s,?s,?i,?i)',
-                        $_POST['Data'][0]['value'],$_POST['Data'][2]['value'], $this->student->getID(),$_POST['Data'][1]['value']);
+                        $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID(), $_POST['Data'][1]['value']);
 
-                   echo 'Урок был назначаен, ожидайте звонка на '.$this->student->getSKYPE();
+                    echo 'Урок был назначаен, ожидайте звонка на ' . $this->student->getSKYPE();
 
-                }else{
+                } else {
 
                     echo 'No';
                 }
@@ -287,21 +285,54 @@ class calendar_student_model extends Model
 
         try {
 
-            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+            if (!$this->isFormatCorrect($_POST['Date'], 'DATE')) {
+
+                throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
 
                 throw new Exception('Incorrect date format');
             }
 
 
-            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons WHERE StudentID=?s AND StudentEmail=?s AND Date=?s", $this->student->getID(), $this->student->getEMAIL(), $_POST['Data']);
+            $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND Status=?s', $_POST['Date'], $_POST['Time'], $this->student->getID(), 'approved');
+            if ($lesson) {
 
-            echo 'Lesson has been removed';
+                $teacher = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i', $lesson[0]['TeacherID']);
+
+                if ($teacher) {
+
+                    $teacher_func = new Teacher();
+                    $availebleTime = json_decode($teacher[0]['AvailableTime'], true);
+
+                    if ($teacher_func->unsetLesson($availebleTime, $_POST['Date'], $_POST['Time'], $teacher[0]['id'])) {
+
+                        DataBase::getInstance()->getDB()->query('DELETE FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND TeacherID=?i',
+                            $_POST['Date'], $_POST['Time'], $this->student->getID(), $teacher[0]['id']);
+
+                        echo 'Назначенный урок был успешно удален';
+
+                    } else {
+
+                        echo 'Unset function error';
+                    }
+
+
+                } else {
+
+                    echo 'Учитель был не найден';
+                }
+
+            } else {
+
+                echo 'Урок был не обнаружен';
+            }
+
 
         } catch (Exception $e) {
-
             $e->getMessage();
         }
-
     }
 
     public function get_all_teachers()
@@ -316,9 +347,9 @@ class calendar_student_model extends Model
             }
 
 
-            $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE Level=?s',$this->student->getLEVEL());
+            $this->teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE Level=?s', $this->student->getLEVEL());
 
-            if($this->teachers){
+            if ($this->teachers) {
 
                 $available_teachers = [];
 
@@ -361,36 +392,36 @@ class calendar_student_model extends Model
                     echo '<div class="caption">';
                     echo '<h5 style="text-align: center">Профиль</h5>
                                 <hr>
-                                <h6>Имя: '.$value['FirstName'].'</h6>
-                                <h6>Уровень: '.$value['Level'].'</h6>
+                                <h6>Имя: ' . $value['FirstName'] . '</h6>
+                                <h6>Уровень: ' . $value['Level'] . '</h6>
                                 <h6>Доступное время</h6>
                                 <hr>';
-                    echo '<form id="'.$value['id'].'">';
-                    echo '<input type="text" name="date" value="'.$_POST['Date'].'" hidden/>';
-                    echo '<input type="text" name="id" value="'.$value['id'].'" hidden/>';
+                    echo '<form id="' . $value['id'] . '">';
+                    echo '<input type="text" name="date" value="' . $_POST['Date'] . '" hidden/>';
+                    echo '<input type="text" name="id" value="' . $value['id'] . '" hidden/>';
                     echo '<div data-toggle="buttons">';
                     $teacher_time_to_array = json_decode($value['AvailableTime'], true);
                     $inuse = true;
 
-                    foreach ($teacher_time_to_array as $time){
-                        if($time['start'] == $_POST['Date'] && $time['in-use']=='no'){
+                    foreach ($teacher_time_to_array as $time) {
+                        if ($time['start'] == $_POST['Date'] && $time['in-use'] == 'no') {
                             $inuse = false;
                             echo '<label class="btn btn-primary">
-                                                 <input type="radio" name="time" id="" value="'.$time['title'].'" autocomplete="off">'.$time['title'].'
+                                                 <input type="radio" name="time" id="" value="' . $time['title'] . '" autocomplete="off">' . $time['title'] . '
                                                  </label>
                                              <br><br>';
                         }
                     }
 
-                    if($inuse){
+                    if ($inuse) {
 
                         echo 'Все время занято';
                     }
 
                     echo '</div>';
                     echo '<hr>';
-                    if(!$inuse){
-                        echo '<button type="button" class="btn btn-success" onclick="addNewLesson(\''.$value['id'].'\')">Выбрать</button>';
+                    if (!$inuse) {
+                        echo '<button type="button" class="btn btn-success" onclick="addNewLesson(\'' . $value['id'] . '\')">Выбрать</button>';
                     }
 
                     echo '</form>';
@@ -400,7 +431,7 @@ class calendar_student_model extends Model
                 }
                 echo '</div>';
 
-            }else{
+            } else {
 
 
                 echo 'We can\'t find any teachers that equals to your level';

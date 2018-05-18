@@ -198,6 +198,36 @@ class Teacher
 
       return false;
     }
+
+    public function unsetLesson($array, $date, $time, $t_id){
+
+        foreach ($array as $key => $value) {
+
+            if (array_search($date, $value) && array_search($time, $value) && array_search('yes', $value)) {
+                $array[$key]['in-use'] = 'no';
+                unset($array[$key]['url']);
+
+                $array_out = json_encode($array);
+
+                try{
+
+                    DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i',$array_out,  $t_id);
+
+                }catch (Exception $e){
+
+                    echo $e->getMessage();
+                }
+
+                return true;
+                break;
+
+            }
+
+
+        }
+
+        return false;
+    }
     /**
      * @param  $AVAILABLE_TIME
      */

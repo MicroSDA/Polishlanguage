@@ -14,6 +14,9 @@ $(document).ready(function () {
             error: function () {
                 $('#script-warning').show();
             }
+        },eventRender: function(event, element) {
+
+            element.append(event.description);
         },
         loading: function (bool) {
             $('#loading-calendar').toggle(bool);
@@ -54,11 +57,22 @@ $(document).ready(function () {
 
         }, eventClick: function(calEvent, jsEvent, view) {
 
+            if (calEvent.url) {
+                window.open(calEvent.url, "_blank");
+                return false;
+            }else{
+
+
+            }
+
             alert(calEvent.title);
+            alert(calEvent.businessHours);
             alert(moment(calEvent.start).format('YYYY-MM-DD'));
 
             // change the border color just for fun
             $(this).css('border-color', 'red');
+
+
 
         }
 

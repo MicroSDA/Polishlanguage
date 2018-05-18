@@ -42,10 +42,9 @@ $(document).ready(function () {
                 if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
 
                     //Edit
-                    $('#lessons-date-edit').text(clickData);
-                    $('#lessons-time-edit').val(eventTime);
-                    $('#lessons-date-edit-offset').val(moment().format("Z"));
-                    $('#edit-lessons-day').modal();
+                    $('#lessons-date').val(clickData);
+                    $('#lessons-time').val(eventTime);
+                    $('#deleteLesson').modal();
 
                 }else {
 
@@ -197,21 +196,22 @@ function addNewLesson(id) {
 
 function deleteLesson() {
 
-    var data = $('#lessons-date-edit').text();
-    var time = $('#lessons-time-edit').val();
+    var date = $('#lessons-date').val();
+    var time = $('#lessons-time').val();
     $.ajax({
         type: 'POST',
         url: '/delete-s-lesson',
         headers: {"Ajax": "Ajax"},
         data: {
-            Data: data,
+            Date: date,
             Time: time
         },
         cache: false,
         success: function (html) {
 
-            $('#edit-lessons-day').modal('toggle');
-            $('#error-message').text(html);
+            $('#deleteLesson').modal('toggle');
+            $('#error-message').empty();
+            $('#error-message').append(html);
             $('#messageModal').modal();
             $('#calendar').fullCalendar('refetchEvents');
 
