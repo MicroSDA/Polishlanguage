@@ -43,9 +43,10 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <div id='calendar' class="sf">
+                        <div id="calendar" class="sf">
                             <div id="loading-calendar">
                             </div>
+                            <button onclick="$('#calendar').fullCalendar('refetchEvents');">Refresh</button>
                         </div>
                     </div>
                 </div>
@@ -72,6 +73,29 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-success" onclick="addNewTime();">Save</button>
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="deleteTime" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h5 class="modal-title">Вы уверены что хотите удалить это время ?</h5>
+            </div>
+            <div class="modal-body">
+                <div style="margin-left: auto">
+                    <input id="delete-date" hidden/>
+                    <input id="delete-time" hidden/>
+                    <div style="text-align:  center">
+                        <button type="button" class="btn btn-warning" onclick="deleteTime();">Да</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>

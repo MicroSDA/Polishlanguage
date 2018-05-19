@@ -82,7 +82,7 @@ class calendar_teacher_model
         try {
 
 
-            if (!$this->isFormatCorrect($_POST['Data'], 'DATE')) {
+            if (!$this->isFormatCorrect($_POST['Date'], 'DATE')) {
                 throw new Exception('Incorrect date format');
             }
 
@@ -98,12 +98,43 @@ class calendar_teacher_model
               $teacher_time =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s',$this->teacher->getID(),$this->teacher->getEMAIL());
               $array = json_decode($teacher_time[0]['AvailableTime'],true);
 
-              $this->teacher->addAVAILABLETIME($array, $_POST['Data'], $_POST['Time']);
+              $this->teacher->addAVAILABLETIME($array, $_POST['Date'], $_POST['Time']);
 
 
         } catch (Exception $e) {
 
             echo $e->getMessage();
         }
+    }
+
+    public function delete_time(){
+
+        try{
+
+            if (!$this->isFormatCorrect($_POST['Date'], 'DATE')) {
+                throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
+                throw new Exception('Incorrect time format');
+            }
+
+            $teacher_time =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s',$this->teacher->getID(),$this->teacher->getEMAIL());
+            $array = json_decode($teacher_time[0]['AvailableTime'],true);
+
+            if($this->teacher->deleteAVAILABLETIME($array, $_POST['Date'], $_POST['Time'])){
+
+                echo 'Время было удалено';
+
+            }else{
+
+                echo 'Урок уже был назначен на это время';
+            }
+
+        }catch (Exception $e){
+
+            echo $e->getMessage();
+        }
+
     }
 }

@@ -16,7 +16,7 @@ $(document).ready(function () {
             }
         },eventRender: function(event, element) {
 
-            element.append(event.description);
+           // element.append(event.description);
         },
         loading: function (bool) {
             $('#loading-calendar').toggle(bool);
@@ -58,25 +58,31 @@ $(document).ready(function () {
         }, eventClick: function(calEvent, jsEvent, view) {
 
             if (calEvent.url) {
-                window.open(calEvent.url, "_blank");
-                return false;
+                //window.open(calEvent.url);
+                //return false;
             }else{
 
+               // deleteTime(moment(calEvent.start).format('YYYY-MM-DD'),calEvent.title);
 
+
+                $('#delete-date').val(moment(calEvent.start).format('YYYY-MM-DD'));
+                $('#delete-time').val(calEvent.title);
+                $('#deleteTime').modal();
+               // alert(calEvent.title);
+               // alert(moment(calEvent.start).format('YYYY-MM-DD'));
+
+                // change the border color just for fun
+               // $(this).css('border-color', 'red');
             }
-
-            alert(calEvent.title);
-            alert(calEvent.businessHours);
-            alert(moment(calEvent.start).format('YYYY-MM-DD'));
-
-            // change the border color just for fun
-            $(this).css('border-color', 'red');
-
 
 
         }
 
     });
+
+    setInterval(function() {$('#calendar').fullCalendar('refetchEvents'); }, 60000);
+    //setTimeout(function() { alert('Привет') }, 1000);
+   // setTimeout("$('#calendar').fullCalendar('refetchEvents')",60*5);
 
 });
 
@@ -102,7 +108,7 @@ $(document).ready(function () {
 
 function addNewTime() {
 
-    var data = $('#new-date').text();
+    var date = $('#new-date').text();
     var time = $('#new-time').val();
     var offset = moment().format("Z");
     $.ajax({
@@ -110,7 +116,7 @@ function addNewTime() {
         url: '/add-t-time',
         headers: {"Ajax": "Ajax"},
         data: {
-            Data: data,
+            Date: date,
             Time: time,
             Offset: offset
         },
@@ -118,6 +124,30 @@ function addNewTime() {
         success: function (html) {
 
             $('#addTime').modal('toggle');
+            $('#error-message').text(html);
+            $('#messageModal').modal();
+            $('#calendar').fullCalendar('refetchEvents');
+        },
+        error: function (html) {
+
+        }
+    });
+}
+
+function deleteTime() {
+
+    $.ajax({
+        type: 'POST',
+        url: '/delete-t-time',
+        headers: {"Ajax": "Ajax"},
+        data: {
+            Date: $('#delete-date').val(),
+            Time: $('#delete-time').val()
+        },
+        cache: false,
+        success: function (html) {
+
+            $('#deleteTime').modal('toggle');
             $('#error-message').text(html);
             $('#messageModal').modal();
             $('#calendar').fullCalendar('refetchEvents');

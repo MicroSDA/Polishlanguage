@@ -150,20 +150,22 @@ class Teacher
     }
 
 
-    //[{"Time":"13:00","Data":"2018-05-17"},{"Time":"13:00","Data":"2018-05-17"},{"Date":"2018-05-19","Time":"15:00"}]
     public function deleteAVAILABLETIME($array, $date, $time)
     {
         foreach ($array as $key => $value) {
 
-            if (array_search($date, $value) && array_search($time, $value)) {
+            if (array_search($date, $value) && array_search($time, $value) && array_search('no', $value)) {
                 unset($array[$key]);
+
+                $array_out = json_encode($array);
+                DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out,$this->getID(),$this->getEMAIL());
+                return true;
             }
 
         }
 
-        $array_out = json_encode($array);
-        DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out,$this->getID(),$this->getEMAIL());
-        $this->setAVAILIBLETIME($array_out);
+      return false;
+
     }
 
 
