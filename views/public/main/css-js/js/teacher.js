@@ -16,7 +16,39 @@ $(document).ready(function () {
             }
         },eventRender: function(event, element) {
 
-           // element.append(event.description);
+            if(event.notif === 'yes'){
+
+                $(element).css('border-color', 'red');
+
+                var audio = new Audio();
+                audio.src = '/public/notif.mp3';
+                audio.autoplay = true;
+
+                $.ajax({
+                    type: 'POST',
+                    url: '/notif-t-update',
+                    headers: {"Ajax": "Ajax"},
+                    data: {
+                        Date: moment(event.start).format('YYYY-MM-DD').toString(),
+                        Time: event.title,
+                        Notif: 'no'
+                    },
+                    cache: false,
+                    success: function (html) {
+                       // $('#calendar').fullCalendar('updateEvent', event);
+                    },
+                    error: function (html) {
+
+                    }
+                });
+
+            }
+
+            //element.append(event.description);
+        },eventAfterRender: function(event, element, view){
+
+
+
         },
         loading: function (bool) {
             $('#loading-calendar').toggle(bool);
@@ -81,8 +113,6 @@ $(document).ready(function () {
     });
 
     setInterval(function() {$('#calendar').fullCalendar('refetchEvents'); }, 60000);
-    //setTimeout(function() { alert('Привет') }, 1000);
-   // setTimeout("$('#calendar').fullCalendar('refetchEvents')",60*5);
 
 });
 
@@ -156,4 +186,13 @@ function deleteTime() {
 
         }
     });
+}
+
+function test() {
+    function soundWarning() {
+        var audio = new Audio();
+        audio.src = '/public/notif.mp3';
+        audio.autoplay = true;
+    }
+    soundWarning();
 }

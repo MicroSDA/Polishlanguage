@@ -50,9 +50,6 @@
             </div>
         </div>
     </div>
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Test">
-        Launch demo modal
-    </button>
 </main>
 <!-- Modal -->
 <div id="getAllTeachersModal" class="modal fade" role="dialog">

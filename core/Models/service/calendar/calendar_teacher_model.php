@@ -52,6 +52,14 @@ class calendar_teacher_model
                     return false;
                 }
                 break;
+            case 'NOTIF':
+                if (preg_match('/^(yes|no)$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
 
         }
     }
@@ -98,7 +106,14 @@ class calendar_teacher_model
               $teacher_time =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s',$this->teacher->getID(),$this->teacher->getEMAIL());
               $array = json_decode($teacher_time[0]['AvailableTime'],true);
 
-              $this->teacher->addAVAILABLETIME($array, $_POST['Date'], $_POST['Time']);
+              if($this->teacher->addAVAILABLETIME($array, $_POST['Date'], $_POST['Time'])){
+
+                  echo 'Время было добавленно';
+
+              }else{
+
+                  echo 'This time already added';
+              }
 
 
         } catch (Exception $e) {
@@ -133,6 +148,40 @@ class calendar_teacher_model
 
         }catch (Exception $e){
 
+            echo $e->getMessage();
+        }
+
+    }
+
+    public function update_notofication(){
+
+        try{
+            if (!$this->isFormatCorrect($_POST['Date'], 'DATE')) {
+                throw new Exception('Incorrect date format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Time'], 'TIME')) {
+                throw new Exception('Incorrect time format');
+            }
+
+            if (!$this->isFormatCorrect($_POST['Notif'], 'NOTIF')) {
+                throw new Exception('Incorrect notif format');
+            }
+
+            $teacher_time =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s',$this->teacher->getID(),$this->teacher->getEMAIL());
+            $array = json_decode($teacher_time[0]['AvailableTime'],true);
+
+            if($this->teacher->notification_update($array, $_POST['Date'], $_POST['Time'],$this->teacher->getID(),'no')){
+
+                echo 'Notification was changed';
+
+            }else{
+
+                echo 'Error changing notification';
+            }
+
+
+        }catch (Exception $e){
             echo $e->getMessage();
         }
 

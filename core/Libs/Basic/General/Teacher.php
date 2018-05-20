@@ -90,6 +90,7 @@ class Teacher
                 $array[$key]['start'] = $new_date;
                 $array[$key]['title'] = $new_time;
                 $array[$key]['in-use'] = 'no';
+                $array[$key]['notif'] = 'no';
                 break;
 
 
@@ -114,14 +115,12 @@ class Teacher
 
                     if (array_search($date, $value) and array_search($time, $value)) {
 
-                        echo 'This time already added';
-                        echo $date.'----'.$time;
                         return false;
                     }
 
                 }
 
-                array_push($array_inc, array('start' => $date,'title' => $time,'in-use'=> 'no'));
+                array_push($array_inc, array('start' => $date,'title' => $time,'in-use'=> 'no','notif'=>'no'));
                 $array_out = json_encode($array_inc);
                 DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(),$this->getEMAIL());
                 //$this->setAVAILIBLETIME($array_out);
@@ -131,7 +130,7 @@ class Teacher
             }else{
 
                 $array_inc =[];
-                array_push($array_inc, array('start' => $date, 'title' => $time,'in-use'=> 'no'));
+                array_push($array_inc, array('start' => $date, 'title' => $time,'in-use'=> 'no','notif'=>'no'));
                 $array_out = json_encode($array_inc);
                 DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(),$this->getEMAIL());
                 //$this->setAVAILIBLETIME($array_out);
@@ -178,6 +177,7 @@ class Teacher
                 $array[$key]['title'] = $time;
                 $array[$key]['in-use'] = $inuse;
                 $array[$key]['url'] = '/teacher/student/?ref='.$s_ref;
+                $array[$key]['notif'] = 'yes';
 
                 $array_out = json_encode($array);
 
@@ -207,6 +207,7 @@ class Teacher
 
             if (array_search($date, $value) && array_search($time, $value) && array_search('yes', $value)) {
                 $array[$key]['in-use'] = 'no';
+                $array[$key]['notif'] = 'yes';
                 unset($array[$key]['url']);
 
                 $array_out = json_encode($array);
@@ -214,6 +215,35 @@ class Teacher
                 try{
 
                     DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i',$array_out,  $t_id);
+
+                }catch (Exception $e){
+
+                    echo $e->getMessage();
+                }
+
+                return true;
+                break;
+
+            }
+
+
+        }
+
+        return false;
+    }
+
+    public function notification_update($array, $date, $time, $id, $notif){
+
+        foreach ($array as $key => $value) {
+
+            if (array_search($date, $value) && array_search($time, $value)) {
+                $array[$key]['notif'] = $notif;
+
+                $array_out = json_encode($array);
+
+                try{
+
+                    DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i',$array_out, $id);
 
                 }catch (Exception $e){
 
