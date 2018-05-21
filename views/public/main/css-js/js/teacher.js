@@ -188,11 +188,22 @@ function deleteTime() {
     });
 }
 
-function test() {
-    function soundWarning() {
-        var audio = new Audio();
-        audio.src = '/public/notif.mp3';
-        audio.autoplay = true;
-    }
-    soundWarning();
+function completeLesson() {
+
+    var data = $('#completeLessonForm').serializeArray();
+    $.ajax({
+        type: 'POST',
+        url: '/complete-t-lesson',
+        headers: {"Ajax": "Ajax"},
+        data: {
+          Data: data
+        },
+        cache: false,
+        success: function (html) {
+
+        },
+        error: function (html) {
+
+        }
+    });
 }

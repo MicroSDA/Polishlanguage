@@ -46,7 +46,6 @@
                         <div id="calendar" class="sf">
                             <div id="loading-calendar">
                             </div>
-                            <button onclick="$('#calendar').fullCalendar('refetchEvents');">Refresh</button>
                         </div>
                     </div>
                 </div>

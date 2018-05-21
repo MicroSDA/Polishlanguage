@@ -202,8 +202,11 @@ class calendar_student_model extends Model
 
                    }else{
 
-                       DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Date, Time, StudentID, TeacherID) VALUES (?s,?s,?i,?i)',
-                           $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID(), $_POST['Data'][1]['value']);
+                       $token = md5(getenv("REMOTE_ADDR"). time()). md5($_POST['Data'][0]['value'].time()).md5($_POST['Data'][2]['value'].time());
+
+                       DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Date, Time, StudentID, TeacherID, Token) VALUES (?s,?s,?i,?i,?s)',
+                           $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID(), $_POST['Data'][1]['value'],
+                           $token );
 
                        echo 'Урок был назначаен, ожидайте звонка на ' . $this->student->getSKYPE();
                    }

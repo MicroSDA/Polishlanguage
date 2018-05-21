@@ -42,6 +42,15 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-md-9">
+                        <?php
+                        if(DataManager::getInstance()->getDataByKey('Status')=='approved'){
+                            require_once URL_ROOT . '/views/public/'.TemplateManager::getInstance()->getTemplate()['path']  . '/'.$this->view_folder.'/approved.php';
+                        }else{
+                            require_once URL_ROOT . '/views/public/'.TemplateManager::getInstance()->getTemplate()['path']  . '/'.$this->view_folder.'/completed.php';
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
         </main>

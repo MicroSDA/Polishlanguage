@@ -27,7 +27,6 @@
                                         <p>Телефон: <?= DataManager::getInstance()->getDataByKey('Teacher')->getPHONE() ?></p>
                                         <p>Skype: <?= DataManager::getInstance()->getDataByKey('Teacher')->getSkype() ?></p>
                                         <p>Уровень: <?= DataManager::getInstance()->getDataByKey('Teacher')->getLEVEL() ?></p>
-                                        <p>Доступное Время: <?= DataManager::getInstance()->getDataByKey('Teacher')->getAVAILABLETIME() ?></p>
                                         <hr>
                                         <p>Дополнительная информация:
                                         <div class="panel panel-default">
@@ -41,9 +40,6 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-9">
-                       <button onclick="test();">Ring</button>
                     </div>
                 </div>
             </div>

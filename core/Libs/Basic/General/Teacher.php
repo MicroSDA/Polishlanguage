@@ -176,7 +176,7 @@ class Teacher
                 $array[$key]['start'] = $date;
                 $array[$key]['title'] = $time;
                 $array[$key]['in-use'] = $inuse;
-                $array[$key]['url'] = '/teacher/student/?ref='.$s_ref;
+                $array[$key]['url'] = '/teacher/lessons/lesson/?date='.$date.'&time='.$time.'&token='.$s_ref;
                 $array[$key]['notif'] = 'yes';
 
                 $array_out = json_encode($array);

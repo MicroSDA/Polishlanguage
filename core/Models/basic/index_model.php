@@ -26,10 +26,8 @@ class index_model extends Model
     public function index()
     {
 
-        DataManager::getInstance()->addData('lox', 'Hi');
 
-        $x = 10/5;
-        DataManager::getInstance()->addData('x', $x);
+
         $this->render();
 
     }

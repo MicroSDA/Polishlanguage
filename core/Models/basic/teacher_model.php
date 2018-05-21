@@ -18,10 +18,57 @@ class teacher_model extends Model
         $this->teacher = new Teacher();
     }
 
-    public function index(){
+    private function isFormatCorrect($array, $flag)
+    {
 
+        switch ($flag) {
+
+            case 'DATE':
+                if (preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+
+                break;
+            case 'TIME':
+                if (preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+
+                } else {
+                    return false;
+                }
+
+                break;
+            case 'OFFSET':
+                if (preg_match('/^(\+|\-)[0-9]{2,2}[:][0-9]{2,2}$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
+            case 'ID':
+                if (preg_match('/^[0-9]+$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
+            case 'TOKEN':
+                if (preg_match('/^[a-zA-Z0-9_-]+$/', $array, $out)) {
+
+                    return true;
+                } else {
+                    return false;
+                }
+                break;
+
+        }
     }
-
 
     public function dashboard(){
 
@@ -96,7 +143,7 @@ class teacher_model extends Model
         $this->render();
     }
 
-    public function get_student_profile(){
+    public function lesson(){
 
         if (!$this->teacher->isLogin()) {
 
@@ -107,14 +154,64 @@ class teacher_model extends Model
          * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
          */
 
-        if(isset($_GET['ref'])){
+
+
+
+        if(isset($_GET['date']) and isset($_GET['time']) and isset($_GET['token'])){
 
             try{
 
-               $student = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Referal=?s',$_GET['ref'] );
+                if (!$this->isFormatCorrect($_GET['date'], 'DATE')) {
+                    throw new Exception('Incorrect date format');
+                }
 
-                if($student){
-                    DataManager::getInstance()->addData('Student',$student[0]);
+
+
+                if (!$this->isFormatCorrect($_GET['time'], 'TIME')) {
+                    throw new Exception('Incorrect time format');
+                }
+
+                if (!$this->isFormatCorrect($_GET['token'], 'TOKEN')) {
+                    throw new Exception('Incorrect token format');
+                }
+
+
+               $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND Token=?s',
+                   $_GET['date'],$_GET['time'],$_GET['token']);
+
+
+                if($lesson){
+
+                    DataManager::getInstance()->addData('Lesson',$lesson[0]);
+
+                    $student =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?i',$lesson[0]['StudentID']);
+
+                    if($student){
+
+                        DataManager::getInstance()->addData('Student',$student[0]);
+
+
+
+                        if($lesson[0]['Status']=='approved'){
+
+                            DataManager::getInstance()->addData('Status','approved');
+
+                        }
+
+                        if($lesson[0]['Status']=='completed'){
+                            DataManager::getInstance()->addData('Status','completed');
+                        }
+
+
+
+                    }else{
+
+                        UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+                        $controller = new Controller();
+                        die();
+                    }
+
+
                 }else{
 
                     UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
@@ -135,4 +232,5 @@ class teacher_model extends Model
 
         $this->render();
     }
+
 }

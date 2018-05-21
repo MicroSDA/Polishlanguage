@@ -700,53 +700,38 @@ class ajax_model
 
     }
 
+    public function for_lesson_completed(){
 
-    public function add_article(){
+        $teacher = new Teacher();
 
+        /**
+         * If isn't login then redirect to login page
+         */
+        if (!$teacher->isLogin()) {
 
-        try{
-
-            if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value']) or empty($_POST['body'])){
-
-                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
-
-            }else{
-
-                if(DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_article WHERE Url=?s",$_POST['data'][1]['value'])){
-
-                    echo '<div style="text-align: center"><span class="btn btn-danger"><h5>Already exist</h5></span></div>';
-
-                }else{
-                    $description = strip_tags(mb_substr($_POST['body'],0,200));
-
-                    $description.='...';
-
-                    if(DataBase::getInstance()->getDB()->query('INSERT INTO c_article (Url, Title, Description, Body, Writer) VALUES (?s,?s,?s,?s,?s)',$_POST['data'][1]['value'],$_POST['data'][0]['value'],$description, $_POST['body'], 'Ro')){
-
-                        $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
-
-                        echo' <form type="Get" action="">';
-                        echo' <div style="text-align: center"><a href="/admin/secure/settings/'.$token[0]['Token'].'?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
-                        echo' </form>';
-
-                    }else{
-
-
-                    }
-                }
-
-
-            }
-
-
-
-
-        }catch (Exception $error){
-
-            echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 242: ajax_model: add_article()<hr>'.$error.'<hr>Contact with developer !</span></div>.';
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
         }
 
 
+
+        if(!preg_match('/^[1|2|3|4|5]$/', $_POST['Data'][0]['rating'], $out)) {
+
+            echo 'rating wrong format';
+            //die;
+        }
+
+        if(!preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $_POST['time'], $out)){
+            echo 'time wrong format';
+            //die;
+        }
+
+        if(!preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/',$_POST['date'], $out)){
+            echo 'date wrong format';
+            //die;
+        }
+
+        arrayPrint($_POST);
     }
 
-}
+  }
