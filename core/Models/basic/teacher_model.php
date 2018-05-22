@@ -119,6 +119,13 @@ class teacher_model extends Model
         }
 
 
+        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE TeacherID=?i ORDER BY id DESC ',$this->teacher->getID());
+
+        if($lessons){
+            DataManager::getInstance()->addData('Lessons', $lessons);
+        }
+
+
         DataManager::getInstance()->addData('Teacher', $this->teacher);
         $this->render();
     }

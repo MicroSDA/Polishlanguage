@@ -715,23 +715,38 @@ class ajax_model
 
 
 
-        if(!preg_match('/^[1|2|3|4|5]$/', $_POST['Data'][0]['rating'], $out)) {
+        if(!preg_match('/^[1|2|3|4|5]$/', $_POST['Data'][0]['value'], $out)) {
 
             echo 'rating wrong format';
             //die;
         }
 
-        if(!preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $_POST['time'], $out)){
-            echo 'time wrong format';
-            //die;
-        }
-
-        if(!preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/',$_POST['date'], $out)){
+        if(!preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/', $_POST['Data'][2]['value'], $out)){
             echo 'date wrong format';
             //die;
         }
 
-        arrayPrint($_POST);
+        if(!preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $_POST['Data'][3]['value'], $out)){
+            echo 'time wrong format';
+            //die;
+        }
+
+        if(!preg_match('/^[0-9a-zA-Z]+$/', $_POST['Data'][4]['value'], $out)){
+            echo 'token wrong format';
+            //die;
+        }
+
+
+
+        DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Status=?s, Estimation=?s, Comment=?s WHERE Date=?s AND Time=?s AND Token=?s',
+                'completed', $_POST['Data'][0]['value'], $_POST['Data'][1]['value'], $_POST['Data'][2]['value'], $_POST['Data'][3]['value'], $_POST['Data'][4]['value']);
+
+
+        echo '<script>document.getElementById(\'completeLessonForm\').reset();</script>';
+        echo '<script>$("#completeLessonForm").remove();</script>';
+        echo '<script>$("#lesson-complete-message").append(\'Информация сохранена!\');</script>';
+
+
     }
 
   }

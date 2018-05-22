@@ -191,8 +191,8 @@ class calendar_student_model extends Model
 
                 $teacher = new Teacher();
                 $availebleTime = json_decode($teacherDB[0]['AvailableTime'], true);
-
-                if ($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $_POST['Data'][1]['value'], 'yes', $this->student->getREFERAL())) {
+                $token = md5(getenv("REMOTE_ADDR"). time()). md5($_POST['Data'][0]['value'].time()).md5($_POST['Data'][2]['value'].time());
+                if ($teacher->setLesson($availebleTime, $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $_POST['Data'][1]['value'], 'yes', $token)) {
 
                    $isLesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i',$_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID());
 
@@ -202,7 +202,7 @@ class calendar_student_model extends Model
 
                    }else{
 
-                       $token = md5(getenv("REMOTE_ADDR"). time()). md5($_POST['Data'][0]['value'].time()).md5($_POST['Data'][2]['value'].time());
+
 
                        DataBase::getInstance()->getDB()->query('INSERT INTO c_lessons (Date, Time, StudentID, TeacherID, Token) VALUES (?s,?s,?i,?i,?s)',
                            $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID(), $_POST['Data'][1]['value'],

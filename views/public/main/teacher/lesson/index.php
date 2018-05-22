@@ -42,30 +42,13 @@
                         </div>
                     </div>
                     <div class="col-md-9">
-                        <?php  if(key_exists('Lessons',DataManager::getInstance()->getAllData())){?>
-                            <div class="row">
-                                <?php foreach (DataManager::getInstance()->getDataByKey('Lessons') as $value): ?>
-                                    <div class="col-md-10">
-                                        <div class="thumbnail">
-                                            <div class="caption">
-                                                <p>Дата: <?=$value['Date']?></p>
-                                                <p>Время: <?=$value['Time']?></p>
-                                                <?php
-                                                if($value['Status']== 'completed'){
-                                                    echo '<p>Статус: Завершен</p>';
-                                                }else{
-                                                    echo '<p>Статус: Открыт</p>';
-                                                }
-                                                ?>
-                                                <a class="btn btn-default" href="/teacher/lessons/lesson/?date=<?=$value['Date']?>&time=<?=$value['Time']?>&token=<?=$value['Token']?>">Перейти</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <?php endforeach ?>
-                            </div>
-                        <?php }else{
-                            echo 'У вас еще не было уроков';
-                        } ?>
+                        <?php
+                        if(DataManager::getInstance()->getDataByKey('Status')=='approved'){
+                            require_once URL_ROOT . '/views/public/'.TemplateManager::getInstance()->getTemplate()['path']  . '/'.$this->view_folder.'/approved.php';
+                        }else{
+                            require_once URL_ROOT . '/views/public/'.TemplateManager::getInstance()->getTemplate()['path']  . '/'.$this->view_folder.'/completed.php';
+                        }
+                        ?>
                     </div>
                 </div>
             </div>

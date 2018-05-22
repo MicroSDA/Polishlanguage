@@ -200,7 +200,8 @@ function completeLesson() {
         },
         cache: false,
         success: function (html) {
-
+            $('#lesson-complete-message').empty();
+            $('#lesson-complete-message').append(html);
         },
         error: function (html) {
 

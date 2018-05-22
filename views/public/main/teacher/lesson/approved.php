@@ -40,6 +40,7 @@
             <input class="form-check-input" type="text" name="token" value="<?= DataManager::getInstance()->getDataByKey('Lesson')['Token']?>" readonly hidden>
             <button name="submit" type="button" onclick="completeLesson();" class="btn btn-primary mb-2">Завершить урок</button><br>
         </form>
-        <div id="feedback-message"></div>
+        <br>
+        <div id="lesson-complete-message"></div>
     </div>
 </div>
