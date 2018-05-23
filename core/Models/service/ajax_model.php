@@ -703,7 +703,7 @@ class ajax_model
     public function for_lesson_completed(){
 
         $teacher = new Teacher();
-
+        $student = new Students();
         /**
          * If isn't login then redirect to login page
          */
@@ -737,9 +737,15 @@ class ajax_model
         }
 
 
+         $studentID =  DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND Token=?s',
+             $_POST['Data'][2]['value'], $_POST['Data'][3]['value'], $_POST['Data'][4]['value']);
 
-        DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Status=?s, Estimation=?s, Comment=?s WHERE Date=?s AND Time=?s AND Token=?s',
+
+
+         DataBase::getInstance()->getDB()->query('UPDATE c_lessons SET Status=?s, Estimation=?s, Comment=?s WHERE Date=?s AND Time=?s AND Token=?s',
                 'completed', $_POST['Data'][0]['value'], $_POST['Data'][1]['value'], $_POST['Data'][2]['value'], $_POST['Data'][3]['value'], $_POST['Data'][4]['value']);
+
+        $student->updateCourseLessonCount(1, $studentID[0]['StudentID']);
 
 
         echo '<script>document.getElementById(\'completeLessonForm\').reset();</script>';

@@ -38,6 +38,11 @@ class personal_area_model extends Model
             die();
         }
 
+        //$array = json_decode($this->students->getCOURSES(),true);
+        //$this->students->addCourse($array, '1',"0","21");
+        //$this->students->addCourse($array, '2', "0","21");
+        //$this->students->setCurrentCourse(1);
+
 
         /**
          * If GET action is logout the delete cookie

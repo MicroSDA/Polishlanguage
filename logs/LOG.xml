@@ -5,4 +5,14 @@
   <Log Time="05.22.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_teacher_model.php" Line="74">Invalid argument supplied for foreach()</Log>
   <Log Time="05.22.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_teacher_model.php" Line="74">Invalid argument supplied for foreach()</Log>
   <Log Time="05.22.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="374">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.23.18/10-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.23.18/10-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.23.18/19-38" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="404">array_search() expects parameter 2 to be array, integer given</Log>
+  <Log Time="05.23.18/19-38" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="457">array_search() expects parameter 2 to be array, integer given</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
 </Logs>

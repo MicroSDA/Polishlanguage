@@ -71,12 +71,15 @@ class calendar_teacher_model
             $time = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i AND Email=?s', $this->teacher->getID(),$this->teacher->getEMAIL());
             $time_out = json_decode($time[0]['AvailableTime'],true);
 
-            foreach ($time_out as $key=> $value){
-                if($value['in-use']== 'yes' ){
-                    $time_out[$key]['color']= 'green';
-                }
+            if(!empty($time_out)){
+                foreach ($time_out as $key=> $value){
+                    if($value['in-use']== 'yes' ){
+                        $time_out[$key]['color']= 'green';
+                    }
 
+                }
             }
+
 
             echo json_encode($time_out);
 

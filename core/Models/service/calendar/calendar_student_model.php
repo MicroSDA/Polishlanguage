@@ -370,16 +370,18 @@ class calendar_student_model extends Model
 
                     $timesArray = json_decode($value_one['AvailableTime'], true);
 
+                    if (!empty($timesArray)) {
 
-                    foreach ($timesArray as $value_two) {
+                        foreach ($timesArray as $value_two) {
 
-                        if (array_search($_POST['Date'], $value_two)) {
+                            if (array_search($_POST['Date'], $value_two)) {
 
-                            array_push($available_teachers, $this->teachers[$key_one]);
-                            break;
+                                array_push($available_teachers, $this->teachers[$key_one]);
+                                break;
+
+                            }
 
                         }
-
                     }
 
 

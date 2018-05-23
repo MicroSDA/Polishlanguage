@@ -74,6 +74,7 @@ class Students
     {
         $this->REFERAL = $REFERAL;
     }
+
     /**
      * @var
      */
@@ -82,7 +83,7 @@ class Students
     /**
      * @var
      */
-      private $COURSES = [];
+    private $COURSES;
 
     /**
      * @var
@@ -137,33 +138,36 @@ class Students
 
             if ($this->students_tempalte) {
 
-                    $this->ID = $this->students_tempalte[0]['id'];
-                    $this->HASH = $this->students_tempalte[0]['Hash'];
-                    $this->REFERAL = $this->students_tempalte[0]['Referal'];
-                    $this->LAST_LOGIN = $this->students_tempalte[0]['LastLogin'];
+                $this->ID = $this->students_tempalte[0]['id'];
+                $this->HASH = $this->students_tempalte[0]['Hash'];
+                $this->REFERAL = $this->students_tempalte[0]['Referal'];
+                $this->LAST_LOGIN = $this->students_tempalte[0]['LastLogin'];
 
-                    $this->FIRST_NAME = $this->students_tempalte[0]['FirstName'];
-                    $this->LAST_NAME = $this->students_tempalte[0]['LastName'];
-                    $this->EMAIL = $this->students_tempalte[0]['Email'];
-                    $this->PHONE = $this->students_tempalte[0]['Phone'];
-                    $this->PASSWORD = $this->students_tempalte[0]['Password'];
-                    $this->SKYPE = $this->students_tempalte[0]['Skype'];
-                    $this->STATUS = $this->students_tempalte[0]['Status'];
-                    $this->IP = $this->students_tempalte[0]['Ip'];
-                    $this->ADD_INFO = $this->students_tempalte[0]['AddInfo'];
-                    $this->COURSES = $this->students_tempalte[0]['Courses'];
-                    $this->LEVEL = $this->students_tempalte[0]['Level'];
+                $this->FIRST_NAME = $this->students_tempalte[0]['FirstName'];
+                $this->LAST_NAME = $this->students_tempalte[0]['LastName'];
+                $this->EMAIL = $this->students_tempalte[0]['Email'];
+                $this->PHONE = $this->students_tempalte[0]['Phone'];
+                $this->PASSWORD = $this->students_tempalte[0]['Password'];
+                $this->SKYPE = $this->students_tempalte[0]['Skype'];
+                $this->STATUS = $this->students_tempalte[0]['Status'];
+                $this->IP = $this->students_tempalte[0]['Ip'];
+                $this->ADD_INFO = $this->students_tempalte[0]['AddInfo'];
+                $this->COURSES = $this->students_tempalte[0]['Courses'];
+                $this->LEVEL = $this->students_tempalte[0]['Level'];
 
-                    unset($this->students_tempalte);
-                    /**
-                     * Was login
-                     */
+                unset($this->students_tempalte);
+                /**
+                 * Was login
+                 */
 
-                    /**
-                     * If account aren't active then disable authorization
-                     */
-                    if($this->STATUS == 'not-active'){return false;}else{return true;}
-
+                /**
+                 * If account aren't active then disable authorization
+                 */
+                if ($this->STATUS == 'not-active') {
+                    return false;
+                } else {
+                    return true;
+                }
 
 
             } else {
@@ -385,5 +389,92 @@ class Students
     public function setSTATUS($STATUS)
     {
         $this->STATUS = $STATUS;
+    }
+
+    public function addCourse($array, $id, $totalLessons, $maxLessons)
+    {
+
+        $array_inc = $array;
+        try {
+
+            if (!empty($array_inc)) {
+
+                foreach ($array_inc as $key => $value) {
+
+                    if (array_search($id, $value)) {
+
+                        return false;
+                    }
+
+                }
+
+                array_push($array_inc, array('id' => $id, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                $array_out = json_encode($array_inc);
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(), $this->getEMAIL());
+                //$this->setAVAILIBLETIME($array_out);
+
+                return true;
+
+            } else {
+
+                $array_inc = [];
+                array_push($array_inc, array('id' => $id, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                $array_out = json_encode($array_inc);
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(), $this->getEMAIL());
+                //$this->setAVAILIBLETIME($array_out);
+
+                return true;
+            }
+
+
+            //return false;
+
+        } catch (Error $e) {
+
+            echo $e->getMessage();
+        }
+
+    }
+
+    public function setCurrentCourse($id, $s_id)
+    {
+
+        DataBase::getInstance()->getDB()->query('UPDATE  c_students SET ActiveCourse=?s WHERE id=?i', $id, $s_id);
+    }
+
+    public function updateCourseLessonCount($i ,$s_id)
+    {
+
+        $arr = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?i', $s_id);
+        if ($arr) {
+
+            $coursesArray = json_decode($arr[0]['Courses'],true);
+
+            if (!empty($coursesArray)) {
+
+                foreach ($coursesArray as $key => $value) {
+
+                    if (array_search($arr[0]['ActiveCourse'], $value)) {
+
+                        if($arr[0]['LessonsInActiveCourse'] >= $coursesArray[$key]['maxLessons']){
+
+
+                        }else{
+                            $coursesArray[$key]['totalLessons']= $arr[0]['LessonsInActiveCourse'] + $i;
+                            $arr[0]['LessonsInActiveCourse'] += $i;
+                            $arr[0]['TotalLessons'] += 1;
+                        }
+
+                    }
+
+                }
+
+            }
+
+
+            $coursesArray_out =  json_encode($coursesArray);
+            DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s, LessonsInActiveCourse=?i, TotalLessons=?i WHERE id=?i',
+                $coursesArray_out, $arr[0]['LessonsInActiveCourse'] , $arr[0]['TotalLessons'],$s_id);
+        }
     }
 }
