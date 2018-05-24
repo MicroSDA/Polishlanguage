@@ -442,13 +442,13 @@ class Students
         DataBase::getInstance()->getDB()->query('UPDATE  c_students SET ActiveCourse=?s WHERE id=?i', $id, $s_id);
     }
 
-    public function updateCourseLessonCount($i ,$s_id)
+    public function updateCourseLessonCount($i, $s_id)
     {
 
         $arr = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?i', $s_id);
         if ($arr) {
 
-            $coursesArray = json_decode($arr[0]['Courses'],true);
+            $coursesArray = json_decode($arr[0]['Courses'], true);
 
             if (!empty($coursesArray)) {
 
@@ -456,11 +456,11 @@ class Students
 
                     if (array_search($arr[0]['ActiveCourse'], $value)) {
 
-                        if($arr[0]['LessonsInActiveCourse'] >= $coursesArray[$key]['maxLessons']){
+                        if ($arr[0]['LessonsInActiveCourse'] >= $coursesArray[$key]['maxLessons']) {
 
 
-                        }else{
-                            $coursesArray[$key]['totalLessons']= $arr[0]['LessonsInActiveCourse'] + $i;
+                        } else {
+                            $coursesArray[$key]['totalLessons'] = $arr[0]['LessonsInActiveCourse'] + $i;
                             $arr[0]['LessonsInActiveCourse'] += $i;
                             $arr[0]['TotalLessons'] += 1;
                         }
@@ -472,9 +472,35 @@ class Students
             }
 
 
-            $coursesArray_out =  json_encode($coursesArray);
+            $coursesArray_out = json_encode($coursesArray);
             DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s, LessonsInActiveCourse=?i, TotalLessons=?i WHERE id=?i',
-                $coursesArray_out, $arr[0]['LessonsInActiveCourse'] , $arr[0]['TotalLessons'],$s_id);
+                $coursesArray_out, $arr[0]['LessonsInActiveCourse'], $arr[0]['TotalLessons'], $s_id);
         }
+    }
+
+    public function getDaysInCurrentCourse($s_id)
+    {
+
+        $arr = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?i', $s_id);
+
+        if ($arr) {
+
+            $coursesArray = json_decode($arr[0]['Courses'], true);
+
+            if (!empty($coursesArray)) {
+
+                foreach ($coursesArray as $key => $value) {
+
+                    if (array_search($arr[0]['ActiveCourse'], $value)) {
+
+                        return array('totalDays' => $coursesArray[$key]['totalLessons'], 'maxDays' => $coursesArray[$key]['maxLessons']);
+                    }
+
+                }
+
+            }
+        }
+
+        return false;
     }
 }
