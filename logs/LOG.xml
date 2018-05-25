@@ -15,4 +15,291 @@
   <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
   <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
   <Log Time="05.23.18/21-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="748">Undefined property: ajax_model::$student</Log>
+  <Log Time="05.25.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/18-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/18-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/18-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-12" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-14" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(Mail/smtp.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-15" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail.php" Line="78">include_once(): Failed opening 'Mail/smtp.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-18" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(Net/SMTP.php): failed to open stream: No such file or directory</Log>
+  <Log Time="05.25.18/19-25" File="C:\xampp\php\pear\Mail\smtp.php" Line="365">include_once(): Failed opening 'Net/SMTP.php' for inclusion (include_path='C:\xampp\php\PEAR')</Log>
+  <Log Time="05.25.18/19-46" File="C:\xampp\php\pear\Net\Socket.php" Line="189">fsockopen(): Failed to enable crypto</Log>
+  <Log Time="05.25.18/19-46" File="C:\xampp\php\pear\Net\Socket.php" Line="189">fsockopen(): unable to connect to ssl://smtp.gmail.com:587 (Unknown error)</Log>
+  <Log Time="05.25.18/22-05" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-05" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-06" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-07" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="145">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="146">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="146">Undefined variable: mail</Log>
+  <Log Time="05.25.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.25.18/22-48" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Lessons</Log>
+  <Log Time="05.25.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.25.18/23-04" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
 </Logs>
