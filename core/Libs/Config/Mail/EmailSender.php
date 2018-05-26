@@ -190,17 +190,17 @@ class EmailSender
 
 
 
-    public function sendEmail($to, $subject, $message){
+    public function sendEmail($to, $subject, $message, $personal_data){
 
         switch ($this->getSENDTYPE()){
 
             case 'SMTP':
 
-                $this->sendViaSMTP($to, $subject, $message);
+                $this->sendViaSMTP($to, $subject, $message, $personal_data);
 
                 break;
             default:
-                $this->sendViaServerProvider($to, $subject, $message);
+                $this->sendViaServerProvider($to, $subject, $message, $personal_data);
                 break;
         }
     }
@@ -243,19 +243,38 @@ class EmailSender
         }
     }
 
+    /**
+     *   '{FN}'=>$personal_data['FirstName'],
+    '{SN}'=>$personal_data['Surname'],
+    '{DATE}'=>$personal_data['Date'],
+    '{TIME}'=>$personal_data['Time'],
+    '{EMAIL}'=>$personal_data['Email']
+     */
 
     /**
      * @param $to
      * @param $subject
      * @param $message
+     * @param $personal_data
      * @return bool
      */
-    public function sendViaServerProvider($to, $subject, $message){
+    public function sendViaServerProvider($to, $subject, $message, $personal_data){
 
-        $this->MESSAGE = strtr($message, array('{TO}' => $to));
+        $this->MESSAGE = strtr($message, array(
+            '{FN}'=>$personal_data['FirstName'],
+            '{SN}'=>$personal_data['Surname'],
+            '{DATE}'=>$personal_data['Date'],
+            '{TIME}'=>$personal_data['Time'],
+            '{EMAIL}'=>$personal_data['Email'],
+            '{WEBSITE}'=>$personal_data['WebSite'],
+            '{PHONE}'=>$personal_data['Phone'],
+            '{SKYPE}'=>$personal_data['Skype'],
+            '{PASSWORD}'=>$personal_data['Password']
+          ));
+
 
         $headers = array(
-            'From' => '<'.$this->THIRD_EMAIL_BOX.'>',
+            'From' => '<'.$this->SERVER_EMAIL_BOX.'>',
             'To' => '<'.$to.'>',
             'Subject' => $subject,
             'MIME-Version' => 1,
