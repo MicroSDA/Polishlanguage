@@ -28,6 +28,7 @@ require_once URL_ROOT.'/core/Libs/Basic/General/VideoStream.php';
 require_once URL_ROOT.'/core/Libs/Basic/General/CacheGenerator.php';
 require_once URL_ROOT.'/core/Libs/Basic/General/Students.php';
 require_once URL_ROOT.'/core/Libs/Basic/General/Teacher.php';
+require_once URL_ROOT.'/core/Libs/Config/Mail/EmailSender.php';
 
 
 

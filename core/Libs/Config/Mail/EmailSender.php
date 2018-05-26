@@ -6,14 +6,55 @@
  * Time: 22:08
  */
 require_once URL_ROOT.'/core/Libs/Config/Mail/Mail.php';
+
+/**
+ * Class EmailSender
+ */
 class EmailSender
 {
 
+    /**
+     * @var
+     */
     private $SERVER_EMAIL_BOX;
+    /**
+     * @var
+     */
     private $THIRD_EMAIL_BOX;
+    /**
+     * @var
+     */
     private $MESSAGE;
+    /**
+     * @var
+     */
     private $HOST;
+    /**
+     * @var
+     */
     private $PORT;
+
+
+    /**
+     * @var
+     */
+    private $SENDTYPE = 'Server';
+
+    /**
+     * @return mixed
+     */
+    public function getSENDTYPE()
+    {
+        return $this->SENDTYPE;
+    }
+
+    /**
+     * @param mixed $SENDTYPE
+     */
+    public function setSENDTYPE($SENDTYPE)
+    {
+        $this->SENDTYPE = $SENDTYPE;
+    }
 
     /**
      * @return mixed
@@ -110,19 +151,73 @@ class EmailSender
     {
         $this->PASSWORD = $PASSWORD;
     }
+
+    /**
+     * @var
+     */
     private $USERNAME;
+    /**
+     * @var
+     */
     private $PASSWORD;
 
+    /**
+     * EmailSender constructor.
+     */
     public function __construct()
     {
+        try{
+
+            $settings = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_email_settings');
+
+            if($settings){
+
+                $this->setTHIRDEMAILBOX($settings['ThirdPartyEmail']);
+                $this->setSERVEREMAILBOX($settings['ServerEmail']);
+                $this->setHOST($settings['SMTPHost']);
+                $this->setPORT($settings['SMTPPort']);
+                $this->setUSERNAME($settings['Username']);
+                $this->setPASSWORD($settings['Password']);
+                $this->setSENDTYPE($settings['SendType']);
+
+            }
+
+        }catch(Exception $e){
+
+        }
+
     }
 
 
 
+    public function sendEmail($to, $subject, $message){
+
+        switch ($this->getSENDTYPE()){
+
+            case 'SMTP':
+
+                $this->sendViaSMTP($to, $subject, $message);
+
+                break;
+            default:
+                $this->sendViaServerProvider($to, $subject, $message);
+                break;
+        }
+    }
+
+    /**
+     * @param $to
+     * @param $subject
+     * @param $message
+     * @return bool
+     */
     public function sendViaSMTP($to, $subject, $message){
 
+
+        $this->MESSAGE = strtr($message, array('{TO}' => $to));
+
         $headers = array(
-            'From' => $this->THIRD_EMAIL_BOX,
+            'From' => '<'.$this->THIRD_EMAIL_BOX.'>',
             'To' => '<'.$to.'>',
             'Subject' => $subject,
             'MIME-Version' => 1,
@@ -137,7 +232,7 @@ class EmailSender
             'password' => $this->PASSWORD
         ));
 
-        $this->MESSAGE = strtr($message, array('{TO}' => $to));
+
 
         $mail = $smtp->send($to, $headers, $this->MESSAGE);
 
@@ -149,28 +244,32 @@ class EmailSender
     }
 
 
-    public function sendViaServerProvider(){
+    /**
+     * @param $to
+     * @param $subject
+     * @param $message
+     * @return bool
+     */
+    public function sendViaServerProvider($to, $subject, $message){
 
-        function mail_utf8($to, $subject ='(No Subject)', $message='', $header_inc)
-       {
-         $header = 'MIME-Version: 1.0'.PHP_EOL.'Content-type: text/plain; charset=UTF-8'.PHP_EOL.'From: '.$header_inc.PHP_EOL;
-         mail($to, '=?UTF-8?B?'.base64_encode($subject).'?=',$message, $header);
-         return true;
-       }
+        $this->MESSAGE = strtr($message, array('{TO}' => $to));
 
-       $email = 'rodion@localhost.com';
-       $subj = 'Subj';
-       $emess = 'Привет ' . PHP_EOL;
-       $emess .= ' Пирвет';
-       $headers = 'From: rodion@gmail.com';
-       //$mailsend = mail($email, $subj, $emess, $headers);
+        $headers = array(
+            'From' => '<'.$this->THIRD_EMAIL_BOX.'>',
+            'To' => '<'.$to.'>',
+            'Subject' => $subject,
+            'MIME-Version' => 1,
+            'Content-type' => 'text/html;charset=UTF-8'
+        );
 
+        $server_mail = Mail::factory('mail');
+        $mail = $server_mail->send($to, $headers, $this->MESSAGE);
+        if (PEAR::isError($mail)) {
+            return false;
+        } else {
+            return true;
+        }
 
-       if ((mail_utf8($email,$subj,$emess,$headers))) {
-           echo 'отправленно';
-       } else {
-           echo 'ошибка';
-       }
     }
 
     public function init(){
