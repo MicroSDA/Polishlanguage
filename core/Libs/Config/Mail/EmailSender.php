@@ -269,7 +269,13 @@ class EmailSender
             '{WEBSITE}'=>$personal_data['WebSite'],
             '{PHONE}'=>$personal_data['Phone'],
             '{SKYPE}'=>$personal_data['Skype'],
-            '{PASSWORD}'=>$personal_data['Password']
+            '{PASSWORD}'=>$personal_data['Password'],
+            '{S_FN}'=>$personal_data['StudentFirstName'],
+            '{S_SN}'=>$personal_data['StudentSurname'],
+            '{S_SKYPE}'=>$personal_data['StudentSkype'],
+            '{L_DATE}'=>$personal_data['LessonDate'],
+            '{L_TIME}'=>$personal_data['LessonTime'],
+
           ));
 
 

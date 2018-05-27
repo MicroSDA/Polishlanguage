@@ -392,14 +392,9 @@ class ajax_model
 
     public function register_new_user(){
 
-       $first_name = $_POST['first-name'];
-       $last_name = $_POST['last-name'];
+       $first_name = $_POST['name'];
        $email= $_POST['email'];
        $phone = $_POST['phone'];
-       $skype = $_POST['skype'];
-       $password = $_POST['password'];
-       $confirm_password=$_POST['password-confirm'];
-
         try{
             /**
              * ///////////FIRS NAME/////////////////////////////////
@@ -415,19 +410,6 @@ class ajax_model
              * //////////////////////////////////////////////////////
              */
 
-            /**
-             * ///////////LAST NAME/////////////////////////////////
-             */
-            if(empty($last_name)){
-                throw new Exception('Last name should be filled');
-            }
-
-            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$last_name)){
-                throw new Exception('Last has a wrong format');
-            }
-            /**
-             * //////////////////////////////////////////////////////
-             */
             /**
              * ///////////EMAIL//////////////////////////////////////
              */
@@ -454,49 +436,50 @@ class ajax_model
             /**
              * ////////////////////////////////////////////////////////
              */
-            /**
-             * ///////////PASSWORD/////////////////////////////////////
-             */
-            if(empty($password)){
-                throw new Exception('Password should be filled');
-            }
-
-            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
-
-                throw new Exception('Password has a wrong format<br>The password must contain at least 8 characters including numbers and upper and lower case letters');
-            }
-
-            if(empty($confirm_password)){
-                throw new Exception('Confirm password should be filled');
-            }
-
-
-            if($password!= $confirm_password){
-                throw new Exception('Passwords mismatched');
-            }
-            /**
-             * //////////////////////////////////////////////////////
-             */
-
-            if(empty($skype)){
-                $skype = 'NO';
-            }
-
 
             $user =DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s',$email, $phone);
 
             if($user){
-                throw new Exception('Account with this email or phone already exist');
+                throw new Exception('Вы уже подали заявку, ожидайте когда с вами свяжется наш преподователь.');
             }else{
                 /**
                  * Register new student
                  */
-                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, LastName, Email, Phone, Skype, Password, Ip, Referal) VALUES (?s,?s,?s,?s,?s,?s,?s,?s)',
-                    $first_name, $last_name, $email, $phone, $skype, $password, $_SERVER['REMOTE_ADDR'],  md5(getenv("REMOTE_ADDR") . "key" . time()));
+
+                /**
+                 * Generate new random password
+                 */
+                $chars="qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP";
+                $max=12;
+                $size=StrLen($chars)-1;
+                $password=null;
+                while($max--){
+                    $password.=$chars[rand(0,$size)];
+                }
+
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_students (FirstName, Password,  Email, Phone, Ip, Referal) VALUES (?s,?s,?s,?s,?s,?s)',
+                    $first_name, $password ,$email, $phone, $_SERVER['REMOTE_ADDR'],  md5(getenv("REMOTE_ADDR") . "key" . time()));
+
+                $mail = new EmailSender();
+                $message = file_get_contents(URL_ROOT.'/views/email/templates/WelcomeEmail.html');
+
+                $personal_data = array(
+                    'FirstName'=> $first_name,
+                    'Email'=> $email,
+                    'Date'=>date('Y-m-d'),
+                    'Time'=>date('H-i'),
+                    'WebSite'=> $_SERVER['HTTP_HOST'],
+                    'Phone'=> $phone,
+                    'Password'=>$password
+                );
+
+                $mail->sendEmail($email,'Добро Пожаловать',$message,  $personal_data);
             }
 
 
-            echo '<script>document.getElementById(\'register-new-user-form\').reset();</script>';
+            echo '<script>$("#name").val(\'\');</script>';
+            echo '<script>$("#email").val(\'\');</script>';
+            echo '<script>$("#phone").val(\'\');</script>';
             echo '<script>$("#register-new-user-block").remove();</script>';
             echo '<script>$("#register-new-user-message").append(\'Done\');</script>';
 
@@ -534,10 +517,10 @@ class ajax_model
                 throw new Exception('Password should be filled');
             }
 
-            if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
+            /*if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
 
                 throw new Exception('Password has a wrong format<br>The password must contain at least 8 characters including numbers and upper and lower case letters');
-            }
+            }*/
 
 
 

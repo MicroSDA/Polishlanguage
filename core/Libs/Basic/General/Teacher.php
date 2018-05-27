@@ -185,10 +185,12 @@ class Teacher
 
                     DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET AvailableTime=?s WHERE id=?i',$array_out,  $id);
 
+
                 }catch (Exception $e){
 
                     echo $e->getMessage();
                 }
+
 
                 return true;
                 break;

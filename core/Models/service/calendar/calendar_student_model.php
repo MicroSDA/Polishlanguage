@@ -196,6 +196,7 @@ class calendar_student_model extends Model
                     if ($days['totalDays'] >= $days['maxDays']) {
 
                         echo 'Вы достигли лимита на текущем курсе';
+
                     } else {
                         $teacher = new Teacher();
                         $availebleTime = json_decode($teacherDB[0]['AvailableTime'], true);
@@ -215,6 +216,25 @@ class calendar_student_model extends Model
                                     $_POST['Data'][0]['value'], $_POST['Data'][2]['value'], $this->student->getID(), $_POST['Data'][1]['value'],
                                     $token);
 
+                                $mail = new EmailSender();
+                                $message = file_get_contents(URL_ROOT.'/views/email/templates/NewLessonEmail.html');
+                                $personal_data = array(
+                                    'FirstName'=> $teacherDB[0]['FirstName'],
+                                    'Surname'=> $teacherDB[0]['LastName'],
+                                    'Email'=> $teacherDB[0]['Email'],
+                                    'Date'=>date('Y-m-d'),
+                                    'Time'=>date('H:i'),
+                                    'WebSite'=> $_SERVER['HTTP_HOST'],
+                                    'Phone'=> $teacherDB[0]['Phone'],
+                                    'Skype'=>$teacherDB[0]['Skype'],
+                                    'StudentFirstName' =>$this->student->getFIRSTNAME(),
+                                    'StudentSurname'=>$this->student->getLASTNAME(),
+                                    'StudentSkype'=>$this->student->getSKYPE(),
+                                    'LessonDate'=> $_POST['Data'][0]['value'],
+                                    'LessonTime'=> $_POST['Data'][2]['value']
+                                );
+
+                                $mail->sendEmail($teacherDB[0]['Email'],'Новый урок', $message,  $personal_data);
                                 echo 'Урок был назначаен, ожидайте звонка на ' . $this->student->getSKYPE();
 
 
@@ -228,6 +248,9 @@ class calendar_student_model extends Model
 
                     }
 
+                }else{
+
+                    echo 'У вас нет активных курсов для того что бы назначить урок';
                 }
 
 
