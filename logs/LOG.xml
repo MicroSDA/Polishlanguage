@@ -121,4 +121,37 @@
   <Log Time="05.27.18/12-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="399">Undefined index: skype</Log>
   <Log Time="05.27.18/12-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="400">Undefined index: password</Log>
   <Log Time="05.27.18/12-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="401">Undefined index: password-confirm</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="271">Undefined index: Skype</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="273">Undefined index: StudentFirstName</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="274">Undefined index: StudentSurname</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="275">Undefined index: StudentSkype</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="276">Undefined index: LessonDate</Log>
+  <Log Time="05.27.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="277">Undefined index: LessonTime</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="271">Undefined index: Skype</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="273">Undefined index: StudentFirstName</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="274">Undefined index: StudentSurname</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="275">Undefined index: StudentSkype</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="276">Undefined index: LessonDate</Log>
+  <Log Time="05.27.18/22-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="277">Undefined index: LessonTime</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="271">Undefined index: Skype</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="273">Undefined index: StudentFirstName</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="274">Undefined index: StudentSurname</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="275">Undefined index: StudentSkype</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="276">Undefined index: LessonDate</Log>
+  <Log Time="05.27.18/22-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="277">Undefined index: LessonTime</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="226">Undefined index: Skype</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="228">Undefined index: StudentFirstName</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="229">Undefined index: StudentSurname</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="230">Undefined index: StudentSkype</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="231">Undefined index: LessonDate</Log>
+  <Log Time="05.27.18/22-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="232">Undefined index: LessonTime</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="226">Undefined index: Skype</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="228">Undefined index: StudentFirstName</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="229">Undefined index: StudentSurname</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="230">Undefined index: StudentSkype</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="231">Undefined index: LessonDate</Log>
+  <Log Time="05.27.18/22-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="232">Undefined index: LessonTime</Log>
+  <Log Time="05.27.18/22-57" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.27.18/22-58" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.27.18/22-59" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="227">Undefined index: Password</Log>
 </Logs>

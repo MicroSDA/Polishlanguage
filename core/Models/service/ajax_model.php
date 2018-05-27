@@ -467,11 +467,13 @@ class ajax_model
                     'FirstName'=> $first_name,
                     'Email'=> $email,
                     'Date'=>date('Y-m-d'),
-                    'Time'=>date('H-i'),
+                    'Time'=>date('H:i'),
                     'WebSite'=> $_SERVER['HTTP_HOST'],
                     'Phone'=> $phone,
-                    'Password'=>$password
+                    'Password'=> $password
                 );
+
+
 
                 $mail->sendEmail($email,'Добро Пожаловать',$message,  $personal_data);
             }

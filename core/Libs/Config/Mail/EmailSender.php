@@ -209,12 +209,29 @@ class EmailSender
      * @param $to
      * @param $subject
      * @param $message
+     * @param $personal_data
      * @return bool
      */
-    public function sendViaSMTP($to, $subject, $message){
+    public function sendViaSMTP($to, $subject, $message,  $personal_data){
 
 
-        $this->MESSAGE = strtr($message, array('{TO}' => $to));
+        $this->MESSAGE = strtr($message, array(
+            '{FN}'=>$personal_data['FirstName'],
+            '{SN}'=>$personal_data['Surname'],
+            '{DATE}'=>$personal_data['Date'],
+            '{TIME}'=>$personal_data['Time'],
+            '{EMAIL}'=>$personal_data['Email'],
+            '{WEBSITE}'=>$personal_data['WebSite'],
+            '{PHONE}'=>$personal_data['Phone'],
+            '{SKYPE}'=>$personal_data['Skype'],
+            '{PASSWORD}'=>$personal_data['Password'],
+            '{S_FN}'=>$personal_data['StudentFirstName'],
+            '{S_SN}'=>$personal_data['StudentSurname'],
+            '{S_SKYPE}'=>$personal_data['StudentSkype'],
+            '{L_DATE}'=>$personal_data['LessonDate'],
+            '{L_TIME}'=>$personal_data['LessonTime'],
+
+        ));
 
         $headers = array(
             'From' => '<'.$this->THIRD_EMAIL_BOX.'>',
