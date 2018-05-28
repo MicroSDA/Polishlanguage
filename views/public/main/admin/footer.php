@@ -4,15 +4,13 @@
         <div class="row justify-content-md-center">
             <!--First column-->
             <div class="col-lg-10">
-                <h5 class="title">Contents</h5>
+                <h5 class="title"></h5>
             </div>
             <!--/.First column-->
             <!--Second column-->
             <div class="col-lg-2">
                 <h5 class="title"></h5>
                 <ul>
-                    <li><a href="https://github.com/MicroSDA/">GitHub</a></li>
-                    <li><a href="https://vk.com/id40372407">Vk</a></li>
                     <li><a href="/public/sitemap.xml">Site Map</a></li>
                 </ul>
             </div>
@@ -23,7 +21,7 @@
     <!--Copyright-->
     <div class="footer-copyright">
         <div class="container-fluid">
-            © 2018 Copyright: Ro
+            Developed and designed by Rodion Kovalenko<br>
         </div>
     </div>
     <!--/.Copyright-->

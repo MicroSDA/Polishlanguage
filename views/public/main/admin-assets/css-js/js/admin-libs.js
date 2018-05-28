@@ -1,19 +1,18 @@
+function editUrlValidate(form_id) {
 
-function editUrlValidate(form_id){
-
-    var this_data = $('#'+form_id).serializeArray();
+    var this_data = $('#' + form_id).serializeArray();
 
     //alert(this_data);
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/edit-url-validate/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/edit-url-validate/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             var obj = JSON.parse(html);
 
@@ -36,19 +35,19 @@ function editUrlValidate(form_id){
 
 };
 
-function editUrl(){
+function editUrl() {
 
     var this_data = $('#edit-url-form').serializeArray();
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/edit-url/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/edit-url/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#edit-url-message').empty();
             $('#edit-url-message').append(html);
@@ -59,20 +58,20 @@ function editUrl(){
 
 };
 
-function deleteUrlValidate(form_id){
+function deleteUrlValidate(form_id) {
 
-    var this_data = $('#'+form_id).serializeArray();
+    var this_data = $('#' + form_id).serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-url-validate/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-url-validate/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             var obj = JSON.parse(html);
 
@@ -87,20 +86,20 @@ function deleteUrlValidate(form_id){
 
 };
 
-function deleteUrl(){
+function deleteUrl() {
 
     var this_data = $('#delete-url-pattern').text();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-url/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-url/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#delete-url-message').empty();
             $('#delete-url-message').append(html);
@@ -118,13 +117,13 @@ function addNewUrl() {
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/add-url/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/add-url/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#add-new-url-message').empty();
             $('#add-new-url-message').append(html);
@@ -142,14 +141,14 @@ function addArticle() {
     var body = CKEDITOR.instances.article_body.getData();
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/add-article/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/add-article/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data,
-                body : body
+                body: body
             },
-        success: function (html){
+        success: function (html) {
 
             $('#add-article-error-message').empty();
             $('#add-article-error-message').append(html);
@@ -162,18 +161,18 @@ function addArticle() {
 
 function editArticleValidate(form_id) {
 
-    var this_data = $('#'+form_id).serializeArray();
+    var this_data = $('#' + form_id).serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/edit-article-validate/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/edit-article-validate/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             var obj = JSON.parse(html);
 
@@ -200,14 +199,14 @@ function editArticle() {
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/edit-article/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/edit-article/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data,
                 body: body
             },
-        success: function (html){
+        success: function (html) {
 
             $('#edit-article-message').empty();
             $('#edit-article-message').append(html);
@@ -217,20 +216,20 @@ function editArticle() {
     });
 }
 
-function deleteArticleValidate(form_id){
+function deleteArticleValidate(form_id) {
 
-    var this_data = $('#'+form_id).serializeArray();
+    var this_data = $('#' + form_id).serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-article-validate/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-article-validate/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             var obj = JSON.parse(html);
 
@@ -245,20 +244,20 @@ function deleteArticleValidate(form_id){
 
 };
 
-function deleteArticle(){
+function deleteArticle() {
 
     var this_data = $('#delete-article-url').text();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-article/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-article/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#delete-article-message').empty();
             $('#delete-article-message').append(html);
@@ -275,13 +274,13 @@ function addNewEmployee() {
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/add-employee/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/add-employee/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#add-new-employee-message').empty();
             $('#add-new-employee-message').append(html);
@@ -290,20 +289,20 @@ function addNewEmployee() {
     });
 }
 
-function addNewBlock(){
+function addNewBlock() {
 
     var this_data = $('#add-new-block-form').serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/add-block/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/add-block/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#add-new-block-message').empty();
             $('#add-new-block-message').append(html);
@@ -312,21 +311,21 @@ function addNewBlock(){
     });
 }
 
-function deleteBlockValidate(form_id){
+function deleteBlockValidate(form_id) {
 
 
-    var this_data = $('#'+form_id).serializeArray();
+    var this_data = $('#' + form_id).serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-block-validate/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-block-validate/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             var obj = JSON.parse(html);
 
@@ -347,13 +346,13 @@ function deleteBlock() {
 
     $.ajax({
         type: 'POST',
-        url:  '/ajax-admin/delete-block/',
-        headers: { "Ajax": "Ajax" },
+        url: '/ajax-admin/delete-block/',
+        headers: {"Ajax": "Ajax"},
         data:
             {
                 data: this_data
             },
-        success: function (html){
+        success: function (html) {
 
             $('#delete-block-message').empty();
             $('#delete-block-message').append(html);
@@ -364,28 +363,60 @@ function deleteBlock() {
 
 
 function uploadLesson() {
-        var name =  $('#lesson-name').val();
-        var level=  $('#lesson-level').val();
-        var file_data = $('#upload-file').prop('files')[0];
-        var form_data = new FormData();
-        form_data.append('file', file_data);
-        form_data.append('name',name);
-        form_data.append('level',level);
+    var name = $('#lesson-name').val();
+    var level = $('#lesson-level').val();
+    var file_data = $('#upload-file').prop('files')[0];
+    var form_data = new FormData();
+    form_data.append('file', file_data);
+    form_data.append('name', name);
+    form_data.append('level', level);
+    $.ajax({
+        url: '/ajax-admin/lesson-upload',
+        headers: {"Ajax": "Ajax"},
+        dataType: 'text',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function (html) {
+
+            $('#add-new-lesson-message').empty();
+            $('#add-new-lesson-message').append(html);
+
+        }
+    });
+
+}
+
+function fillNewsStudent(form_id, type) {
+
+    if (type === 'get') {
+
+        var data = $('#' + form_id).serializeArray();
+
+        $('#activate-student-message').empty();
+        $('#activateStudentForm [name=first-name]').val(data[0]['value']);
+        $('#activateStudentForm [name=email]').val(data[1]['value']);
+        $('#activateStudentForm [name=phone]').val(data[2]['value']);
+        $('#activate-students-modal').modal();
+
+    } else {
+
+        $('#activateStudentForm').submit(function(e) {  e.preventDefault();});
+        var this_data = $('#activateStudentForm').serializeArray();
+        console.log(this_data);
         $.ajax({
-            url: '/ajax-admin/lesson-upload',
-            headers: { "Ajax": "Ajax" },
-            dataType: 'text',
-            cache: false,
-            contentType: false,
-            processData: false,
-            data: form_data,
-            type: 'post',
-            success: function(html){
+            url: '/ajax-admin/activate-student',
+            headers: {"Ajax": "Ajax"},
+            data: this_data,
+            type: 'POST',
+            success: function (html) {
 
-                $('#add-new-lesson-message').empty();
-                $('#add-new-lesson-message').append(html);
-
+                $('#activate-student-message').empty();
+                $('#activate-student-message').append(html);
             }
         });
+    }
 
 }

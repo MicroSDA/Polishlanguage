@@ -240,6 +240,112 @@ class ajax_model
 
     }
 
+    public function activate_student(){
+
+
+        $first_name = trim($_POST['first-name'], " \t\n\r \v");
+        $surename = trim($_POST['surname'], " \t\n\r \v");
+        $email =  trim($_POST['email'], " \t\n\r \v");
+        $addinfo = trim($_POST['additionalInfo'], " \t\n\r \v");
+        $phone = trim($_POST['phone'], " \t\n\r \v");
+        $skype = trim($_POST['skype'], " \t\n\r \v");
+        $gender = trim($_POST['gender'], " \t\n\r \v");
+        $age = trim($_POST['age'], " \t\n\r \v");
+        $level = trim($_POST['level'], " \t\n\r \v");
+
+        try{
+
+            /**
+             * ///////////FIRS NAME/////////////////////////////////
+             */
+            if(empty($first_name)){
+                throw new Exception('Name should be filled');
+            }
+
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$first_name)){
+                throw new Exception('Name has a wrong format or contain spaces');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+
+            /**
+             * ///////////Surname/////////////////////////////////
+             */
+            if(empty($surename)){
+                throw new Exception('Surname should be filled');
+            }
+
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$surename)){
+                throw new Exception('Surname has a wrong format or contain spaces');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+            if(empty($email)){
+                throw new Exception('Student hasn\'t been found');
+            }
+
+            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$email)){
+                throw new Exception('Student hasn\'t been found');
+            }
+            /**
+             * ///////////PHONE//////////////////////////////////////
+             */
+            if(empty($phone) or $phone == '+'){
+                throw new Exception('Phone should be filled');
+            }
+
+            if(!preg_match('/^\+[0-9]{10,13}$/', $phone)){
+                throw new Exception('Phone has a wrong format or contain spaces');
+            }
+
+            if(empty($skype)){
+                throw new Exception('Skype should be filled');
+            }
+
+            if(empty($age)){
+                throw new Exception('Age should be filled');
+            }
+
+            if(!preg_match('/^[0-9]+$/u',$age)){
+                throw new Exception('Age has a wrong format or contain spaces');
+            }
+
+            if(empty($gender)){
+                throw new Exception('Gender should be filled');
+            }
+
+            if(empty($level)){
+                throw new Exception('Level should be filled');
+            }
+
+
+            $student = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_students WHERE Email=?s AND Status=?s', $email, 'not-active');
+
+            if($student){
+
+                $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET LastName=?s, Skype=?s, AddInfo=?s, Gender=?s, Age=?i, Level=?s, Status=?s WHERE Email=?s',
+                    $first_name, $skype, $addinfo, $gender, $age, $level, 'active', $email);
+
+                echo '<script>document.getElementById(\'activateStudentForm\').reset();</script>';
+
+                echo' <div style="text-align: center"><a href="/admin/secure/students/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+            }
+
+
+
+
+        }catch (Exception $e){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>'.$e->getMessage().'</h5></span></div>';
+        }
+
+    }
+
     public function add_block(){
 
         if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value'])){

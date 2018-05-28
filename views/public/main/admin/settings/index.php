@@ -1,6 +1,6 @@
 <body>
 <header>
-    <nav class="navbar navbar-expand-lg navbar-dark elegant-color" style="font-size: 85%">
+    <nav class="navbar navbar-expand-lg navbar-dark elegant-color" style="font-size: 75%">
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,31 +37,28 @@
         <!-- Nav tabs -->
         <ul class="nav nav-tabs nav-justified">
             <li class="nav-item">
-                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">System</a>
+                <a class="nav-link active" data-toggle="tab" href="#systemPanel" role="tab">System</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Theme</a>
+                <a class="nav-link" data-toggle="tab" href="#emailPanel" role="tab">Email</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Email</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Data Base</a>
+                <a class="nav-link" data-toggle="tab" href="#databasePanel" role="tab">Data Base</a>
             </li>
         </ul>
         <!-- Tab panels -->
         <div class="tab-content card">
             <!--Panel 1-->
-            <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+            <div class="tab-pane fade in show active" id="systemPanel" role="tabpanel">
                 <br>
                 <hr>
                 <div class="row">
                     <div class="col-lg-6 col-sm-12">
                         <div class="card">
                             <h4 class="card-title" style="text-align: center"><span
-                                        class="btn btn-outline-dark"><h5>Site Urls</h5></span></h4>
+                                        class="btn btn-outline-dark"><h5 class="ba">Site Urls</h5></span></h4>
                             <div class="card-title" style="text-align: center"><button
-                                        class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#add-new-url-modal"><h6>Add new</h6></button></div>
+                                        class="btn btn-outline-success ba" type="button" data-toggle="modal" data-target="#add-new-url-modal"><h6 class="ba">Add new</h6></button></div>
                             <div class="card-body" style="height:507px; overflow-y: auto; display: block">
                                 <h4 class="card-title"></h4>
                                 <p class="card-text"></p>
@@ -101,10 +98,10 @@
                                                     </select>
                                                 <?php endif ?>
                                                 <td>
-                                                    <button class="btn btn-outline-info" type="button" onclick="editUrlValidate('form-edit-<?=$i?>');">Change</button>
+                                                    <button class="btn btn-outline-info ba" type="button" onclick="editUrlValidate('form-edit-<?=$i?>');">Change</button>
                                                 </td>
                                                 <td>
-                                                    <button class="btn btn-outline-warning" type="button" onclick="deleteUrlValidate('form-edit-<?=$i?>');">Delete</button>
+                                                    <button class="btn btn-outline-warning ba" type="button" onclick="deleteUrlValidate('form-edit-<?=$i?>');">Delete</button>
                                                 </td>
                                                 <td  hidden><input  hidden name="model" type="text" value="<?= $value['Model'] ?>" required></td>
                                                 <td  hidden><input  hidden name="method" type="text" value="<?= $value['Method'] ?>" required></td>
@@ -148,7 +145,7 @@
                     <div class="col-lg-6 col-sm-12">
                         <div class="card">
                             <h4 class="card-title" style="text-align: center"><span
-                                        class="btn btn-outline-dark"><h5>System's</h5></span></h4>
+                                        class="btn btn-outline-dark"><h5 class="ba">System's</h5></span></h4>
                             <div class="card-body" style="height:350px;">
                                 <h4 class="card-title"></h4>
                                 <p class="card-text"></p>
@@ -157,10 +154,10 @@
                                 <br>
                                 <form class="form-control" action="" type="Get">
                                     <div>
-                                        <button type="submit" name="submit" value="site-map" class="btn btn-outline-primary"
+                                        <button type="submit" name="submit" value="site-map" class="btn btn-outline-primary ba"
                                                 href="">Generate Site Map
                                         </button>
-                                        <button type="submit" name="submit" value="reset-cache" class="btn btn-outline-warning"
+                                        <button type="submit" name="submit" value="reset-cache" class="btn btn-outline-warning ba"
                                                 href="">Reset Cache
                                         </button>
                                     </div>
@@ -179,23 +176,17 @@
             </div>
             <!--/.Panel 1-->
             <!--Panel 2-->
-            <div class="tab-pane fade" id="panel2" role="tabpanel">
+            <div class="tab-pane fade" id="emailPanel" role="tabpanel">
                 <br>
 
             </div>
             <!--/.Panel 2-->
             <!--Panel 3-->
-            <div class="tab-pane fade" id="panel3" role="tabpanel">
+            <div class="tab-pane fade" id="databasePanel" role="tabpanel">
                 <br>
 
             </div>
             <!--/.Panel 3-->
-            <!--Panel 4-->
-            <div class="tab-pane fade" id="panel3" role="tabpanel">
-                <br>
-
-            </div>
-            <!--/.Panel 4-->
         </div>
 
     </div>

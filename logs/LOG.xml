@@ -154,4 +154,310 @@
   <Log Time="05.27.18/22-57" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
   <Log Time="05.27.18/22-58" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="151">Invalid argument supplied for foreach()</Log>
   <Log Time="05.27.18/22-59" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="227">Undefined index: Password</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Admin</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Admin</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Admin</Log>
+  <Log Time="05.28.18/11-47" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: System Panel</Log>
+  <Log Time="05.28.18/11-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: System Panel</Log>
+  <Log Time="05.28.18/11-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/11-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Control Board</Log>
+  <Log Time="05.28.18/11-56" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-10" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-10" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-10" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-10" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-10" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-11" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-11" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-11" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-12" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-26" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-26" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-26" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-26" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-26" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="68">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="65">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="65">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-38" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-38" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Employee</Log>
+  <Log Time="05.28.18/18-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Students</Log>
+  <Log Time="05.28.18/18-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/18-40" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Students</Log>
+  <Log Time="05.28.18/18-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="64">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.28.18/19-05" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="65">Undefined variable: condition</Log>
+  <Log Time="05.28.18/19-05" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="65">Undefined variable: condition</Log>
+  <Log Time="05.28.18/19-05" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="65">Undefined variable: condition</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="226">Undefined index: Skype</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="228">Undefined index: StudentFirstName</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="229">Undefined index: StudentSurname</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="230">Undefined index: StudentSkype</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="231">Undefined index: LessonDate</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="232">Undefined index: LessonTime</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="220">Undefined index: Surname</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="226">Undefined index: Skype</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="228">Undefined index: StudentFirstName</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="229">Undefined index: StudentSurname</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="230">Undefined index: StudentSkype</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="231">Undefined index: LessonDate</Log>
+  <Log Time="05.28.18/19-11" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\Mail\EmailSender.php" Line="232">Undefined index: LessonTime</Log>
+  <Log Time="05.28.18/21-09" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="255">Undefined index: first_name</Log>
+  <Log Time="05.28.18/21-09" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="255">Undefined index: first_name</Log>
+  <Log Time="05.28.18/21-09" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="255">Undefined index: first_name</Log>
+  <Log Time="05.28.18/21-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="252">Undefined index: level</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="253">Undefined index: level</Log>
+  <Log Time="05.28.18/21-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="248">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-27" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-27" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="247">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-35" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-35" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-35" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-35" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-37" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-51" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-52" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/21-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-09" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-10" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionaInfo]</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo]</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
+  <Log Time="05.28.18/22-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="249">Undefined index: additionalInfo</Log>
 </Logs>

@@ -70,7 +70,7 @@
                 <js type="internal" url="/assets/js/" path="/css-js/js/login-and-register.js" file="login-and-register.js" hash="61eed2bbe0672fb1f1d056b2db1201f6"> </js>
             </Assets-Js>
         </Page>
-        <Page name="Admin">
+        <Page name="Control Board">
             <Assets-Css>
                 <css  type="internal" url="/assets/css/" path="/admin-assets/css-js/css/bootstrap.min.css" file="bootstrap.min.css" hash="909af5b5c3824673f9657ff22cf69baafsf"> </css>
                 <css  type="internal" url="/assets/css/" path="/admin-assets/css-js/css/mdb.min.css" file="mdb.min.css" hash="909af5b5c3824673f9657ff22cf69bas"> </css>
@@ -91,7 +91,7 @@
                 <js type="internal" url="/assets/js/" path="/admin-assets/css-js/js/ckeditor/editor/sample.js" file="sample.js" hash="44f27dbs39df6aee19b615b430f333a0"> </js>
             </Assets-Js>
         </Page>
-        <Page name="Admin Login">
+        <Page name="Control Board Login">
             <Assets-Css>
                 <css  type="internal" url="/assets/css/" path="/admin-assets/css-js/css/bootstrap.min.css" file="bootstrap.min.css" hash="909af5b5c3824673f9657ff22cf69baa"> </css>
                 <css  type="internal" url="/assets/css/" path="/admin-assets/css-js/css/mdb.min.css" file="mdb.min.css" hash="909af5b5c3824673f9657ff22cf69bas"> </css>

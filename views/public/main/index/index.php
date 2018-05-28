@@ -63,7 +63,7 @@
 
 
             <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success-outline display-4"
-                                                           href="tel:+1-234-567-8901">Войти&nbsp;</a></div>
+                                                           href="/login">Войти&nbsp;</a></div>
         </div>
     </nav>
 </section>

@@ -359,4 +359,18 @@ class admin_model extends Model
          */
         $this->render('admin/header.php','admin/footer.php');
     }
+
+    public function students(){
+
+
+        $students = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students');
+
+        DataManager::getInstance()->addData('Students',$students);
+
+
+        /**
+         * Render with admin header and footer
+         */
+        $this->render('admin/header.php','admin/footer.php');
+    }
 }
