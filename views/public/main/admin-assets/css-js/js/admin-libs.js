@@ -391,17 +391,16 @@ function uploadLesson() {
 
 function fillNewsStudent(form_id, type) {
 
+
     if (type === 'get') {
-
         var data = $('#' + form_id).serializeArray();
-
         $('#activate-student-message').empty();
         $('#activateStudentForm [name=first-name]').val(data[0]['value']);
         $('#activateStudentForm [name=email]').val(data[1]['value']);
         $('#activateStudentForm [name=phone]').val(data[2]['value']);
         $('#activate-students-modal').modal();
 
-    } else {
+    } else if(type === 'save'){
 
         $('#activateStudentForm').submit(function(e) {  e.preventDefault();});
         var this_data = $('#activateStudentForm').serializeArray();
@@ -417,6 +416,33 @@ function fillNewsStudent(form_id, type) {
                 $('#activate-student-message').append(html);
             }
         });
+
+    }else if(type === 'delete-ask'){
+        var data = $('#' + form_id).serializeArray();
+        $('#deleteStudentForm [name=email]').val(data[1]['value']);
+        $('#delete-students-modal').modal();
+
+    }else if(type === 'delete'){
+
+        var delete_data = $('#deleteStudentForm').serializeArray();
+
+        $.ajax({
+            url: '/ajax-admin/delete-student',
+            headers: {"Ajax": "Ajax"},
+            data: delete_data,
+            type: 'POST',
+            success: function (html) {
+
+                $('#delete-student-message').empty();
+                $('#delete-student-message').append(html);
+
+            }, error: function () {
+
+                $('#delete-student-message').empty();
+                $('#delete-student-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+            }
+        });
+
     }
 
 }

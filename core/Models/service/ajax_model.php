@@ -346,6 +346,22 @@ class ajax_model
 
     }
 
+    public function delete_student(){
+
+
+        try{
+
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+            DataBase::getInstance()->getDB()->query('DELETE FROM c_students WHERE Email=?s',$_POST['email']);
+            echo '<script>document.getElementById(\'deleteStudentForm\').reset();</script>';
+            echo' <div style="text-align: center"><a href="/admin/secure/students/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+        }catch (Exception $e){
+            $e->getMessage();
+        }
+
+    }
+
     public function add_block(){
 
         if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value'])){

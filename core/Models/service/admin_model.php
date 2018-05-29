@@ -56,7 +56,7 @@ class admin_model extends Model
                     /**
                      * If !Admin Login page, redirect to login page
                      */
-                    if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Admin Login'){
+                    if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Control Board Login'){
                         header('location:/admin/secure/login/'.$token[0]['Token'].'');
                     }
 
@@ -66,7 +66,7 @@ class admin_model extends Model
                 /**
                  * If !Admin Login page, redirect to login page
                  */
-                if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Admin Login'){
+                if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Control Board Login'){
                     header('location:/admin/secure/login/'.$token[0]['Token'].'');
                 }
             }
@@ -78,7 +78,7 @@ class admin_model extends Model
              * If cookies !isset and !Admin Login page redirect to login page
              */
 
-            if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Admin Login'){
+            if(UrlsDispatcher::getInstance()->getCurrentUrlData()['name'] !='Control Board Login'){
                 header('location:/admin/secure/login/'.$token[0]['Token'].'');
             }
         }
@@ -363,7 +363,7 @@ class admin_model extends Model
     public function students(){
 
 
-        $students = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students');
+        $students = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students ORDER BY id DESC');
 
         DataManager::getInstance()->addData('Students',$students);
 

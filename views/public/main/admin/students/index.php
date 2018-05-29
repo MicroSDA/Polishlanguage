@@ -72,10 +72,10 @@
                                         <td><?= $value['Email'] ?><input hidden name="email" type="text" value="<?= $value['Email'] ?>" required></td></td>
                                         <td><?= $value['Phone'] ?><input hidden name="phone" type="text" value="<?= $value['Phone'] ?>" required></td></td>
                                         <td>
-                                            <button class="btn btn-outline-info" type="button" onclick="fillNewsStudent('form-edit-<?= $i ?>','get');">Fill</button>
+                                            <button class="btn btn-outline-info ba" type="button" onclick="fillNewsStudent('form-edit-<?= $i ?>','get');">Fill</button>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-warning" type="button" onclick="('form-edit-<?= $i ?>');">Delete</button>
+                                            <button class="btn btn-outline-warning ba" type="button" onclick="fillNewsStudent('form-edit-<?= $i ?>','delete-ask');;">Delete</button>
                                         </td>
                                     </form>
                                 </tr>
@@ -119,10 +119,10 @@
                                         <td><?= $value['Email'] ?></td>
                                         <td><?= $value['Phone'] ?></td>
                                         <td>
-                                            <button class="btn btn-outline-info" type="button" onclick="('form-edit-<?= $i ?>');">Change</button>
+                                            <button class="btn btn-outline-info ba" type="button" onclick="('form-edit-<?= $i ?>');">Change</button>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-warning" type="button" onclick="('form-edit-<?= $i ?>');">Delete</button>
+                                            <button class="btn btn-outline-warning ba" type="button" onclick="('form-edit-<?= $i ?>');">Delete</button>
                                         </td>
                                     </form>
                                 </tr>
@@ -203,6 +203,29 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="delete-students-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                Are you sure ?
+            </div>
+            <div class="modal-body">
+                <form id="deleteStudentForm">
+                    <div style="text-align: center">
+                        <input type="text" name="email" class="form-control" PLACEHOLDER="" required hidden>
+                        <button class="btn btn-warning ba" type="button" onclick="fillNewsStudent('','delete')">Delete</button>
+                    </div>
+                    </td>
+                    <div id="delete-student-message" style="text-align: center"></div>
+                </form>
+                <div id="activate-student-message" style="text-align: center"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-warning ba" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
