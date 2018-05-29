@@ -40,7 +40,7 @@
 </header>
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="card">
                 <h4 class="card-title" style="text-align: center">
                     <span class="btn btn-outline-dark ba"><h5 class="ba">New Students</h5></span>
@@ -87,14 +87,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg-6 col-sm-12">
+        <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="card">
                 <h4 class="card-title" style="text-align: center">
                     <span class="btn btn-outline-dark ba"><h5 class="ba">All Students</h5></span>
                 </h4>
                 <div class="card-title" style="text-align: center">
                 </div>
-                <div class="card-body" style="height:507px; overflow-y: auto; display: block">
+                <div class="card-body" style="height:507px; overflow-y: auto; display: block;">
                     <h4 class="card-title"></h4>
                     <p class="card-text"></p>
                     <table class="table table-bordered">

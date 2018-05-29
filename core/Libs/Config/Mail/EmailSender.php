@@ -216,21 +216,20 @@ class EmailSender
 
 
         $this->MESSAGE = strtr($message, array(
-            '{FN}'=>$personal_data['FirstName'],
-            '{SN}'=>$personal_data['Surname'],
-            '{DATE}'=>$personal_data['Date'],
-            '{TIME}'=>$personal_data['Time'],
-            '{EMAIL}'=>$personal_data['Email'],
-            '{WEBSITE}'=>$personal_data['WebSite'],
-            '{PHONE}'=>$personal_data['Phone'],
-            '{SKYPE}'=>$personal_data['Skype'],
-            '{PASSWORD}'=>$personal_data['Password'],
-            '{S_FN}'=>$personal_data['StudentFirstName'],
-            '{S_SN}'=>$personal_data['StudentSurname'],
-            '{S_SKYPE}'=>$personal_data['StudentSkype'],
-            '{L_DATE}'=>$personal_data['LessonDate'],
-            '{L_TIME}'=>$personal_data['LessonTime'],
-
+            '{FN}'=> (isset($personal_data['FirstName']) ? $personal_data['FirstName']: 'NULL'),
+            '{SN}'=>(isset($personal_data['Surname']) ? $personal_data['Surname']: 'NULL'),
+            '{DATE}'=>(isset($personal_data['Date']) ? $personal_data['Date']: 'NULL'),
+            '{TIME}'=>(isset($personal_data['Time']) ? $personal_data['Time']: 'NULL'),
+            '{EMAIL}'=>(isset($personal_data['Email']) ? $personal_data['Email']: 'NULL'),
+            '{WEBSITE}'=>(isset($personal_data['WebSite']) ? $personal_data['WebSite']: 'NULL'),
+            '{PHONE}'=>(isset($personal_data['Phone']) ? $personal_data['Phone']: 'NULL'),
+            '{SKYPE}'=>(isset($personal_data['Skype']) ? $personal_data['Skype']: 'NULL'),
+            '{PASSWORD}'=>(isset($personal_data['Password']) ? $personal_data['Password']: 'NULL'),
+            '{S_FN}'=>(isset($personal_data['StudentFirstName']) ? $personal_data['StudentFirstName']: 'NULL'),
+            '{S_SN}'=>(isset($personal_data['StudentSurname']) ? $personal_data['StudentSurname']: 'NULL'),
+            '{S_SKYPE}'=>(isset($personal_data['StudentSkype']) ? $personal_data['StudentSkype']: 'NULL'),
+            '{L_DATE}'=>(isset($personal_data['LessonDate']) ? $personal_data['LessonDate']: 'NULL'),
+            '{L_TIME}'=>(isset($personal_data['LessonTime']) ? $personal_data['LessonTime']: 'NULL'),
         ));
 
         $headers = array(
@@ -278,21 +277,20 @@ class EmailSender
     public function sendViaServerProvider($to, $subject, $message, $personal_data){
 
         $this->MESSAGE = strtr($message, array(
-            '{FN}'=>$personal_data['FirstName'],
-            '{SN}'=>$personal_data['Surname'],
-            '{DATE}'=>$personal_data['Date'],
-            '{TIME}'=>$personal_data['Time'],
-            '{EMAIL}'=>$personal_data['Email'],
-            '{WEBSITE}'=>$personal_data['WebSite'],
-            '{PHONE}'=>$personal_data['Phone'],
-            '{SKYPE}'=>$personal_data['Skype'],
-            '{PASSWORD}'=>$personal_data['Password'],
-            '{S_FN}'=>$personal_data['StudentFirstName'],
-            '{S_SN}'=>$personal_data['StudentSurname'],
-            '{S_SKYPE}'=>$personal_data['StudentSkype'],
-            '{L_DATE}'=>$personal_data['LessonDate'],
-            '{L_TIME}'=>$personal_data['LessonTime'],
-
+            '{FN}'=> (isset($personal_data['FirstName']) ? $personal_data['FirstName']: 'NULL'),
+            '{SN}'=>(isset($personal_data['Surname']) ? $personal_data['Surname']: 'NULL'),
+            '{DATE}'=>(isset($personal_data['Date']) ? $personal_data['Date']: 'NULL'),
+            '{TIME}'=>(isset($personal_data['Time']) ? $personal_data['Time']: 'NULL'),
+            '{EMAIL}'=>(isset($personal_data['Email']) ? $personal_data['Email']: 'NULL'),
+            '{WEBSITE}'=>(isset($personal_data['WebSite']) ? $personal_data['WebSite']: 'NULL'),
+            '{PHONE}'=>(isset($personal_data['Phone']) ? $personal_data['Phone']: 'NULL'),
+            '{SKYPE}'=>(isset($personal_data['Skype']) ? $personal_data['Skype']: 'NULL'),
+            '{PASSWORD}'=>(isset($personal_data['Password']) ? $personal_data['Password']: 'NULL'),
+            '{S_FN}'=>(isset($personal_data['StudentFirstName']) ? $personal_data['StudentFirstName']: 'NULL'),
+            '{S_SN}'=>(isset($personal_data['StudentSurname']) ? $personal_data['StudentSurname']: 'NULL'),
+            '{S_SKYPE}'=>(isset($personal_data['StudentSkype']) ? $personal_data['StudentSkype']: 'NULL'),
+            '{L_DATE}'=>(isset($personal_data['LessonDate']) ? $personal_data['LessonDate']: 'NULL'),
+            '{L_TIME}'=>(isset($personal_data['LessonTime']) ? $personal_data['LessonTime']: 'NULL'),
           ));
 
 

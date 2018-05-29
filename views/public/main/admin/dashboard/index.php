@@ -50,7 +50,7 @@
             <br>
             <div class="card">
                 <h4 class="card-title" style="text-align: center"><span
-                            class="btn btn-outline-dark"><h5>Visitors</h5></span></h4>
+                            class="btn btn-outline-dark ba"><h5 class="ba">Visitors</h5></span></h4>
                 <div class="card-body">
                     <h4 class="card-title"></h4>
                     <p class="card-text"></p>
