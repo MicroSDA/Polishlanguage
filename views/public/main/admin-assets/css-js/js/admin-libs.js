@@ -400,9 +400,11 @@ function fillNewsStudent(form_id, type) {
         $('#activateStudentForm [name=phone]').val(data[2]['value']);
         $('#activate-students-modal').modal();
 
-    } else if(type === 'save'){
+    } else if (type === 'save') {
 
-        $('#activateStudentForm').submit(function(e) {  e.preventDefault();});
+        $('#activateStudentForm').submit(function (e) {
+            e.preventDefault();
+        });
         var this_data = $('#activateStudentForm').serializeArray();
         console.log(this_data);
         $.ajax({
@@ -417,12 +419,12 @@ function fillNewsStudent(form_id, type) {
             }
         });
 
-    }else if(type === 'delete-ask'){
+    } else if (type === 'delete-ask') {
         var data = $('#' + form_id).serializeArray();
         $('#deleteStudentForm [name=email]').val(data[1]['value']);
         $('#delete-students-modal').modal();
 
-    }else if(type === 'delete'){
+    } else if (type === 'delete') {
 
         var delete_data = $('#deleteStudentForm').serializeArray();
 
@@ -445,4 +447,59 @@ function fillNewsStudent(form_id, type) {
 
     }
 
+}
+
+function editStudent(form_id, type) {
+
+    if (type === 'get') {
+
+        var data = $('#form-edit-' + form_id).serializeArray();
+
+        console.log(data);
+        $('#edit-student-message').empty();
+
+        $('#editStudentForm [name=first-name]').val(data[0]['value']);
+        $('#editStudentForm [name=surname]').val(data[1]['value']);
+        $('#editStudentForm [name=email]').val(data[2]['value']);
+        $('#editStudentForm [name=phone]').val(data[3]['value'])
+        $('#editStudentForm [name=skype]').val(data[4]['value']);
+        $('#editStudentForm [name=additionalInfo]').val(data[5]['value']);
+        $('#editStudentForm [name=level]').val(data[6]['value']);
+        $('#editStudentForm [name=gender][value=' + data[7]['value'] + ']').prop('checked', true);
+        $('#editStudentForm [name=age]').val(data[8]['value']);
+        $('#editStudentForm [name=activeCourse]').val(data[9]['value']);
+
+        $('#courses-for-clone').html('');
+        var d = $('#courses-block-'+form_id).html();
+        $('#courses-for-clone').append(d);
+        $('#courses-for-clone').css('display', 'block');
+        $('#edit-students-modal').modal();
+
+
+        $('#change-student-message').empty();
+    } else if (type === 'save') {
+
+        $('#editStudentForm').submit(function (e) {
+            e.preventDefault();
+        });
+        var data = $('#editStudentForm').serializeArray();
+
+        console.log(data);
+        $.ajax({
+            url: '/ajax-admin/edit-student',
+            headers: {"Ajax": "Ajax"},
+            data: {'Data': data},
+            type: 'POST',
+            success: function (html) {
+
+                $('#change-student-message').empty();
+                $('#change-student-message').append(html);
+
+            }, error: function () {
+
+                $('#change-student-message').empty();
+                $('#change-student-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+            }
+        });
+    }
 }

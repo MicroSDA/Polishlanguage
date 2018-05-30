@@ -391,15 +391,14 @@ class Students
         $this->STATUS = $STATUS;
     }
 
-    public function addCourse($array, $id, $totalLessons, $maxLessons)
+    public function addCourse($s_id, $id, $name, $totalLessons, $maxLessons)
     {
 
-        $array_inc = $array;
         try {
 
-            if (!empty($array_inc)) {
+            if (!empty($this->COURSES)) {
 
-                foreach ($array_inc as $key => $value) {
+                foreach ($this->COURSES as $key => $value) {
 
                     if (array_search($id, $value)) {
 
@@ -408,20 +407,20 @@ class Students
 
                 }
 
-                array_push($array_inc, array('id' => $id, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
-                $array_out = json_encode($array_inc);
-                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(), $this->getEMAIL());
-                //$this->setAVAILIBLETIME($array_out);
+                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i', $array_out, $s_id);
+                $this->setCOURSES($this->COURSES);
 
                 return true;
 
             } else {
 
-                $array_inc = [];
-                array_push($array_inc, array('id' => $id, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
-                $array_out = json_encode($array_inc);
-                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i AND Email=?s', $array_out, $this->getID(), $this->getEMAIL());
-                //$this->setAVAILIBLETIME($array_out);
+                $this->COURSES = [];
+                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i', $array_out, $s_id);
+                $this->setCOURSES($this->COURSES);
 
                 return true;
             }
@@ -434,6 +433,23 @@ class Students
             echo $e->getMessage();
         }
 
+    }
+
+    public function deleteCourse($id, $s_id){
+
+        foreach ($this->COURSES as $key => $value) {
+
+            if (array_search($id, $value)) {
+                unset($this->COURSES[$key]);
+                $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i',$array_out, $s_id);
+                $this->setCOURSES($this->COURSES);
+                return true;
+            }
+
+        }
+
+        return false;
     }
 
     public function setCurrentCourse($id, $s_id)

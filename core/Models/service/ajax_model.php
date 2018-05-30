@@ -362,6 +362,174 @@ class ajax_model
 
     }
 
+
+    public function edit_student (){
+
+        $data =[];
+        $courses =[];
+
+        /**
+         * Separate courses and other data
+         */
+        foreach ($_POST['Data'] as $key=> $value){
+
+            if($key >= 10){
+                array_push($courses, array('id'=> $value['value']));
+            }else{
+
+                $data[$value['name']]=$value['value'];
+            }
+        }
+
+
+        $courses_delete =[];
+
+        $courses_db = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_courses');
+
+
+        /**
+         * Convert courses data by index id=index in the array
+         */
+        foreach ($courses_db as $key => $value){
+            $courses_delete[$value['id']]=$value['id'];
+        }
+
+        /**
+         * Prepare arr courses for delete
+         */
+        foreach ($courses as $value){
+            unset($courses_delete[$value['id']]);
+        }
+
+
+        $student_func = new Students();
+        $student = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_students WHERE Email=?s',$data['email']);
+        $student_func->setCOURSES(json_decode($student['Courses'],true));
+
+        /**
+         * Delete courses
+         */
+        foreach ($courses_delete as $value){
+           $student_func->deleteCourse($value, $student['id']);
+        }
+
+
+        $courses_add =[];
+        /**
+         * Prepare array for adding courses id=index array
+         */
+        foreach ($courses_db as $value){
+            $courses_add[$value['id']]['id']=$value['id'];
+            $courses_add[$value['id']]['Name']=$value['Name'];
+            $courses_add[$value['id']]['Period']=$value['Period'];
+        }
+
+        /**
+         * Add new courses
+         */
+       foreach ($courses as $value){
+
+            $student_func->addCourse($student['id'], $courses_add[$value['id']]['id'], $courses_add[$value['id']]['Name'],'0', $courses_add[$value['id']]['Period']);
+       }
+
+        $first_name = trim($data['first-name'], " \t\n\r \v");
+        $surename = trim($data['surname'], " \t\n\r \v");
+        $email =  trim($data['email'], " \t\n\r \v");
+        $addinfo = trim($data['additionalInfo'], " \t\n\r \v");
+        $phone = trim($data['phone'], " \t\n\r \v");
+        $skype = trim($data['skype'], " \t\n\r \v");
+        $gender = trim($data['gender'], " \t\n\r \v");
+        $age = trim($data['age'], " \t\n\r \v");
+        $level = trim($data['level'], " \t\n\r \v");
+        $active_cours = trim($data['activeCourse'], " \t\n\r \v");
+
+
+        try{
+
+
+           /**
+            * ///////////FIRS NAME/////////////////////////////////
+            */
+           if(empty($first_name)){
+               throw new Exception('Name should be filled');
+           }
+
+           if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$first_name)){
+               throw new Exception('Name has a wrong format or contain spaces');
+           }
+           /**
+            * //////////////////////////////////////////////////////
+            */
+
+           /**
+            * ///////////Surname/////////////////////////////////
+            */
+           if(empty($surename)){
+               throw new Exception('Surname should be filled');
+           }
+
+           if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$surename)){
+               throw new Exception('Surname has a wrong format or contain spaces');
+           }
+           /**
+            * //////////////////////////////////////////////////////
+            */
+           if(empty($email)){
+               throw new Exception('Student hasn\'t been found');
+           }
+
+           if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$email)){
+               throw new Exception('Student hasn\'t been found');
+           }
+           /**
+            * ///////////PHONE//////////////////////////////////////
+            */
+           if(empty($phone) or $phone == '+'){
+               throw new Exception('Phone should be filled');
+           }
+
+           if(!preg_match('/^\+[0-9]{10,13}$/', $phone)){
+               throw new Exception('Phone has a wrong format or contain spaces');
+           }
+
+           if(empty($skype)){
+               throw new Exception('Skype should be filled');
+           }
+
+           if(empty($age)){
+               throw new Exception('Age should be filled');
+           }
+
+           if(!preg_match('/^[0-9]+$/u',$age)){
+               throw new Exception('Age has a wrong format or contain spaces');
+           }
+
+           if(empty($gender)){
+               throw new Exception('Gender should be filled');
+           }
+
+           if(empty($level)){
+               throw new Exception('Level should be filled');
+           }
+
+
+           DataBase::getInstance()->getDB()->query('UPDATE c_students SET FirstName=?s, LastName=?s, Skype=?s, AddInfo=?s, Gender=?s, Age=?i, Level=?s, ActiveCourse=?i WHERE Email=?s',
+               $first_name, $surename, $skype, $addinfo, $gender, $age, $level, (int)$active_cours, $email);
+
+           //echo '<script>document.getElementById(\'activateStudentForm\').reset();</script>';
+
+           $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+            //echo '<script>document.getElementById(\'editStudentForm\').reset();</script>';
+           echo' <div style="text-align: center"><a href="/admin/secure/students/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+
+       }catch (Exception $e){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>'.$e->getMessage().'</h5></span></div>';
+
+       }
+
+    }
+
     public function add_block(){
 
         if(empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value'])){

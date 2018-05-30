@@ -629,4 +629,260 @@
   <Log Time="05.29.18/12-15" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\index_model.php" Line="44">Undefined index: StudentSkype</Log>
   <Log Time="05.29.18/12-15" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\index_model.php" Line="45">Undefined index: LessonDate</Log>
   <Log Time="05.29.18/12-15" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\index_model.php" Line="46">Undefined index: LessonTime</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Array to string conversion</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/18-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/18-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="378">Undefined index: name</Log>
+  <Log Time="05.29.18/19-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="388">Undefined index: name</Log>
+  <Log Time="05.29.18/19-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="388">Undefined index: name</Log>
+  <Log Time="05.29.18/19-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="388">Undefined index: name</Log>
+  <Log Time="05.29.18/19-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="388">Undefined index: name</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="136">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/19-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="141">Undefined variable: cours_value</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="394">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="411">Undefined variable: arr_out</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="395">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.29.18/22-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="394">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.29.18/22-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="394">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.29.18/22-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="394">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/22-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="133">Undefined index: Name</Log>
+  <Log Time="05.29.18/23-07" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="130">Undefined variable: s_c_value</Log>
+  <Log Time="05.29.18/23-07" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="128">Undefined variable: s_c_value</Log>
+  <Log Time="05.29.18/23-07" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="129">Undefined variable: s_c_value</Log>
+  <Log Time="05.30.18/13-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">Undefined index: </Log>
+  <Log Time="05.30.18/13-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">Undefined index: </Log>
+  <Log Time="05.30.18/13-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-23" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="374">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="378">array_push() expects parameter 1 to be array, null given</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/14-12" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="393">Array to string conversion</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="402">Undefined variable: array</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-17" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-18" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-18" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-18" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/15-28" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="408">Undefined index: </Log>
+  <Log Time="05.30.18/15-28" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="408">Undefined index: </Log>
+  <Log Time="05.30.18/15-28" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="408">Undefined index: </Log>
+  <Log Time="05.30.18/15-28" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="408">Undefined index: </Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="414">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="416">Array to string conversion</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-32" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="416">Array to string conversion</Log>
+  <Log Time="05.30.18/15-33" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-33" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-33" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-33" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/15-33" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="415">Illegal offset type</Log>
+  <Log Time="05.30.18/18-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-39" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="444">Undefined index: activeCourse</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-48" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-49" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-55" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="387">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
+  <Log Time="05.30.18/18-58" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="440">Invalid argument supplied for foreach()</Log>
 </Logs>

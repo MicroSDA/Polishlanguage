@@ -15,9 +15,9 @@
  */
 
    function arrayPrint($array_i){
-       echo '<pre>';
+       echo '<pre>'."\n";
        print_r($array_i);
-       echo '</pre>';
+       echo '</pre>'."\n";
    }
 
     $GLOBALS['time'] = microtime(true);
