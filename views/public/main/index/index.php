@@ -114,7 +114,7 @@
                 <div id="register-new-user-block"
                 <form id="register-new-user-form" class="mbr-form" >
                     <div class="mbr-subscribe input-group">
-                        <input class="form-control" type="text"  name="name" placeholder="First Name" id="name"required >
+                        <input class="form-control" type="text"  name="name" placeholder="First Name" id="name" required>
                         <input class="form-control" type="email" name="email" placeholder="Email" id="email" required >
                         <input class="form-control" type="text" name="phone" placeholder="Phone" id="phone" required >
                         <span class="input-group-btn">

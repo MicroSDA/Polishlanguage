@@ -151,7 +151,7 @@
                                             <button class="btn btn-outline-info ba" type="button" onclick="editStudent('<?=$value['id']?>','get');">Change</button>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-warning ba" type="button" onclick="editStudent('<?=$value['id']?>');">Delete</button>
+                                            <button class="btn btn-outline-warning ba" type="button" onclick="editStudent('<?=$value['id']?>','delete-ask');">Delete</button>
                                         </td>
                                     </form>
                                 </tr>

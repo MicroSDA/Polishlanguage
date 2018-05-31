@@ -363,6 +363,7 @@ function deleteBlock() {
 
 
 function uploadLesson() {
+
     var name = $('#lesson-name').val();
     var level = $('#lesson-level').val();
     var file_data = $('#upload-file').prop('files')[0];
@@ -420,6 +421,7 @@ function fillNewsStudent(form_id, type) {
         });
 
     } else if (type === 'delete-ask') {
+
         var data = $('#' + form_id).serializeArray();
         $('#deleteStudentForm [name=email]').val(data[1]['value']);
         $('#delete-students-modal').modal();
@@ -501,5 +503,12 @@ function editStudent(form_id, type) {
                 $('#change-student-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
             }
         });
+
+    }else if (type === 'delete-ask') {
+
+        var data = $('#form-edit-' + form_id).serializeArray();
+        $('#deleteStudentForm [name=email]').val(data[2]['value']);
+        $('#delete-students-modal').modal();
+
     }
 }

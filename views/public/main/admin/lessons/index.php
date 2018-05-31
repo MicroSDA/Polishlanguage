@@ -100,7 +100,14 @@
                             <input type="text" id="lesson-name" name="name" class="form-control" PLACEHOLDER="Name" required>
                         </div>
                         <div class="col-md-3">
-                           <input type="text" id="lesson-level" name="level"  class="form-control" PLACEHOLDER="level" required>
+                            <label class="control-label" for="name">Level</label>
+                            <select id ="lesson-level" name="lesson-level" class="form-control">
+                                <option value="A1">A1</option>
+                                <option value="A2">A2</option>
+                                <option value="B1">B1</option>
+                                <option value="B2">B2</option>
+                                <option value="C1">C1</option>
+                            </select>
                         </div>
                         <div class="col-md-6">
                             <input class="btn btn-outline-info" id="upload-file" type="file" name="upload" />
