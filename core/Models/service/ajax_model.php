@@ -331,6 +331,23 @@ class ajax_model
                 DataBase::getInstance()->getDB()->query('UPDATE c_students SET LastName=?s, Skype=?s, AddInfo=?s, Gender=?s, Age=?i, Level=?s, Status=?s WHERE Email=?s',
                     $first_name, $skype, $addinfo, $gender, $age, $level, 'active', $email);
 
+                $mail = new EmailSender();
+                $message = file_get_contents(URL_ROOT.'/views/email/templates/ActivationCompleteEmail.html');
+
+                $personal_data = array(
+                    'FirstName'=> $first_name,
+                    'Email'=> $email,
+                    'Date'=>date('Y-m-d'),
+                    'Time'=>date('H:i'),
+                    'WebSite'=> $_SERVER['HTTP_HOST'],
+                    'Phone'=> $phone,
+                    'Password'=> $student['Password']
+                );
+
+
+
+                $mail->sendEmail($email,'Активация завершена',$message,  $personal_data);
+
                 echo '<script>document.getElementById(\'activateStudentForm\').reset();</script>';
 
                 echo' <div style="text-align: center"><a href="/admin/secure/students/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';

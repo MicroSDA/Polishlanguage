@@ -112,7 +112,7 @@ $(document).ready(function () {
 
     });
 
-    setInterval(function() {$('#calendar').fullCalendar('refetchEvents'); }, 5000);
+    setInterval(function() {$('#calendar').fullCalendar('refetchEvents'); }, 60000);
 
 });
 

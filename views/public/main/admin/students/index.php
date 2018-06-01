@@ -130,10 +130,10 @@
                                         <input hidden name="activeCourse" type="text" value="<?= $value['ActiveCourse'] ?>" required>
                                         <div id="courses-block-<?=$value['id']?>" style="display: none;">
                                             <?php foreach ($value['Courses'] as $s_c_value): ?>
-                                            <?php if ($s_c_value['in-use']=='yes'): ?>
+                                            <?php if ($s_c_value['activity']=='active'): ?>
                                                     <div class="form-check form-check-inline">
                                                         <div class="form-check">
-                                                            <label class="form-check-input" for="cours-<?= $s_c_value['id'] ?>" ><?= $s_c_value['name'] ?></label>
+                                                            <label class="form-check-input" for="cours-<?= $s_c_value['id'] ?>" ><?= $s_c_value['name'] ?> - Lessons(C:<?= $s_c_value['totalLessons'] ?>, M:<?= $s_c_value['maxLessons'] ?>)</label>
                                                             <input type="checkbox" name="course-<?= $s_c_value['id'] ?>" id="cours-<?= $s_c_value['id'] ?>" value="<?= $s_c_value['id'] ?>" checked>
                                                         </div>
                                                     </div>

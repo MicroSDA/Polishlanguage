@@ -387,7 +387,9 @@ class admin_model extends Model
                 foreach ($student_value['Courses'] as $key => $value) {
 
                     if ($value['id'] == $cours_value['id']) {
-                        $arr_out[$i]['in-use']='yes';
+                        $arr_out[$i]['totalLessons'] = $value['totalLessons'];
+                        $arr_out[$i]['maxLessons'] = $value['maxLessons'];
+                        $arr_out[$i]['activity'] = $value['activity'];
                     }
                 }
 
@@ -401,7 +403,7 @@ class admin_model extends Model
 
         DataManager::getInstance()->addData('Students', $students);
         DataManager::getInstance()->addData('Courses', $courses);
-        DataManager::getInstance()->addData('Active-Courses', $courses);
+        //DataManager::getInstance()->addData('Active-Courses', $courses);
         /**
          * Render with admin header and footer
          */

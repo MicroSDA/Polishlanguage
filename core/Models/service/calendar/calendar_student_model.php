@@ -191,13 +191,15 @@ class calendar_student_model extends Model
 
 
                 $days = $this->student->getDaysInCurrentCourse($this->student->getID());
+                $coursActivity = $this->student->ifCourseActive($this->student->getID());
 
                 if ($days) {
                     if ($days['totalDays'] >= $days['maxDays']) {
 
                         echo 'Вы достигли лимита на текущем курсе';
 
-                    } else {
+                    } else if($coursActivity){
+
                         $teacher = new Teacher();
                         $availebleTime = json_decode($teacherDB[0]['AvailableTime'], true);
                         $token = md5(getenv("REMOTE_ADDR") . time()) . md5($_POST['Data'][0]['value'] . time()) . md5($_POST['Data'][2]['value'] . time());
@@ -246,6 +248,9 @@ class calendar_student_model extends Model
                             echo 'Время уже занято';
                         }
 
+                    }else{
+
+                        echo 'У вас нет активных курсов для того что бы назначить урок';
                     }
 
                 }else{

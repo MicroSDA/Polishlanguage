@@ -402,12 +402,20 @@ class Students
 
                     if (array_search($id, $value)) {
 
-                        return false;
+                        /**
+                         * set active course if already exist
+                         */
+                        $this->COURSES[$key]['activity'] ='active';
+                        $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
+                        DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i', $array_out, $s_id);
+                        $this->setCOURSES($this->COURSES);
+
+                        return true;
                     }
 
                 }
 
-                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons , 'activity'=>'active'));
                 $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
                 DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i', $array_out, $s_id);
                 $this->setCOURSES($this->COURSES);
@@ -417,7 +425,7 @@ class Students
             } else {
 
                 $this->COURSES = [];
-                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons));
+                array_push($this->COURSES , array('id' => $id, 'name'=> $name, 'totalLessons' => $totalLessons, 'maxLessons' => $maxLessons, 'activity'=>'active'));
                 $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
                 DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i', $array_out, $s_id);
                 $this->setCOURSES($this->COURSES);
@@ -426,7 +434,6 @@ class Students
             }
 
 
-            //return false;
 
         } catch (Error $e) {
 
@@ -440,7 +447,7 @@ class Students
         foreach ($this->COURSES as $key => $value) {
 
             if (array_search($id, $value)) {
-                unset($this->COURSES[$key]);
+                $this->COURSES[$key]['activity']= 'not-active';
                 $array_out = json_encode($this->COURSES ,JSON_UNESCAPED_UNICODE);
                 DataBase::getInstance()->getDB()->query('UPDATE c_students SET Courses=?s WHERE id=?i',$array_out, $s_id);
                 $this->setCOURSES($this->COURSES);
@@ -451,6 +458,7 @@ class Students
 
         return false;
     }
+
 
     public function setCurrentCourse($id, $s_id)
     {
@@ -510,6 +518,31 @@ class Students
                     if (array_search($arr[0]['ActiveCourse'], $value)) {
 
                         return array('totalDays' => $coursesArray[$key]['totalLessons'], 'maxDays' => $coursesArray[$key]['maxLessons']);
+                    }
+
+                }
+
+            }
+        }
+
+        return false;
+    }
+
+    public function ifCourseActive($s_id){
+
+        $arr = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE id=?i', $s_id);
+
+        if ($arr) {
+
+            $coursesArray = json_decode($arr[0]['Courses'], true);
+
+            if (!empty($coursesArray)) {
+
+                foreach ($coursesArray as $key => $value) {
+
+                    if (array_search($arr[0]['ActiveCourse'], $value) &&  $coursesArray[$key]['activity'] == 'active') {
+
+                      return true;
                     }
 
                 }

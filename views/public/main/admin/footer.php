@@ -21,7 +21,7 @@
     <!--Copyright-->
     <div class="footer-copyright">
         <div class="container-fluid">
-            Developed and designed by Rodion Kovalenko<br>
+            <!--Copyright- Developed and designed by Rodion Kovalenko<br> -->
         </div>
     </div>
     <!--/.Copyright-->

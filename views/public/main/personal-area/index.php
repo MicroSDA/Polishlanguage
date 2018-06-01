@@ -26,7 +26,6 @@
                                 <p>Почта: <?= DataManager::getInstance()->getDataByKey('Students')->getEMAIL() ?></p>
                                 <p>Телефон: <?= DataManager::getInstance()->getDataByKey('Students')->getPHONE() ?></p>
                                 <p>Skype: <?= DataManager::getInstance()->getDataByKey('Students')->getSkype() ?></p>
-                                <p>Доступные курсы: <?= DataManager::getInstance()->getDataByKey('Students')->getCOURSES() ?></p>
                                 <p>Уровень: <?= DataManager::getInstance()->getDataByKey('Students')->getLEVEL()?></p>
                                 <hr>
                                 <p>Дополнительная информация:
