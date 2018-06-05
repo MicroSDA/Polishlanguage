@@ -9,25 +9,32 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/dashboard/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Dashboard</a>
+                    <a class="nav-link"
+                       href="/admin/secure/dashboard/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Dashboard</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/articles/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Articles</a>
+                    <a class="nav-link"
+                       href="/admin/secure/articles/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Articles</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/employee/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Employee</a>
+                    <a class="nav-link"
+                       href="/admin/secure/employee/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Employee</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/entrance/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Entrance</a>
+                    <a class="nav-link"
+                       href="/admin/secure/entrance/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Entrance</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/students/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Students</a>
+                    <a class="nav-link"
+                       href="/admin/secure/students/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Students</a>
                 </li>
                 <li class="nav-item active">
-                    <a class="nav-link" href="/admin/secure/lessons/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Lessons</a>
+                    <a class="nav-link"
+                       href="/admin/secure/lessons/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Lessons</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="/admin/secure/settings/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Settings</a>
+                    <a class="nav-link"
+                       href="/admin/secure/settings/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Settings</a>
                 </li>
             </ul>
             <span class="navbar-text white-text">Welcome <span
@@ -44,7 +51,8 @@
             <span class="btn btn-outline-dark"><h5>Lessons</h5></span>
         </h4>
         <div class="card-title" style="text-align: center">
-            <button class="btn btn-outline-success" type="button" data-toggle="modal" data-target="#add-new-lesson-modal">
+            <button class="btn btn-outline-success" type="button" data-toggle="modal"
+                    data-target="#add-new-lesson-modal">
                 <h6>Add new</h6>
             </button>
         </div>
@@ -56,7 +64,7 @@
                 <tr style="color:white">
                     <th>#</th>
                     <th>Name</th>
-                    <th>Level</th>
+                    <th>Course</th>
                     <th></th>
                     <th></th>
                 </tr>
@@ -68,12 +76,16 @@
                         <form id="form-edit-<?= $i ?>" method="post">
                             <th scope="row"><?= $i ?></th>
                             <td><?= $value['Name'] ?></td>
-                            <td><?= $value['Level'] ?></td>
+                            <td><?= $value['CourseName'] ?></td>
                             <td>
-                                <button class="btn btn-outline-info" type="button" onclick="('form-edit-<?= $i ?>');">Change</button>
+                                <button class="btn btn-outline-info" type="button" onclick="('form-edit-<?= $i ?>');">
+                                    Change
+                                </button>
                             </td>
                             <td>
-                                <button class="btn btn-outline-warning" type="button" onclick="('form-edit-<?= $i ?>');">Delete</button>
+                                <button class="btn btn-outline-warning" type="button"
+                                        onclick="('form-edit-<?= $i ?>');">Delete
+                                </button>
                             </td>
                         </form>
                     </tr>
@@ -93,29 +105,63 @@
             <div class="modal-header">
             </div>
             <div class="modal-body">
-                <form id="add-new-employee-form">
-                    </form>
-                    <div class="form-row">
-                        <div class="col-md-9">
-                            <input type="text" id="lesson-name" name="name" class="form-control" PLACEHOLDER="Name" required>
-                        </div>
-                        <div class="col-md-3">
-                            <label class="control-label" for="name">Level</label>
-                            <select id ="lesson-level" name="lesson-level" class="form-control">
-                                <option value="A1">A1</option>
-                                <option value="A2">A2</option>
-                                <option value="B1">B1</option>
-                                <option value="B2">B2</option>
-                                <option value="C1">C1</option>
-                            </select>
-                        </div>
-                        <div class="col-md-6">
-                            <input class="btn btn-outline-info" id="upload-file" type="file" name="upload" />
-                        </div>
-                        <div class="col-md-6">
-                            <button class="btn btn-outline-success" id="upload-bnt" onclick="uploadLesson();">Upload</button>
+                <form id="add-new-lesson-form">
+                <div class="form-row">
+                    <div class="col-md-12">
+                        <input type="text" id="lesson-name" name="name" class="form-control" PLACEHOLDER="Name"
+                               required>
+                    </div>
+                    <div class="col-md-12">
+                        <textarea style="min-height: 150px" type="text" id="lesson-description"
+                                  name="lesson-description" class="form-control" PLACEHOLDER="Description"
+                                  required></textarea>
+                    </div>
+                    <div class="col-md-12">
+                        <label class="control-label" for="name">Level</label>
+                        <select id="lesson-course" name="lesson-course" class="form-control">
+                            <?php foreach (DataManager::getInstance()->getDataByKey('Courses') as $value): ?>
+                                <option name="<?= $value['Name'] ?>" value="<?= $value['id'] ?>"><?= $value['Name'] ?>
+                                    (<?= $value['Level'] ?>)
+                                </option>
+                            <?php endforeach ?>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label class="input-group-btn">
+                                <span class="btn btn btn-outline-info">
+                                    IMAGE&hellip; <input type="file" style="display: none;" id="upload-image" name="image">
+                                </span>
+                            </label>
+                            <input type="text" class="form-control" readonly>
                         </div>
                     </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label class="input-group-btn">
+                                <span class="btn btn btn-outline-info">
+                                    PDF&hellip; <input type="file" style="display: none;" id="upload-pdf" name="pdf">
+                                </span>
+                            </label>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="input-group">
+                            <label class="input-group-btn">
+                                <span class="btn btn btn-outline-info">
+                                    AUDIO&hellip; <input type="file" style="display: none;" id="upload-audio" name="audio">
+                                </span>
+                            </label>
+                            <input type="text" class="form-control" readonly>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button class="btn btn-success" type="" id="upload-bnt" onclick="uploadLesson();">Upload
+                        </button>
+                    </div>
+                </div>
+                </form>
                 <br>
                 <br>
                 <div id="add-new-lesson-message"></div>

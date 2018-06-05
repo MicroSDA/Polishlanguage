@@ -364,15 +364,25 @@ function deleteBlock() {
 
 function uploadLesson() {
 
+    $('#add-new-lesson-form').submit(function (e) {
+        e.preventDefault();
+    });
+
     var name = $('#lesson-name').val();
-    var level = $('#lesson-level').val();
-    var file_data = $('#upload-file').prop('files')[0];
+    var course = $('#lesson-course').val();
+    var description = $('#lesson-description').val();
+    var image_data = $('#upload-image').prop('files')[0];
+    var pdf_data = $('#upload-pdf').prop('files')[0];
+    var audio_data = $('#upload-audio').prop('files')[0];
     var form_data = new FormData();
-    form_data.append('file', file_data);
+    form_data.append('image', image_data);
+    form_data.append('pdf', pdf_data);
+    form_data.append('audio', audio_data);
     form_data.append('name', name);
-    form_data.append('level', level);
+    form_data.append('description', description);
+    form_data.append('course', course);
     $.ajax({
-        url: '/ajax-admin/lesson-upload',
+        url: '/ajax-admin/upload-lesson-material',
         headers: {"Ajax": "Ajax"},
         dataType: 'text',
         cache: false,
@@ -512,3 +522,31 @@ function editStudent(form_id, type) {
 
     }
 }
+
+$(function() {
+
+    // We can attach the `fileselect` event to all file inputs on the page
+    $(document).on('change', ':file', function() {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
+
+    // We can watch for our custom `fileselect` event like this
+    $(document).ready( function() {
+        $(':file').on('fileselect', function(event, numFiles, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+            if( input.length ) {
+                input.val(log);
+            } else {
+                if( log ) alert(log);
+            }
+
+        });
+    });
+
+});

@@ -290,8 +290,10 @@ class admin_model extends Model
     public function lessons()
     {
 
-        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf');
+        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf ORDER BY id DESC ');
+        $courses = DataBase::getInstance()->getDB()->getAll('SELECT  * FROM c_courses');
         DataManager::getInstance()->addData('Lessons', $lessons);
+        DataManager::getInstance()->addData('Courses', $courses);
         /**
          * Render with admin header and footer
          */

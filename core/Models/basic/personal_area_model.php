@@ -98,21 +98,34 @@ class personal_area_model extends Model
          */
 
 
-        $lessons_A1 = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Level=?s', 'A1');
-        $lessons_A2 = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Level=?s', 'A2');
-        $lessons_B1 = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Level=?s', 'B1');
-        $lessons_B2 = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Level=?s', 'B2');
-        $lessons_C1 = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Level=?s', 'C1');
 
-        DataManager::getInstance()->addData('LessonsA1', $lessons_A1);
-        DataManager::getInstance()->addData('LessonsA2', $lessons_A2);
-        DataManager::getInstance()->addData('LessonsB1', $lessons_B1);
-        DataManager::getInstance()->addData('LessonsB2', $lessons_B2);
-        DataManager::getInstance()->addData('LessonsC1', $lessons_C1);
+        $courses = json_decode($this->students->getCOURSES(),true);
 
+        //arrayPrint($courses);
+        /**
+         *
+        $data = $db->getInd('id','SELECT * FROM ?n WHERE id IN (?a)','table', array(1,2));
+         */
+        $coursese_array=[];
+        foreach ($courses as $key => $value){
+
+            if($value['activity']=='active')
+
+            array_push($coursese_array, $value['id']);
+        }
+
+        $lessons = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE CourseID IN (?a)',$coursese_array);
+        $lessons_out=[];
+        foreach ($lessons as $key=> $value){
+            $lessons_out[$value['CourseName']][]=$value;
+
+        }
+
+        DataManager::getInstance()->addData('Lessons', $lessons_out);
         DataManager::getInstance()->addData('Students', $this->students);
 
 
+       //arrayPrint($lessons_out);
         /**
          * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
          */

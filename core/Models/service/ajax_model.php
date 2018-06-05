@@ -604,90 +604,87 @@ class ajax_model
         }
     }
 
-    public function upload_pdf(){
+    public function upload_lesson_material(){
 
 
         header('Content-Type: text/plain; charset=utf-8');
 
         try {
 
-            if(empty($_POST['name']) or empty($_POST['level']) ){
+            if(empty($_POST['name']) or empty($_POST['course']) or empty($_POST['description'])){
 
-                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
-                die();
+                throw new RuntimeException('All fields should be filled.');
 
-            }else{
-
-                if(!DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_lessons_pdf WHERE Name=?s",$_POST['name'])){
-
-                    // Undefined | Multiple Files | $_FILES Corruption Attack
-                    // If this request falls under any of them, treat it invalid.
-                    if (!isset($_FILES['file']['error']) || is_array($_FILES['file']['error'])) {
-                        throw new RuntimeException('Invalid parameters.');
-                    }
-
-                    // Check $_FILES['upfile']['error'] value.
-                    switch ($_FILES['file']['error']) {
-                        case UPLOAD_ERR_OK:
-                            break;
-                        case UPLOAD_ERR_NO_FILE:
-                            throw new RuntimeException('No file sent.');
-                        case UPLOAD_ERR_INI_SIZE:
-                        case UPLOAD_ERR_FORM_SIZE:
-                            throw new RuntimeException('Exceeded filesize limit.');
-                        default:
-                            throw new RuntimeException('Unknown errors.');
-                    }
-
-                    // You should also check filesize here.
-                    if ($_FILES['file']['size'] > 100000000) {
-                        throw new RuntimeException('Exceeded filesize limit.');
-
-                    }
-
-                    // DO NOT TRUST $_FILES['upfile']['mime'] VALUE !!
-                    // Check MIME Type by yourself.
-                    $finfo = new finfo(FILEINFO_MIME_TYPE);
-                    if (false === $ext = array_search(
-                            $finfo->file($_FILES['file']['tmp_name']),
-                            array(
-                                'pdf' => 'application/pdf',
-                            ),
-                            true
-                        )) {
-                        throw new RuntimeException('Invalid file format.');
-                    }
-
-                    // You should name it uniquely.
-                    // DO NOT USE $_FILES['upfile']['name'] WITHOUT ANY VALIDATION !!
-                    // On this example, obtain safe unique name from its binary data.
-                    if (!move_uploaded_file($_FILES['file']['tmp_name'], sprintf('./private/content/lessons/%s',$_FILES['file']['name']))) {
-                        throw new RuntimeException('Failed to move uploaded file.');
-                    }
+            }else {
+                
+                       require_once URL_ROOT.'/core/Libs/Basic/General/FileUpload.php';
 
                     /**
-                     * Success
+                     * PDF Upload
                      */
+                       $file_upload = new FileUpload();
+                       $file_upload->upload('pdf',URL_ROOT.'/private/content/lessons/pdf/', array('pdf' => 'application/pdf'),1000000);
+                       $pdf_file_name = $file_upload->getFILENAME();
+                    /**
+                     * -------------------
+                     */
+
+
+                    /**
+                     * Image Upload
+                     */
+                    $file_upload->upload('image',
+                        URL_ROOT.'/private/content/lessons/images/',
+                        array('gif' => 'image/gif','jpeg'=>'image/jpeg',
+                            'png'=>'image/png'),
+                        1000000);
+                    $image_file_name = $file_upload->getFILENAME();
+                    $image_url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                        time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course'].'image');
+                    /**
+                     * -------------------
+                     */
+
+
+
+                    $audio_file_name = '';
+                    $audio_url = '';
+                    if(isset($_FILES['audio'])){
+                        /**
+                         * Audio Upload
+                         */
+                        $file_upload->upload('audio',URL_ROOT.'/private/content/lessons/audio/', array('mp3' => 'audio/mpeg'),1000000);
+                        $audio_file_name  = $file_upload->getFILENAME();
+                        $audio_url = md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                                time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course']);
+                        /**
+                         * -------------------
+                         */
+                    }
+
+
+                       $pdf_url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name']);
+                       $course = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_courses WHERE id=?i',$_POST['course']);
+
+                       DataBase::getInstance()->getDB()->query("INSERT INTO c_lessons_pdf (Name, FileName, AudioFileName, ImageFileName, Description, CourseID, CourseName, PdfUrl, AudioUrl, ImageUrl) VALUES (?s, ?s, ?s, ?s, ?s, ?i, ?s, ?s, ?s, ?s)"
+                           ,$_POST['name'], $pdf_file_name, $audio_file_name, $image_file_name, $_POST['description'], $_POST['course'] , $course['Name'],
+                           $pdf_url, $audio_url, $image_url);
+
+
                     $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+
+                    echo '<script>document.getElementById(\'add-new-lesson-form\').reset();</script>';
+
+
                     echo' <form type="Get" action="">';
+
                     echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+
                     echo' </form>';
 
-
-
-                    $url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
-                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name']);
-                    DataBase::getInstance()->getDB()->query("INSERT INTO c_lessons_pdf (Name, FileName, Level, Url) VALUES (?s, ?s, ?s, ?s)",$_POST['name'],
-                        $_FILES['file']['name'], $_POST['level'],$url);
-
-                }else{
-
-                    echo '<div style="text-align: center"><span class="btn btn-warning"><h5>Name already exist</h5></span></div>';
-                    die();
-                }
-
             }
-
 
         } catch (RuntimeException $e) {
 

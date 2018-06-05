@@ -137,13 +137,13 @@ class file_manager_model
 
                 if (isset($_GET['hash'])) {
 
-                    $file = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE Url=?s', $_GET['hash']);
+                    $file = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE PdfUrl=?s', $_GET['hash']);
 
                     if ($file) {
 
 
                         $file_name = $file[0]['FileName'];
-                        $file_path = URL_ROOT . '/private/content/lessons/' . $file_name;
+                        $file_path = URL_ROOT . '/private/content/lessons/pdf/' . $file_name;
 
                         if (file_exists($file_path)) {
 
@@ -184,4 +184,136 @@ class file_manager_model
         }
     }
 
+    public function download_logo()
+    {
+
+        $student = new Students();
+
+        /**
+         * /127.0.0.1/lessons-donwload-logo?hash=0c456d164d6d681cd6a6b5f1481f21cf2865500d1f1bba72f80cbb366477fc5db490e24aa53b2ce84f02f0f04619c3a3b2d8c6dd924e522db0ed0508191ef44c
+         */
+
+        if (isset($_SERVER['HTTP_REFERER'])) {
+
+
+            if($student->isLogin()){
+
+                if (isset($_GET['hash'])) {
+
+                    $file = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE ImageUrl=?s', $_GET['hash']);
+
+                    if ($file) {
+
+
+                        $file_name = $file[0]['ImageFileName'];
+                        $file_path = URL_ROOT . '/private/content/lessons/images/' . $file_name;
+
+                        $image_type = pathinfo(URL_ROOT . '/private/content/lessons/images/' . $file_name, PATHINFO_EXTENSION);
+
+                        switch ($image_type){
+                            case 'jpeg':
+                                $image_type = 'image/jpeg';
+                            case 'png':
+                                $image_type = 'image/png';
+                            case 'gif':
+                                $image_type = 'image/gif';
+                        }
+
+                        if (file_exists($file_path)) {
+
+
+                            header('Content-Description: File Transfer');
+                            header('Content-Type: application/octet-stream');
+                            header('Content-Disposition: attachment; filename="'. $file_name);
+                            header("Content-type: ".$image_type."");//Get and show report format
+                            header("Content-Transfer-Encoding: binary");
+                            header("Accept-Ranges: bytes");
+                            header("Content-Length: " . filesize($file_path));
+                            readfile($file_path);
+                            exit();
+
+                        } else {
+
+                            header('Location:/');
+                        }
+
+                    } else {
+
+                        header('Location:/');
+                    }
+
+                } else {
+
+                    header('Location:/');
+                }
+
+            }else{
+
+                header('Location:/');
+            }
+        }else{
+            header('Location:/');
+        }
+
+    }
+
+    public function download_audio()
+    {
+
+        $student = new Students();
+        /**
+         * /lessons-donwload?hash=
+         */
+        if (isset($_SERVER['HTTP_REFERER'])) {
+
+            if($student->isLogin()){
+
+                if (isset($_GET['hash'])) {
+
+                    $file = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons_pdf WHERE AudioUrl=?s', $_GET['hash']);
+
+                    if ($file) {
+
+
+                        $file_name = $file[0]['AudioFileName'];
+                        $file_path = URL_ROOT . '/private/content/lessons/audio/' . $file_name;
+
+                        if (file_exists($file_path)) {
+
+                            header('Content-Description: File Transfer');
+                            header('Content-Type: application/octet-stream');
+                            header('Content-Disposition: attachment; filename="'. $file_name);
+                            header("Content-type: audio/mpeg");//Get and show report format
+                            header("Content-Transfer-Encoding: binary");
+                            header("Accept-Ranges: bytes");
+                            header("Content-Length: " . filesize($file_path));
+                            readfile($file_path);
+                            exit();
+
+                        } else {
+
+                            header('Location:/');
+                        }
+
+                    } else {
+
+                        header('Location:/');
+                    }
+
+                } else {
+
+                    header('Location:/');
+                }
+
+            }else{
+
+                header('Location:/');
+            }
+
+
+        }else{
+
+            header('Location:/');
+        }
+    }
 }
