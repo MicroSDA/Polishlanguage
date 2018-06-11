@@ -616,14 +616,14 @@ class ajax_model
                 throw new RuntimeException('All fields should be filled.');
 
             }else {
-                
+
                        require_once URL_ROOT.'/core/Libs/Basic/General/FileUpload.php';
 
                     /**
                      * PDF Upload
                      */
                        $file_upload = new FileUpload();
-                       $file_upload->upload('pdf',URL_ROOT.'/private/content/lessons/pdf/', array('pdf' => 'application/pdf'),1000000);
+                       $file_upload->upload('pdf',URL_ROOT.'/private/content/lessons/pdf/', array('pdf' => 'application/pdf'),10000000);
                        $pdf_file_name = $file_upload->getFILENAME();
                     /**
                      * -------------------
@@ -637,7 +637,7 @@ class ajax_model
                         URL_ROOT.'/private/content/lessons/images/',
                         array('gif' => 'image/gif','jpeg'=>'image/jpeg',
                             'png'=>'image/png'),
-                        1000000);
+                        10000000);
                     $image_file_name = $file_upload->getFILENAME();
                     $image_url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
                         time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course'].'image');
@@ -653,7 +653,7 @@ class ajax_model
                         /**
                          * Audio Upload
                          */
-                        $file_upload->upload('audio',URL_ROOT.'/private/content/lessons/audio/', array('mp3' => 'audio/mpeg'),1000000);
+                        $file_upload->upload('audio',URL_ROOT.'/private/content/lessons/audio/', array('mp3' => 'audio/mpeg'),10000000);
                         $audio_file_name  = $file_upload->getFILENAME();
                         $audio_url = md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
                                 time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course']);
@@ -683,6 +683,124 @@ class ajax_model
                     echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
 
                     echo' </form>';
+
+            }
+
+        } catch (RuntimeException $e) {
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+
+
+        }
+    }
+
+    public function change_lesson_material(){
+
+
+        header('Content-Type: text/plain; charset=utf-8');
+
+
+        try {
+
+            if(empty($_POST['name']) or empty($_POST['course']) or empty($_POST['description'])){
+
+                throw new RuntimeException('All fields should be filled.');
+
+            }else {
+
+                require_once URL_ROOT.'/core/Libs/Basic/General/FileUpload.php';
+                $file_upload = new FileUpload();
+
+                if($_POST['delete-audio'] == 'delete'){
+                    //$audio = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_lessons_pdf WHERE id=?i',$_POST['id']);
+                    DataBase::getInstance()->getDB()->query('UPDATE c_lessons_pdf Set AudioFileName=?s, AudioUrl=?s WHERE id=?i','','',$_POST['id']);
+                   /*if (file_exists(URL_ROOT . '/private/content/lessons/audio/'.$audio['AudioFileName'])) {
+                            unlink(URL_ROOT . '/private/content/lessons/audio/'.$audio['AudioFileName']);
+
+                    }*/
+
+                }
+
+                if(isset($_FILES['pdf'])){
+
+                    /**
+                     * PDF Upload
+                     */
+
+                    $file_upload->upload('pdf',
+                        URL_ROOT.'/private/content/lessons/pdf/',
+                        array('pdf' => 'application/pdf'),
+                        1000000);
+                    $pdf_file_name = $file_upload->getFILENAME();
+                    $pdf_url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name']);
+
+                    DataBase::getInstance()->getDB()->query("UPDATE c_lessons_pdf SET FileName=?s, PdfUrl=?s WHERE id=?i"
+                        ,$pdf_file_name,$pdf_url, $_POST['id']);
+                    /**
+                     * -------------------
+                     */
+                }
+
+                if(isset($_FILES['image'])){
+
+                    /**
+                     * Image Upload
+                     */
+                    $file_upload->upload('image',
+                        URL_ROOT.'/private/content/lessons/images/',
+                        array('gif' => 'image/gif','jpeg'=>'image/jpeg',
+                            'png'=>'image/png'),
+                        10000000);
+                    $image_file_name = $file_upload->getFILENAME();
+                    $image_url= md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course'].'image');
+                    DataBase::getInstance()->getDB()->query("UPDATE c_lessons_pdf SET ImageFileName=?s, ImageUrl=?s WHERE id=?i"
+                        ,$image_file_name, $image_url, $_POST['id']);
+                    /**
+                     * -------------------
+                     */
+                }
+
+
+                if(isset($_FILES['audio'])){
+                    /**
+                     * Audio Upload
+                     */
+                    $file_upload->upload('audio',
+                        URL_ROOT.'/private/content/lessons/audio/',
+                        array('mp3' => 'audio/mpeg'),
+                        1000000);
+                    $audio_file_name  = $file_upload->getFILENAME();
+                    $audio_url = md5(getenv("REMOTE_ADDR") . "key" . time()). md5(getenv("REMOTE_ADDR") . "key-2" .
+                            time()). md5(getenv("REMOTE_ADDR") . "key-3" . time()).  md5($_POST['name'].$_POST['course']);
+                    DataBase::getInstance()->getDB()->query("UPDATE c_lessons_pdf SET AudioFileName=?s, AudioUrl=?s WHERE id=?i"
+                        ,$audio_file_name, $audio_url, $_POST['id']);
+                    /**
+                     * -------------------
+                     */
+                }
+
+
+
+                $course = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_courses WHERE id=?i',$_POST['course']);
+
+
+                DataBase::getInstance()->getDB()->query("UPDATE c_lessons_pdf SET Name=?s, Description=?s, CourseID=?i, CourseName=?s WHERE id=?i"
+                    ,$_POST['name'], $_POST['description'],$_POST['course'],$course['Name'], $_POST['id']);
+
+
+                $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+
+                echo '<script>document.getElementById(\'add-new-lesson-form\').reset();</script>';
+
+
+                echo' <form type="Get" action="">';
+
+                echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+
+                echo' </form>';
 
             }
 

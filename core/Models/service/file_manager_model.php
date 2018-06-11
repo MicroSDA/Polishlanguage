@@ -196,7 +196,7 @@ class file_manager_model
         if (isset($_SERVER['HTTP_REFERER'])) {
 
 
-            if($student->isLogin()){
+
 
                 if (isset($_GET['hash'])) {
 
@@ -247,10 +247,7 @@ class file_manager_model
                     header('Location:/');
                 }
 
-            }else{
 
-                header('Location:/');
-            }
         }else{
             header('Location:/');
         }

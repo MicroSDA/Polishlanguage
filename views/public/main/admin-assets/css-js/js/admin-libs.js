@@ -400,6 +400,86 @@ function uploadLesson() {
 
 }
 
+function changeLesson(form_id, type){
+    switch (type){
+        case 'get':
+            var data = $('#' + form_id).serializeArray();
+            $('#edit-lesson-form')[0].reset()
+            $('#edit-lesson-form [name=audio-file-delete]').empty();
+
+            $('#edit-lesson-form [name=lessons-id]').val(data[0]['value']);
+            $('#edit-lesson-form [name=name]').val(data[1]['value']);
+            $('#edit-lesson-form [name=description]').val(data[2]['value']);
+            $('#edit-lesson-form [name=courseName]').val(data[3]['value']);
+            $('#edit-lesson-form [name=pdf-file-name]').val(data[5]['value']);
+            $('#edit-lesson-form [name=image-src]').prop('src','/lessons-donwload-logo?hash='+data[6]['value']);
+
+            if(data[8]['value']!==''){
+                $('#edit-lesson-form [name=audio-file-name]').val(data[8]['value']);
+                $('#edit-lesson-form [name=audio-file-delete]').append('<label style="margin-top:25px" for="delete-audio-checkbox">Delete?</label> <input id="delete-audio" name="delete-audio-checkbox" type="checkbox">');
+                $('#edit-lesson-form [name=audio-file-delete]').css('display', 'block');
+
+            }
+
+            $('#edit-lesson-modal').modal();
+             console.log(data);
+             break;
+        case 'change':
+
+            $('#edit-lesson-form').submit(function (e) {
+                e.preventDefault();
+            });
+
+            var id = $('#lessons-id').val();
+            var name = $('#change-name').val();
+            var description =$('#change-description').val();
+            var course = $('#change-course').val();
+            var delete_audio = 'not-delete';
+
+            if ($('#delete-audio').is(":checked"))
+            { delete_audio = 'delete';
+            }
+
+
+            var image_data = $('#change-image').prop('files')[0];
+            var pdf_data = $('#change-pdf').prop('files')[0];
+            var audio_data = $('#change-audio').prop('files')[0];
+            var form_data = new FormData();
+
+            form_data.append('id', id);
+            form_data.append('name', name);
+            form_data.append('description', description);
+            form_data.append('course', course);
+            form_data.append('delete-audio', delete_audio);
+            form_data.append('image', image_data);
+            form_data.append('pdf', pdf_data);
+            form_data.append('audio', audio_data);
+
+
+            $.ajax({
+                url: '/ajax-admin/change-lesson-material',
+                headers: {"Ajax": "Ajax"},
+                data:  form_data,
+                type: 'POST',
+                dataType: 'text',
+                cache: false,
+                contentType: false,
+                processData: false,
+                success: function (html) {
+
+                    $('#change-lesson-message').empty();
+                    $('#change-lesson-message').append(html);
+                }, error: function () {
+
+                }
+            });
+             break;
+        case 'delete':
+             alert('Delete:'+form_id);
+             break;
+    }
+}
+
 function fillNewsStudent(form_id, type) {
 
 

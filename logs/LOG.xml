@@ -711,4 +711,121 @@
   <Log Time="06.05.18/14-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
   <Log Time="06.05.18/14-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
   <Log Time="06.05.18/14-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.05.18/15-03" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/15-08" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/15-08" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.05.18/15-08" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/16-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.05.18/16-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.05.18/16-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.08.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.08.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.08.18/13-25" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.08.18/13-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.08.18/13-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.08.18/13-37" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.09.18/11-38" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-38" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-38" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined index: course</Log>
+  <Log Time="06.09.18/11-38" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.09.18/11-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.09.18/11-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.09.18/11-55" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.11.18/14-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Undefined offset: 0</Log>
+  <Log Time="06.11.18/14-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Undefined offset: 0</Log>
+  <Log Time="06.11.18/14-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Undefined offset: 0</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'name'</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'name'</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'name'</Log>
+  <Log Time="06.11.18/14-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">json_decode() expects parameter 1 to be string, array given</Log>
+  <Log Time="06.11.18/14-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">json_decode() expects parameter 1 to be string, array given</Log>
+  <Log Time="06.11.18/14-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">json_decode() expects parameter 1 to be string, array given</Log>
+  <Log Time="06.11.18/14-47" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="705">Illegal string offset ''</Log>
+  <Log Time="06.11.18/14-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="705">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-52" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/14-52" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'change-name'</Log>
+  <Log Time="06.11.18/14-52" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="702">Illegal string offset 'value'</Log>
+  <Log Time="06.11.18/15-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: pdf_file_name</Log>
+  <Log Time="06.11.18/15-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.11.18/15-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined index: courseName</Log>
+  <Log Time="06.11.18/15-11" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.11.18/15-34" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="768">Undefined variable: image_file_name</Log>
+  <Log Time="06.11.18/15-34" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_url</Log>
+  <Log Time="06.11.18/15-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.11.18/15-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.11.18/15-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="769">Undefined variable: image_file_name</Log>
+  <Log Time="06.11.18/15-43" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="770">Undefined variable: image_url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-22" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-23" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-23" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-23" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.11.18/16-25" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
 </Logs>
