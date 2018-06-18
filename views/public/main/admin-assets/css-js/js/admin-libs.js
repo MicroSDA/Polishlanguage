@@ -676,9 +676,31 @@ function changeCourse(form_id, type) {
             });
 
             break;
+        case 'delete-ask':
+            $('#delete-course-form [name=id]').val(form_id);
+            $('#delete-course-modal').modal();
+
+            break;
         case 'delete':
 
-            break
+            var delete_data = $('#delete-course-form').serializeArray();
+            $.ajax({
+                url: '/ajax-admin/delete-course',
+                headers: {"Ajax": "Ajax"},
+                data: delete_data,
+                type: 'POST',
+                success: function (html) {
+
+                    $('#delete-course-message').empty();
+                    $('#delete-course-message').append(html);
+
+                }, error: function () {
+
+                    $('#delete-course-message').empty();
+                    $('#delete-course-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+                }
+            });
+            break;
     }
 }
 

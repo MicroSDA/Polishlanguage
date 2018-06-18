@@ -889,4 +889,10 @@
   <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
   <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
   <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="136">Undefined index: activity</Log>
 </Logs>

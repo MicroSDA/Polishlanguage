@@ -100,7 +100,7 @@
                             </td>
                             <td>
                                 <button class="btn btn-outline-warning ba" type="button"
-                                        onclick="changeCourse('form-edit-<?= $i ?>','delete');">Delete
+                                        onclick="changeCourse(<?= $value['id'] ?>,'delete-ask');">Delete
                                 </button>
                             </td>
                         </form>
@@ -229,6 +229,29 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delete-course-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                Are you sure ?
+            </div>
+            <div class="modal-body">
+                <form id="delete-course-form">
+                    <div style="text-align: center">
+                        <input type="text" name="id" class="form-control" PLACEHOLDER="" required hidden>
+                        <button class="btn btn-warning ba" type="button" onclick="changeCourse('','delete')">Delete</button>
+                    </div>
+                    </td>
+                    <div id="delete-course-message" style="text-align: center"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-warning ba" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
