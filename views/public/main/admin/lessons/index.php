@@ -28,6 +28,9 @@
                     <a class="nav-link"
                        href="/admin/secure/students/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Students</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/admin/secure/courses/<?= DataManager::getInstance()->getDataByKey('admin-href')?>">Courses</a>
+                </li>
                 <li class="nav-item active">
                     <a class="nav-link"
                        href="/admin/secure/lessons/<?= DataManager::getInstance()->getDataByKey('admin-href') ?>">Lessons</a>

@@ -828,4 +828,65 @@
   <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
   <Log Time="06.11.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
   <Log Time="06.11.18/16-25" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.13.18/09-52" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.13.18/10-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.13.18/10-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.13.18/10-04" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.13.18/10-06" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.13.18/10-08" File="C:\xampp\htdocs\polishlanguage\core\Libs\DataBase\safemysql.class.php" Line="148">mysqli_connect(): (HY000/2002): No connection could be made because the target machine actively refused it.&#13;
+</Log>
+  <Log Time="06.15.18/14-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.15.18/14-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.15.18/14-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.15.18/14-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.17.18/12-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-21" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-21" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-21" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-21" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-21" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1177">preg_match(): No ending delimiter '^' found</Log>
+  <Log Time="06.17.18/12-47" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1193">Undefined index: Level</Log>
+  <Log Time="06.17.18/12-47" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1193">Undefined index: Name</Log>
+  <Log Time="06.17.18/12-47" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1193">Undefined index: Level</Log>
+  <Log Time="06.17.18/12-47" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1193">Undefined index: Level</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.18.18/12-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="136">Undefined index: activity</Log>
+  <Log Time="06.18.18/13-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
+  <Log Time="06.18.18/13-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1243">Undefined index: course-description</Log>
 </Logs>

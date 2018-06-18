@@ -603,6 +603,85 @@ function editStudent(form_id, type) {
     }
 }
 
+
+function addCourse() {
+
+    var data = $('#add-new-course-form').serializeArray();
+    $('#add-new-course-form').submit(function (e) {
+        e.preventDefault();
+    });
+    $.ajax({
+        url: '/ajax-admin/add-course',
+        headers: {"Ajax": "Ajax"},
+        data:  data,
+        type: 'POST',
+        success: function (html) {
+
+
+            $('#add-course-message').empty();
+            $('#add-course-message').append(html);
+
+        }, error: function () {
+
+            $('#add-course-message').empty();
+            $('#add-course-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+        }
+    });
+    console.log(data);
+
+
+}
+
+function changeCourse(form_id, type) {
+
+    switch (type){
+        case 'get':
+            var data = $('#'+form_id).serializeArray();
+
+            $('#change-course-message').empty();
+            $('#change-course-form [name=id]').val(data[0]['value']);
+            $('#change-course-form [name=name]').val(data[1]['value']);
+            $('#change-course-form [name=description]').val(data[2]['value']);
+            $('#change-course-form [name=level]').val(data[3]['value']);
+            $('#change-course-form [name=price]').val(data[4]['value']);
+            $('#change-course-form [name=duration]').val(data[5]['value']);
+            $('#change-course-form [name=score]').val(data[6]['value']);
+            $('#change-course-modal').modal();
+            console.log(data);
+            break;
+
+        case 'change':
+            $('#change-course-form').submit(function (e) {
+                e.preventDefault();
+            });
+
+            var data = $('#change-course-form').serializeArray();
+
+            $.ajax({
+                url: '/ajax-admin/edit-course',
+                headers: {"Ajax": "Ajax"},
+                data:  data,
+                type: 'POST',
+                success: function (html) {
+
+
+                    $('#change-course-message').empty();
+                    $('#change-course-message').append(html);
+
+                }, error: function () {
+
+                    $('#change-course-message').empty();
+                    $('#change-course-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+                }
+            });
+
+            break;
+        case 'delete':
+
+            break
+    }
+}
+
 $(function() {
 
     // We can attach the `fileselect` event to all file inputs on the page

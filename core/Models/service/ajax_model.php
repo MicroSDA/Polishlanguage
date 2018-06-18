@@ -795,7 +795,6 @@ class ajax_model
 
                 echo '<script>document.getElementById(\'add-new-lesson-form\').reset();</script>';
 
-
                 echo' <form type="Get" action="">';
 
                 echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
@@ -1125,22 +1124,22 @@ class ajax_model
         if(!preg_match('/^[1|2|3|4|5]$/', $_POST['Data'][0]['value'], $out)) {
 
             echo 'rating wrong format';
-            //die;
+            die;
         }
 
         if(!preg_match('/^[0-9]{4,4}[-][0-9]{2,2}[-][0-9]{2,2}$/', $_POST['Data'][2]['value'], $out)){
             echo 'date wrong format';
-            //die;
+            die;
         }
 
         if(!preg_match('/^[0-9]{2,2}[:][0-9]{2,2}$/', $_POST['Data'][3]['value'], $out)){
             echo 'time wrong format';
-            //die;
+            die;
         }
 
         if(!preg_match('/^[0-9a-zA-Z]+$/', $_POST['Data'][4]['value'], $out)){
             echo 'token wrong format';
-            //die;
+            die;
         }
 
 
@@ -1162,4 +1161,102 @@ class ajax_model
 
     }
 
+
+    public function add_course(){
+        try{
+            if(empty($_POST['name']) or
+                empty($_POST['course-description']) or
+                empty($_POST['level']) or
+                empty($_POST['price']) or
+                empty($_POST['duration'])){
+                throw new ErrorException('All fields should be filled ');
+
+            }
+
+            if(!preg_match('/^[0-9]*[.]?[0-9]+(?:[eE][-+]?[0-9]+)?$/',$_POST['price'], $out)) {
+
+                throw new ErrorException('Price has wrong format');
+            }
+
+            if(!preg_match('/^[0-9]+$/',$_POST['duration'], $out)) {
+
+                throw new ErrorException('Duration has wrong format');
+            }
+
+            if(!preg_match('/^[0-9]+$/',$_POST['score'], $out)) {
+
+                throw new ErrorException('Score has wrong format');
+            }
+
+            DataBase::getInstance()->getDB()->query('INSERT INTO c_courses (Name, Level, Description, Price, Period, Score) VALUES (?s,?s,?s,?i,?i,?i)',
+                $_POST['name'], $_POST['level'], $_POST['course-description'], $_POST['price'],$_POST['duration'],$_POST['score']);
+
+
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+            echo '<script>document.getElementById(\'add-new-course-form\').reset();</script>';
+
+            echo' <form type="Get" action="">';
+
+            echo' <div style="text-align: center"><a href="/admin/secure/courses/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+
+            echo' </form>';
+
+        }catch (ErrorException $e){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+        }
+
+
+        //
+    }
+
+    public function edit_course(){
+
+        try{
+            if( empty($_POST['id']) or
+                empty($_POST['name']) or
+                empty($_POST['description']) or
+                empty($_POST['level']) or
+                empty($_POST['price']) or
+                empty($_POST['duration'])){
+                throw new ErrorException('All fields should be filled ');
+
+            }
+
+            if(!preg_match('/^[0-9]*[.]?[0-9]+(?:[eE][-+]?[0-9]+)?$/',$_POST['price'], $out)) {
+
+                throw new ErrorException('Price has wrong format');
+            }
+
+            if(!preg_match('/^[0-9]+$/',$_POST['duration'], $out)) {
+
+                throw new ErrorException('Duration has wrong format');
+            }
+
+            if(!preg_match('/^[0-9]+$/',$_POST['score'], $out)) {
+
+                throw new ErrorException('Score has wrong format');
+            }
+
+            DataBase::getInstance()->getDB()->query('UPDATE c_courses SET Name=?s, Level=?s, Description=?s, Price=?i, Period=?i, Score=?i WHERE id=?i',
+                $_POST['name'], $_POST['level'], $_POST['description'], $_POST['price'],$_POST['duration'],$_POST['score'], $_POST['id']);
+
+
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+            echo '<script>document.getElementById(\'change-course-form\').reset();</script>';
+
+            echo' <form type="Get" action="">';
+
+            echo' <div style="text-align: center"><a href="/admin/secure/courses/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+
+            echo' </form>';
+
+        }catch (ErrorException $e){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+        }
+
+    }
   }

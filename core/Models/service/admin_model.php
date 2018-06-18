@@ -411,4 +411,19 @@ class admin_model extends Model
          */
         $this->render('admin/header.php', 'admin/footer.php');
     }
+
+    public function courses(){
+
+
+        $courses = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_courses ORDER BY id DESC');
+
+        if($courses){
+
+            DataManager::getInstance()->addData('Courses', $courses);
+        }
+        /**
+         * Render with admin header and footer
+         */
+        $this->render('admin/header.php', 'admin/footer.php');
+    }
 }
