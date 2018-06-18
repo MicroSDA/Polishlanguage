@@ -809,6 +809,25 @@ class ajax_model
 
 
         }
+
+
+    }
+
+    public function delete_lesson_material(){
+        
+        try {
+
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons_pdf WHERE id=?i", $_POST['id']);
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+            echo' <form type="Get" action="">';
+            echo' <div style="text-align: center"><a href="/admin/secure/lessons/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+            echo' </form>';
+
+        } catch (Exception $e) {
+
+            echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+        }
     }
 
     public function register_new_user(){

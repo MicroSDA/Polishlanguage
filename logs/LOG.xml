@@ -895,4 +895,7 @@
   <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
   <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
   <Log Time="06.18.18/13-49" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\students\index.php" Line="136">Undefined index: activity</Log>
+  <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
 </Logs>

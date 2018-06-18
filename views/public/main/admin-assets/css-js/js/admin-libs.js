@@ -474,9 +474,32 @@ function changeLesson(form_id, type){
                 }
             });
              break;
+        case 'delete-ask':
+
+            $('#delete-lesson-form [name=id]').val(form_id);
+            $('#delete-lesson-modal').modal();
+
+            break;
         case 'delete':
-             alert('Delete:'+form_id);
-             break;
+
+            var delete_data = $('#delete-lesson-form').serializeArray();
+            $.ajax({
+                url: '/ajax-admin/delete-lesson',
+                headers: {"Ajax": "Ajax"},
+                data: delete_data,
+                type: 'POST',
+                success: function (html) {
+
+                    $('#delete-lesson-message').empty();
+                    $('#delete-lesson-message').append(html);
+
+                }, error: function () {
+
+                    $('#delete-lesson-message').empty();
+                    $('#delete-lesson-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+                }
+            });
+            break;
     }
 }
 

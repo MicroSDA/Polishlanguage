@@ -96,7 +96,7 @@
                             </td>
                             <td>
                                 <button class="btn btn-outline-warning ba" type="button"
-                                        onclick="changeLesson('form-edit-<?= $i ?>','delete');">Delete
+                                        onclick="changeLesson(<?= $value['id'] ?>,'delete-ask');">Delete
                                 </button>
                             </td>
                         </form>
@@ -261,6 +261,29 @@
             </div>
             <div class="modal-footer">
                 <button class="btn btn-outline-warning" type="button" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="delete-lesson-modal" class="modal fade">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                Are you sure ?
+            </div>
+            <div class="modal-body">
+                <form id="delete-lesson-form">
+                    <div style="text-align: center">
+                        <input type="text" name="id" required hidden>
+                        <button class="btn btn-warning ba" type="button" onclick=" changeLesson('','delete')">Delete</button>
+                    </div>
+                    </td>
+                    <div id="delete-lesson-message" style="text-align: center"></div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-warning ba" type="button" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
