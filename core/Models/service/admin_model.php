@@ -426,4 +426,12 @@ class admin_model extends Model
          */
         $this->render('admin/header.php', 'admin/footer.php');
     }
+
+    public function teachers(){
+
+        $teachers = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher');
+        DataManager::getInstance()->addData('Teachers', $teachers);
+
+        $this->render('admin/header.php', 'admin/footer.php');
+    }
 }

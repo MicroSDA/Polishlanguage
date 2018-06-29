@@ -235,11 +235,6 @@ class ajax_model
 
     }
 
-    public function admin_delete_employee(){
-
-
-    }
-
     public function activate_student(){
 
 
@@ -814,7 +809,7 @@ class ajax_model
     }
 
     public function delete_lesson_material(){
-        
+
         try {
 
             DataBase::getInstance()->getDB()->query("DELETE FROM c_lessons_pdf WHERE id=?i", $_POST['id']);
@@ -1293,6 +1288,132 @@ class ajax_model
         } catch (Exception $e) {
 
             echo '<div style="text-align: center"><span class="btn btn-warning">'.$e->getMessage().'</span></div>.';
+        }
+    }
+
+    public function add_teacher(){
+
+        $first_name = trim($_POST['first-name'], " \t\n\r \v");
+        $surename = trim($_POST['surname'], " \t\n\r \v");
+        $email =  trim($_POST['email'], " \t\n\r \v");
+        $addinfo = trim($_POST['additionalInfo'], " \t\n\r \v");
+        $phone = trim($_POST['phone'], " \t\n\r \v");
+        $skype = trim($_POST['skype'], " \t\n\r \v");
+        $gender = trim($_POST['gender'], " \t\n\r \v");
+        $level = trim($_POST['level'], " \t\n\r \v");
+
+        try{
+
+            /**
+             * ///////////FIRS NAME/////////////////////////////////
+             */
+            if(empty($first_name)){
+                throw new Exception('Name should be filled');
+            }
+
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$first_name)){
+                throw new Exception('Name has a wrong format or contain spaces');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+
+            /**
+             * ///////////Surname/////////////////////////////////
+             */
+            if(empty($surename)){
+                throw new Exception('Surname should be filled');
+            }
+
+            if(!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u',$surename)){
+                throw new Exception('Surname has a wrong format or contain spaces');
+            }
+            /**
+             * //////////////////////////////////////////////////////
+             */
+            if(empty($email)){
+                throw new Exception('Email hasn\'t been found');
+            }
+
+            if(!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u' ,$email)){
+                throw new Exception('Email hasn\'t been found');
+            }
+            /**
+             * ///////////PHONE//////////////////////////////////////
+             */
+            if(empty($phone) or $phone == '+'){
+                throw new Exception('Phone should be filled');
+            }
+
+            if(!preg_match('/^\+[0-9]{10,13}$/', $phone)){
+                throw new Exception('Phone has a wrong format or contain spaces');
+            }
+
+            if(empty($skype)){
+                throw new Exception('Skype should be filled');
+            }
+
+            if(empty($gender)){
+                throw new Exception('Gender should be filled');
+            }
+
+            if(empty($level)){
+                throw new Exception('Level should be filled');
+            }
+
+
+            $teacher = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_teacher WHERE Email=?s AND Status=?s', $email, 'not-active');
+
+            if(!$teacher){
+
+                $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i',1);
+
+
+                DataBase::getInstance()->getDB()->query('INSERT INTO c_teacher(FirstName, LastName, Skype, Phone, AddInfo, Gender, Level, Status, Email) VALUES (?s,?s,?s,?s,?s,?s,?s,?s,?s)',
+                    $first_name, $surename, $skype, $phone, $addinfo, $gender, $level, 'active', $email);
+
+                $mail = new EmailSender();
+                $message = file_get_contents(URL_ROOT.'/views/email/templates/ActivationCompleteEmail.html');
+
+                /**
+                 * Generate new random password
+                 */
+                $chars="qazxswedcvfrtgbnhyujmkiolp1234567890QAZXSWEDCVFRTGBNHYUJMKIOLP";
+                $max=12;
+                $size=StrLen($chars)-1;
+                $password=null;
+                while($max--){
+                    $password.=$chars[rand(0,$size)];
+                }
+
+                $personal_data = array(
+                    'FirstName'=> $first_name,
+                    'Email'=> $email,
+                    'Date'=>date('Y-m-d'),
+                    'Time'=>date('H:i'),
+                    'WebSite'=> $_SERVER['HTTP_HOST'],
+                    'Phone'=> $phone,
+                    'Password'=> $password
+                );
+
+
+
+                $mail->sendEmail($email,'Активация завершена',$message,  $personal_data);
+
+                echo '<script>document.getElementById(\'add-new-teacher-form\').reset();</script>';
+
+                echo' <div style="text-align: center"><a href="/admin/secure/teachers/'.$token[0]['Token'].'"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
+            }else{
+
+                throw new Exception("Teacher was already added");
+            }
+
+
+
+
+        }catch (Exception $e){
+
+            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>'.$e->getMessage().'</h5></span></div>';
         }
     }
   }

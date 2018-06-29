@@ -727,6 +727,31 @@ function changeCourse(form_id, type) {
     }
 }
 
+function addTeacher() {
+    $('#add-new-teacher-form').submit(function (e) {
+        e.preventDefault();
+    });
+
+    var data = $('#add-new-teacher-form').serializeArray();
+    $.ajax({
+        url: '/ajax-admin/add-teacher',
+        headers: {"Ajax": "Ajax"},
+        data: data,
+        type: 'POST',
+        success: function (html) {
+
+            $('#add-new-teacher-message').empty();
+            $('#add-new-teacher-message').append(html);
+
+        }, error: function () {
+
+            $('#add-new-teacher-message').empty();
+            $('#add-new-teacher-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+        }
+    });
+
+}
+
 $(function() {
 
     // We can attach the `fileselect` event to all file inputs on the page

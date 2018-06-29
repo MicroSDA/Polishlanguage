@@ -898,4 +898,200 @@
   <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
   <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
   <Log Time="06.18.18/14-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.18.18/19-13" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="72">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-31" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Students</Log>
+  <Log Time="06.22.18/19-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="119">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-31" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-31" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="309">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-33" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="72">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-33" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Students</Log>
+  <Log Time="06.22.18/19-33" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="119">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-33" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-33" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="309">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-35" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="72">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-35" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Students</Log>
+  <Log Time="06.22.18/19-35" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="119">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-35" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-35" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="309">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="73">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Lessons</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="73">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="78">Undefined index: CourseName</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="80">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="81">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-38" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="81">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="80">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="81">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="80">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="81">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="130">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="81">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="131">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-39" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="209">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="131">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="209">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="131">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="209">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="82">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="89">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="132">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="210">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="83">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="89">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="90">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="133">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="211">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-41" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="89">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="90">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="133">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="211">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="84">Undefined index: Name</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="85">Undefined index: Description</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="89">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="90">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="91">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="134">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="212">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-44" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="86">Undefined index: CourseID</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="87">Undefined index: PdfUrl</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="88">Undefined index: FileName</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="89">Undefined index: ImageUrl</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="90">Undefined index: AudioUrl</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="91">Undefined index: AudioFileName</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="134">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/19-59" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="212">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-01" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="134">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-01" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/20-01" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="212">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-02" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="207">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-02" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/20-02" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="207">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-55" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="203">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-56" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="204">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-56" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
+  <Log Time="06.22.18/20-56" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="204">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.22.18/20-58" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="204">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/17-14" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="204">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/17-15" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/17-16" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/18-21" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/18-34" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="06.29.18/18-40" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
 </Logs>
