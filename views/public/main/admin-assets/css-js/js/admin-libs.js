@@ -400,8 +400,8 @@ function uploadLesson() {
 
 }
 
-function changeLesson(form_id, type){
-    switch (type){
+function changeLesson(form_id, type) {
+    switch (type) {
         case 'get':
             var data = $('#' + form_id).serializeArray();
             $('#edit-lesson-form')[0].reset()
@@ -412,9 +412,9 @@ function changeLesson(form_id, type){
             $('#edit-lesson-form [name=description]').val(data[2]['value']);
             $('#edit-lesson-form [name=courseName]').val(data[3]['value']);
             $('#edit-lesson-form [name=pdf-file-name]').val(data[5]['value']);
-            $('#edit-lesson-form [name=image-src]').prop('src','/lessons-donwload-logo?hash='+data[6]['value']);
+            $('#edit-lesson-form [name=image-src]').prop('src', '/lessons-donwload-logo?hash=' + data[6]['value']);
 
-            if(data[8]['value']!==''){
+            if (data[8]['value'] !== '') {
                 $('#edit-lesson-form [name=audio-file-name]').val(data[8]['value']);
                 $('#edit-lesson-form [name=audio-file-delete]').append('<label style="margin-top:25px" for="delete-audio-checkbox">Delete?</label> <input id="delete-audio" name="delete-audio-checkbox" type="checkbox">');
                 $('#edit-lesson-form [name=audio-file-delete]').css('display', 'block');
@@ -422,8 +422,8 @@ function changeLesson(form_id, type){
             }
 
             $('#edit-lesson-modal').modal();
-             console.log(data);
-             break;
+            console.log(data);
+            break;
         case 'change':
 
             $('#edit-lesson-form').submit(function (e) {
@@ -432,12 +432,12 @@ function changeLesson(form_id, type){
 
             var id = $('#lessons-id').val();
             var name = $('#change-name').val();
-            var description =$('#change-description').val();
+            var description = $('#change-description').val();
             var course = $('#change-course').val();
             var delete_audio = 'not-delete';
 
-            if ($('#delete-audio').is(":checked"))
-            { delete_audio = 'delete';
+            if ($('#delete-audio').is(":checked")) {
+                delete_audio = 'delete';
             }
 
 
@@ -459,7 +459,7 @@ function changeLesson(form_id, type){
             $.ajax({
                 url: '/ajax-admin/change-lesson-material',
                 headers: {"Ajax": "Ajax"},
-                data:  form_data,
+                data: form_data,
                 type: 'POST',
                 dataType: 'text',
                 cache: false,
@@ -473,7 +473,7 @@ function changeLesson(form_id, type){
 
                 }
             });
-             break;
+            break;
         case 'delete-ask':
 
             $('#delete-lesson-form [name=id]').val(form_id);
@@ -585,7 +585,7 @@ function editStudent(form_id, type) {
         $('#editStudentForm [name=activeCourse]').val(data[9]['value']);
 
         $('#courses-for-clone').html('');
-        var d = $('#courses-block-'+form_id).html();
+        var d = $('#courses-block-' + form_id).html();
         $('#courses-for-clone').append(d);
         $('#courses-for-clone').css('display', 'block');
         $('#edit-students-modal').modal();
@@ -617,7 +617,7 @@ function editStudent(form_id, type) {
             }
         });
 
-    }else if (type === 'delete-ask') {
+    } else if (type === 'delete-ask') {
 
         var data = $('#form-edit-' + form_id).serializeArray();
         $('#deleteStudentForm [name=email]').val(data[2]['value']);
@@ -636,7 +636,7 @@ function addCourse() {
     $.ajax({
         url: '/ajax-admin/add-course',
         headers: {"Ajax": "Ajax"},
-        data:  data,
+        data: data,
         type: 'POST',
         success: function (html) {
 
@@ -657,9 +657,9 @@ function addCourse() {
 
 function changeCourse(form_id, type) {
 
-    switch (type){
+    switch (type) {
         case 'get':
-            var data = $('#'+form_id).serializeArray();
+            var data = $('#' + form_id).serializeArray();
 
             $('#change-course-message').empty();
             $('#change-course-form [name=id]').val(data[0]['value']);
@@ -683,7 +683,7 @@ function changeCourse(form_id, type) {
             $.ajax({
                 url: '/ajax-admin/edit-course',
                 headers: {"Ajax": "Ajax"},
-                data:  data,
+                data: data,
                 type: 'POST',
                 success: function (html) {
 
@@ -752,10 +752,85 @@ function addTeacher() {
 
 }
 
-$(function() {
+function editTeacher(form_id, type) {
+
+    switch (type) {
+        case 'get':
+            var data = $('#' + form_id).serializeArray();
+            $('#edit-teacher-message').empty();
+            $('#edit-teacher-form [name=id]').val(data[0]['value']);
+            $('#edit-teacher-form [name=first-name]').val(data[1]['value']);
+            $('#edit-teacher-form [name=surname]').val(data[2]['value']);
+            $('#edit-teacher-form [name=email]').val(data[3]['value']);
+            $('#edit-teacher-form [name=level]').val(data[4]['value']);
+            $('#edit-teacher-form [name=status]').val(data[5]['value']);
+            $('#edit-teacher-form [name=phone]').val(data[6]['value']);
+            $('#edit-teacher-form [name=skype]').val(data[7]['value']);
+            $('#edit-teacher-form [name=addinfo]').val(data[8]['value']);
+
+            $('#edit-teacher-modal').modal();
+            console.log(data);
+
+            break;
+        case 'change':
+            $('#edit-teacher-form').submit(function (e) {
+                e.preventDefault();
+            });
+            var data = $('#edit-teacher-form').serializeArray();
+
+            $.ajax({
+                url: '/ajax-admin/edit-teacher',
+                headers: {"Ajax": "Ajax"},
+                data: data,
+                type: 'POST',
+                success: function (html) {
+
+
+                    $('#edit-teacher-message').empty();
+                    $('#edit-teacher-message').append(html);
+
+                }, error: function () {
+
+                    $('#edit-teacher-message').empty();
+                    $('#edit-teacher-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+                }
+            });
+
+            break;
+        case 'delete-ask':
+            $('#delete-teacher-form [name=id]').val(form_id);
+            $('#delete-teacher-modal').modal();
+
+            break;
+        case 'delete':
+            var delete_data = $('#delete-teacher-form').serializeArray();
+            $.ajax({
+                url: '/ajax-admin/delete-teacher',
+                headers: {"Ajax": "Ajax"},
+                data: delete_data,
+                type: 'POST',
+                success: function (html) {
+
+                    $('#delete-teacher-message').empty();
+                    $('#delete-teacher-message').append(html);
+
+                }, error: function () {
+
+                    $('#delete-teacher-message').empty();
+                    $('#delete-teacher-message').append('<div style="text-align: center"><span class="btn btn-warning"><h5>Error during connection to server</h5></span></div>');
+                }
+            });
+            break;
+    }
+
+    // edit-teacher-modal
+
+}
+
+$(function () {
 
     // We can attach the `fileselect` event to all file inputs on the page
-    $(document).on('change', ':file', function() {
+    $(document).on('change', ':file', function () {
         var input = $(this),
             numFiles = input.get(0).files ? input.get(0).files.length : 1,
             label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
@@ -763,16 +838,16 @@ $(function() {
     });
 
     // We can watch for our custom `fileselect` event like this
-    $(document).ready( function() {
-        $(':file').on('fileselect', function(event, numFiles, label) {
+    $(document).ready(function () {
+        $(':file').on('fileselect', function (event, numFiles, label) {
 
             var input = $(this).parents('.input-group').find(':text'),
                 log = numFiles > 1 ? numFiles + ' files selected' : label;
 
-            if( input.length ) {
+            if (input.length) {
                 input.val(log);
             } else {
-                if( log ) alert(log);
+                if (log) alert(log);
             }
 
         });
