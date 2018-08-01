@@ -1247,4 +1247,332 @@
   <Log Time="07.12.18/13-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
   <Log Time="07.12.18/13-36" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Courses</Log>
   <Log Time="07.12.18/13-36" File="C:\xampp\htdocs\polishlanguage\views\public\main\admin\teachers\index.php" Line="208">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-20" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-22" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-24" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-28" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="07.18.18/21-30" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.18.18/21-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-40" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/21-53" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.18.18/23-12" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.19.18/20-56" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="67">date() expects at least 1 parameter, 0 given</Log>
+  <Log Time="07.19.18/20-56" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="67">date() expects at least 1 parameter, 0 given</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/20-59" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+4' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+4' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+5' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+5' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+5' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+5' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+2' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+2' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-00" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+1' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'GMT+3' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-01" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-02" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/21-02" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\personal_area_model.php" Line="66">date_default_timezone_set(): Timezone ID 'Ukraine/Kiev' is invalid</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="363">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="363">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="363">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="363">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="363">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-17" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="364">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-18" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="364">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="364">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="364">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="360">Undefined index: Time</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="364">Undefined index: Date</Log>
+  <Log Time="07.19.18/22-19" File="C:\xampp\htdocs\polishlanguage\core\Models\service\calendar\calendar_student_model.php" Line="369">Object of class DateTime could not be converted to string</Log>
+  <Log Time="07.20.18/16-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-16" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-23" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\article_model.php" Line="33">Undefined offset: 0</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\article_model.php" Line="33">Undefined offset: 0</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\article_model.php" Line="33">Undefined offset: 0</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Models\basic\article_model.php" Line="33">Undefined offset: 0</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-28" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-29" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-29" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-29" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-29" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/16-30" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.20.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.20.18/18-54" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.22.18/20-41" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\settings\index.php" Line="53">Undefined variable: value</Log>
+  <Log Time="07.22.18/20-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\settings\index.php" Line="53">Undefined variable: value</Log>
+  <Log Time="07.22.18/20-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\settings\index.php" Line="51">Undefined variable: value</Log>
+  <Log Time="07.22.18/20-42" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\settings\index.php" Line="52">Undefined variable: value</Log>
+  <Log Time="07.22.18/20-43" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Student</Log>
+  <Log Time="07.22.18/20-43" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Student</Log>
+  <Log Time="07.22.18/20-43" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Student</Log>
+  <Log Time="07.22.18/20-43" File="C:\xampp\htdocs\polishlanguage\core\MVC\DataManager.php" Line="62">Undefined index: Student</Log>
+  <Log Time="07.22.18/20-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="177">Undefined index: Photo</Log>
+  <Log Time="07.22.18/20-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="177">Undefined index: Photo</Log>
+  <Log Time="07.22.18/20-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="177">Undefined index: Photo</Log>
+  <Log Time="07.22.18/20-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="177">Undefined index: Photo</Log>
+  <Log Time="07.22.18/20-46" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Students.php" Line="177">Undefined index: Photo</Log>
+  <Log Time="07.23.18/16-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1619">Undefined index: id</Log>
+  <Log Time="07.23.18/16-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1619">Undefined index: id</Log>
+  <Log Time="07.23.18/16-54" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1619">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-02" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-03" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-05" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.23.18/17-05" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1629">Undefined index: id</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(C:/xampp/htdocs/polishlanguage/public/photos/9b529d945adfe77d34f8652809e9e1ac712c4947bddcec7aba5f2f1c76710756/Account 2.png): failed to open stream: No such file or directory</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(): Unable to move 'C:\xampp\tmp\phpECAC.tmp' to 'C:/xampp/htdocs/polishlanguage/public/photos/9b529d945adfe77d34f8652809e9e1ac712c4947bddcec7aba5f2f1c76710756/Account 2.png'</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(C:/xampp/htdocs/polishlanguage/public/photos/9c0bdd832eee9fe43271b5a18833132c712c4947bddcec7aba5f2f1c76710756/Account 2.png): failed to open stream: No such file or directory</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(): Unable to move 'C:\xampp\tmp\php545.tmp' to 'C:/xampp/htdocs/polishlanguage/public/photos/9c0bdd832eee9fe43271b5a18833132c712c4947bddcec7aba5f2f1c76710756/Account 2.png'</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(C:/xampp/htdocs/polishlanguage/public/photos/9392103351269ef4998cdb39e3a87562712c4947bddcec7aba5f2f1c76710756/Account 2.png): failed to open stream: No such file or directory</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(): Unable to move 'C:\xampp\tmp\php16AC.tmp' to 'C:/xampp/htdocs/polishlanguage/public/photos/9392103351269ef4998cdb39e3a87562712c4947bddcec7aba5f2f1c76710756/Account 2.png'</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(C:/xampp/htdocs/polishlanguage/public/photos/ff9905fcf8e17e4bb9fde09196b5789f712c4947bddcec7aba5f2f1c76710756/Account 1.png): failed to open stream: No such file or directory</Log>
+  <Log Time="07.24.18/18-01" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\FileUpload.php" Line="134">move_uploaded_file(): Unable to move 'C:\xampp\tmp\php308E.tmp' to 'C:/xampp/htdocs/polishlanguage/public/photos/ff9905fcf8e17e4bb9fde09196b5789f712c4947bddcec7aba5f2f1c76710756/Account 1.png'</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-04" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-05" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-05" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-05" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): No such file or directory</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-06" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): File exists</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): File exists</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-07" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">mkdir(): File exists</Log>
+  <Log Time="07.24.18/18-09" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1717">Undefined index: id</Log>
+  <Log Time="07.24.18/18-13" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1717">Undefined index: id</Log>
+  <Log Time="07.24.18/18-13" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-13" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-14" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-15" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1706">Undefined index: id</Log>
+  <Log Time="07.24.18/18-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">Undefined index: id</Log>
+  <Log Time="07.24.18/18-16" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1707">Undefined index: id</Log>
+  <Log Time="07.24.18/18-36" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1708">Undefined index: id</Log>
+  <Log Time="07.24.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1716">Undefined index: id</Log>
+  <Log Time="07.24.18/22-31" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1716">Undefined index: id</Log>
+  <Log Time="07.24.18/22-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.24.18/22-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="07.24.18/22-53" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="07.25.18/00-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.25.18/00-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="07.25.18/00-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.25.18/00-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="07.25.18/00-48" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.25.18/00-49" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="07.25.18/20-40" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-42" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="07.25.18/20-45" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-45" File="C:\xampp\htdocs\polishlanguage\core\Libs\Basic\General\Teacher.php" Line="336">Undefined index: Photo</Log>
+  <Log Time="07.25.18/20-45" File="C:\xampp\htdocs\polishlanguage\core\Models\service\ajax_model.php" Line="1848">Undefined index: id</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Undefined index: Articles</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="75">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Undefined index: Articles</Log>
+  <Log Time="08.01.18/13-24" File="C:\xampp\htdocs\polishlanguage\core\Libs\Config\TemplateManager.php" Line="96">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-26" File="C:\xampp\htdocs\polishlanguage\core\Models\service\admin_model.php" Line="389">Invalid argument supplied for foreach()</Log>
+  <Log Time="08.01.18/13-30" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
+  <Log Time="08.01.18/13-30" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Url</Log>
+  <Log Time="08.01.18/13-30" File="C:\xampp\htdocs\polishlanguage\views\public\main\personal-area\contents\index.php" Line="88">Undefined index: Name</Log>
 </Logs>

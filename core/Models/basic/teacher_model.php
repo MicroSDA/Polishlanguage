@@ -240,4 +240,22 @@ class teacher_model extends Model
         $this->render();
     }
 
+
+    public function settings(){
+        if (!$this->teacher->isLogin()) {
+
+            header('Location:/login');
+            die();
+        }
+        /**
+         * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        DataManager::getInstance()->addData('Teacher', $this->teacher);
+        /**
+         * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        $this->render();
+    }
 }

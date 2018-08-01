@@ -34,6 +34,26 @@ class Teacher
     /**
      * @var
      */
+    private $PHOTO;
+
+    /**
+     * @return mixed
+     */
+    public function getPHOTO()
+    {
+        return $this->PHOTO;
+    }
+
+    /**
+     * @param mixed $PHOTO
+     */
+    public function setPHOTO($PHOTO)
+    {
+        $this->PHOTO = $PHOTO;
+    }
+    /**
+     * @var
+     */
     private $SKYPE;
     /**
      * @var
@@ -313,6 +333,7 @@ class Teacher
                 $this->ADD_INFO = $this->teacher_template[0]['AddInfo'];
                 $this->LEVEL = $this->teacher_template[0]['Level'];
                 $this->AVAILABLE_TIME = $this->teacher_template[0]['AvailableTime'];
+                $this->PHOTO = $this->teacher_template[0]['Photo'];
 
                 unset($this->teacher_template);
                 /**

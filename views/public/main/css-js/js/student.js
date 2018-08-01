@@ -30,7 +30,6 @@ $(document).ready(function () {
 
             dayEvents.forEach(function(item, i, dayEvents) {
                 if(clickData.toString() === moment(item.start).format().toString()) {
-                    //alert(moment(item.start).format());
                     eventDay.push(clickData);
                     eventTime = item.title;
                     return false;
@@ -71,19 +70,6 @@ $(document).ready(function () {
             }
 
 
-
-
-
-            /* if (moment().format('YYYY-MM-DD') === date.format('YYYY-MM-DD') || date.isAfter(moment())) {
-                 var clickData = date.format();
-                 $('#lessons-date').text(clickData);
-                 $('#myModal').modal()
-
-             } else {
-                 $('#error-message').text('This is past day, please choose available days');
-                 $('#messageModal').modal()
-
-             }*/
         }
 
     });
@@ -241,3 +227,88 @@ function addFeedback() {
     });
 }
 
+
+function changePassword() {
+
+    var data = $('#change-password-form').serializeArray();
+
+    $('#change-password-form').submit(function (e) {
+        e.preventDefault();
+    });
+
+    $.ajax({
+        type: 'POST',
+        url: '/change-password',
+        headers: {"Ajax": "Ajax"},
+        data: data,
+        cache: false,
+        success: function (html) {
+
+            $('#change-password-message').empty();
+            $('#change-password-message').append(html);
+
+        },
+        error: function (html) {
+
+        }
+    });
+
+}
+
+
+function changePhoto() {
+
+    var image_data = $('#upload-image').prop('files')[0];
+    var form_data = new FormData();
+    var name = $('#name').val();
+
+    form_data.append('name', name);
+    form_data.append('image', image_data);
+
+    $.ajax({
+        url: '/change-photo',
+        headers: {"Ajax": "Ajax"},
+        dataType: 'text',
+        cache: false,
+        contentType: false,
+        processData: false,
+        data: form_data,
+        type: 'post',
+        success: function (html) {
+
+            $('#change-photo-message').empty();
+            $('#change-photo-message').append(html);
+
+        }
+    });
+    //alert(image_data);
+
+}
+
+$(function () {
+
+    // We can attach the `fileselect` event to all file inputs on the page
+    $(document).on('change', ':file', function () {
+        var input = $(this),
+            numFiles = input.get(0).files ? input.get(0).files.length : 1,
+            label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
+        input.trigger('fileselect', [numFiles, label]);
+    });
+
+    // We can watch for our custom `fileselect` event like this
+    $(document).ready(function () {
+        $(':file').on('fileselect', function (event, numFiles, label) {
+
+            var input = $(this).parents('.input-group').find(':text'),
+                log = numFiles > 1 ? numFiles + ' files selected' : label;
+
+            if (input.length) {
+                input.val(log);
+            } else {
+                if (log) /*alert(log)*/;
+            }
+
+        });
+    });
+
+});

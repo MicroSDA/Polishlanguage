@@ -38,10 +38,7 @@ class personal_area_model extends Model
             die();
         }
 
-        //$array = json_decode($this->students->getCOURSES(),true);
-        //$this->students->addCourse($array, '2', 'Kрестьянин','0','21');
-        //$this->students->addCourse($array, '2', "0","21");
-        //$this->students->setCurrentCourse(1);
+
 
 
         /**
@@ -65,6 +62,8 @@ class personal_area_model extends Model
          */
 
         DataManager::getInstance()->addData('Students', $this->students);
+
+
 
 
         /**
@@ -233,6 +232,32 @@ class personal_area_model extends Model
 
         DataManager::getInstance()->addData('Students', $this->students);
 
+
+        /**
+         * Render///////////////////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        $this->render();
+    }
+
+    public function settings(){
+
+
+        /**
+         * If isn't login then redirect to login page
+         */
+        if (!$this->students->isLogin()) {
+
+            header('Location:/login');
+            die();
+        }
+
+        /**
+         * Main Body Section ///////////////////////////////////////////////////////////////////////////////////////////
+         */
+
+        
+        DataManager::getInstance()->addData('Students', $this->students);
 
         /**
          * Render///////////////////////////////////////////////////////////////////////////////////////////////////////

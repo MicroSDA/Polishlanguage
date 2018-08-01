@@ -29,8 +29,11 @@ class article_model extends Model
     public function article(){
 
         $article = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_article WHERE Url=?s', UrlsDispatcher::getInstance()->getValue('STR'));
-
-        DataManager::getInstance()->addData('Article',$article[0]);
+        if($article){
+            DataManager::getInstance()->addData('Article',$article[0]);
+        }else{
+            header('Location:/articles');
+        }
 
         $this->render();
     }

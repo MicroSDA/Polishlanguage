@@ -14,6 +14,7 @@
                             <a href="/teacher/dashboard" class="list-group-item active">Главная</a>
                             <a href="/teacher/lessons" class="list-group-item">Ваши занятия</a>
                             <a href="/teacher/available-time" class="list-group-item">Доступное время</a>
+                            <a href="/teacher/settings" class="list-group-item">Настройки</a>
                         </div>
                         <div class="row">
                             <br>

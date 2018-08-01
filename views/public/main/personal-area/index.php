@@ -14,6 +14,7 @@
                     <a href="/account" class="list-group-item">Домашнее задание</a>
                     <a href="/account" class="list-group-item">Дополнительные материалы</a>
                     <a href="/account" class="list-group-item">Мой прогресс</a>
+                    <a href="/account/settings" class="list-group-item">Настройки</a>
                 </div>
                 <div class="row">
                     <br>

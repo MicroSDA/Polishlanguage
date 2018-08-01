@@ -61,9 +61,11 @@ class FileUpload
 
            if(empty($FILE_MASK) or empty($FILE_PATH) or empty($FILE_TYPE)){
 
+               die;
                throw new RuntimeException('Invalid income parameters !, File Mask ='.
                    $FILE_MASK.', File Path ='.
                    $FILE_PATH.', File Type ='. arrayPrint($FILE_TYPE));
+
            }else{
 
                /**
@@ -89,8 +91,9 @@ class FileUpload
                    case UPLOAD_ERR_NO_FILE:
                        throw new RuntimeException('File hasn\'t been sent');
                    case UPLOAD_ERR_INI_SIZE:
+                       break;
                    case UPLOAD_ERR_FORM_SIZE:
-                       throw new RuntimeException('Exceeded file size limit.');
+                       throw new RuntimeException('Превышен размер файла');
                    default:
                        throw new RuntimeException('Unknown errors.');
                }
@@ -104,7 +107,7 @@ class FileUpload
                 */
 
                if ($_FILES[$this->FILE_MASK]['size'] > $this->FILE_SIZE) {
-                   throw new RuntimeException('Exceeded file size limit.');
+                   throw new RuntimeException('Превышен размер файла');
                }
 
                /**
@@ -132,6 +135,7 @@ class FileUpload
                 * Save file
                 */
                if (!move_uploaded_file($_FILES[$this->FILE_MASK]['tmp_name'], sprintf($this->FILE_PATH.'%s',$_FILES[$this->FILE_MASK]['name']))) {
+                   die;
                    throw new RuntimeException('Failed during move uploaded file.');
 
                }else{

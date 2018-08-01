@@ -940,11 +940,11 @@ class ajax_model
              * ///////////EMAIL//////////////////////////////////////
              */
             if (empty($email)) {
-                throw new Exception('Email should be filled');
+                throw new Exception('Поле с почтой должно быть заполено');
             }
 
             if (!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u', $email)) {
-                throw new Exception('Email has a wrong format');
+                throw new Exception('Неверный формат почты');
             }
             /**
              * //////////////////////////////////////////////////////
@@ -953,7 +953,7 @@ class ajax_model
              * ///////////PASSWORD/////////////////////////////////////
              */
             if (empty($password)) {
-                throw new Exception('Password should be filled');
+                throw new Exception('После с паролем должно быть заполнено');
             }
 
             /*if(!preg_match('/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/',$password)){
@@ -967,7 +967,7 @@ class ajax_model
             if ($student) {
 
                 if ($student[0]['Status'] == 'not-active') {
-                    throw new Exception('Your account should be active');
+                    throw new Exception('Учетная запись неактивна');
                 }
                 /**
                  * Generate new Hash for cookie
@@ -997,7 +997,7 @@ class ajax_model
                 if ($teacher) {
 
                     if ($teacher[0]['Status'] == 'not-active') {
-                        throw new Exception('Your account should be active');
+                        throw new Exception('Учетная запись неактивна');
                     }
                     /**
                      * Generate new Hash for cookie
@@ -1022,14 +1022,16 @@ class ajax_model
 
                 } else {
 
-                    throw new Exception('Wrong password or email !');
+                    throw new Exception('Неверный логин или пароль');
                 }
 
 
             }
 
         } catch (Exception $e) {
-            echo $e->getMessage();
+
+            echo '<div style="text-align: center"><div class="btn btn-danger">' . $e->getMessage() . '</div></div>';
+            //echo $e->getMessage();
         }
 
 
@@ -1495,16 +1497,16 @@ class ajax_model
             $teacher = DataBase::getInstance()->getDB()->getRow('SELECT * FROM c_teacher WHERE Email=?s AND id=?i', $email, $id);
 
             if ($teacher) {
-               DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET FirstName=?s, LastName=?s, Email=?s, Phone=?s,
-               Skype=?s, Gender=?s, Addinfo=?s, Status=?s, Level=?s WHERE id=?i',$first_name, $surename, $email, $phone, $skype,
-                   $gender, $addinfo, $status, $level, $id);
+                DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET FirstName=?s, LastName=?s, Email=?s, Phone=?s,
+               Skype=?s, Gender=?s, Addinfo=?s, Status=?s, Level=?s WHERE id=?i', $first_name, $surename, $email, $phone, $skype,
+                    $gender, $addinfo, $status, $level, $id);
 
                 $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i', 1);
                 echo '<script>document.getElementById(\'edit-teacher-form\').reset();</script>';
 
                 echo ' <div style="text-align: center"><a href="/admin/secure/teachers/' . $token[0]['Token'] . '"><span class="btn btn-outline-success"><h6>Done, update page to get changes immediately</h6></span></a></div>';
 
-            }else{
+            } else {
 
                 throw new Exception("Teacher hasn\'t been found");
             }
@@ -1516,7 +1518,8 @@ class ajax_model
         }
     }
 
-    public function delete_teacher(){
+    public function delete_teacher()
+    {
 
         try {
 
@@ -1533,6 +1536,339 @@ class ajax_model
             echo '<div style="text-align: center"><span class="btn btn-warning">' . $e->getMessage() . '</span></div>.';
         }
 
-        
+
+    }
+
+    public function add_article()
+    {
+        try {
+            if (empty($_POST['data'][0]['value']) or empty($_POST['data'][1]['value']) or empty($_POST['body'])) {
+                echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
+            } else {
+                if (DataBase::getInstance()->getDB()->getAll("SELECT * FROM c_article WHERE Url=?s", $_POST['data'][1]['value'])) {
+                    echo '<div style="text-align: center"><span class="btn btn-danger"><h5>Already exist</h5></span></div>';
+                } else {
+                    $description = strip_tags(mb_substr($_POST['body'], 0, 200));
+                    $description .= '...';
+                    if (DataBase::getInstance()->getDB()->query('INSERT INTO c_article (Url, Title, Description, Body, Writer) VALUES (?s,?s,?s,?s,?s)', $_POST['data'][1]['value'], $_POST['data'][0]['value'], $description, $_POST['body'], 'Ro')) {
+                        $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i', 1);
+                        echo ' <form type="Get" action="">';
+                        echo ' <div style="text-align: center"><a href="/admin/secure/settings/' . $token[0]['Token'] . '?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
+                        echo ' </form>';
+                    } else {
+                    }
+                }
+            }
+        } catch (Exception $error) {
+            echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 242: ajax_model: add_article()<hr>' . $error . '<hr>Contact with developer !</span></div>.';
+        }
+    }
+
+    public function admin_validate_edit_article()
+    {
+        $article_title = $_POST['data'][0]['value'];
+        $article_url = $_POST['data'][1]['value'];
+        $article_writer = $_POST['data'][2]['value'];
+        $article_body = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_article WHERE Url=?s', $article_url);
+        $outgoing['title'] = $article_title;
+        $outgoing['url'] = $article_url;
+        $outgoing['writer'] = $article_writer;
+        $outgoing['body'] = $article_body[0]['Body'];
+        echo json_encode($outgoing);
+    }
+
+    public function admin_edit_article()
+    {
+        $article_title = $_POST['data'][0]['value'];
+        $article_url = $_POST['data'][1]['value'];
+        $article_url_old = $_POST['data'][2]['value'];
+        $article_writer = $_POST['data'][3]['value'];
+        $article_body = $_POST['body'];
+        if (empty($article_title) or empty($article_url) or empty($article_writer) or empty($article_body) or empty($article_url_old)) {
+            echo '<div style="text-align: center"><span class="btn btn-warning"><h5>All fields should be filled</h5></span></div>';
+            die();
+        } else {
+            try {
+                $description = strip_tags(mb_substr($article_body, 0, 200));
+                $description .= '...';
+                DataBase::getInstance()->getDB()->query("UPDATE c_article SET Url=?s, Title=?s, Description=?s, Body=?s WHERE Url=?s",
+                    $article_url, $article_title, $description, $article_body, $article_url_old);
+                $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i', 1);
+                echo ' <form type="Get" action="">';
+                echo ' <div style="text-align: center"><a href="/admin/secure/settings/' . $token[0]['Token'] . '?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
+                echo ' </form>';
+            } catch (Exception $error) {
+                echo '<div style="text-align: center"><span class="btn btn-danger">INTERNAL ERROR<br>Line 329: ajax_model: admin_edit_article()<hr>' . $error . '<hr>Contact with developer !</span></div>.';
+            }
+        }
+    }
+
+    public function admin_validate_delete_article()
+    {
+        $outgoing['url'] = $_POST['data'][1]['value'];
+        echo json_encode($outgoing);
+    }
+
+    public function admin_delete_article()
+    {
+        try {
+            DataBase::getInstance()->getDB()->query("DELETE FROM c_article WHERE Url=?s", $_POST['data']);
+            $token = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_settings WHERE id=?i', 1);
+            echo ' <form type="Get" action="">';
+            echo ' <div style="text-align: center"><a href="/admin/secure/settings/' . $token[0]['Token'] . '?submit=reset-cache"><span class="btn btn-outline-success"><h6>Done, reset cache to get changes immediately</h6></span></a></div>';
+            echo ' </form>';
+        } catch (Exception $error) {
+            echo '<div style="text-align: center"><span class="btn btn-warning">INTERNAL ERROR<br>Line 168: ajax_model: admin_delete_url()<hr>' . $error . '<hr>Contact with developer !</span></div>.';
+        }
+    }
+
+    public function change_password()
+    {
+
+        $srudent = new Students();
+        if (!$srudent->isLogin()) {
+
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
+            die;
+        }
+
+        $id = trim($_POST['id'], " \t\n\r \v");
+        $old_password = trim($_POST['old-pass'], " \t\n\r \v");
+        $password = trim($_POST['password'], " \t\n\r \v");
+        $conf_password = trim($_POST['conf-password'], " \t\n\r \v");
+
+        try {
+
+            if (empty($id)) {
+                throw new Exception('Ошибка');
+            }
+
+            if (!preg_match('/^[0-9]+$/', $id)) {
+                throw new Exception('Ошибка');
+            }
+
+            if (empty($old_password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $old_password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+            if (empty($password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+            if (empty($conf_password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $conf_password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+
+            if($password !== $conf_password){
+                throw new Exception('Введённый вами пароль не совпадает');
+            }
+
+            $student = DataBase::getInstance()->getDB()->getOne('SELECT * FROM c_students WHERE id=?i AND Password=?s', $id, $old_password);
+
+            if($student){
+
+                DataBase::getInstance()->getDB()->query('UPDATE c_students SET Password=?s WHERE id=?i', $password, $id);
+
+                echo ('Пароль был успешно изменен');
+                die;
+
+            }else{
+
+                throw new Exception('Пароль введен не верно');
+            }
+
+
+        } catch (Exception $e) {
+
+            echo $e->getMessage();
+        }
+
+
+    }
+
+    public function change_photo(){
+
+        $srudent = new Students();
+        if (!$srudent->isLogin()) {
+
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
+            die;
+        }
+
+        try{
+            if (isset($_FILES['image'])) {
+
+                /**
+                 * Image Upload
+                 */
+
+
+                require_once URL_ROOT . '/core/Libs/Basic/General/FileUpload.php';
+                $file_upload = new FileUpload();
+                $image_folder = md5(getenv("REMOTE_ADDR") . "key" . time()) . md5(getenv("REMOTE_ADDR") . "key-2". $_POST['id']);
+                mkdir(URL_ROOT .'/public/photos/'.$image_folder, 0700);
+                $file_upload->upload('image',
+                    URL_ROOT .'/public/photos/'.$image_folder.'/',
+                    array('gif' => 'image/gif', 'jpeg' => 'image/jpeg',
+                        'png' => 'image/png'),
+                    1000000);
+                $image_file_name = $file_upload->getFILENAME();
+
+
+                DataBase::getInstance()->getDB()->query("UPDATE c_students SET Photo=?s WHERE id=?i"
+                    ,'/public/photos/'.$image_folder.'/'.$image_file_name, $_POST['name']);
+
+                echo '<script>document.location.replace("/account/settings");</script>';
+                /**
+                 * -------------------
+                 */
+            }else{
+
+                echo 'Выберете фото';
+            }
+
+        }catch (Exception $e){
+            die;
+        }
+
+    }
+
+
+    public function change_t_password(){
+        $teacher = new Teacher();
+        if (!$teacher->isLogin()) {
+
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
+            die;
+        }
+
+        $id = trim($_POST['id'], " \t\n\r \v");
+        $old_password = trim($_POST['old-pass'], " \t\n\r \v");
+        $password = trim($_POST['password'], " \t\n\r \v");
+        $conf_password = trim($_POST['conf-password'], " \t\n\r \v");
+
+        try {
+
+            if (empty($id)) {
+                throw new Exception('Ошибка');
+            }
+
+            if (!preg_match('/^[0-9]+$/', $id)) {
+                throw new Exception('Ошибка');
+            }
+
+            if (empty($old_password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $old_password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+            if (empty($password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+            if (empty($conf_password)) {
+                throw new Exception('Все поля обязательны для заполнения');
+            }
+
+            if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $conf_password)) {
+                throw new Exception('Пароль короткий или имеет не верный формат');
+            }
+
+
+            if($password !== $conf_password){
+                throw new Exception('Введённый вами пароль не совпадает');
+            }
+
+            $student = DataBase::getInstance()->getDB()->getOne('SELECT * FROM c_teacher WHERE id=?i AND Password=?s', $id, $old_password);
+
+            if($student){
+
+                DataBase::getInstance()->getDB()->query('UPDATE c_teacher SET Password=?s WHERE id=?i', $password, $id);
+
+                echo ('Пароль был успешно изменен');
+                die;
+
+            }else{
+
+                throw new Exception('Пароль введен не верно');
+            }
+
+
+        } catch (Exception $e) {
+
+            echo $e->getMessage();
+        }
+
+
+    }
+
+    public function change_t_photo(){
+
+        $teacher = new Teacher();
+        if (!$teacher->isLogin()) {
+
+            UrlsDispatcher::getInstance()->setCurrentUrlData(UrlsDispatcher::getInstance()->getUrlsDataListByKey('(^)'));
+            $controller = new Controller();
+            die;
+        }
+
+        try{
+            if (isset($_FILES['image'])) {
+
+                /**
+                 * Image Upload
+                 */
+
+
+                require_once URL_ROOT . '/core/Libs/Basic/General/FileUpload.php';
+                $file_upload = new FileUpload();
+                $image_folder = md5(getenv("REMOTE_ADDR") . "key" . time()) . md5(getenv("REMOTE_ADDR") . "key-2". $_POST['id']);
+                mkdir(URL_ROOT .'/public/photos/'.$image_folder, 0700);
+                $file_upload->upload('image',
+                    URL_ROOT .'/public/photos/'.$image_folder.'/',
+                    array('gif' => 'image/gif', 'jpeg' => 'image/jpeg',
+                        'png' => 'image/png'),
+                    1000000);
+                $image_file_name = $file_upload->getFILENAME();
+
+
+                DataBase::getInstance()->getDB()->query("UPDATE c_teacher SET Photo=?s WHERE id=?i"
+                    ,'/public/photos/'.$image_folder.'/'.$image_file_name, $_POST['name']);
+
+                echo '<script>document.location.replace("/teacher/settings");</script>';
+                /**
+                 * -------------------
+                 */
+            }else{
+
+                echo 'Выберете фото';
+            }
+
+        }catch (Exception $e){
+            die;
+        }
     }
 }

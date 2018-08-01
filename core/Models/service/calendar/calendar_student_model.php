@@ -355,6 +355,22 @@ class calendar_student_model extends Model
             $lesson = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_lessons WHERE Date=?s AND Time=?s AND StudentID=?i AND Status=?s', $_POST['Date'], $_POST['Time'], $this->student->getID(), 'approved');
             if ($lesson) {
 
+
+                $current = new DateTime(date('Y-m-d H:i', time()));
+                $dateTime = $lesson[0]['Date'].' '.$lesson[0]['Time'];
+                $lesson_time = new DateTime(date($dateTime));
+
+                $Diff = $current->diff($lesson_time);
+
+                if ($Diff->i <= 30){
+                    echo  'Назначенный урок можно отменить только лишь за 30 минут до начала.';
+                    die;
+                }
+
+
+
+
+
                 $teacher = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_teacher WHERE id=?i', $lesson[0]['TeacherID']);
 
                 if ($teacher) {

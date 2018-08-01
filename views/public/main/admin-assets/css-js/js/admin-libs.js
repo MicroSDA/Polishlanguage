@@ -161,18 +161,18 @@ function addArticle() {
 
 function editArticleValidate(form_id) {
 
-    var this_data = $('#' + form_id).serializeArray();
+    var this_data = $('#'+form_id).serializeArray();
 
 
     $.ajax({
         type: 'POST',
-        url: '/ajax-admin/edit-article-validate/',
-        headers: {"Ajax": "Ajax"},
+        url:  '/ajax-admin/edit-article-validate/',
+        headers: { "Ajax": "Ajax" },
         data:
             {
                 data: this_data
             },
-        success: function (html) {
+        success: function (html){
 
             var obj = JSON.parse(html);
 
@@ -199,14 +199,14 @@ function editArticle() {
 
     $.ajax({
         type: 'POST',
-        url: '/ajax-admin/edit-article/',
-        headers: {"Ajax": "Ajax"},
+        url:  '/ajax-admin/edit-article/',
+        headers: { "Ajax": "Ajax" },
         data:
             {
                 data: this_data,
                 body: body
             },
-        success: function (html) {
+        success: function (html){
 
             $('#edit-article-message').empty();
             $('#edit-article-message').append(html);

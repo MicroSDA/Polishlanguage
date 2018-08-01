@@ -5,6 +5,7 @@
  * Time: 2:24 PM
  */
 
+date_default_timezone_set('Europe/Kiev');
 
 /**
  * Catch all exception

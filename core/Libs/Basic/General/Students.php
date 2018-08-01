@@ -94,6 +94,26 @@ class Students
      * @var
      */
     private $LEVEL;
+    /**
+     * @var
+     */
+    private $PHOTO;
+
+    /**
+     * @return mixed
+     */
+    public function getPHOTO()
+    {
+        return $this->PHOTO;
+    }
+
+    /**
+     * @param mixed $PHOTO
+     */
+    public function setPHOTO($PHOTO)
+    {
+        $this->PHOTO = $PHOTO;
+    }
 
     /**
      * @return mixed
@@ -154,6 +174,7 @@ class Students
                 $this->ADD_INFO = $this->students_tempalte[0]['AddInfo'];
                 $this->COURSES = $this->students_tempalte[0]['Courses'];
                 $this->LEVEL = $this->students_tempalte[0]['Level'];
+                $this->PHOTO = $this->students_tempalte[0]['Photo'];
 
                 unset($this->students_tempalte);
                 /**
