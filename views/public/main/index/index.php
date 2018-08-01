@@ -1,842 +1,1018 @@
 <!DOCTYPE html>
-<html >
+<html lang="zxx" class="no-js">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v4.7.2, #">
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="public/indexpage-assets/assets/images/pliklogoblack-122x122.png" type="image/x-icon">
-  <meta name="description" content="">
-  <title>Plik - Онлайн Школа Польского Языка</title>
-  <link rel="stylesheet" href="public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/tether/tether.min.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/animatecss/animate.min.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/theme/css/style.css">
-  <link rel="stylesheet" href="public/indexpage-assets/assets/mobirise/css/mbr-additional.css" type="text/css">
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="public/indexpage-assets/img/fav.png">
+    <!-- Author Meta -->
+    <meta name="author" content="">
+    <!-- Meta Description -->
+    <meta name="description" content="">
+    <!-- Meta Keyword -->
+    <meta name="keywords" content="">
+    <!-- meta character set -->
+    <meta charset="UTF-8">
+    <!-- Site Title -->
+    <title>Plik - Онлайн Школа Польского Языка</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+    <!--
+            CSS
+            ============================================= -->
+    <link rel="stylesheet" href="public/indexpage-assets/css/linearicons.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/bootstrap.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/animate.min.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="public/indexpage-assets/css/main.css">
 </head>
-<body style="overflow-x: hidden !important;">
-  <section class="menu cid-qRQq4QImbi" once="menu" id="menu2-3">
 
+<body>
+<!-- start banner Area -->
+<section class="banner-area" id="home">
+    <!-- Start Header Area -->
+    <header class="default-header">
+        <nav class="navbar navbar-expand-lg  navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="/">
+                    <img src="public/indexpage-assets/img/Plik.png" style="max-width: 40px" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="text-white lnr lnr-menu"></span>
+                </button>
 
-
-    <nav class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
+                <div class="collapse navbar-collapse justify-content-end align-items-center"
+                     id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li><a href="/">Главная</a></li>
+                        <li><a href="#price">Курсы и цены</a></li>
+                        <li><a href="#secvice">Дополнительные Услуги</a></li>
+                        <li><a href="/contact-us">Контакты</a></li>
+                        <!-- Dropdown -->
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Войти
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="/login">Войти</a>
+                                <a class="dropdown-item" href="#contact">Регистрация</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </button>
-        <div class="menu-logo">
-            <div class="navbar-brand">
-                <span class="navbar-logo">
-                    <a href="http://polishlanguage.esy.es/indexpage/">
-
-                    </a>
-                </span>
-
-            </div>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
-
-
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="/">Главная</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="/price">Цены</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="/contact">Контакты</a></li>
-                        <li class="nav-item"><a class="nav-link link text-black display-4" href="/articles">Статьи</a></li>
-            </ul>
-
-
-            <div class="navbar-buttons mbr-section-btn"><a class="btn btn-sm btn-success-outline display-4" href="/login">Войти</a></div>
-        </div>
-    </nav>
+        </nav>
+    </header>
+    <!-- End Header Area -->
 </section>
 
-<section class="engine"><a href="https://mobirise.me/y"></a></section><section class="header8 cid-qRQq0SnES3 mbr-fullscreen mbr-parallax-background" id="header8-2">
+<section class="default-banner active-blog-slider">
+    <div class="item-slider relative"
+         style="background: url(public/indexpage-assets/img/slider0.png);background-size: cover;">
+        <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+        <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+                <div class="col-md-10 col-12">
+                    <div class="banner-content text-center">
+                        <h4 class="text-white mb-20 text-uppercase">Онлайн школа польского языка</h4>
+                        <img src="public/indexpage-assets/img/Plik.png" style="max-width: 200px" alt="">
+                        <h4 class="text-white mb-20 text-uppercase">Выучи польский язык за 90 дней <br>
+                            Быстро, легко и с удовольствием.</h4>
+                        <a href="#contact" class="text-uppercase header-btn">Записаться на бесплатный урок</a>
+                    </div>
+                </div>
 
-
-
-    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(0, 0, 0);">
-    </div>
-
-    <div class="container align-center">
-        <div class="row justify-content-md-center">
-            <div class="mbr-white col-md-10">
-                <h1 class="mbr-section-title align-center py-2 mbr-bold mbr-fonts-style display-2">
-                        Онлайн школа польского языка</h1>
-                <div class="pliklogo"><img src="./public/images/Plik.png" alt="Plik Онлайн Школа Польского Языка" title="" style="max-width: 220px"></div>
-                <p class="mbr-text align-center py-2 mbr-fonts-style display-7"></p><p>
-                        Выучи польский язык за 90 дней<br>Быстро, легко и с удовольствием</p><p></p>
-
-
-                <div class="mbr-section-btn text-center"><a class="btn btn-md btn-primary-outline display-4" href="https://#">Записаться на бесплатный пробный урок</a></div>
             </div>
         </div>
-
     </div>
-
+    <div class="item-slider relative"
+         style="background: url(public/indexpage-assets/img/Poland2.jpg);background-size: cover;">
+        <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+        <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+                <div class="col-md-10 col-12">
+                    <div class="banner-content text-center">
+                        <h4 class="text-white mb-20 text-uppercase">Онлайн школа польского языка</h4>
+                        <img src="public/indexpage-assets/img/Plik.png" style="max-width: 200px" alt="">
+                        <h4 class="text-white mb-20 text-uppercase">Выучи польский язык за 90 дней <br>
+                            Быстро, легко и с удовольствием.</h4>
+                        <a href="#contact" class="text-uppercase header-btn">Записаться на бесплатный урок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item-slider relative"
+         style="background: url(public/indexpage-assets/img/poland4.jpg);background-size: cover;">
+        <div class="overlay" style="background: rgba(0,0,0,.3)"></div>
+        <div class="container">
+            <div class="row fullscreen justify-content-center align-items-center">
+                <div class="col-md-10 col-12">
+                    <div class="banner-content text-center">
+                        <h4 class="text-white mb-20 text-uppercase">Онлайн школа польского языка</h4>
+                        <div align-items-center><img src="public/indexpage-assets/img/Plik.png" style="max-width: 200px"
+                                                     alt=""></div>
+                        <h4 class="text-white mb-20 text-uppercase">Выучи польский язык за 90 дней <br>
+                            Быстро, легко и с удовольствием.</h4>
+                        <a href="#contact" class="text-uppercase header-btn">Записаться на бесплатный урок</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </section>
+<!--End First screen -->
 
-<section class="mbr-section form3 cid-qRQHUqZuEK" id="form3-5">
-
-
-
-
-
+<!-- start contact Area -->
+<section class="contact-area section-gap" id="contact">
     <div class="container">
-        <div class="row justify-content-center">
-            <div class="title col-12 col-lg-8">
-                <h2 class="align-center pb-2 mbr-fonts-style display-2">
-                    Заявка на консультацию</h2>
-                <h3 class="mbr-section-subtitle align-center pb-5 mbr-light mbr-fonts-style display-7"></h3>
+        <div class="row d-flex justify-content-center mb-4 mt-2">
+            <div class="menu-content pb-10 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Заявка на консультацию</h1>
+                    <!-- <p>.</p> -->
+                </div>
             </div>
         </div>
+        <form class="form-area contact-form text-right" id="myForm" method="POST"  role="form">
+            <div class="row">
+                <div class="col-md-3 form-group">
+                    <input name="name" id="name" placeholder="Ваше имя" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = 'Введите ваше имя'" class="common-input mb-20 form-control"
+                           required type="text">
+                </div>
+                <div class="col-md-3 form-group">
+                    <input name="email" placeholder="Введите Email"
+                           pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = 'Введите Ваш Email'" class="common-input mb-20 form-control"
+                           required="" type="email">
+                </div>
+                <div class="col-md-3 form-group">
+                    <input name="phone" placeholder="Номер телефона (+)" onfocus="this.placeholder = ''"
+                           onblur="this.placeholder = 'Введите номер телефона'" class="common-input mb-20 form-control"
+                           required="" type="text">
+                </div>
+                <div class="col-md-3 form-group">
+                    <button type="submit" id="upload-bnt" onclick="consult();"  class="genric-btn success circle arrow mb-20 large">Оставить
+                        заявку<span class="lnr lnr-arrow-right"></span></button>
+                </div>
 
-        <div class="col-12">
-                <div id="register-new-user-block">
-                <form id="register-new-user-form" class="mbr-form">
-                  <div class="col-12 err-message text-center">
-                  </div>
-
-                    <div class="input-group mb-5">
-                        <div class="col-xs-12 col-sm-12 col-lg-3"><input class="form-control mt-2" type="text"  name="name" placeholder="Имя" id="name" required></div>
-                        <div class="col-xs-12 col-sm-12 col-lg-3"><input class="form-control mt-2" type="email" name="email" placeholder="Email" id="email" required ></div>
-                        <div class="col-xs-12 col-sm-12 col-lg-3"><input class="form-control mt-2" type="text" name="phone" placeholder="Телефон" id="phone" required ></div>
-                        <div class="col-xs-12 col-sm-12 col-lg-3 text-center"><span class="input-group-btn">
-                            <button name="submit" type="submit" onclick="submitContact();" class="btn btn-primary-outline display-4 mt-2" style="margin: 0px; padding-bottom: 11px; padding-top: 11px; color:black;">Оставить заявку</button>
-                        </span></div>
-                    </div>
-                </form>
             </div>
-
-        </div>
+        </form>
+        <div id="results" style="text-align: center;"></div>
     </div>
 </section>
+<!-- end contact Area -->
 
-<section class="features11 cid-qRQrlD9uQQ" id="features11-4">
-
-
-
-
-
+<!-- Start about Area -->
+<section class="section-gap info-area" id="about">
     <div class="container">
-        <div class="col-md-12">
-            <div class="media-container-row">
-                <div class="mbr-figure" style="width: 63%;">
-                    <img src="public/indexpage-assets/assets/images/laptop-3087585-1922-952x635.jpg" alt="Plik Онлайн Школа Польского Языка" title="">
-                </div>
-                <div class=" align-left aside-content">
-                    <h2 class="mbr-title pt-2 mbr-fonts-style display-5">Занимайтесь с носителем</h2>
-
-                    <div class="block-content">
-                        <div class="card p-3 pr-3">
-                            <div class="media">
-                                <div class=" align-self-center card-img pb-3">
-                                    <span class="mbr-iconfont mbri-smile-face" style="font-size: 50px;"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="card-title mbr-fonts-style display-7">
-                                        Найдем подход к каждому</h4>
-                                </div>
-                            </div>
-
-                            <div class="card-box">
-                                <p class="block-text mbr-fonts-style display-7">
-                                   Подстраиваемся под Ваши интересы</p>
-                            </div>
-                        </div>
-
-                        <div class="card p-3 pr-3">
-                            <div class="media">
-                                <div class="align-self-center card-img pb-3">
-                                    <span class="mbr-iconfont mbri-globe" style="font-size: 50px;"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="card-title mbr-fonts-style display-7">
-                                        Поможем преодолеть языковой барьер</h4>
-                                </div>
-                            </div>
-
-                            <div class="card-box">
-                                <p class="block-text mbr-fonts-style display-7">
-                                    Занятия языком с погружением в культуру</p>
-                            </div>
-                        </div>
-
-                        <div class="card p-3 pr-3">
-                            <div class="media">
-                                <div class="align-self-center card-img pb-3">
-                                    <span class="mbr-iconfont mbri-clock" style="font-size: 50px;"></span>
-                                </div>
-                                <div class="media-body">
-                                    <h4 class="card-title mbr-fonts-style display-7">
-                                        В удобное для Вас время</h4>
-                                </div>
-                            </div>
-
-                            <div class="card-box">
-                                <p class="block-text mbr-fonts-style display-7">
-                                    Вы сами выбираете когда заниматься</p>
-                            </div>
-                        </div>
-
-                    </div>
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-40 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Почему нужно учить у нас?</h1>
+                    <p>Plik - это онлайн школа нового образца.</p>
                 </div>
             </div>
         </div>
+        <div class="single-info row mt-40">
+            <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+                <div class="info-thumb">
+                    <img src="public/indexpage-assets/img/girl.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                <div class="info-content">
+                    <h2>Занимайтесь с носителем</h2>
+                    <div class="section-top-border">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>Найдем подход к каждому</h3> Подстраиваемся под Ваши интересы
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>Поможем преодолеть языковой барьер</h3> Занятия языком с погружением в культуру
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>В удобное для Вас время</h3> Вы сами выбираете когда заниматься
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                <div class="info-content">
+                    <h2>Занимайтесь с носителем</h2>
+                    <div class="section-top-border">
+
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>Результат гарантирован</h3> Следуйте рекомендациям преподавателей и очень быстро
+                                    достигните цели
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>Современная система</h3> Мы убрали все лишнее, оставив самое интересное, и
+                                    внедрили лучшие методики преподавания
+                                </blockquote>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <blockquote class="generic-blockquote">
+                                    <h3>Живой язык</h3> Формальный и неформальный польский. Научитесь применять сленг и
+                                    не краснеть
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-12 mt-120 text-center no-padding info-left">
+                <div class="info-thumb">
+                    <img src="public/indexpage-assets/img/man.jpg" class="img-fluid" alt="">
+                </div>
+            </div>
+
+
+        </div>
+
+
     </div>
+
 </section>
+<!-- End about Area -->
 
-<section class="counters1 counters cid-qRQJxGOMgq" id="counters1-7">
-
-
-
-    <div class="mbr-overlay" style="opacity: 0.8; background-color: rgb(35, 35, 35);">
-    </div>
-
+<!-- Start Learning Steps-->
+<section class="project-area section-gap" id="project">
     <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-            Почему нужно учить у нас?</h2>
-        <h3 class="mbr-section-subtitle mbr-fonts-style display-5">Plik - это онлайн школа нового образца</h3>
-
-        <div class="container pt-4 mt-2">
-            <div class="media-container-row">
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-like" style="color: rgb(15, 118, 153);"></span>
-                        </div>
-
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">1</h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                Результат гарантирован</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                               Следуйте рекомендациям преподавателей и очень быстро достигните цели</p>
-                        </div>
-                    </div>
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Выучить польский язык за 3 месяца?</h1>
+                    <p>Всё что вам нужно сделать, это:</p>
                 </div>
-
-
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-magic-stick" style="color: rgb(15, 118, 153);"></span>
-                        </div>
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">2</h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Современная система</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Мы убрали все лишнее, оставив самое интересное, и внедрили лучшие методики преподавания
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
-                    <div class="panel-item p-3">
-                        <div class="card-img pb-3">
-                            <span class="mbr-iconfont mbri-users" style="color: rgb(15, 118, 153);"></span>
-                        </div>
-                        <div class="card-text">
-                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                  3</h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Живой язык</h4>
-                            <p class="mbr-content-text mbr-fonts-style display-7">
-                                    Формальный и неформальный польский. Научитесь применять сленг и не краснеть
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-
-
             </div>
         </div>
-   </div>
-</section>
-
-<section class="counters2 counters cid-qRQMC0T6x3" id="counters2-8">
-
-
-
-
-
-    <div class="container pt-4 mt-2">
-        <div class="media-container-row">
-            <div class="media-block" style="width: 50%;">
-                <h2 class="mbr-section-title pb-3 align-left mbr-fonts-style display-5">
-                    Выучить польский язык за 3 месяца?</h2>
-                <h3 class="mbr-section-subtitle pb-3 align-left mbr-fonts-style display-5">Всё что вам нужно сделать, это:</h3>
-                <div class="mbr-figure">
-                    <img src="public/indexpage-assets/assets/images/mbr-1046x697.jpg" alt="" title="">
-                </div>
-            </div>
-            <div class="cards-block">
-                <div class="cards-container">
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont pr-2 mbri-touch" style="color: rgb(15, 118, 153);"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    1</h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Записаться на вводный урок</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">Польский язык это офигенно
-<br><br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont pr-2 mbri-briefcase" style="color: rgb(15, 118, 153);"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    2</h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
-                                    Заниматься с преподавателем</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">Польский язык это офигенно
-<br></p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont pr-2 mbri-idea" style="color: rgb(15, 118, 153);"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    3</h3>
-                            </div>
-                            <div class="card-text">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Закрепить материал</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                        Польский язык это офигенно
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card px-3 align-left col-12 col-md-6">
-                        <div class="panel-item p-3">
-                            <div class="card-img pb-3">
-                                <span class="mbr-iconfont pr-2 mbri-target" style="color: rgb(15, 118, 153);"></span>
-                                <h3 class="count py-3 mbr-fonts-style display-2">
-                                    4</h3>
-                            </div>
-                            <div class="card-texts">
-                                <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Добиться цели</h4>
-                                <p class="mbr-content-text mbr-fonts-style display-7">
-                                        Польский язык это офигенно
-                                </p>
-                            </div>
-                        </div>
+        <div class="row justify-content-center d-flex">
+            <div class="active-works-carousel mt-40 col-lg-8">
+                <div class="item">
+                    <img class="img-fluid" src="public/indexpage-assets/img/4steps1.jpg" alt="">
+                    <div class="caption text-center mt-20">
+                        <h6 class="text-uppercase">1. Записаться на вводный урок</h6>
+                        <p>Узнай свой уровень и получи рекомендации</p>
                     </div>
                 </div>
+                <div class="item">
+                    <img class="img-fluid" src="public/indexpage-assets/img/4steps2.jpg" alt="">
+                    <div class="caption text-center mt-20">
+                        <h6 class="text-uppercase">2. Заниматься с преподавателем</h6>
+                        <p>Уроки с носителем приведут тебя к цели.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-fluid" src="public/indexpage-assets/img/4steps3.jpg" alt="">
+                    <div class="caption text-center mt-20">
+                        <h6 class="text-uppercase">3. Закрепить материал</h6>
+                        <p>Делай домашнее задание, слушай аудио и читай дополнительные материалы.</p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img class="img-fluid" src="public/indexpage-assets/img/why.jpg" alt="">
+                    <div class="caption text-center mt-20">
+                        <h6 class="text-uppercase">4. Добиться цели</h6>
+                        <p>Получи то, о чем давно мечтал!</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
-    <div class="mbr-section-btn align-center mb4"><a class="btn btn-secondary-outline display-4 mt-4" href="#video3-a">Посмотреть видео</a>
-
-            </div>
 </section>
+<!-- End Learning Steps -->
 
-<section class="cid-qRQOvZQRiT" id="video3-a">
-
-
-
-    <figure class="mbr-figure align-center container">
-        <div class="video-block" style="width: 80%;">
-            <div><iframe class="mbr-embedded-video" src="https://www.youtube.com/embed/uNCr7NdOJgw?rel=0&amp;amp;showinfo=0&amp;autoplay=0&amp;loop=0" width="1280" height="720" frameborder="0" allowfullscreen></iframe></div>
-        </div>
-    </figure>
-</section>
-
-<section class="tabs3 cid-qSUfg8Nr6H" id="tabs3-1d">
-
-
-
-
-
+<!-- Start Video Area -->
+<section class="video-area pt-40 pb-40">
+    <div class="overlay overlay-bg"></div>
     <div class="container">
-        <h2 class="mbr-section-title align-center pb-3 mbr-fonts-style display-2">Занятия польским языком по Skype</h2>
-        <h3 class="mbr-section-subtitle  display-5 align-center mbr-light mbr-fonts-style">
-            Выберите предположительный уровень Ваших знаний сами, или пройдите наш тест на знания языка, и получите оценку Ваших знаний.</h3>
-    </div>
-    <div class="container-fluid">
-        <div class="row tabcont">
-            <ul class="nav nav-tabs pt-3 mt-5" role="tablist">
-                <li class="nav-item mbr-fonts-style"><a class="nav-link active show display-7" role="tab" data-toggle="tab" href="#tabs3-1d_tab0" aria-selected="true">Начальный</a></li>
-                <li class="nav-item mbr-fonts-style"><a class="nav-link  active show display-7" role="tab" data-toggle="tab" href="#tabs3-1d_tab1" aria-selected="true">&nbsp; &nbsp;Средний &nbsp; &nbsp;</a></li>
-                <li class="nav-item mbr-fonts-style"><a class="nav-link show active display-7" role="tab" data-toggle="tab" href="#tabs3-1d_tab2" aria-selected="true">
-                        Расширенный</a></li>
-
-
-
-            </ul>
-        </div>
-    </div>
-
-    <div class="container">
-        <div class="row px-1">
-            <div class="tab-content">
-                <div id="tab1" class="tab-pane in active mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbr-iconfont mbri-smile-face"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                А1 - Новичок</h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Ваш польский вселяет уверенность.<br>Число занятий - 21 занятие + 1 тест
-<br>Длительность одного занятия - 60 минут&nbsp;<br></p>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-responsive mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                А2 - Любитель</h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Ваш польский вселяет уверенность.<br>Число занятий - 21 занятие + 1 тест
-<br>Длительность одного занятия – 60 минут&nbsp;<br></p>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <div id="tab2" class="tab-pane  mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-bootstrap mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">B1 - Специалист</h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Ваш польский вселяет уверенность.
-<br>Число занятий – 30 занятий + 1 тест
-<br>Длительность одного занятия – 60 минут&nbsp;<br></p>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-bootstrap mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                B2 - Профессионал</h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">Ваш польский вселяет уверенность.<br>Число занятий – 30 занятий + 1 тест
-<br>Длительность одного занятия – 60 минут&nbsp;<br></p>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <div id="tab3" class="tab-pane  mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-extension mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title align-center mbr-fonts-style pb-2 display-5">
-                                С1 - Эксперт</h4>
-                            <p class="mbr-section-text align-center mbr-fonts-style display-7">Число занятий – 30 занятий + 1 тест
-<br>Длительность одного занятия – 60 минут&nbsp;<br></p>
-                        </div>
-
-
-
-
-
-                    </div>
-                </div>
-
-                <div id="tab4" class="tab-pane  mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-responsive mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                МОБИЛЬНАЯ АДАПТАЦИЯ
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Не требуется особых знаний, все сайты Mobirise адаптивны. Вам не нужно создавать специально мобильную версию сайта.
-                            </p>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-responsive mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                МОБИЛЬНАЯ АДАПТАЦИЯ
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Не требуется особых знаний, все сайты Mobirise адаптивны. Вам не нужно создавать специально мобильную версию сайта.
-                            </p>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <div id="tab5" class="tab-pane  mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-bootstrap mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                ЛЕГКО И ПРОСТО
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Сократите время разработки с помощью простого перетаскивания блоков на страницу, редактируйте содержание и публикуйте - нет необходимости в технических навыках.
-                            </p>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-bootstrap mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                ЛЕГКО И ПРОСТО
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Сократите время разработки с помощью простого перетаскивания блоков на страницу, редактируйте содержание и публикуйте - нет необходимости в технических навыках.
-                            </p>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-
-                <div id="tab6" class="tab-pane  mbr-table" role="tabpanel">
-                    <div class="row tab-content-row">
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-extension mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                ТРЕНДОВЫЕ БЛОКИ
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Выберите готовые и настраиваемые шаблоны блоков - полноэкранный интро, bootstrap-карусель, слайдер, галерею изображений с параллаксом, "липким" заголовком и многое другое.
-                            </p>
-                        </div>
-
-                        <div class="col-xs-12 col-md-6">
-                            <div class="card-img ">
-                                <span class="mbri-extension mbr-iconfont"></span>
-                            </div>
-                            <h4 class="mbr-element-title  align-center mbr-fonts-style pb-2 display-5">
-                                ТРЕНДОВЫЕ БЛОКИ
-                            </h4>
-                            <p class="mbr-section-text  align-center mbr-fonts-style display-7">
-                                Выберите готовые и настраиваемые шаблоны блоков - полноэкранный интро, bootstrap-карусель, слайдер, галерею изображений с параллаксом, "липким" заголовком и многое другое.
-                            </p>
-                        </div>
-
-
-
-
-                    </div>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
-<div class="media-container-row title">
-            <div class="col-12 col-md-8">
-                <div class="mbr-section-btn align-center"><a class="btn btn-secondary-outline display-4 mt-4" href="https://#">Пройти тест</a>
-                    <a class="btn btn-success-outline display-4 mt-4" href="https://#">&nbsp;Заказать курс&nbsp;</a></div>
+        <div class="video-content">
+            <a href="http://www.youtube.com/watch?v=0O2aH4XLbto" class="play-btn"><img
+                        src="public/indexpage-assets/img/play-btn.png" alt=""></a>
+            <div class="video-desc">
+                <h3 class="h2 text-white text-uppercase">Изучение польского языка по Skype</h3>
+                <h4 class="text-white">Как проходят уроки</h4>
             </div>
         </div>
-
-
     </div>
-
 </section>
-
-<section class="mbr-section content8 cid-qRQQAhNWVz" id="content8-d">
-
+<!-- Start Video Area -->
 
 
-</section>
-
-<section class="features3 cid-qRQRvxFJcv" id="features3-e">
-
-
-
-
+<!-- Start Courses -->
+<section class="feature-area section-gap" id="price">
     <div class="container">
-<h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-           Полезная информация</h2>
-        <div class="media-container-row">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="public/indexpage-assets/assets/images/mbr-676x423.jpg" alt="Plik Онлайн Школа Польского Языка" title="">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Занятия польским языком по Skype</h1>
+                    <p>Выберите предположительный уровень Ваших знаний сами, или пройдите наш тест на знания языка, и
+                        получите оценку Ваших знаний.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row pb-5 d-flex justify-content-center">
+            <div class="col-lg-4 col-md-6 ">
+                <div class="single-feature mb-30 text-center">
+                    <div class="title d-flex flex-row pb-20">
+                        <span class="lnr lnr-user"></span>
+                        <h4><a href="#">А1 Новичoк</a></h4>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Полезная информация</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Это очень важная инфа о польском языке и это небходимо каждому<br>человеку который будет учить польский язык.
+                    <div class="card-price-fixed">
+                        <p class="price-color"><span class="price center-text">4378</span>
+                            <small class="text-muted"> грн</small>
                         </p>
+                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(199
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+                        <p>Оплата по занятиям:</p>
+                        <p class="center-text price-color"><span style="font-size:2rem;">5060</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p style="font-size:0.8rem; margin-top:-15px;">(230
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+
+                        <hr>
+
+                        <div class="d-flex flex-row justify-content-around pb-4">
+                            <div class="pt-2">
+                                <div class="price-card-font">21</div>
+                                <div style="font-size:1rem;">Занятие</div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="price-card-font">1</div>
+                                <div style="font-size:1rem;">Тест</div>
+                            </div>
+                        </div>
+                        <p class="mb-1"><br></p>
+                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
                     </div>
-                    <div class="mbr-section-btn text-center"><a href="https://#" class="btn btn-secondary-outline display-4">
-                            Подробнее
-                        </a></div>
+
+                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                            data-toggle="modal" data-target="#modal1">
+                        Подробнее
+                    </button>
+                    <div class="col-12">
+                        <a href="#" class="genric-btn danger radius">Купить</a>
+                    </div>
+                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal1">А1 Новичoк</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: justify;">Мы купим билет на поезд и немного попутешествуем. Мы
+                                        научимся читать билборды, вывески и проспекты. Сходим за покупками в супермаркет
+                                        и разобраться в меню ресторана. Мы уже понимаем простые предложения и
+                                        высказывания продавцов, врачей и водителей.
+                                        В случае болезни можем записаться к врачу и объяснить свою проблему...
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
+                                    <p>Вы можете понять знакомые слова и самые основные выражения о себе лично, своей
+                                        семье и окружающей среде, если темп речи собеседника медленный, а произношение
+                                        выразительное. Вы понимаете известные названия, слова и очень простые
+                                        предложения,
+                                        например, на информационных досках и плакатах или в каталогах.
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
+                                    <p>Вы можете принять участие в разговоре при условии, что собеседник готов повторить
+                                        медленнее или сформулировать свои мысли в элементарные предложения. Вы можете
+                                        сформулировать простые вопросы и отвечать на подобные. Также, использовать
+                                        простые
+                                        выражения и предложения. Описать место, где живете и людей, которых знаете.
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
+                                    <p>Вы можете написать короткую, простую открытку, например: с праздничными
+                                        поздравлениями. Вы способны заполнить формы (например, в гостинице) с личными
+                                        данными, такими как имя, адрес, гражданство…
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+            <!------------------------------->
+            <div class="col-lg-4 col-md-6 ">
+                <div class="single-feature mb-30 text-center">
+                    <div class="title d-flex flex-row pb-20">
+                        <span class="lnr lnr-user"></span>
+                        <h4><a href="#">А2 Любитель</a></h4>
+                    </div>
+                    <div class="card-price-fixed">
+                        <p class="price-color"><span class="price center-text">4378</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(199
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+                        <p>Оплата по занятиям:</p>
+                        <p class="center-text price-color"><span style="font-size:2rem;">5060</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p style="font-size:0.8rem; margin-top:-15px;">(230
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="public/indexpage-assets/assets/images/02.jpg" alt="Plik Онлайн Школа Польского Языка">
+                        <hr>
+
+                        <div class="d-flex flex-row justify-content-around pb-4">
+                            <div class="pt-2">
+                                <div class="price-card-font">21</div>
+                                <div style="font-size:1rem;">Занятие</div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="price-card-font">1</div>
+                                <div style="font-size:1rem;">Тест</div>
+                            </div>
+                        </div>
+                        <p class="mb-1"><br></p>
+                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Очень полезная информация</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Это очень важная инфа о польском языке и это небходимо каждому
-<br>человеку который будет учить польский язык.</p>
+
+                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                            data-toggle="modal" data-target="#modal2">
+                        Подробнее
+                    </button>
+                    <div class="col-12">
+                        <a href="#" class="genric-btn danger radius">Купить</a>
                     </div>
-                    <div class="mbr-section-btn text-center"><a href="https://#" class="btn btn-secondary-outline display-4">
-                            Подробнее
-                        </a></div>
+                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal2">А2 Любитель</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: justify;">Мы прочитаем объявления и найдем съемную квартиру,
+                                        полетаем на самолете. Напишем резюме и попутешествуем. Красиво расскажем о себе
+                                        и любимых местах. Поговорим о фильмах, насущных проблемах, праздниках и
+                                        приключениях. Примем участие в диалогах
+                                        и научимся выражать свое мнение. Напишем короткое письмо другу или
+                                        мотивационное...
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
+                                    <p>Вы понимаете фразы и наиболее часто используемые слова, относящиеся к важным для
+                                        вас вопросам (например, основная информация обо мне и моей семье, о покупках,
+                                        месте и регионе проживания, занятости). Вы можете понять основной смысл,
+                                        содержащийся
+                                        в коротких, простых сообщениях и объявлениях.
+                                    </p>
+                                    <p> Вы способны читать короткие, простые тексты. Вы умеете находить конкретную,
+                                        предсказуемую информацию в простых текстах о повседневной жизни, таких как
+                                        реклама, проспекты, карты меню, расписания. Вы понимаете короткие, простые
+                                        письма.
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
+                                    <p> Вы можете принять участие в обычном, типичном разговоре, который требует
+                                        простого и прямого обмена информацией на известные вам темы. Вы используете ряд
+                                        выражений и предложений, чтобы описать мою семью, условия жизни, других людей,
+                                        образование,
+                                        вашу текущую и прошлую работу.
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
+                                    <p> Вы в состоянии писать короткие и простые заметки или сообщения. Можете написать
+                                        очень простое частное письмо, например, поблагодарить кого-то за что-то.
+                                    </p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+            <!------------------------------->
+            <div class="col-lg-4 col-md-6 ">
+                <div class="single-feature mb-30 text-center">
+                    <div class="title d-flex flex-row pb-20">
+                        <span class="lnr lnr-user"></span>
+                        <h4><a href="#">B1 Специалист</a></h4>
+                    </div>
+                    <div class="card-price-fixed">
+                        <p class="price-color"><span class="price center-text">7475</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(299
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+                        <p>Оплата по занятиям:</p>
+                        <p class="center-text price-color"><span style="font-size:2rem;">8250</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p style="font-size:0.8rem; margin-top:-15px;">(330
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
 
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <img src="public/indexpage-assets/assets/images/mbr-676x451.jpg" alt="Plik Онлайн Школа Польского Языка" title="">
+                        <hr>
+
+                        <div class="d-flex flex-row justify-content-around pb-4">
+                            <div class="pt-2">
+                                <div class="price-card-font">24</div>
+                                <div style="font-size:1rem;">Занятий</div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="price-card-font">1</div>
+                                <div style="font-size:1rem;">Тест</div>
+                            </div>
+                        </div>
+                        <p class="mb-1">Занятия с носителем</p>
+                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
                     </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Без этой инфы плохо&nbsp;</h4>
-                        <p class="mbr-text mbr-fonts-style display-7">Это очень важная инфа о польском языке и это небходимо каждому
-<br>человеку который будет учить польский язык.</p>
+
+                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                            data-toggle="modal" data-target="#modal3">
+                        Подробнее
+                    </button>
+                    <div class="col-12">
+                        <a href="#" class="genric-btn danger radius">Купить</a>
                     </div>
-                    <div class="mbr-section-btn text-center"><a href="https://#" class="btn btn-secondary-outline display-4">
-                            Подробнее
-                        </a></div>
+                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal3">B1 Специалист</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: justify;">Теперь мы не растеряемся в любой компании. Мы умеем
+                                        говорить на тему истории, политики, экономики, природы и последних событий. Мы
+                                        посетим театр и поговорим о живописи. Мы обсудим и напишем сочинения на
+                                        множество актуальных тем: покупки, влияние
+                                        рекламы...
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
+                                    <p>Вы понимаете основные идеи, сформулированные на стандартном многообразии языков
+                                        по знакомым темам, типичным для дома, школы, отдыха и т. д. Также понимаете
+                                        основные темы многих радио и телевизионных программ. Вам доступны тексты,
+                                        состоящие в
+                                        основном из самых распространенных слов, касающихся повседневной или
+                                        профессиональной жизни. Понимаете описания событий, чувств и желаний,
+                                        содержащихся в частной переписке.</p>
+                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
+                                    <p>Вы справляетесь с большинством ситуаций, которые могут случится во время поездки
+                                        за границу. Вы можете - без предварительной подготовки - участвовать в
+                                        разговорах на знакомые частные или повседневные темаы (например, семья,
+                                        интересы, работа,
+                                        путешествия, текущие события…). Вы комбинируете выражения простым образом,
+                                        описывая переживания и события, а также мечты, надежды и амбиции. Можете вкратце
+                                        обосновать и объяснить свои собственные взгляды и планы. Вы способны сообщать о
+                                        событиях
+                                        и рассказывать истории о действии книг или фильмов, описывая собственные реакции
+                                        и впечатления.</p>
+                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
+                                    <p>Вы можете писать простые тексты на знакомые темы или связанные с вашими
+                                        интересами. Пишите частные письма, описывающие впечатления и эмоции.</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
+            <!------------------------------->
+            <div class="col-md-6 col-lg-4">
+                <div class="single-feature mb-30 text-center">
+                    <div class="title d-flex flex-row pb-20">
+                        <span class="lnr lnr-user"></span>
+                        <h4><a href="#">B2 Профессионал</a></h4>
+                    </div>
+                    <div class="card-price-fixed">
+                        <p class="price-color"><span class="price center-text">9269</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(299
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+                        <p>Оплата по занятиям:</p>
+                        <p class="center-text price-color"><span style="font-size:2rem;">10230</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p style="font-size:0.8rem; margin-top:-15px;">(330
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
 
+                        <hr>
+
+                        <div class="d-flex flex-row justify-content-around pb-4">
+                            <div class="pt-2">
+                                <div class="price-card-font">30</div>
+                                <div style="font-size:1rem;">Занятий</div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="price-card-font">1</div>
+                                <div style="font-size:1rem;">Тест</div>
+                            </div>
+                        </div>
+                        <p class="mb-1">Занятия только с носителем</p>
+                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                            data-toggle="modal" data-target="#modal4">
+                        Подробнее
+                    </button>
+                    <div class="col-12">
+                        <a href="#" class="genric-btn danger radius">Купить</a>
+                    </div>
+                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal4">B2 Профессионал</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: justify;">Сейчас, слушая и общаясь с Вами можно подумать, что
+                                        вы уже очень давно проживаете в Польше. Мы будем обсуждать новости и
+                                        телевидение, дискутировать на всевозможные темы. Оттачивать мастерство и
+                                        обращать внимание на детали. Мы научимся использовать
+                                        фразеологизмы и метафоры. Поговорим о Польских традициях, городах и местах. С
+                                        помощью специализированных текстов усовершенствуем красоту нашей речи и сможем
+                                        поддержать любую беседу.
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
+                                    <p>Вы понимаете более длинные речи и лекции и справляетесь со сложными аргументами -
+                                        при условии, что предмет вам хорошо известен. Понимаете большинство
+                                        телевизионных новостей, программ и фильмов. Вы с пониманием читаете статьи и
+                                        доклады о проблемах
+                                        современного мира, в которых писатели представляют конкретные позиции и взгляды.
+                                        Понимаете современную литературную прозу.</p>
+                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
+                                    <p>Общаетесь настолько плавно или спонтанно, чтобы поддержать случайные разговоры с
+                                        носителями языка. Можете активно участвовать в дискуссиях на знакомые темы,
+                                        высказывать свое мнение и защищать свои взгляды. Способны сформулировать четкие,
+                                        полные
+                                        заявления на различные темы, связанные с интересующими вас проблемами. Вы можете
+                                        объяснить свою точку зрения по данному вопросу и дать аргументы в пользу
+                                        возможных решений.</p>
+                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
+                                    Вы пишите понятные, подробные тексты на любые темы, связанные с моими интересами.
+                                    Можете написать эссе или исследование, передать информацию или рассмотреть аргументы
+                                    за и против. Способны писать письма, подчеркивая важность событий и свои
+                                    переживания.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!------------------------------------>
+            <div class="col-md-6 col-lg-4">
+                <div class="single-feature mb-30 text-center">
+                    <div class="title d-flex flex-row pb-20">
+                        <span class="lnr lnr-user"></span>
+                        <h4><a href="#">С1 Эксперт</a></h4>
+                    </div>
+                    <div class="card-price-fixed">
+                        <p class="price-color"><span class="price center-text">10379</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(399
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+                        <p>Оплата по занятиям:</p>
+                        <p class="center-text price-color"><span style="font-size:2rem;">11180</span>
+                            <small class="text-muted"> грн</small>
+                        </p>
+                        <p style="font-size:0.8rem; margin-top:-15px;">(430
+                            <small class="text-muted"> грн/урок</small>
+                            )
+                        </p>
+
+                        <hr>
+
+                        <div class="d-flex flex-row justify-content-around pb-4">
+                            <div class="pt-2">
+                                <div class="price-card-font">30</div>
+                                <div style="font-size:1rem;">Занятий</div>
+                            </div>
+                            <div class="pt-2">
+                                <div class="price-card-font">1</div>
+                                <div style="font-size:1rem;">Тест</div>
+                            </div>
+                        </div>
+                        <p class="mb-1">Занятия только с носителем</p>
+                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
+                    </div>
+
+                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                            data-toggle="modal" data-target="#modal5">
+                        Подробнее
+                    </button>
+                    <div class="col-12">
+                        <a href="#" class="genric-btn danger radius">Купить</a>
+                    </div>
+                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5"
+                         aria-hidden="true">
+                        <div class="modal-dialog modal-lg" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modal5">С1 Эксперт</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p style="text-align: justify;">Уже сложно понять поляк ты или нет. С легкостью
+                                        обсуждаем любую новость или научную статью. Дело осталось за малым. Сейчас мы
+                                        обсудим правила хорошего тона. Поговорим о праве, медицине. Научимся
+                                        организовывать мероприятия, правильно писать статьи
+                                        и общаться с прессой. Обсудим стереотипы, касающиеся пола, национальностей и
+                                        жизни в мегаполисах. Обсудим молодежные течения Польши. Больше ни одна тема тебя
+                                        не удивит!
+                                    </p>
+                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
+                                    <p>Вы понимаете более длинные утверждения, даже если они не четко структурированы и
+                                        логический смысл подразумевается, а не выражается на прямую. Воспринимаете
+                                        телевизионные программы и фильмы без особых трудностей. Понимаете длинную и
+                                        сложную информацию
+                                        и литературные тексты, замечая и оценивая их разнообразие с точки зрения стиля.
+                                        Вы разбираете специализированные статьи и более длинные технические инструкции,
+                                        даже те, которые не связаны с вашей специальностью.</p>
+                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
+                                    <p>Вы можете говорить свободно и спонтанно, не слишком явно думая о том, чтобы найти
+                                        правильную формулировку. Также вы эффективно общаетесь в социальных и
+                                        профессиональных вопросах. Можете точно сформулировать свои мысли и взгляды,
+                                        умело ссылаясь
+                                        на заявления собеседников. Вы способны сформулировать четкие и подробные
+                                        высказывания о сложных проблемах.</p>
+                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
+                                    <p>Вы формируете мысли в ясно и хорошо структурированные тексты, довольно широко
+                                        излагая свою точку зрения. Можете написать о сложных проблемах в частном письме,
+                                        в диссертации или исследовании, в котором освещаются вопросы, которые вы
+                                        считаете
+                                        наиболее важными. Способны подобрать стиль текста для потенциального
+                                        читателя.</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
 
         </div>
-    </div>
 </section>
+<!-- End Courses -->
 
-<section class="testimonials4 cid-qRQT6B62E4" id="testimonials4-f">
-
-
-
-  <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(0, 0, 0);">
-  </div>
-  <div class="container">
-    <h2 class="pb-3 mbr-fonts-style mbr-white align-center display-2">
-        ОТЗЫВЫ НАШИХ УЧЕНИКОВ</h2>
-
-    <div class="col-md-10 testimonials-container">
-
-
-
-    <div class="testimonials-item">
-        <div class="user row">
-          <div class="col-lg-3 col-md-4">
-            <div class="user_image">
-              <img src="public/indexpage-assets/assets/images/face3.jpg">
-            </div>
-          </div>
-          <div class="testimonials-caption col-lg-9 col-md-8">
-            <div class="user_text ">
-              <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
-              </p>
-            </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Хелен
-            </div>
-            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 ДИЗАЙНЕР
-            </div>
-          </div>
-        </div>
-      </div><div class="testimonials-item">
-        <div class="user row">
-          <div class="col-lg-3 col-md-4">
-            <div class="user_image">
-              <img src="public/indexpage-assets/assets/images/face1.jpg">
-            </div>
-          </div>
-          <div class="testimonials-caption col-lg-9 col-md-8">
-            <div class="user_text">
-              <p class="mbr-fonts-style  display-7">
-                 <em>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae nostrum, quos voluptas fugiat blanditiis, temporibus expedita cumque doloribus ea, officiis consequuntur repellat minus ad veritatis? Facere similique accusamus, accusantium sunt!"</em>
-              </p>
-            </div>
-            <div class="user_name mbr-bold mbr-fonts-style align-left pt-3 display-7">
-                 Линда
-            </div>
-            <div class="user_desk mbr-light mbr-fonts-style align-left pt-2 display-7">
-                 РАЗРАБОТЧИК
-            </div>
-          </div>
-        </div>
-      </div></div>
-  </div>
-</section>
-
-<section class="mbr-section info2 cid-qSUlvPuEsd" id="info2-1e">
-
-
-
-
-
+<!-- start blog Area -->
+<section class="blog-area section-gap" id="blog">
     <div class="container">
-        <div class="row main justify-content-center">
-            <div class="media-container-column col-12 col-lg-3 col-md-4">
-                <div class="mbr-section-btn align-left py-4"><a class="btn btn-primary display-4" href="https://#">
-
-                    Записаться</a></div>
-            </div>
-            <div class="media-container-column title col-12 col-lg-7 col-md-6">
-                <h2 class="align-right mbr-bold mbr-white pb-3 mbr-fonts-style display-2">
-                    Скидка 30%*</h2>
-                <h3 class="mbr-section-subtitle align-right mbr-light mbr-white mbr-fonts-style display-7">
-                    Получите скидку 30% на следующий курс за приведенного друга.</h3>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="cid-qRQUarr9dI" id="footer1-g">
-
-
-
-
-
-    <div class="container">
-        <div class="media-container-row content text-white">
-            <div class="col-12 col-md-3">
-                <div class="media-wrap">
-                    <a href="https://plik.com.ua">
-                        <img src="public/indexpage-assets/assets/images/pliklogowhite-288x288.png" alt="Plik Онлайн Школа Польского Языка" title="">
-                    </a>
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-70 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Полезная информация</h1>
                 </div>
             </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Адрес
-                </h5>
-                <p class="mbr-text">
-                    Улица
-                    <br>Город, индекс
+        </div>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 single-blog">
+                <div class="thumb text-center">
+                    <img class="img-fluid" src="public/indexpage-assets/img/b1.jpg" alt="">
+                </div>
+                <p class="date">20 Июня 2018</p>
+                <h4 class="text-center"><a href="#">Как получить карту поляка Becomes A Problem</a></h4>
+                <p>
+                    inappropriate behavior ipsum dolor sit amet, consectetur. inappropriate behavior ipsum dolor sit
+                    amet, consectetur.
                 </p>
+
             </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Контакты
-                </h5>
-                <p class="mbr-text">Email: contact@plik.com.ua
-<br>Телефон: +7 000 000 0001
-<br>Telegram: @plik.com.ua<br></p>
+            <div class="col-lg-3 col-md-6 single-blog">
+                <div class="thumb text-center">
+                    <img class="img-fluid" src="public/indexpage-assets/img/b2.jpg" alt="">
+                </div>
+                <p class="date">20 Июня 2018</p>
+                <h4 class="text-center"><a href="#">Addiction When Gambling Becomes A Problem</a></h4>
+                <p>
+                    inappropriate behavior ipsum dolor sit amet, consectetur. inappropriate behavior ipsum dolor sit
+                    amet, consectetur.
+                </p>
+
             </div>
-            <div class="col-12 col-md-3 mbr-fonts-style display-7">
-                <h5 class="pb-3">
-                    Ссылки
-                </h5>
-                <p class="mbr-text">Кабинет ученика&nbsp;<br>Цены<br>Курсы</p>
+            <div class="col-lg-3 col-md-6 single-blog">
+                <div class="thumb text-center">
+                    <img class="img-fluid" src="public/indexpage-assets/img/b3.jpg" alt="">
+                </div>
+                <p class="date">20 Июня 2018</p>
+                <h4 class="text-center"><a href="#">Addiction When Gambling Becomes A Problem</a></h4>
+                <p>
+                    inappropriate behavior ipsum dolor sit amet, consectetur. inappropriate behavior ipsum dolor sit
+                    amet, consectetur.
+                </p>
+
+            </div>
+            <div class="col-lg-3 col-md-6 single-blog">
+                <div class="thumb text-center">
+                    <img class="img-fluid" src="public/indexpage-assets/img/b4.jpg" alt="">
+                </div>
+                <p class="date">20 Июня 2018</p>
+                <h4 class="text-center"><a href="#">Addiction When Gambling Becomes A Problem</a></h4>
+                <p>
+                    inappropriate behavior ipsum dolor sit amet, consectetur. inappropriate behavior ipsum dolor sit
+                    amet, consectetur.
+                </p>
+
             </div>
         </div>
-        <div class="footer-lower">
-            <div class="media-container-row">
-                <div class="col-sm-12">
-                    <hr>
+    </div>
+</section>
+<!-- end blog Area -->
+
+<!--Start Review Area-->
+<section class="project-area section-gap">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-40 col-lg-8">
+                <div class="title text-center">
+                    <h1 class="mb-10">Отзывы учеников</h1>
                 </div>
             </div>
-            <div class="media-container-row mbr-white">
-                <div class="col-sm-6 copyright">
-                    <p class="mbr-text mbr-fonts-style display-7">
-                        © Copyright 2018 Plik - все права защищены
-                    </p>
-                </div>
-                <div class="col-md-6">
-                    <div class="social-list align-right">
-                        <div class="soc-item">
-                            <a href="#" target="_blank">
-                                <span class="socicon-twitter socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
+        </div>
+        <div class="row d-flex">
+            <div class="col-md-4 pb-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="public/indexpage-assets/img/review-1.jpg" alt=""
+                                 class="review-img img-fluid pb-4">
                         </div>
-                        <div class="soc-item">
-                            <a href="#" target="_blank">
-                                <span class="socicon-facebook socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
-                        </div>
-                        <div class="soc-item">
-                            <a href="#" target="_blank">
-                                <span class="socicon-youtube socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
-                        </div>
-                        <div class="soc-item">
-                            <a href="#" target="_blank">
-                                <span class="socicon-instagram socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
-                        </div>
-                        <div class="soc-item">
-                            <a href="#" target="_blank">
-                                <span class="socicon-googleplus socicon mbr-iconfont mbr-iconfont-social"></span>
-                            </a>
-                        </div>
+                        <div class="card-title">Елена</div>
 
+                        <div class="card-text">"Я работаю в венчурном фонде и знаю все нюансы молодых компаний. Я
+                            действительно придирчива к услугам в сфере образования, но могу уверенно сказать, что Plik —
+                            это хорошая команда людей, которые любят свое дело."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="public/indexpage-assets/img/review-2.jpg" alt=""
+                                 class="review-img img-fluid pb-4">
+                        </div>
+                        <div class="card-title">Андрей</div>
+                        <div class="card-text">"Я работаю в венчурном фонде и знаю все нюансы молодых компаний. Я
+                            действительно придирчива к услугам в сфере образования, но могу уверенно сказать, что Plik —
+                            это хорошая команда людей, которые любят свое дело."
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 pb-2">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div>
+                            <img src="public/indexpage-assets/img/review-3.jpg" alt=""
+                                 class="review-img img-fluid pb-4">
+                        </div>
+                        <div class="card-title">Татьяна</div>
+                        <div class="card-text">"Я работаю в венчурном фонде и знаю все нюансы молодых компаний. Я
+                            действительно придирчива к услугам в сфере образования, но могу уверенно сказать, что Plik —
+                            это хорошая команда людей, которые любят свое дело."
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!--End Review Area-->
+<!-- start footer Area -->
+<footer class="footer-area section-gap">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-3 text-center mb-4">
+                <a href="/"><img src="public/indexpage-assets/img/Plik.png" style="max-width: 40%" alt=""></a>
+            </div>
+            <div class="col-12 col-md-3">
+
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="pb-3 footer-links text-center">Контакты</h5>
+                <ul>
+                    <li>Email: <a href="mailto:contact@plik.com.ua">contact@plik.com.ua</a></li>
+                    <li>Телефон: <a href="tel:+380000-000-00-00">+380(ххх) ххх-хх-хх</a></li>
+                    <li>Telegram: <a href="https://telegram.me/plik.com.ua">@plik.com.ua</a></li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 mb-4">
+                <h5 class="pb-3 footer-links text-center">Ссылки</h5>
+                <ul class="footer-nav">
+                    <li><a href="/" class="footer-links">Главная</a></li>
+                    <li><a href="#price" class="footer-links">Курсы и Цены</a></li>
+                    <li><a href="#" class="footer-links">Дополнительные Услуги</a></li>
+                    <li><a href="/account" class="footer-links">Кабинет ученика</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container-fluid">
+                <hr style="size:100%;">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 mt-4">© Copyright 2018 Plik - все права защищены</div>
+            <div class="col-xs-12 col-sm-6">
+                <div class="d-flex social-list mt-4 justify-content-center">
+                    <div class="social-item"><a href="#" footer-links><i class="fa fa-2x fa-facebook"></i></a></div>
+                    <div class="social-item"><a href="#" footer-links><i class="fa fa-2x fa-twitter"></i></a></div>
+                    <div class="social-item"><a href="#" footer-links><i class="fa fa-2x fa-instagram"></i></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- end footer Area -->
 
 
-  <script src="public/indexpage-assets/assets/web/assets/jquery/jquery.min.js"></script>
-  <script src="public/indexpage-assets/assets/popper/popper.min.js"></script>
-  <script src="public/indexpage-assets/assets/tether/tether.min.js"></script>
-  <script src="public/indexpage-assets/assets/bootstrap/js/bootstrap.min.js"></script>
-  <script src="public/indexpage-assets/assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="public/indexpage-assets/assets/dropdown/js/script.min.js"></script>
-  <script src="public/indexpage-assets/assets/touchswipe/jquery.touch-swipe.min.js"></script>
-  <script src="public/indexpage-assets/assets/viewportchecker/jquery.viewportchecker.js"></script>
-  <script src="public/indexpage-assets/assets/playervimeo/vimeo_player.js"></script>
-  <script src="public/indexpage-assets/assets/parallax/jarallax.min.js"></script>
-  <script src="public/indexpage-assets/assets/mbr-tabs/mbr-tabs.js"></script>
-  <script src="public/indexpage-assets/assets/theme/js/script.js"></script>
-  <script src="public/indexpage-assets/assets/formoid/formoid.min.js"></script>
-  <script src="public/indexpage-assets/assets/jquery.validate.min.js"></script>
-  <script src="public/indexpage-assets/assets/script-contact.js"></script>
+<script src="public/indexpage-assets/js/vendor/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+        integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+        crossorigin="anonymous"></script>
+<script src="public/indexpage-assets/js/vendor/bootstrap.min.js"></script>
+<script src="public/indexpage-assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="public/indexpage-assets/js/jquery.magnific-popup.min.js"></script>
+<script src="public/indexpage-assets/js/owl.carousel.min.js"></script>
+<script src="public/indexpage-assets/js/jquery.sticky.js"></script>
+<script src="public/indexpage-assets/js/slick.js"></script>
+<script src="public/indexpage-assets/js/jquery.counterup.min.js"></script>
+<script src="public/indexpage-assets/js/waypoints.min.js"></script>
+<script src="public/indexpage-assets/js/main.js"></script>
+</body>
 
-
-
- <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i></i></a></div>
-    <input name="animation" type="hidden">
-  </body>
 </html>

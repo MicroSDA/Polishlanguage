@@ -829,6 +829,7 @@ class ajax_model
     public function register_new_user()
     {
 
+        
         $first_name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
@@ -837,11 +838,13 @@ class ajax_model
              * ///////////FIRS NAME/////////////////////////////////
              */
             if (empty($first_name)) {
-                throw new Exception('Name should be filled');
+                throw new Exception('1');
+                //Name should be filled
             }
 
             if (!preg_match('/^[a-zA-Zа-яА-я0-9]{3,}$/u', $first_name)) {
-                throw new Exception('Name has a wrong format');
+                throw new Exception('2');
+                //Name has a wrong format
             }
             /**
              * //////////////////////////////////////////////////////
@@ -851,11 +854,13 @@ class ajax_model
              * ///////////EMAIL//////////////////////////////////////
              */
             if (empty($email)) {
-                throw new Exception('Email should be filled');
+                throw new Exception('3');
+               //Email should be filled
             }
 
             if (!preg_match('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u', $email)) {
-                throw new Exception('Email has a wrong format');
+                throw new Exception('4');
+                //Email has a wrong format
             }
             /**
              * //////////////////////////////////////////////////////
@@ -864,11 +869,13 @@ class ajax_model
              * ///////////PHONE//////////////////////////////////////
              */
             if (empty($phone) or $phone == '+') {
-                throw new Exception('Phone should be filled');
+                throw new Exception('5');
+                //Phone should be filled
             }
 
             if (!preg_match('/^\+[0-9]{10,13}$/', $phone)) {
-                throw new Exception('Phone has a wrong format');
+                throw new Exception('6');
+                //Phone has a wrong format
             }
             /**
              * ////////////////////////////////////////////////////////
@@ -877,7 +884,7 @@ class ajax_model
             $user = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_students WHERE Email=?s OR Phone=?s', $email, $phone);
 
             if ($user) {
-                throw new Exception('Вы уже подали заявку, ожидайте когда с вами свяжется наш преподователь.');
+                throw new Exception('8');
             } else {
                 /**
                  * Register new student
@@ -914,12 +921,7 @@ class ajax_model
                 $mail->sendEmail($email, 'Добро Пожаловать', $message, $personal_data);
             }
 
-
-            echo '<script>$("#name").val(\'\');</script>';
-            echo '<script>$("#email").val(\'\');</script>';
-            echo '<script>$("#phone").val(\'\');</script>';
-            echo '<script>$("#register-new-user-block").remove();</script>';
-            echo '<script>$("#register-new-user-message").append(\'Done\');</script>';
+            echo '7';
 
         } catch (Exception $e) {
 

@@ -4,61 +4,142 @@
     <list default="true" id="424c9712-c0b1-4b60-9575-cc9c180fcddf" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/config/Urls-Routing-List.xml" afterPath="$PROJECT_DIR$/config/Urls-Routing-List.xml" />
-      <change beforePath="$PROJECT_DIR$/core/Libs/Basic/General/FileUpload.php" afterPath="$PROJECT_DIR$/core/Libs/Basic/General/FileUpload.php" />
-      <change beforePath="$PROJECT_DIR$/core/Libs/Basic/General/Students.php" afterPath="$PROJECT_DIR$/core/Libs/Basic/General/Students.php" />
-      <change beforePath="$PROJECT_DIR$/core/Libs/Basic/General/Teacher.php" afterPath="$PROJECT_DIR$/core/Libs/Basic/General/Teacher.php" />
-      <change beforePath="$PROJECT_DIR$/core/Models/basic/article_model.php" afterPath="$PROJECT_DIR$/core/Models/basic/article_model.php" />
-      <change beforePath="$PROJECT_DIR$/core/Models/basic/personal_area_model.php" afterPath="$PROJECT_DIR$/core/Models/basic/personal_area_model.php" />
-      <change beforePath="$PROJECT_DIR$/core/Models/basic/teacher_model.php" afterPath="$PROJECT_DIR$/core/Models/basic/teacher_model.php" />
+      <change beforePath="$PROJECT_DIR$/core/Models/basic/error_404_model.php" afterPath="$PROJECT_DIR$/core/Models/basic/error_404_model.php" />
       <change beforePath="$PROJECT_DIR$/core/Models/service/ajax_model.php" afterPath="$PROJECT_DIR$/core/Models/service/ajax_model.php" />
-      <change beforePath="$PROJECT_DIR$/core/Models/service/calendar/calendar_student_model.php" afterPath="$PROJECT_DIR$/core/Models/service/calendar/calendar_student_model.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
       <change beforePath="$PROJECT_DIR$/logs/LOG.xml" afterPath="$PROJECT_DIR$/logs/LOG.xml" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/animatecss/animate.min.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/animatecss/animate.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-grid.min.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-grid.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-reboot.min.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-reboot.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap.min.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/js/bootstrap.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/css/style.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/js/script.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/js/script.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/formoid/formoid.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/formoid/formoid.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/player.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/player.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/script.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/script.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/style.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/style.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/02.jpg" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/images/02.jpg" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x423.jpg" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x423.jpg" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x451.jpg" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x451.jpg" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/imagesloaded/imagesloaded.pkgd.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/imagesloaded/imagesloaded.pkgd.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/masonry/masonry.pkgd.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/masonry/masonry.pkgd.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mbr-tabs/mbr-tabs.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/mbr-tabs/mbr-tabs.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mobirise/css/mbr-additional.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/mobirise/css/mbr-additional.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/parallax/jarallax.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/parallax/jarallax.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/playervimeo/vimeo_player.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/playervimeo/vimeo_player.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/popper/popper.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/popper/popper.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/slidervideo/script.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/slidervideo/script.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/smoothscroll/smooth-scroll.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/smoothscroll/smooth-scroll.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/css/styles.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/css/styles.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.svg" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.svg" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/css/style.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/css/style.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/js/script.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/js/script.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/touchswipe/jquery.touch-swipe.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/touchswipe/jquery.touch-swipe.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/viewportchecker/jquery.viewportchecker.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/viewportchecker/jquery.viewportchecker.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/vimeoplayer/jquery.mb.vimeo_player.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/vimeoplayer/jquery.mb.vimeo_player.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/jquery/jquery.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/jquery/jquery.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.css" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.svg" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.svg" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/ytplayer/jquery.mb.ytplayer.min.js" afterPath="$PROJECT_DIR$/public/indexpage-assets/assets/ytplayer/jquery.mb.ytplayer.min.js" />
-      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/style.css" afterPath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/style.css" />
-      <change beforePath="$PROJECT_DIR$/public/sitemap.xml" afterPath="$PROJECT_DIR$/public/sitemap.xml" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/admin-libs.js" afterPath="$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/admin-libs.js" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/css-js/js/login-and-register.js" afterPath="$PROJECT_DIR$/views/public/main/css-js/js/login-and-register.js" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/css-js/js/student.js" afterPath="$PROJECT_DIR$/views/public/main/css-js/js/student.js" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/css-js/js/teacher.js" afterPath="$PROJECT_DIR$/views/public/main/css-js/js/teacher.js" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/animatecss/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/animatecss/animate.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-grid.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap-reboot.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/css/bootstrap.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/js/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrap/js/bootstrap.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrapcarouselswipe/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/bootstrapcarouselswipe/bootstrap-carousel-swipe.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/css/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/js/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/dropdown/js/script.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/formoid/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/formoid/formoid.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/player.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/script.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/gallery/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/Plik.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/architecture-buildings-business-14621-2000x1232.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/background3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/face1.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/face3.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/flag-poland-polish-5611-2000x1333.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery00.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery01.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery02.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery03.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery04.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/gallery05.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/hashes.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/laptop-3087585-1922-952x635.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/logo2.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1-1620x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1-1920x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1-720x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1046x697.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1092x725.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1438x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1440x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1607x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1619x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1620x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1623x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-1920x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-2-1620x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-2-720x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-3-1620x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-3-720x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-4-720x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x423.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-676x451.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-720x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-772x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-824x1080.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/mbr-favicon.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/pliklogo.jpg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/pliklogoblack-122x122.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/images/pliklogowhite-288x288.png" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/imagesloaded/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/imagesloaded/imagesloaded.pkgd.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/jquery.validate.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/login-and-register.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/masonry/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/masonry/masonry.pkgd.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mbr-tabs/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mbr-tabs/mbr-tabs.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mobirise/css/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/mobirise/css/mbr-additional.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/parallax/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/parallax/jarallax.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/playervimeo/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/playervimeo/vimeo_player.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/popper/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/popper/popper.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/script-contact.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/slidervideo/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/slidervideo/script.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/smoothscroll/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/smoothscroll/smooth-scroll.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/css/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/css/styles.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/socicon/fonts/socicon.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/tether/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/tether/tether.min.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/tether/tether.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/css/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/css/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/js/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/theme/js/script.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/touchswipe/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/touchswipe/jquery.touch-swipe.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/viewportchecker/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/viewportchecker/jquery.viewportchecker.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/vimeoplayer/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/vimeoplayer/jquery.mb.vimeo_player.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/jquery/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/jquery/jquery.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.eot" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.svg" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/web/assets/mobirise-icons/mobirise-icons.woff" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/ytplayer/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/assets/ytplayer/jquery.mb.ytplayer.min.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/300.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/300italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/500.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/500italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/700.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/700italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/900.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/900italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/italic.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/regular.ttf" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/Rubik/style.css" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/_notes/dwsync.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/public/indexpage-assets/fonts/fonts.json" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/views/public/main/error-404/index.php" afterPath="$PROJECT_DIR$/views/public/main/error-404/index.php" />
       <change beforePath="$PROJECT_DIR$/views/public/main/index/index.php" afterPath="$PROJECT_DIR$/views/public/main/index/index.php" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/login/index.php" afterPath="$PROJECT_DIR$/views/public/main/login/index.php" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/personal-area/index.php" afterPath="$PROJECT_DIR$/views/public/main/personal-area/index.php" />
-      <change beforePath="$PROJECT_DIR$/views/public/main/teacher/dashboard/index.php" afterPath="$PROJECT_DIR$/views/public/main/teacher/dashboard/index.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -69,213 +150,205 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ajax_model.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/index/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="618">
+              <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajax_model.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/core/Models/service/ajax_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="732">
-              <caret line="1872" column="5" lean-forward="false" selection-start-line="1872" selection-start-column="5" selection-end-line="1872" selection-end-column="5" />
+            <state relative-caret-position="285">
+              <caret line="831" column="8" lean-forward="false" selection-start-line="831" selection-start-column="8" selection-end-line="831" selection-end-column="8" />
               <folding>
-                <marker date="1532540574439" expanded="true" signature="1493:1511" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="1775:1793" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="1992:2106" ph="UPDATE c_urls... " />
-                <marker date="1532540574439" expanded="true" signature="2314:2350" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="2438:2456" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="2745:2763" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="4370:4405" ph="DELETE FROM c_urls... " />
-                <marker date="1532540574439" expanded="true" signature="4488:4524" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="4612:4630" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="4920:4938" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="5777:5795" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="6060:6078" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="6283:6320" ph="SELECT * FRO... c_urls" />
-                <marker date="1532540574439" expanded="true" signature="6399:6515" ph="INSERT INTO c_urls... " />
-                <marker date="1532540574439" expanded="true" signature="6712:6748" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="6844:6862" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="7144:7162" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="7315:7333" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="7777:7795" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="7980:8019" ph="SELECT * FRO... c_employee" />
-                <marker date="1532540574439" expanded="true" signature="8115:8210" ph="INSERT INTO c_employee... " />
-                <marker date="1532540574439" expanded="true" signature="8450:8486" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="8590:8608" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="8902:8920" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="9086:9104" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="12255:12294" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="12255:12308" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="12431:12467" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="12533:12628" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="12533:12643" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="13509:13527" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="13780:13798" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="14020:14056" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="14117:14154" ph="DELETE FROM c_students... " />
-                <marker date="1532540574439" expanded="true" signature="14299:14317" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="15079:15102" ph="SELECT * FRO... c_courses" />
-                <marker date="1532540574439" expanded="true" signature="15582:15621" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="19488:19587" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="19488:19603" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="19488:19618" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="19893:19929" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="20060:20078" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="20316:20334" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="20590:20608" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="20793:20838" ph="SELECT * FRO... c_restricted_person" />
-                <marker date="1532540574439" expanded="true" signature="20934:20994" ph="INSERT INTO c_restricted_person... " />
-                <marker date="1532540574439" expanded="true" signature="21150:21186" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="21290:21308" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="21583:21601" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="21767:21785" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="22224:22267" ph="DELETE FROM c_restricted_person... " />
-                <marker date="1532540574439" expanded="true" signature="22350:22386" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="22474:22492" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="22763:22781" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="25528:25563" ph="SELECT * FRO... c_courses" />
-                <marker date="1532540574439" expanded="true" signature="25643:25826" ph="INSERT INTO c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="26100:26136" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="26335:26353" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="26646:26664" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="27349:27388" ph="SELECT * FRO... c_lessons_pdf" />
-                <marker date="1532540574439" expanded="true" signature="27466:27532" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="28510:28569" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="29545:29611" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="30506:30572" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="30824:30859" ph="SELECT * FRO... c_courses" />
-                <marker date="1532540574439" expanded="true" signature="30940:31016" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="30940:31028" ph="UPDATE c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="30946:31016" ph="INSERT INTO c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="31210:31246" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="31444:31462" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="31755:31773" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="31987:32024" ph="DELETE FROM c_lessons_pdf... " />
-                <marker date="1532540574439" expanded="true" signature="32105:32141" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="32229:32247" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="32513:32531" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="34369:34420" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="35130:35229" ph="INSERT INTO c_students... " />
-                <marker date="1532540574439" expanded="true" signature="37707:37762" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="38303:38373" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="38892:38946" ph="SELECT * FRO... c_teacher" />
-                <marker date="1532540574439" expanded="true" signature="39535:39604" ph="UPDATE c_teacher... " />
-                <marker date="1532540574439" expanded="true" signature="40273:40291" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="41586:41667" ph="SELECT * FRO... c_lessons" />
-                <marker date="1532540574439" expanded="true" signature="41850:41925" ph="SELECT * FRO... c_lessons_feedback" />
-                <marker date="1532540574439" expanded="true" signature="42193:42300" ph="INSERT INTO c_lessons_feedback... " />
-                <marker date="1532540574439" expanded="true" signature="42486:42561" ph="UPDATE c_lessons... " />
-                <marker date="1532540574439" expanded="true" signature="44204:44266" ph="SELECT * FRO... c_lessons" />
-                <marker date="1532540574439" expanded="true" signature="44417:44513" ph="UPDATE c_lessons... " />
-                <marker date="1532540574439" expanded="true" signature="45938:46035" ph="INSERT INTO c_courses... " />
-                <marker date="1532540574439" expanded="true" signature="46237:46273" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="46458:46476" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="46748:46766" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="47816:47913" ph="UPDATE c_courses... " />
-                <marker date="1532540574439" expanded="true" signature="47822:47898" ph="INSERT INTO c_courses... " />
-                <marker date="1532540574439" expanded="true" signature="48122:48158" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="48342:48360" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="48632:48650" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="48852:48884" ph="DELETE FROM c_restricted_person... " />
-                <marker date="1532540574439" expanded="true" signature="48852:48885" ph="DELETE FROM c_courses... " />
-                <marker date="1532540574439" expanded="true" signature="48966:49002" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="49090:49108" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="49374:49392" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="52137:52189" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="52313:52349" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="52415:52546" ph="INSERT INTO c_teacher... " />
-                <marker date="1532540574439" expanded="true" signature="52426:52510" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="53809:53827" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="54168:54186" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="57043:57091" ph="SELECT * FRO... c_teacher" />
-                <marker date="1532540574439" expanded="true" signature="57194:57339" ph="UPDATE c_teacher... " />
-                <marker date="1532540574439" expanded="true" signature="57194:57341" ph="UPDATE c_teacher... " />
-                <marker date="1532540574439" expanded="true" signature="57522:57558" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="57698:57716" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="58059:58077" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="58287:58320" ph="DELETE FROM c_teacher... " />
-                <marker date="1532540574439" expanded="true" signature="58402:58438" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="58526:58544" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="58811:58829" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="59124:59142" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="59309:59345" ph="SELECT * FRO... c_article" />
-                <marker date="1532540574439" expanded="true" signature="59417:59435" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="59719:59804" ph="INSERT INTO c_article... " />
-                <marker date="1532540574439" expanded="true" signature="59977:60013" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="60124:60142" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="60525:60543" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="60987:61023" ph="SELECT * FRO... c_article" />
-                <marker date="1532540574439" expanded="true" signature="61739:61757" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="62068:62143" ph="UPDATE c_article... " />
-                <marker date="1532540574439" expanded="true" signature="62311:62347" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="62442:62460" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="62760:62778" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="63236:63270" ph="DELETE FROM c_article... " />
-                <marker date="1532540574439" expanded="true" signature="63353:63389" ph="SELECT * FRO... c_settings" />
-                <marker date="1532540574439" expanded="true" signature="63476:63494" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="63782:63800" ph="..." />
-                <marker date="1532540574439" expanded="true" signature="65854:65906" ph="SELECT * FRO... c_students" />
-                <marker date="1532540574439" expanded="true" signature="66015:66060" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="67496:67538" ph="UPDATE c_students... " />
-                <marker date="1532540574439" expanded="true" signature="69820:69871" ph="SELECT * FRO... c_teachers" />
-                <marker date="1532540574439" expanded="true" signature="69980:70024" ph="UPDATE c_teachers... " />
-                <marker date="1532540574439" expanded="true" signature="71461:71502" ph="UPDATE c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="1493:1511" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="1775:1793" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="1992:2106" ph="UPDATE c_urls... " />
+                <marker date="1533160376516" expanded="true" signature="2314:2350" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="2438:2456" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="2745:2763" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="4370:4405" ph="DELETE FROM c_urls... " />
+                <marker date="1533160376516" expanded="true" signature="4488:4524" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="4612:4630" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="4920:4938" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="5777:5795" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="6060:6078" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="6283:6320" ph="SELECT * FRO... c_urls" />
+                <marker date="1533160376516" expanded="true" signature="6399:6515" ph="INSERT INTO c_urls... " />
+                <marker date="1533160376516" expanded="true" signature="6712:6748" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="6844:6862" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="7144:7162" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="7315:7333" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="7777:7795" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="7980:8019" ph="SELECT * FRO... c_employee" />
+                <marker date="1533160376516" expanded="true" signature="8115:8210" ph="INSERT INTO c_employee... " />
+                <marker date="1533160376516" expanded="true" signature="8450:8486" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="8590:8608" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="8902:8920" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="9086:9104" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="12255:12294" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="12255:12308" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="12431:12467" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="12533:12628" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="12533:12643" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="13509:13527" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="13780:13798" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="14020:14056" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="14117:14154" ph="DELETE FROM c_students... " />
+                <marker date="1533160376516" expanded="true" signature="14299:14317" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="15079:15102" ph="SELECT * FRO... c_courses" />
+                <marker date="1533160376516" expanded="true" signature="15582:15621" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="19488:19587" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="19488:19603" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="19488:19618" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="19893:19929" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="20060:20078" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="20316:20334" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="20590:20608" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="20793:20838" ph="SELECT * FRO... c_restricted_person" />
+                <marker date="1533160376516" expanded="true" signature="20934:20994" ph="INSERT INTO c_restricted_person... " />
+                <marker date="1533160376516" expanded="true" signature="21150:21186" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="21290:21308" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="21583:21601" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="21767:21785" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="22224:22267" ph="DELETE FROM c_restricted_person... " />
+                <marker date="1533160376516" expanded="true" signature="22350:22386" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="22474:22492" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="22763:22781" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="25528:25563" ph="SELECT * FRO... c_courses" />
+                <marker date="1533160376516" expanded="true" signature="25643:25826" ph="INSERT INTO c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="26100:26136" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="26335:26353" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="26646:26664" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="27349:27388" ph="SELECT * FRO... c_lessons_pdf" />
+                <marker date="1533160376516" expanded="true" signature="27466:27532" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="28510:28569" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="29545:29611" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="30506:30572" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="30824:30859" ph="SELECT * FRO... c_courses" />
+                <marker date="1533160376516" expanded="true" signature="30940:31016" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="30940:31028" ph="UPDATE c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="30946:31016" ph="INSERT INTO c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="31210:31246" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="31444:31462" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="31755:31773" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="31987:32024" ph="DELETE FROM c_lessons_pdf... " />
+                <marker date="1533160376516" expanded="true" signature="32105:32141" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="32229:32247" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="32513:32531" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="34497:34548" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="35188:35287" ph="INSERT INTO c_students... " />
+                <marker date="1533160376516" expanded="true" signature="37443:37498" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="38039:38109" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="38628:38682" ph="SELECT * FRO... c_teacher" />
+                <marker date="1533160376516" expanded="true" signature="39271:39340" ph="UPDATE c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="40009:40027" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="41322:41403" ph="SELECT * FRO... c_lessons" />
+                <marker date="1533160376516" expanded="true" signature="41586:41661" ph="SELECT * FRO... c_lessons_feedback" />
+                <marker date="1533160376516" expanded="true" signature="41929:42036" ph="INSERT INTO c_lessons_feedback... " />
+                <marker date="1533160376516" expanded="true" signature="42222:42297" ph="UPDATE c_lessons... " />
+                <marker date="1533160376516" expanded="true" signature="43940:44002" ph="SELECT * FRO... c_lessons" />
+                <marker date="1533160376516" expanded="true" signature="44153:44249" ph="UPDATE c_lessons... " />
+                <marker date="1533160376516" expanded="true" signature="45674:45771" ph="INSERT INTO c_courses... " />
+                <marker date="1533160376516" expanded="true" signature="45973:46009" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="46194:46212" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="46484:46502" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="47552:47649" ph="UPDATE c_courses... " />
+                <marker date="1533160376516" expanded="true" signature="47558:47634" ph="INSERT INTO c_courses... " />
+                <marker date="1533160376516" expanded="true" signature="47858:47894" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="48078:48096" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="48368:48386" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="48588:48620" ph="DELETE FROM c_restricted_person... " />
+                <marker date="1533160376516" expanded="true" signature="48588:48621" ph="DELETE FROM c_courses... " />
+                <marker date="1533160376516" expanded="true" signature="48702:48738" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="48826:48844" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="49110:49128" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="51873:51925" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="52049:52085" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="52151:52282" ph="INSERT INTO c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="52162:52246" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="53545:53563" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="53904:53922" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="56779:56827" ph="SELECT * FRO... c_teacher" />
+                <marker date="1533160376516" expanded="true" signature="56930:57075" ph="UPDATE c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="56930:57077" ph="UPDATE c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="57258:57294" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="57434:57452" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="57795:57813" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="58023:58056" ph="DELETE FROM c_teacher... " />
+                <marker date="1533160376516" expanded="true" signature="58138:58174" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="58262:58280" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="58547:58565" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="58860:58878" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="59045:59081" ph="SELECT * FRO... c_article" />
+                <marker date="1533160376516" expanded="true" signature="59153:59171" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="59455:59540" ph="INSERT INTO c_article... " />
+                <marker date="1533160376516" expanded="true" signature="59713:59749" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="59860:59878" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="60261:60279" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="60723:60759" ph="SELECT * FRO... c_article" />
+                <marker date="1533160376516" expanded="true" signature="61475:61493" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="61804:61879" ph="UPDATE c_article... " />
+                <marker date="1533160376516" expanded="true" signature="62047:62083" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="62178:62196" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="62496:62514" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="62972:63006" ph="DELETE FROM c_article... " />
+                <marker date="1533160376516" expanded="true" signature="63089:63125" ph="SELECT * FRO... c_settings" />
+                <marker date="1533160376516" expanded="true" signature="63212:63230" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="63518:63536" ph="..." />
+                <marker date="1533160376516" expanded="true" signature="65590:65642" ph="SELECT * FRO... c_students" />
+                <marker date="1533160376516" expanded="true" signature="65751:65796" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="67232:67274" ph="UPDATE c_students... " />
+                <marker date="1533160376516" expanded="true" signature="69556:69607" ph="SELECT * FRO... c_teachers" />
+                <marker date="1533160376516" expanded="true" signature="69716:69760" ph="UPDATE c_teachers... " />
+                <marker date="1533160376516" expanded="true" signature="71197:71238" ph="UPDATE c_teacher... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/article/index.php">
+        <entry file="file://$PROJECT_DIR$/views/public/main/login/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="66" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/all-articles/index.php">
+        <entry file="file://$PROJECT_DIR$/views/public/main/admin/courses/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="4" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="1" selection-end-column="4" />
+            <state relative-caret-position="697">
+              <caret line="161" column="89" lean-forward="false" selection-start-line="161" selection-start-column="61" selection-end-line="161" selection-end-column="89" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="footer.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/footer.php">
+      <file leaf-file-name="admin-libs.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/admin-libs.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="107" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="107" />
+            <state relative-caret-position="-1252">
+              <caret line="518" column="8" lean-forward="false" selection-start-line="518" selection-start-column="8" selection-end-line="520" selection-end-column="11" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/header.php">
+      <file leaf-file-name="error_404_model.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/core/Models/basic/error_404_model.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/teacher/dashboard/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="32" lean-forward="false" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/teacher/settings/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1428">
-              <caret line="84" column="106" lean-forward="false" selection-start-line="84" selection-start-column="106" selection-end-line="84" selection-end-column="106" />
+            <state relative-caret-position="391">
+              <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -284,28 +357,43 @@
       <file leaf-file-name="student.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/student.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="576">
-              <caret line="302" column="74" lean-forward="true" selection-start-line="302" selection-start-column="74" selection-end-line="302" selection-end-column="74" />
+            <state relative-caret-position="712">
+              <caret line="241" column="34" lean-forward="true" selection-start-line="241" selection-start-column="34" selection-end-line="241" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Template-Config.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/contact-us/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="748">
-              <caret line="71" column="15" lean-forward="true" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+            <state relative-caret-position="358">
+              <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+              <folding>
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/indexpage-assets/js/main.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="638">
+              <caret line="201" column="59" lean-forward="false" selection-start-line="201" selection-start-column="59" selection-end-line="201" selection-end-column="59" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="teacher.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/teacher.js">
+      <file leaf-file-name="login-and-register.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/login-and-register.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="249" column="31" lean-forward="false" selection-start-line="249" selection-start-column="31" selection-end-line="249" selection-end-column="31" />
+            <state relative-caret-position="561">
+              <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="49" />
               <folding />
             </state>
           </provider>
@@ -325,13 +413,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>rawQuery</find>
-      <find>/</find>
-      <find>/font/roboto/Roboto-Light.woff2</find>
-      <find>/font/</find>
-      <find>font-face</find>
-      <find>assets</find>
-      <find>font</find>
       <find>language</find>
       <find>theme-chooser.js</find>
       <find>theme-chooser</find>
@@ -351,10 +432,17 @@
       <find>вой</find>
       <find>Онлай</find>
       <find>login</find>
-      <find>regi</find>
       <find>int</find>
       <find>log</find>
       <find>bac</find>
+      <find>price</find>
+      <find>Глав</find>
+      <find>my</find>
+      <find>id=&quot;price&quot;</find>
+      <find>results</find>
+      <find>regis</find>
+      <find>regi</find>
+      <find>addC</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -364,11 +452,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/public/indexpage-assets/assets/login-and-register.js" />
-        <option value="$PROJECT_DIR$/core/Libs/Config/ErrorLog.php" />
-        <option value="$PROJECT_DIR$/config/Template-Config.xml" />
-        <option value="$PROJECT_DIR$/views/public/main/admin/students/.htaccess" />
-        <option value="$APPLICATION_CONFIG_DIR$/scratches/scratch.htaccess" />
         <option value="$PROJECT_DIR$/views/public/main/admin/entrance/index.php" />
         <option value="$PROJECT_DIR$/core/Libs/Config/Mail/EmailSender.php" />
         <option value="$PROJECT_DIR$/core/Models/basic/index_model.php" />
@@ -406,7 +489,6 @@
         <option value="$PROJECT_DIR$/views/public/main/personal-area/settings/index.php" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/js/student.js" />
         <option value="$PROJECT_DIR$/core/Libs/Basic/General/FileUpload.php" />
-        <option value="$PROJECT_DIR$/views/public/main/index/index.php" />
         <option value="$PROJECT_DIR$/views/public/main/login/index.php" />
         <option value="$PROJECT_DIR$/public/indexpage-assets/assets/mobirise/css/mbr-additional.css" />
         <option value="$PROJECT_DIR$/views/public/main/teacher/dashboard/index.php" />
@@ -414,6 +496,12 @@
         <option value="$PROJECT_DIR$/views/public/main/teacher/settings/index.php" />
         <option value="$PROJECT_DIR$/core/Libs/Basic/General/Teacher.php" />
         <option value="$PROJECT_DIR$/views/public/main/css-js/js/teacher.js" />
+        <option value="$PROJECT_DIR$/core/Models/basic/error_404_model.php" />
+        <option value="$PROJECT_DIR$/views/public/main/error-404/index.php" />
+        <option value="$PROJECT_DIR$/core/Models/basic/contact_us_model.php" />
+        <option value="$PROJECT_DIR$/views/public/main/contact-us/index.php" />
+        <option value="$PROJECT_DIR$/views/public/main/index/index.php" />
+        <option value="$PROJECT_DIR$/public/indexpage-assets/js/main.js" />
         <option value="$PROJECT_DIR$/core/Models/service/ajax_model.php" />
       </list>
     </option>
@@ -425,7 +513,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-237" />
     <option name="y" value="-20" />
     <option name="width" value="1906" />
@@ -469,6 +557,129 @@
             <path>
               <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
               <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="core" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="Models" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="service" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="indexpage-assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="indexpage-assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="courses" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin-assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin-assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="admin-assets" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="css-js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="polishlanguage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="polishlanguage" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="views" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="public" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="main" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="login" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -669,18 +880,18 @@
       <workItem from="1532352619471" duration="8473000" />
       <workItem from="1532461585361" duration="6947000" />
       <workItem from="1532530860625" duration="3843000" />
-      <workItem from="1533118803897" duration="1986000" />
+      <workItem from="1533118803897" duration="8851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1387311000" />
+    <option name="totallyTimeSpent" value="1394176000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1696" height="1026" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14761905" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1904762" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
@@ -713,66 +924,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/public/main/admin/students/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="156" column="143" lean-forward="false" selection-start-line="156" selection-start-column="140" selection-end-line="156" selection-end-column="143" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/add-new-brand.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/service/admin_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2259">
-          <caret line="431" column="85" lean-forward="false" selection-start-line="431" selection-start-column="85" selection-end-line="431" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/basic/error_404_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/admin/teachers/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4692">
-          <caret line="276" column="43" lean-forward="false" selection-start-line="276" selection-start-column="43" selection-end-line="276" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/basic/price_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/basic/index_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/core/Models/basic/contact_model.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="476">
           <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/contact/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
         </state>
       </provider>
     </entry>
@@ -930,20 +1085,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/login-and-register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="12" lean-forward="false" selection-start-line="24" selection-start-column="12" selection-end-line="24" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/admin-libs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6460">
-          <caret line="380" column="35" lean-forward="false" selection-start-line="380" selection-start-column="3" selection-end-line="380" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/indexpage-assets/assets/images/02.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -972,20 +1113,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/index/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="49" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="842" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/login/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1053,156 +1180,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/core/Models/service/ajax_model.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="732">
-          <caret line="1872" column="5" lean-forward="false" selection-start-line="1872" selection-start-column="5" selection-end-line="1872" selection-end-column="5" />
-          <folding>
-            <marker date="1532540574439" expanded="true" signature="1493:1511" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="1775:1793" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="1992:2106" ph="UPDATE c_urls... " />
-            <marker date="1532540574439" expanded="true" signature="2314:2350" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="2438:2456" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="2745:2763" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="4370:4405" ph="DELETE FROM c_urls... " />
-            <marker date="1532540574439" expanded="true" signature="4488:4524" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="4612:4630" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="4920:4938" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="5777:5795" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="6060:6078" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="6283:6320" ph="SELECT * FRO... c_urls" />
-            <marker date="1532540574439" expanded="true" signature="6399:6515" ph="INSERT INTO c_urls... " />
-            <marker date="1532540574439" expanded="true" signature="6712:6748" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="6844:6862" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="7144:7162" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="7315:7333" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="7777:7795" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="7980:8019" ph="SELECT * FRO... c_employee" />
-            <marker date="1532540574439" expanded="true" signature="8115:8210" ph="INSERT INTO c_employee... " />
-            <marker date="1532540574439" expanded="true" signature="8450:8486" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="8590:8608" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="8902:8920" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="9086:9104" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="12255:12294" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="12255:12308" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="12431:12467" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="12533:12628" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="12533:12643" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="13509:13527" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="13780:13798" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="14020:14056" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="14117:14154" ph="DELETE FROM c_students... " />
-            <marker date="1532540574439" expanded="true" signature="14299:14317" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="15079:15102" ph="SELECT * FRO... c_courses" />
-            <marker date="1532540574439" expanded="true" signature="15582:15621" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="19488:19587" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="19488:19603" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="19488:19618" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="19893:19929" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="20060:20078" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="20316:20334" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="20590:20608" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="20793:20838" ph="SELECT * FRO... c_restricted_person" />
-            <marker date="1532540574439" expanded="true" signature="20934:20994" ph="INSERT INTO c_restricted_person... " />
-            <marker date="1532540574439" expanded="true" signature="21150:21186" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="21290:21308" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="21583:21601" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="21767:21785" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="22224:22267" ph="DELETE FROM c_restricted_person... " />
-            <marker date="1532540574439" expanded="true" signature="22350:22386" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="22474:22492" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="22763:22781" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="25528:25563" ph="SELECT * FRO... c_courses" />
-            <marker date="1532540574439" expanded="true" signature="25643:25826" ph="INSERT INTO c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="26100:26136" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="26335:26353" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="26646:26664" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="27349:27388" ph="SELECT * FRO... c_lessons_pdf" />
-            <marker date="1532540574439" expanded="true" signature="27466:27532" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="28510:28569" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="29545:29611" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="30506:30572" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="30824:30859" ph="SELECT * FRO... c_courses" />
-            <marker date="1532540574439" expanded="true" signature="30940:31016" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="30940:31028" ph="UPDATE c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="30946:31016" ph="INSERT INTO c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="31210:31246" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="31444:31462" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="31755:31773" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="31987:32024" ph="DELETE FROM c_lessons_pdf... " />
-            <marker date="1532540574439" expanded="true" signature="32105:32141" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="32229:32247" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="32513:32531" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="34369:34420" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="35130:35229" ph="INSERT INTO c_students... " />
-            <marker date="1532540574439" expanded="true" signature="37707:37762" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="38303:38373" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="38892:38946" ph="SELECT * FRO... c_teacher" />
-            <marker date="1532540574439" expanded="true" signature="39535:39604" ph="UPDATE c_teacher... " />
-            <marker date="1532540574439" expanded="true" signature="40273:40291" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="41586:41667" ph="SELECT * FRO... c_lessons" />
-            <marker date="1532540574439" expanded="true" signature="41850:41925" ph="SELECT * FRO... c_lessons_feedback" />
-            <marker date="1532540574439" expanded="true" signature="42193:42300" ph="INSERT INTO c_lessons_feedback... " />
-            <marker date="1532540574439" expanded="true" signature="42486:42561" ph="UPDATE c_lessons... " />
-            <marker date="1532540574439" expanded="true" signature="44204:44266" ph="SELECT * FRO... c_lessons" />
-            <marker date="1532540574439" expanded="true" signature="44417:44513" ph="UPDATE c_lessons... " />
-            <marker date="1532540574439" expanded="true" signature="45938:46035" ph="INSERT INTO c_courses... " />
-            <marker date="1532540574439" expanded="true" signature="46237:46273" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="46458:46476" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="46748:46766" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="47816:47913" ph="UPDATE c_courses... " />
-            <marker date="1532540574439" expanded="true" signature="47822:47898" ph="INSERT INTO c_courses... " />
-            <marker date="1532540574439" expanded="true" signature="48122:48158" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="48342:48360" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="48632:48650" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="48852:48884" ph="DELETE FROM c_restricted_person... " />
-            <marker date="1532540574439" expanded="true" signature="48852:48885" ph="DELETE FROM c_courses... " />
-            <marker date="1532540574439" expanded="true" signature="48966:49002" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="49090:49108" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="49374:49392" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="52137:52189" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="52313:52349" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="52415:52546" ph="INSERT INTO c_teacher... " />
-            <marker date="1532540574439" expanded="true" signature="52426:52510" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="53809:53827" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="54168:54186" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="57043:57091" ph="SELECT * FRO... c_teacher" />
-            <marker date="1532540574439" expanded="true" signature="57194:57339" ph="UPDATE c_teacher... " />
-            <marker date="1532540574439" expanded="true" signature="57194:57341" ph="UPDATE c_teacher... " />
-            <marker date="1532540574439" expanded="true" signature="57522:57558" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="57698:57716" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="58059:58077" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="58287:58320" ph="DELETE FROM c_teacher... " />
-            <marker date="1532540574439" expanded="true" signature="58402:58438" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="58526:58544" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="58811:58829" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="59124:59142" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="59309:59345" ph="SELECT * FRO... c_article" />
-            <marker date="1532540574439" expanded="true" signature="59417:59435" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="59719:59804" ph="INSERT INTO c_article... " />
-            <marker date="1532540574439" expanded="true" signature="59977:60013" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="60124:60142" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="60525:60543" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="60987:61023" ph="SELECT * FRO... c_article" />
-            <marker date="1532540574439" expanded="true" signature="61739:61757" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="62068:62143" ph="UPDATE c_article... " />
-            <marker date="1532540574439" expanded="true" signature="62311:62347" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="62442:62460" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="62760:62778" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="63236:63270" ph="DELETE FROM c_article... " />
-            <marker date="1532540574439" expanded="true" signature="63353:63389" ph="SELECT * FRO... c_settings" />
-            <marker date="1532540574439" expanded="true" signature="63476:63494" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="63782:63800" ph="..." />
-            <marker date="1532540574439" expanded="true" signature="65854:65906" ph="SELECT * FRO... c_students" />
-            <marker date="1532540574439" expanded="true" signature="66015:66060" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="67496:67538" ph="UPDATE c_students... " />
-            <marker date="1532540574439" expanded="true" signature="69820:69871" ph="SELECT * FRO... c_teachers" />
-            <marker date="1532540574439" expanded="true" signature="69980:70024" ph="UPDATE c_teachers... " />
-            <marker date="1532540574439" expanded="true" signature="71461:71502" ph="UPDATE c_teacher... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/main/article/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1211,18 +1188,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/all-articles/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="4" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="1" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/public/main/footer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="107" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="107" />
+          <caret line="3" column="107" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="107" />
           <folding />
         </state>
       </provider>
@@ -1230,15 +1199,7 @@
     <entry file="file://$PROJECT_DIR$/views/public/main/header.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/student.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="302" column="74" lean-forward="true" selection-start-line="302" selection-start-column="74" selection-end-line="302" selection-end-column="74" />
+          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1254,8 +1215,284 @@
     <entry file="file://$PROJECT_DIR$/config/Template-Config.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
-          <caret line="71" column="15" lean-forward="true" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
+          <caret line="71" column="15" lean-forward="false" selection-start-line="71" selection-start-column="15" selection-end-line="71" selection-end-column="15" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/all-articles/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="4" lean-forward="false" selection-start-line="0" selection-start-column="1" selection-end-line="1" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/error-404/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="970">
+          <caret line="109" column="21" lean-forward="true" selection-start-line="109" selection-start-column="21" selection-end-line="109" selection-end-column="21" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#h2#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Models/basic/contact_us_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/contact/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1088">
+          <caret line="53" column="73" lean-forward="false" selection-start-line="53" selection-start-column="73" selection-end-line="53" selection-end-column="73" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Models/basic/index_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="33" column="1" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="33" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/login-and-register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="49" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/login/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="66" lean-forward="false" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/contact-us/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="51" column="48" lean-forward="false" selection-start-line="51" selection-start-column="48" selection-end-line="51" selection-end-column="48" />
+          <folding>
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#nav#0;n#header#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#hr#0;n#div#0;n#div#1;n#div#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/admin/courses/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="161" column="89" lean-forward="false" selection-start-line="161" selection-start-column="61" selection-end-line="161" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/css-js/js/student.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="712">
+          <caret line="241" column="34" lean-forward="true" selection-start-line="241" selection-start-column="34" selection-end-line="241" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/admin-assets/css-js/js/admin-libs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1252">
+          <caret line="518" column="8" lean-forward="false" selection-start-line="518" selection-start-column="8" selection-end-line="520" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/indexpage-assets/js/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="638">
+          <caret line="201" column="59" lean-forward="false" selection-start-line="201" selection-start-column="59" selection-end-line="201" selection-end-column="59" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Models/basic/error_404_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" column="8" lean-forward="false" selection-start-line="28" selection-start-column="8" selection-end-line="28" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/public/main/index/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/core/Models/service/ajax_model.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="831" column="8" lean-forward="false" selection-start-line="831" selection-start-column="8" selection-end-line="831" selection-end-column="8" />
+          <folding>
+            <marker date="1533160376516" expanded="true" signature="1493:1511" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="1775:1793" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="1992:2106" ph="UPDATE c_urls... " />
+            <marker date="1533160376516" expanded="true" signature="2314:2350" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="2438:2456" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="2745:2763" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="4370:4405" ph="DELETE FROM c_urls... " />
+            <marker date="1533160376516" expanded="true" signature="4488:4524" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="4612:4630" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="4920:4938" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="5777:5795" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="6060:6078" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="6283:6320" ph="SELECT * FRO... c_urls" />
+            <marker date="1533160376516" expanded="true" signature="6399:6515" ph="INSERT INTO c_urls... " />
+            <marker date="1533160376516" expanded="true" signature="6712:6748" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="6844:6862" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="7144:7162" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="7315:7333" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="7777:7795" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="7980:8019" ph="SELECT * FRO... c_employee" />
+            <marker date="1533160376516" expanded="true" signature="8115:8210" ph="INSERT INTO c_employee... " />
+            <marker date="1533160376516" expanded="true" signature="8450:8486" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="8590:8608" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="8902:8920" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="9086:9104" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="12255:12294" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="12255:12308" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="12431:12467" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="12533:12628" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="12533:12643" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="13509:13527" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="13780:13798" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="14020:14056" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="14117:14154" ph="DELETE FROM c_students... " />
+            <marker date="1533160376516" expanded="true" signature="14299:14317" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="15079:15102" ph="SELECT * FRO... c_courses" />
+            <marker date="1533160376516" expanded="true" signature="15582:15621" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="19488:19587" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="19488:19603" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="19488:19618" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="19893:19929" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="20060:20078" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="20316:20334" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="20590:20608" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="20793:20838" ph="SELECT * FRO... c_restricted_person" />
+            <marker date="1533160376516" expanded="true" signature="20934:20994" ph="INSERT INTO c_restricted_person... " />
+            <marker date="1533160376516" expanded="true" signature="21150:21186" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="21290:21308" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="21583:21601" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="21767:21785" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="22224:22267" ph="DELETE FROM c_restricted_person... " />
+            <marker date="1533160376516" expanded="true" signature="22350:22386" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="22474:22492" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="22763:22781" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="25528:25563" ph="SELECT * FRO... c_courses" />
+            <marker date="1533160376516" expanded="true" signature="25643:25826" ph="INSERT INTO c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="26100:26136" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="26335:26353" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="26646:26664" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="27349:27388" ph="SELECT * FRO... c_lessons_pdf" />
+            <marker date="1533160376516" expanded="true" signature="27466:27532" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="28510:28569" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="29545:29611" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="30506:30572" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="30824:30859" ph="SELECT * FRO... c_courses" />
+            <marker date="1533160376516" expanded="true" signature="30940:31016" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="30940:31028" ph="UPDATE c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="30946:31016" ph="INSERT INTO c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="31210:31246" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="31444:31462" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="31755:31773" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="31987:32024" ph="DELETE FROM c_lessons_pdf... " />
+            <marker date="1533160376516" expanded="true" signature="32105:32141" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="32229:32247" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="32513:32531" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="34497:34548" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="35188:35287" ph="INSERT INTO c_students... " />
+            <marker date="1533160376516" expanded="true" signature="37443:37498" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="38039:38109" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="38628:38682" ph="SELECT * FRO... c_teacher" />
+            <marker date="1533160376516" expanded="true" signature="39271:39340" ph="UPDATE c_teacher... " />
+            <marker date="1533160376516" expanded="true" signature="40009:40027" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="41322:41403" ph="SELECT * FRO... c_lessons" />
+            <marker date="1533160376516" expanded="true" signature="41586:41661" ph="SELECT * FRO... c_lessons_feedback" />
+            <marker date="1533160376516" expanded="true" signature="41929:42036" ph="INSERT INTO c_lessons_feedback... " />
+            <marker date="1533160376516" expanded="true" signature="42222:42297" ph="UPDATE c_lessons... " />
+            <marker date="1533160376516" expanded="true" signature="43940:44002" ph="SELECT * FRO... c_lessons" />
+            <marker date="1533160376516" expanded="true" signature="44153:44249" ph="UPDATE c_lessons... " />
+            <marker date="1533160376516" expanded="true" signature="45674:45771" ph="INSERT INTO c_courses... " />
+            <marker date="1533160376516" expanded="true" signature="45973:46009" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="46194:46212" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="46484:46502" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="47552:47649" ph="UPDATE c_courses... " />
+            <marker date="1533160376516" expanded="true" signature="47558:47634" ph="INSERT INTO c_courses... " />
+            <marker date="1533160376516" expanded="true" signature="47858:47894" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="48078:48096" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="48368:48386" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="48588:48620" ph="DELETE FROM c_restricted_person... " />
+            <marker date="1533160376516" expanded="true" signature="48588:48621" ph="DELETE FROM c_courses... " />
+            <marker date="1533160376516" expanded="true" signature="48702:48738" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="48826:48844" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="49110:49128" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="51873:51925" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="52049:52085" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="52151:52282" ph="INSERT INTO c_teacher... " />
+            <marker date="1533160376516" expanded="true" signature="52162:52246" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="53545:53563" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="53904:53922" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="56779:56827" ph="SELECT * FRO... c_teacher" />
+            <marker date="1533160376516" expanded="true" signature="56930:57075" ph="UPDATE c_teacher... " />
+            <marker date="1533160376516" expanded="true" signature="56930:57077" ph="UPDATE c_teacher... " />
+            <marker date="1533160376516" expanded="true" signature="57258:57294" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="57434:57452" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="57795:57813" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="58023:58056" ph="DELETE FROM c_teacher... " />
+            <marker date="1533160376516" expanded="true" signature="58138:58174" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="58262:58280" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="58547:58565" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="58860:58878" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="59045:59081" ph="SELECT * FRO... c_article" />
+            <marker date="1533160376516" expanded="true" signature="59153:59171" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="59455:59540" ph="INSERT INTO c_article... " />
+            <marker date="1533160376516" expanded="true" signature="59713:59749" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="59860:59878" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="60261:60279" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="60723:60759" ph="SELECT * FRO... c_article" />
+            <marker date="1533160376516" expanded="true" signature="61475:61493" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="61804:61879" ph="UPDATE c_article... " />
+            <marker date="1533160376516" expanded="true" signature="62047:62083" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="62178:62196" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="62496:62514" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="62972:63006" ph="DELETE FROM c_article... " />
+            <marker date="1533160376516" expanded="true" signature="63089:63125" ph="SELECT * FRO... c_settings" />
+            <marker date="1533160376516" expanded="true" signature="63212:63230" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="63518:63536" ph="..." />
+            <marker date="1533160376516" expanded="true" signature="65590:65642" ph="SELECT * FRO... c_students" />
+            <marker date="1533160376516" expanded="true" signature="65751:65796" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="67232:67274" ph="UPDATE c_students... " />
+            <marker date="1533160376516" expanded="true" signature="69556:69607" ph="SELECT * FRO... c_teachers" />
+            <marker date="1533160376516" expanded="true" signature="69716:69760" ph="UPDATE c_teachers... " />
+            <marker date="1533160376516" expanded="true" signature="71197:71238" ph="UPDATE c_teacher... " />
+          </folding>
         </state>
       </provider>
     </entry>

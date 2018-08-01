@@ -26,8 +26,9 @@ class error_404_model extends Model {
      *
      */
     public function index(){
+        
          header('HTTP/1.1 404 Not Found');
-        $this->render();
+         $this->render(false,false);
 
     }
 }
