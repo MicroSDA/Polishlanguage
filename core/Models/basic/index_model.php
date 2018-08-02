@@ -25,7 +25,12 @@ class index_model extends Model
      */
     public function index()
     {
+        $courses = DataBase::getInstance()->getDB()->getAll('SELECT * FROM c_courses');
 
+        if($courses){
+
+            DataManager::getInstance()->addData('Courses', $courses);
+        }
 
         $this->render(false,false);
 

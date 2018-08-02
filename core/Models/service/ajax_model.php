@@ -829,7 +829,7 @@ class ajax_model
     public function register_new_user()
     {
 
-        
+
         $first_name = $_POST['name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];

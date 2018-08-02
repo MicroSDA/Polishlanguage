@@ -344,484 +344,74 @@
             </div>
         </div>
         <div class="row pb-5 d-flex justify-content-center">
-            <div class="col-lg-4 col-md-6 ">
-                <div class="single-feature mb-30 text-center">
-                    <div class="title d-flex flex-row pb-20">
-                        <span class="lnr lnr-user"></span>
-                        <h4><a href="#">А1 Новичoк</a></h4>
-                    </div>
-                    <div class="card-price-fixed">
-                        <p class="price-color"><span class="price center-text">4378</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(199
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-                        <p>Оплата по занятиям:</p>
-                        <p class="center-text price-color"><span style="font-size:2rem;">5060</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p style="font-size:0.8rem; margin-top:-15px;">(230
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-
-                        <hr>
-
-                        <div class="d-flex flex-row justify-content-around pb-4">
-                            <div class="pt-2">
-                                <div class="price-card-font">21</div>
-                                <div style="font-size:1rem;">Занятие</div>
-                            </div>
-                            <div class="pt-2">
-                                <div class="price-card-font">1</div>
-                                <div style="font-size:1rem;">Тест</div>
-                            </div>
+            <?php foreach (DataManager::getInstance()->getDataByKey('Courses') as $value): ?>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="single-feature mb-30 text-center">
+                        <div class="title d-flex flex-row pb-20">
+                            <span class="lnr lnr-user"></span>
+                            <h4><a href="#"><?= $value['Level'] ?> - <?= $value['Name'] ?></a></h4>
                         </div>
-                        <p class="mb-1"><br></p>
-                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
-                    </div>
+                        <div class="card-price-fixed">
+                            <p class="price-color"><span class="price center-text"><?= $value['Price'] ?></span>
+                                <small class="text-muted"> грн</small>
+                            </p>
+                            <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(199
+                                <small class="text-muted"> грн/урок</small>
+                                )
+                            </p>
+                            <p>Оплата по занятиям:</p>
+                            <p class="center-text price-color"><span style="font-size:2rem;">5060</span>
+                                <small class="text-muted"> грн</small>
+                            </p>
+                            <p style="font-size:0.8rem; margin-top:-15px;">(230
+                                <small class="text-muted"> грн/урок</small>
+                                )
+                            </p>
 
-                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
-                            data-toggle="modal" data-target="#modal1">
-                        Подробнее
-                    </button>
-                    <div class="col-12">
-                        <a href="#" class="genric-btn danger radius">Купить</a>
-                    </div>
-                    <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal1">А1 Новичoк</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: justify;">Мы купим билет на поезд и немного попутешествуем. Мы
-                                        научимся читать билборды, вывески и проспекты. Сходим за покупками в супермаркет
-                                        и разобраться в меню ресторана. Мы уже понимаем простые предложения и
-                                        высказывания продавцов, врачей и водителей.
-                                        В случае болезни можем записаться к врачу и объяснить свою проблему...
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
-                                    <p>Вы можете понять знакомые слова и самые основные выражения о себе лично, своей
-                                        семье и окружающей среде, если темп речи собеседника медленный, а произношение
-                                        выразительное. Вы понимаете известные названия, слова и очень простые
-                                        предложения,
-                                        например, на информационных досках и плакатах или в каталогах.
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
-                                    <p>Вы можете принять участие в разговоре при условии, что собеседник готов повторить
-                                        медленнее или сформулировать свои мысли в элементарные предложения. Вы можете
-                                        сформулировать простые вопросы и отвечать на подобные. Также, использовать
-                                        простые
-                                        выражения и предложения. Описать место, где живете и людей, которых знаете.
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
-                                    <p>Вы можете написать короткую, простую открытку, например: с праздничными
-                                        поздравлениями. Вы способны заполнить формы (например, в гостинице) с личными
-                                        данными, такими как имя, адрес, гражданство…
-                                    </p>
-                                </div>
+                            <hr>
 
+                            <div class="d-flex flex-row justify-content-around pb-4">
+                                <div class="pt-2">
+                                    <div class="price-card-font"><?= $value['Period'] ?></div>
+                                    <div style="font-size:1rem;">Занятие</div>
+                                </div>
+                                <div class="pt-2">
+                                    <div class="price-card-font">1</div>
+                                    <div style="font-size:1rem;">Тест</div>
+                                </div>
+                            </div>
+                            <p class="mb-1"><br></p>
+                            <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
+                        </div>
+
+                        <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
+                                data-toggle="modal" data-target="#<?= $value['Level'] ?>-<?= $value['Name'] ?>">
+                            Подробнее
+                        </button>
+                        <div class="col-12">
+                            <a href="#" class="genric-btn danger radius">Купить</a>
+                        </div>
+                        <div class="modal fade" id="<?= $value['Level'] ?>-<?= $value['Name'] ?>" tabindex="-1" role="dialog" aria-labelledby="modal1"
+                             aria-hidden="true">
+                            <div class="modal-dialog modal-lg" role="document">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h5 class="modal-title" id="<?= $value['Level'] ?>-<?= $value['Name'] ?>"><?= $value['Level'] ?> - <?= $value['Name'] ?></h5>
+                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                            <span aria-hidden="true">&times;</span>
+                                        </button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <?= $value['Description'] ?>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-            </div>
-            <!------------------------------->
-            <div class="col-lg-4 col-md-6 ">
-                <div class="single-feature mb-30 text-center">
-                    <div class="title d-flex flex-row pb-20">
-                        <span class="lnr lnr-user"></span>
-                        <h4><a href="#">А2 Любитель</a></h4>
-                    </div>
-                    <div class="card-price-fixed">
-                        <p class="price-color"><span class="price center-text">4378</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(199
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-                        <p>Оплата по занятиям:</p>
-                        <p class="center-text price-color"><span style="font-size:2rem;">5060</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p style="font-size:0.8rem; margin-top:-15px;">(230
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-
-                        <hr>
-
-                        <div class="d-flex flex-row justify-content-around pb-4">
-                            <div class="pt-2">
-                                <div class="price-card-font">21</div>
-                                <div style="font-size:1rem;">Занятие</div>
-                            </div>
-                            <div class="pt-2">
-                                <div class="price-card-font">1</div>
-                                <div style="font-size:1rem;">Тест</div>
-                            </div>
-                        </div>
-                        <p class="mb-1"><br></p>
-                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
-                            data-toggle="modal" data-target="#modal2">
-                        Подробнее
-                    </button>
-                    <div class="col-12">
-                        <a href="#" class="genric-btn danger radius">Купить</a>
-                    </div>
-                    <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal2">А2 Любитель</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: justify;">Мы прочитаем объявления и найдем съемную квартиру,
-                                        полетаем на самолете. Напишем резюме и попутешествуем. Красиво расскажем о себе
-                                        и любимых местах. Поговорим о фильмах, насущных проблемах, праздниках и
-                                        приключениях. Примем участие в диалогах
-                                        и научимся выражать свое мнение. Напишем короткое письмо другу или
-                                        мотивационное...
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
-                                    <p>Вы понимаете фразы и наиболее часто используемые слова, относящиеся к важным для
-                                        вас вопросам (например, основная информация обо мне и моей семье, о покупках,
-                                        месте и регионе проживания, занятости). Вы можете понять основной смысл,
-                                        содержащийся
-                                        в коротких, простых сообщениях и объявлениях.
-                                    </p>
-                                    <p> Вы способны читать короткие, простые тексты. Вы умеете находить конкретную,
-                                        предсказуемую информацию в простых текстах о повседневной жизни, таких как
-                                        реклама, проспекты, карты меню, расписания. Вы понимаете короткие, простые
-                                        письма.
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
-                                    <p> Вы можете принять участие в обычном, типичном разговоре, который требует
-                                        простого и прямого обмена информацией на известные вам темы. Вы используете ряд
-                                        выражений и предложений, чтобы описать мою семью, условия жизни, других людей,
-                                        образование,
-                                        вашу текущую и прошлую работу.
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
-                                    <p> Вы в состоянии писать короткие и простые заметки или сообщения. Можете написать
-                                        очень простое частное письмо, например, поблагодарить кого-то за что-то.
-                                    </p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <!------------------------------->
-            <div class="col-lg-4 col-md-6 ">
-                <div class="single-feature mb-30 text-center">
-                    <div class="title d-flex flex-row pb-20">
-                        <span class="lnr lnr-user"></span>
-                        <h4><a href="#">B1 Специалист</a></h4>
-                    </div>
-                    <div class="card-price-fixed">
-                        <p class="price-color"><span class="price center-text">7475</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(299
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-                        <p>Оплата по занятиям:</p>
-                        <p class="center-text price-color"><span style="font-size:2rem;">8250</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p style="font-size:0.8rem; margin-top:-15px;">(330
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-
-                        <hr>
-
-                        <div class="d-flex flex-row justify-content-around pb-4">
-                            <div class="pt-2">
-                                <div class="price-card-font">24</div>
-                                <div style="font-size:1rem;">Занятий</div>
-                            </div>
-                            <div class="pt-2">
-                                <div class="price-card-font">1</div>
-                                <div style="font-size:1rem;">Тест</div>
-                            </div>
-                        </div>
-                        <p class="mb-1">Занятия с носителем</p>
-                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
-                            data-toggle="modal" data-target="#modal3">
-                        Подробнее
-                    </button>
-                    <div class="col-12">
-                        <a href="#" class="genric-btn danger radius">Купить</a>
-                    </div>
-                    <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal3">B1 Специалист</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: justify;">Теперь мы не растеряемся в любой компании. Мы умеем
-                                        говорить на тему истории, политики, экономики, природы и последних событий. Мы
-                                        посетим театр и поговорим о живописи. Мы обсудим и напишем сочинения на
-                                        множество актуальных тем: покупки, влияние
-                                        рекламы...
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
-                                    <p>Вы понимаете основные идеи, сформулированные на стандартном многообразии языков
-                                        по знакомым темам, типичным для дома, школы, отдыха и т. д. Также понимаете
-                                        основные темы многих радио и телевизионных программ. Вам доступны тексты,
-                                        состоящие в
-                                        основном из самых распространенных слов, касающихся повседневной или
-                                        профессиональной жизни. Понимаете описания событий, чувств и желаний,
-                                        содержащихся в частной переписке.</p>
-                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
-                                    <p>Вы справляетесь с большинством ситуаций, которые могут случится во время поездки
-                                        за границу. Вы можете - без предварительной подготовки - участвовать в
-                                        разговорах на знакомые частные или повседневные темаы (например, семья,
-                                        интересы, работа,
-                                        путешествия, текущие события…). Вы комбинируете выражения простым образом,
-                                        описывая переживания и события, а также мечты, надежды и амбиции. Можете вкратце
-                                        обосновать и объяснить свои собственные взгляды и планы. Вы способны сообщать о
-                                        событиях
-                                        и рассказывать истории о действии книг или фильмов, описывая собственные реакции
-                                        и впечатления.</p>
-                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
-                                    <p>Вы можете писать простые тексты на знакомые темы или связанные с вашими
-                                        интересами. Пишите частные письма, описывающие впечатления и эмоции.</p>
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <!------------------------------->
-            <div class="col-md-6 col-lg-4">
-                <div class="single-feature mb-30 text-center">
-                    <div class="title d-flex flex-row pb-20">
-                        <span class="lnr lnr-user"></span>
-                        <h4><a href="#">B2 Профессионал</a></h4>
-                    </div>
-                    <div class="card-price-fixed">
-                        <p class="price-color"><span class="price center-text">9269</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(299
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-                        <p>Оплата по занятиям:</p>
-                        <p class="center-text price-color"><span style="font-size:2rem;">10230</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p style="font-size:0.8rem; margin-top:-15px;">(330
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-
-                        <hr>
-
-                        <div class="d-flex flex-row justify-content-around pb-4">
-                            <div class="pt-2">
-                                <div class="price-card-font">30</div>
-                                <div style="font-size:1rem;">Занятий</div>
-                            </div>
-                            <div class="pt-2">
-                                <div class="price-card-font">1</div>
-                                <div style="font-size:1rem;">Тест</div>
-                            </div>
-                        </div>
-                        <p class="mb-1">Занятия только с носителем</p>
-                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
-                            data-toggle="modal" data-target="#modal4">
-                        Подробнее
-                    </button>
-                    <div class="col-12">
-                        <a href="#" class="genric-btn danger radius">Купить</a>
-                    </div>
-                    <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="modal4"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal4">B2 Профессионал</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: justify;">Сейчас, слушая и общаясь с Вами можно подумать, что
-                                        вы уже очень давно проживаете в Польше. Мы будем обсуждать новости и
-                                        телевидение, дискутировать на всевозможные темы. Оттачивать мастерство и
-                                        обращать внимание на детали. Мы научимся использовать
-                                        фразеологизмы и метафоры. Поговорим о Польских традициях, городах и местах. С
-                                        помощью специализированных текстов усовершенствуем красоту нашей речи и сможем
-                                        поддержать любую беседу.
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
-                                    <p>Вы понимаете более длинные речи и лекции и справляетесь со сложными аргументами -
-                                        при условии, что предмет вам хорошо известен. Понимаете большинство
-                                        телевизионных новостей, программ и фильмов. Вы с пониманием читаете статьи и
-                                        доклады о проблемах
-                                        современного мира, в которых писатели представляют конкретные позиции и взгляды.
-                                        Понимаете современную литературную прозу.</p>
-                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
-                                    <p>Общаетесь настолько плавно или спонтанно, чтобы поддержать случайные разговоры с
-                                        носителями языка. Можете активно участвовать в дискуссиях на знакомые темы,
-                                        высказывать свое мнение и защищать свои взгляды. Способны сформулировать четкие,
-                                        полные
-                                        заявления на различные темы, связанные с интересующими вас проблемами. Вы можете
-                                        объяснить свою точку зрения по данному вопросу и дать аргументы в пользу
-                                        возможных решений.</p>
-                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
-                                    Вы пишите понятные, подробные тексты на любые темы, связанные с моими интересами.
-                                    Можете написать эссе или исследование, передать информацию или рассмотреть аргументы
-                                    за и против. Способны писать письма, подчеркивая важность событий и свои
-                                    переживания.</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-            <!------------------------------------>
-            <div class="col-md-6 col-lg-4">
-                <div class="single-feature mb-30 text-center">
-                    <div class="title d-flex flex-row pb-20">
-                        <span class="lnr lnr-user"></span>
-                        <h4><a href="#">С1 Эксперт</a></h4>
-                    </div>
-                    <div class="card-price-fixed">
-                        <p class="price-color"><span class="price center-text">10379</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p class="center-text" style="font-size:0.8rem; margin-top:-15px;">(399
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-                        <p>Оплата по занятиям:</p>
-                        <p class="center-text price-color"><span style="font-size:2rem;">11180</span>
-                            <small class="text-muted"> грн</small>
-                        </p>
-                        <p style="font-size:0.8rem; margin-top:-15px;">(430
-                            <small class="text-muted"> грн/урок</small>
-                            )
-                        </p>
-
-                        <hr>
-
-                        <div class="d-flex flex-row justify-content-around pb-4">
-                            <div class="pt-2">
-                                <div class="price-card-font">30</div>
-                                <div style="font-size:1rem;">Занятий</div>
-                            </div>
-                            <div class="pt-2">
-                                <div class="price-card-font">1</div>
-                                <div style="font-size:1rem;">Тест</div>
-                            </div>
-                        </div>
-                        <p class="mb-1">Занятия только с носителем</p>
-                        <p class="pb-2 center-text">Длительность одного занятия - 60 минут</p>
-                    </div>
-
-                    <button type="button" class="btn btn-primary genric-btn info-border circle arrow medium"
-                            data-toggle="modal" data-target="#modal5">
-                        Подробнее
-                    </button>
-                    <div class="col-12">
-                        <a href="#" class="genric-btn danger radius">Купить</a>
-                    </div>
-                    <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="modal5"
-                         aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                    <h5 class="modal-title" id="modal5">С1 Эксперт</h5>
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
-                                </div>
-                                <div class="modal-body">
-                                    <p style="text-align: justify;">Уже сложно понять поляк ты или нет. С легкостью
-                                        обсуждаем любую новость или научную статью. Дело осталось за малым. Сейчас мы
-                                        обсудим правила хорошего тона. Поговорим о праве, медицине. Научимся
-                                        организовывать мероприятия, правильно писать статьи
-                                        и общаться с прессой. Обсудим стереотипы, касающиеся пола, национальностей и
-                                        жизни в мегаполисах. Обсудим молодежные течения Польши. Больше ни одна тема тебя
-                                        не удивит!
-                                    </p>
-                                    <p style="font-size:1.5rem; color:black;">Понимание</p>
-                                    <p>Вы понимаете более длинные утверждения, даже если они не четко структурированы и
-                                        логический смысл подразумевается, а не выражается на прямую. Воспринимаете
-                                        телевизионные программы и фильмы без особых трудностей. Понимаете длинную и
-                                        сложную информацию
-                                        и литературные тексты, замечая и оценивая их разнообразие с точки зрения стиля.
-                                        Вы разбираете специализированные статьи и более длинные технические инструкции,
-                                        даже те, которые не связаны с вашей специальностью.</p>
-                                    <p style="font-size:1.5rem; color:black;">Говорение</p>
-                                    <p>Вы можете говорить свободно и спонтанно, не слишком явно думая о том, чтобы найти
-                                        правильную формулировку. Также вы эффективно общаетесь в социальных и
-                                        профессиональных вопросах. Можете точно сформулировать свои мысли и взгляды,
-                                        умело ссылаясь
-                                        на заявления собеседников. Вы способны сформулировать четкие и подробные
-                                        высказывания о сложных проблемах.</p>
-                                    <p style="font-size:1.5rem; color:black;">Письмо</p>
-                                    <p>Вы формируете мысли в ясно и хорошо структурированные тексты, довольно широко
-                                        излагая свою точку зрения. Можете написать о сложных проблемах в частном письме,
-                                        в диссертации или исследовании, в котором освещаются вопросы, которые вы
-                                        считаете
-                                        наиболее важными. Способны подобрать стиль текста для потенциального
-                                        читателя.</p>
-
-                                </div>
-
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
+            <?php endforeach ?>
+            <!--------------------->
 
         </div>
 </section>
